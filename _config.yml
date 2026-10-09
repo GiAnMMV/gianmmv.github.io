@@ -1,6 +1,7 @@
 theme: jekyll-theme-cayman
 title: GiAnMMV's Website
 description: My page! [WIP]
+classes: wide
 
 collections:
   puzzles:
@@ -8,10 +9,6 @@ collections:
     permalink: /puzzles/:name/
 
 defaults:
-  - scope:
-      type: ""
-    values:
-      classes: wide
   - scope:
       type: "puzzles"
     values:
