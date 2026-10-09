@@ -1,0 +1,332 @@
+{
+  "id": "sxsm_GiAnMMV_607c8067ae792dfcfc875e59d58bd06e",
+  "metadata": {
+    "source": "SudokuMaker v2026.08.14-d47fc4b",
+    "title": "Dalmatian Madness",
+    "author": "GiAnMMV",
+    "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nGerman Whispers: Every two consecutive digits along a green line must have a difference of at least 5.\nKropki Dots: Digits separated by a white dot are consecutive; digits separated by a black dot have a 1:2 ratio; if two digits are separated by a black&white dot, one must be multiple of the other.\nA dot placed at the corner intersection of four cells indicates that its condition applies to both diagonal pairs (top-left/bottom-right and top-right/bottom-left).",
+    "msgcorrect": "You did it, the solution is correct! :D\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
+    "solution": "875642319413759682962381754586297431139468275247513968758926143694135827321874596"
+  },
+  "cages": [],
+  "cells": [
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {"value": 2}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}]
+  ],
+  "regions": [
+    [[0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]],
+    [[0, 3], [0, 4], [0, 5], [1, 3], [1, 4], [1, 5], [2, 3], [2, 4], [2, 5]],
+    [[0, 6], [0, 7], [0, 8], [1, 6], [1, 7], [1, 8], [2, 6], [2, 7], [2, 8]],
+    [[3, 0], [3, 1], [3, 2], [4, 0], [4, 1], [4, 2], [5, 0], [5, 1], [5, 2]],
+    [[3, 3], [3, 4], [3, 5], [4, 3], [4, 4], [4, 5], [5, 3], [5, 4], [5, 5]],
+    [[3, 6], [3, 7], [3, 8], [4, 6], [4, 7], [4, 8], [5, 6], [5, 7], [5, 8]],
+    [[6, 0], [6, 1], [6, 2], [7, 0], [7, 1], [7, 2], [8, 0], [8, 1], [8, 2]],
+    [[6, 3], [6, 4], [6, 5], [7, 3], [7, 4], [7, 5], [8, 3], [8, 4], [8, 5]],
+    [[6, 6], [6, 7], [6, 8], [7, 6], [7, 7], [7, 8], [8, 6], [8, 7], [8, 8]]
+  ],
+  "lines": [
+    {"wayPoints": [[4.5, 1.5], [4.5, 3.5], [3.5, 4.5], [2.5, 3.5]], "color": "#67f067ff", "thickness": 9.6},
+    {"wayPoints": [[6.5, 5.5], [5.5, 4.5], [4.5, 5.5], [4.5, 7.5]], "color": "#67f067ff", "thickness": 9.6},
+    {"wayPoints": [[8.5, 3.5], [6.5, 3.5], [6.5, 4.5]], "color": "#67f067ff", "thickness": 9.6},
+    {"wayPoints": [[0.5, 5.5], [2.5, 5.5], [2.5, 4.5]], "color": "#67f067ff", "thickness": 9.6}
+  ],
+  "overlays": [
+    {
+      "center": [2, 2],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#000000",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [7, 7],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#000000",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [7, 2],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [2, 7],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [3, 6],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [0.5, 5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#000000",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [0.5, 1],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [8, 8.5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [7, 4],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [8, 6],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [1, 0.5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#000000",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [6, 8],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#000000",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [8, 1],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [1, 8],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [5, 5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [3, 3.5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [6, 5.5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#000000",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [4, 5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [5, 0.5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#000000",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [8, 0.5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#000000",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [5, 3.5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [3, 4],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [4, 6.5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#000000",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [3, 6],
+      "width": 0.18,
+      "height": 0.18,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#000000",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [7, 4],
+      "width": 0.18,
+      "height": 0.18,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#000000",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [8, 6],
+      "width": 0.18,
+      "height": 0.18,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#000000",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [8, 1],
+      "width": 0.18,
+      "height": 0.18,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#000000",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [5, 5],
+      "width": 0.18,
+      "height": 0.18,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#000000",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [3, 4],
+      "width": 0.18,
+      "height": 0.18,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#000000",
+      "borderColor": "#000000"
+    }
+  ]
+}
