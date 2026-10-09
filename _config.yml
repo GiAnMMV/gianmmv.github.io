@@ -9,6 +9,10 @@ collections:
 
 defaults:
   - scope:
+      type: ""
+    values:
+      classes: wide
+  - scope:
       type: "puzzles"
     values:
       layout: "puzzle"

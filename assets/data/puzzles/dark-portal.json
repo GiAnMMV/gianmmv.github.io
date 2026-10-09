@@ -1,0 +1,142 @@
+{
+  "id": "sxsm_GiAnMMV_84356b229bb938e1c7411007705dacab",
+  "metadata": {
+    "source": "SudokuMaker v2026.08.14-d47fc4b",
+    "title": "Dark Portal",
+    "author": "GiAnMMV",
+    "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nPalindrome Lines: Digits along a grey line read the same backwards and forwards.\nArrows: Numbers along an arrow sum to the total in the circled cell.\nKropki: Digits separated by a white dot are consecutive; digits separated by a black dot have a 1:2 ratio.",
+    "msgcorrect": "Congrats, you did it!\nBe proud! :D\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
+    "solution": "643975218958214637271836954582369741467158329139742586396581472825497163714623895"
+  },
+  "cages": [],
+  "cells": [
+    [{}, {}, {}, {}, {}, {}, {"value": 2}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {"value": 4}, {}, {}, {}, {}, {}, {}]
+  ],
+  "regions": [
+    [[0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]],
+    [[0, 3], [0, 4], [0, 5], [1, 3], [1, 4], [1, 5], [2, 3], [2, 4], [2, 5]],
+    [[0, 6], [0, 7], [0, 8], [1, 6], [1, 7], [1, 8], [2, 6], [2, 7], [2, 8]],
+    [[3, 0], [3, 1], [3, 2], [4, 0], [4, 1], [4, 2], [5, 0], [5, 1], [5, 2]],
+    [[3, 3], [3, 4], [3, 5], [4, 3], [4, 4], [4, 5], [5, 3], [5, 4], [5, 5]],
+    [[3, 6], [3, 7], [3, 8], [4, 6], [4, 7], [4, 8], [5, 6], [5, 7], [5, 8]],
+    [[6, 0], [6, 1], [6, 2], [7, 0], [7, 1], [7, 2], [8, 0], [8, 1], [8, 2]],
+    [[6, 3], [6, 4], [6, 5], [7, 3], [7, 4], [7, 5], [8, 3], [8, 4], [8, 5]],
+    [[6, 6], [6, 7], [6, 8], [7, 6], [7, 7], [7, 8], [8, 6], [8, 7], [8, 8]]
+  ],
+  "lines": [
+    {"wayPoints": [[0.5, 2.5], [1.5, 2.5], [2.5, 3.5], [2.5, 4.5]], "color": "#aaaf", "thickness": 9.6},
+    {"wayPoints": [[6.5, 4.5], [6.5, 5.5], [7.5, 6.5], [8.5, 6.5]], "color": "#aaaf", "thickness": 9.6},
+    {"wayPoints": [[0.5, 1.5], [2.5, 1.5], [3.5, 0.5], [4.5, 0.5]], "color": "#aaaf", "thickness": 9.6},
+    {"wayPoints": [[8.5, 7.5], [6.5, 7.5], [5.5, 8.5], [4.5, 8.5]], "color": "#aaaf", "thickness": 9.6},
+    {"wayPoints": [[6.5, 3.5], [7.5, 2.5]], "color": "#aaaf", "thickness": 9.6},
+    {"wayPoints": [[1.5, 6.5], [2.5, 5.5]], "color": "#aaaf", "thickness": 9.6}
+  ],
+  "overlays": [
+    {
+      "center": [6.5, 0.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [2.5, 8.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "angle": 0,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {"center": [5, 1.5], "width": 0.33, "height": 0.33, "text": "", "color": "#FFFFFF", "rounded": true, "backgroundColor": "#000000"},
+    {"center": [4, 7.5], "width": 0.33, "height": 0.33, "text": "", "color": "#FFFFFF", "rounded": true, "backgroundColor": "#000000"},
+    {"center": [3.5, 4], "width": 0.33, "height": 0.33, "text": "", "color": "#FFFFFF", "rounded": true, "backgroundColor": "#000000"},
+    {"center": [5.5, 5], "width": 0.33, "height": 0.33, "text": "", "color": "#FFFFFF", "rounded": true, "backgroundColor": "#000000"},
+    {"center": [6, 4.5], "width": 0.33, "height": 0.33, "text": "", "color": "#FFFFFF", "rounded": true, "backgroundColor": "#000000"},
+    {"center": [3, 4.5], "width": 0.33, "height": 0.33, "text": "", "color": "#FFFFFF", "rounded": true, "backgroundColor": "#000000"},
+    {
+      "center": [4.5, 7],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [4.5, 2],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [4, 4.5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [5, 4.5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [3, 2.5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [6, 6.5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    }
+  ],
+  "arrows": [
+    {"wayPoints": [[6.782, 0.782], [7.5, 1.5], [8.5, 1.5]], "headLength": 0.35, "color": "#aaaf", "thickness": 3.2},
+    {"wayPoints": [[6.218, 0.782], [5.5, 1.5]], "headLength": 0.35, "color": "#aaaf", "thickness": 3.2},
+    {"wayPoints": [[2.218, 8.218], [1.5, 7.5], [0.5, 7.5]], "headLength": 0.35, "color": "#aaaf", "thickness": 3.2},
+    {"wayPoints": [[2.782, 8.218], [3.5, 7.5]], "headLength": 0.35, "color": "#aaaf", "thickness": 3.2}
+  ]
+}
