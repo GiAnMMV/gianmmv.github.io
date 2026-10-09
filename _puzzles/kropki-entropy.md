@@ -2,6 +2,7 @@
 title: "Kropki Entropy"
 image: "/assets/images/kropki-entropy.png"
 sudokupad: "https://sudokupad.app/cyfk2rn9bl"
+json_data: "/assets/data/puzzles/kropki-entropy.json"
 date: 2026-09-05
 order: 1
 rules:
