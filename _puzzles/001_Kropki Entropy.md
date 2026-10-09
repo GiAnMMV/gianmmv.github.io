@@ -1,3 +1,4 @@
+---
 title: "Kropki Entropy"
 image: "/assets/images/Kropky Entropy.png"
 sudokupad: "https://sudokupad.app/cyfk2rn9bl"
