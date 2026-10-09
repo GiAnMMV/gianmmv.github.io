@@ -139,6 +139,29 @@ const Zipper = {
     }
 };
 
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("puzzle-link");
+  if (!container) return;
+
+  const jsonPath = container.getAttribute("data-json-url");
+  if (!jsonPath) return;
+
+  fetch(jsonPath)
+    .then(response => {
+      if (!response.ok) throw new Error("Could not load puzzle JSON");
+      return response.json();
+    })
+    .then(data => {
+      const targetUrl = convertJsonToUrl(data);
+
+      if (targetUrl) {
+        container.href = targetUrl;
+        container.style.display = "inline-block";
+      }
+    })
+    .catch(err => console.error("Converter error:", err));
+});
+
 function convertJsonToUrl(jsonData) {
     return "https://sudokupad.app/scl" + encodeURIComponent(LZipper["compact64"](Zipper.zip(jsonData)));
 }
