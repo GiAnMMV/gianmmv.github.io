@@ -1,7 +1,5 @@
 ---
 title: "Aoi Manji"
-image: "/assets/images/aoi-manji.png"
-sudokupad: "https://sudokupad.app/aek8y4n7dc"
 date: 2026-09-05
 order: 2
 rules:

@@ -8,11 +8,9 @@ layout: default
   <p><time datetime="{{ page.date }}">{{ page.date | date: "%-d %B %Y" }}</time></p>
   {% endif %}
   <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
-    {% if page.image %}
-      <div style="flex: 1 1 300px; max-width: 416px;">
-        <img src="{{ page.image | relative_url }}" style="width: 100%; height: auto; display: block;" alt="{{ page.title }}" />
-      </div>
-    {% endif %}
+    <div style="flex: 1 1 300px; max-width: 416px;">
+      <img src="{{ page.slug | prepend: '/assets/images/' | append: '.png' | relative_url }}" style="width: 100%; height: auto; display: block;" alt="{{ page.title }}" />
+    </div>
   
     <div style="flex: 2 1 300px; min-width: 0;">
       {% if page.rules %}
@@ -23,11 +21,7 @@ layout: default
         {% endfor %}
         </ul>
       {% endif %}
-      {% if page.json_data %}
-        <p>Play it online in <a id="puzzle-link" data-json-url="{{ page.json_data | relative_url }}" href="#">SudokuPad</a>.</p>
-      {% elsif page.sudokupad %}
-        <p>Play it online in <a title="{{ page.title }} by GiAnMMV" href="{{ page.sudokupad }}">SudokuPad</a>.</p>
-      {% endif %}
+      <p>Play it online in <a id="puzzle-link" data-json-url="{{ page.slug | prepend: '/assets/data/puzzles/' | append: '.json' | relative_url }}" href="#">SudokuPad</a>.</p>
       {% if page.content %}
       <div class="content">
         {{ content }}
