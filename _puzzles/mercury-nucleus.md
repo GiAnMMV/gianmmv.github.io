@@ -1,6 +1,5 @@
 ---
 title: "Mercury Nucleus"
-date: 2026
 order: 11
 rules:
   - name: "Classic Sudoku"

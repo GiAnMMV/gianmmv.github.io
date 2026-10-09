@@ -1,6 +1,5 @@
 ---
 title: "Skysandoku 2"
-date: 2026
 order: 19
 rules:
   - name: "Classic Sudoku"

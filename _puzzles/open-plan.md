@@ -1,6 +1,5 @@
 ---
 title: "Open Plan"
-date: 2026
 order: 21
 rules:
   - name: "Classic Sudoku"

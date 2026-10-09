@@ -1,6 +1,5 @@
 ---
 title: "Sudogram"
-date: 2026
 order: 24
 rules:
   - name: "Classic Sudoku"

@@ -1,6 +1,5 @@
 ---
 title: "Spilled Candies"
-date: 2026
 order: 27
 rules:
   - name: "Classic Sudoku"

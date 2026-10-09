@@ -1,6 +1,5 @@
 ---
 title: "Thermo Square"
-date: 2026
 order: 18
 rules:
   - name: "6x6 Sudoku"

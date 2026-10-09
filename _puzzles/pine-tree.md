@@ -1,6 +1,5 @@
 ---
 title: "Pine Tree"
-date: 2026
 order: 30
 rules:
   - name: "Classic Sudoku"

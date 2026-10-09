@@ -1,6 +1,5 @@
 ---
 title: "Grains of Salt & Pepper"
-date: 2026
 order: 22
 rules:
   - name: "Classic Sudoku"

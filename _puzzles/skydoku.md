@@ -1,6 +1,5 @@
 ---
 title: "Skydoku"
-date: 2026
 order: 29
 rules:
   - name: "Classic Sudoku"

@@ -1,6 +1,5 @@
 ---
 title: "Hero Sandwich"
-date: 2026
 order: 26
 rules:
   - name: "Classic Sudoku"

@@ -1,6 +1,5 @@
 ---
 title: "Thermo Mikado"
-date: 2026
 order: 23
 rules:
   - name: "Classic Sudoku"

@@ -1,6 +1,5 @@
 ---
 title: "Some X-Sums"
-date: 2026
 order: 28
 rules:
   - name: "Classic Sudoku"
