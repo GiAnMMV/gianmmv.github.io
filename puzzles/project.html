@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<article class="project-detail">
+  <h1>{{ page.title }}</h1>
+  <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+
+  <h2>Rules:</h2>
+  <ul>
+  {% for rule in page.rules %}
+    <li><strong>{{ rule.name }}:</strong> {{ rule.desc }}</li>
+  {% endfor %}
+  </ul>
+  <div class="content">
+    {{ content }}
+  </div>
+</article>
