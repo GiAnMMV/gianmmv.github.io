@@ -6,3 +6,9 @@ collections:
   projects:
     output: true
     permalink: /puzzles/:name/
+
+defaults:
+  - scope:
+      type: "puzzles"
+    values:
+      layout: "puzzle"
