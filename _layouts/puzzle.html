@@ -2,33 +2,35 @@
 layout: default
 ---
 
-<article class="project-detail" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
+<article class="project-detail">
   <h1>{{ page.title }}</h1>
   {% if page.date %}
   <p><time datetime="{{ page.date }}">{{ page.date | date: "%-d %B %Y" }}</time></p>
   {% endif %}
-  {% if page.image %}
-    <div style="flex: 1 1 300px; max-width: 416px;">
-      <img src="{{ page.image | relative_url }}" style="width: 100%; height: auto; display: block;" alt="{{ page.title }}" />
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
+    {% if page.image %}
+      <div style="flex: 1 1 300px; max-width: 416px;">
+        <img src="{{ page.image | relative_url }}" style="width: 100%; height: auto; display: block;" alt="{{ page.title }}" />
+      </div>
+    {% endif %}
+  
+    <div style="flex: 2 1 300px; min-width: 0;">
+      {% if page.rules %}
+        <h2>Rules:</h2>
+        <ul>
+        {% for rule in page.rules %}
+          <li><strong>{{ rule.name }}:</strong> {{ rule.desc }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+      {% if page.sudokupad %}
+        <p>Play in online in <a href="{{ page.sudokupad }}" target="_blank" class="btn">SudokuPad</a>.</p>
+      {% endif %}
+      {% if page.content %}
+      <div class="content">
+        {{ content }}
+      </div>
+      {% endif %}
     </div>
-  {% endif %}
-
-  <div style="flex: 2 1 300px; min-width: 0;">
-    {% if page.rules %}
-      <h2>Rules:</h2>
-      <ul>
-      {% for rule in page.rules %}
-        <li><strong>{{ rule.name }}:</strong> {{ rule.desc }}</li>
-      {% endfor %}
-      </ul>
-    {% endif %}
-    {% if page.sudokupad %}
-      <p>Play in online in <a href="{{ page.sudokupad }}" target="_blank" class="btn">SudokuPad</a>.</p>
-    {% endif %}
-    {% if page.content %}
-    <div class="content">
-      {{ content }}
-    </div>
-    {% endif %}
   </div>
 </article>
