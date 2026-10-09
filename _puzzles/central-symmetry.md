@@ -9,7 +9,7 @@ rules:
   - name: "Arrows"
     desc: "Numbers along an arrow sum up to the total in the circled cells; the circled value is read left to right or top to down if composed by multiple digits."
   - name: "Greater/Less"
-    desc: "If two digits are separated by a "⁠<⁠", the smaller one in on the side where the "⁠<⁠" points to."
+    desc: "If two digits are separated by a \"<\", the smaller one in on the side where the \"<\" points to."
   - name: "Even"
     desc: "A digit inside a grey square must be even."
 ---
