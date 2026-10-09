@@ -4,8 +4,8 @@
     "source": "SudokuMaker v2026.08.14-d47fc4b",
     "title": "Black & White",
     "author": "GiAnMMV",
-    "rules": "Normal sudoku rules apply.\nKiller cages: Digits inside a cage must sum to the number in the corner.\nPalindrome lines: Digits along a grey line read the same backwards and forwards.\nKropki: Digits separated by a white dot are consecutive; digits separate by a black dot have a 1:2 ratio.",
-    "msgcorrect": "Thanks for solving my third puzzle! :D",
+    "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nKiller cages: Digits inside a cage must sum to the number in the corner.\nPalindrome lines: Digits along a grey line read the same backwards and forwards.\nKropki: Digits separated by a white dot are consecutive; digits separated by a black dot have a 1:2 ratio.",
+    "msgcorrect": "Thanks for solving my third puzzle! :D\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "958234716732165894641789325813576249567942183429813657396421578285397461174658932"
   },
   "cages": [

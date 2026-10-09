@@ -5,7 +5,7 @@
     "title": "Aoi Manji",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nRegion Sum Lines: Box borders divide a blue line into multiple segments which have the same sum. Different lines must have the same sum.\nPalindrome Lines: Digits along a grey line read the same backwards and forwards.\nX: Two digits separated by an X clue sum up to 10.",
-    "msgcorrect": "You did it! Thanks for playing my puzzle!",
+    "msgcorrect": "You did it! Thanks for playing my puzzle!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "215987364869543172437162985641739258928451736753628419576394821384215697192876543"
   },
   "cages": [],
