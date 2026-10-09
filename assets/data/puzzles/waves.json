@@ -1,0 +1,209 @@
+{
+  "id": "sxsm_GiAnMMV_038e190e833a7bfdeab7559b142ecebb",
+  "metadata": {
+    "source": "SudokuMaker v2026.08.14-d47fc4b",
+    "title": "Waves",
+    "author": "GiAnMMV",
+    "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nRegion Sum Lines: Box borders divide a blue line into multiple segments which have the same sum. Different lines may have different sums.\nSame Sum Cages: The sum of the digits inside an outlined cage must be identical across all such cages.\nKropki Dots: Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio.\nX: Two digits separated by an X clue sum up to 10.\nEven: A digit inside a grey square must be even.",
+    "msgcorrect": "You did it, you're great! :D\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
+    "solution": "857249136934816725162375984746931852293658471581724369679182543428593617315467298"
+  },
+  "cages": [
+    {"cells": [[0, 0], [1, 0], [2, 0]]},
+    {"cells": [[6, 8], [7, 8], [8, 8]]},
+    {"cells": [[5, 1], [6, 1], [7, 1], [8, 1]]},
+    {"cells": [[0, 7], [1, 7], [2, 7], [3, 7]]},
+    {"cells": [[5, 0], [6, 0], [7, 0], [8, 0]]},
+    {"cells": [[0, 8], [1, 8], [2, 8], [3, 8], [4, 8]]}
+  ],
+  "cells": [
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {"value": 4}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {"value": 5}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {"value": 6}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}]
+  ],
+  "regions": [
+    [[0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]],
+    [[0, 3], [0, 4], [0, 5], [1, 3], [1, 4], [1, 5], [2, 3], [2, 4], [2, 5]],
+    [[0, 6], [0, 7], [0, 8], [1, 6], [1, 7], [1, 8], [2, 6], [2, 7], [2, 8]],
+    [[3, 0], [3, 1], [3, 2], [4, 0], [4, 1], [4, 2], [5, 0], [5, 1], [5, 2]],
+    [[3, 3], [3, 4], [3, 5], [4, 3], [4, 4], [4, 5], [5, 3], [5, 4], [5, 5]],
+    [[3, 6], [3, 7], [3, 8], [4, 6], [4, 7], [4, 8], [5, 6], [5, 7], [5, 8]],
+    [[6, 0], [6, 1], [6, 2], [7, 0], [7, 1], [7, 2], [8, 0], [8, 1], [8, 2]],
+    [[6, 3], [6, 4], [6, 5], [7, 3], [7, 4], [7, 5], [8, 3], [8, 4], [8, 5]],
+    [[6, 6], [6, 7], [6, 8], [7, 6], [7, 7], [7, 8], [8, 6], [8, 7], [8, 8]]
+  ],
+  "lines": [
+    {"wayPoints": [[3.5, 5.5], [3.5, 3.5], [2.5, 2.5], [0.5, 2.5]], "color": "#2ecbffff", "thickness": 9.6},
+    {"wayPoints": [[8.5, 6.5], [6.5, 6.5], [5.5, 5.5], [5.5, 3.5]], "color": "#2ecbffff", "thickness": 9.6},
+    {
+      "wayPoints": [[4.5, 0.5], [3.5, 0.5], [3.5, 2.5], [4.5, 3.5], [4.5, 5.5], [5.5, 6.5], [5.5, 8.5], [4.5, 8.5]],
+      "color": "#2ecbffff",
+      "thickness": 9.6
+    }
+  ],
+  "overlays": [
+    {"center": [4.5, 3], "width": 0.33, "height": 0.33, "text": "", "color": "#FFFFFF", "rounded": true, "backgroundColor": "#000000"},
+    {"center": [4.5, 6], "width": 0.33, "height": 0.33, "text": "", "color": "#FFFFFF", "rounded": true, "backgroundColor": "#000000"},
+    {"center": [1.5, 3], "width": 0.33, "height": 0.33, "text": "", "color": "#FFFFFF", "rounded": true, "backgroundColor": "#000000"},
+    {"center": [7.5, 6], "width": 0.33, "height": 0.33, "text": "", "color": "#FFFFFF", "rounded": true, "backgroundColor": "#000000"},
+    {"center": [0.5, 4], "width": 0.33, "height": 0.33, "text": "", "color": "#FFFFFF", "rounded": true, "backgroundColor": "#000000"},
+    {
+      "center": [6, 4.5],
+      "width": 0.35,
+      "height": 0.35,
+      "stroke": "#000000",
+      "stroke-width": 1,
+      "stroke-linejoin": "round",
+      "text": "X",
+      "fontSize": 14,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF"
+    },
+    {
+      "center": [3, 4.5],
+      "width": 0.35,
+      "height": 0.35,
+      "stroke": "#000000",
+      "stroke-width": 1,
+      "stroke-linejoin": "round",
+      "text": "X",
+      "fontSize": 14,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF"
+    },
+    {
+      "center": [8, 5.5],
+      "width": 0.35,
+      "height": 0.35,
+      "stroke": "#000000",
+      "stroke-width": 1,
+      "stroke-linejoin": "round",
+      "text": "X",
+      "fontSize": 14,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF"
+    },
+    {
+      "center": [1, 3.5],
+      "width": 0.35,
+      "height": 0.35,
+      "stroke": "#000000",
+      "stroke-width": 1,
+      "stroke-linejoin": "round",
+      "text": "X",
+      "fontSize": 14,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF"
+    },
+    {
+      "center": [2, 0.5],
+      "width": 0.35,
+      "height": 0.35,
+      "stroke": "#000000",
+      "stroke-width": 1,
+      "stroke-linejoin": "round",
+      "text": "X",
+      "fontSize": 14,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF"
+    },
+    {
+      "center": [7, 8.5],
+      "width": 0.35,
+      "height": 0.35,
+      "stroke": "#000000",
+      "stroke-width": 1,
+      "stroke-linejoin": "round",
+      "text": "X",
+      "fontSize": 14,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF"
+    },
+    {
+      "center": [3, 1.5],
+      "width": 0.35,
+      "height": 0.35,
+      "stroke": "#000000",
+      "stroke-width": 1,
+      "stroke-linejoin": "round",
+      "text": "X",
+      "fontSize": 14,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF"
+    },
+    {
+      "center": [6, 7.5],
+      "width": 0.35,
+      "height": 0.35,
+      "stroke": "#000000",
+      "stroke-width": 1,
+      "stroke-linejoin": "round",
+      "text": "X",
+      "fontSize": 14,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF"
+    },
+    {
+      "center": [1, 0.5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [8, 8.5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [8, 1.5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [1, 7.5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [8.5, 5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    }
+  ],
+  "underlays": [{"center": [4.5, 0.5], "width": 0.8, "height": 0.8, "backgroundColor": "#0003"}]
+}
