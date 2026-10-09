@@ -4,6 +4,7 @@ layout: default
 
 <article class="project-detail">
   <h1>{{ page.title }}</h1>
+  <p><time datetime="{{ page.date }}">{{ page.date | date: "%d %B %Y" }}</time></p>
   {% if page.image %}
     <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
   {% endif %}
@@ -17,7 +18,9 @@ layout: default
   {% if page.sudokupad %}
     <p>Play in online in <a href="{{ page.sudokupad }}" target="_blank" class="btn">Sudokupad</a>.</p>
   {% endif %}
+  {% if page.content %}
   <div class="content">
     {{ content }}
   </div>
+  {% endif %}
 </article>
