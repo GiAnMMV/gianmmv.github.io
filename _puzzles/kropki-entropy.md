@@ -2,6 +2,8 @@
 title: "Kropki Entropy"
 image: "/assets/images/kropki-entropy.png"
 sudokupad: "https://sudokupad.app/cyfk2rn9bl"
+date: 2026-09-05
+order: 1
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."
@@ -10,5 +12,3 @@ rules:
   - name: "Kropki"
     desc: "Digits separated by a white dot are consecutive; digits separated by a black dot have a 1:2 ratio."
 ---
-
-Sample Text.
