@@ -23,15 +23,10 @@ layout: default
         {% endfor %}
         </ul>
       {% endif %}
-      {% if page.sudokupad %}
-        <p>Play it online in <a title="{{ page.title }} by GiAnMMV" href="{{ page.sudokupad }}">SudokuPad</a>.</p>
-      {% endif %}
       {% if page.json_data %}
-        <a id="puzzle-link" 
-           data-json-url="{{ page.json_data | relative_url }}" 
-           href="#" 
-          SudokuPad
-        </a>
+        <p>Play it online in <a id="puzzle-link" data-json-url="{{ page.json_data | relative_url }}" href="#">SudokuPad</a>.</p>
+      {% elsif page.sudokupad %}
+        <p>Play it online in <a title="{{ page.title }} by GiAnMMV" href="{{ page.sudokupad }}">SudokuPad</a>.</p>
       {% endif %}
       {% if page.content %}
       <div class="content">
