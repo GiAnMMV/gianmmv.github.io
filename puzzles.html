@@ -50,7 +50,7 @@ permalink: /puzzles/
     {% assign sorted_puzzles = site.puzzles | sort: "order" %}
     {% for puzzle in sorted_puzzles %}
       <a href="{{ puzzle.url | relative_url }}" class="puzzle-card">
-        <img src="{{ puzzle.image | relative_url }}" alt="{{ puzzle.title }}">
+        <img src="{{ puzzle.slug | prepend: '/assets/images/' | append: '.png' | relative_url }}" alt="{{ puzzle.title }}">
         <h3>{{ puzzle.title }}</h3>
       </a>
     {% endfor %}
