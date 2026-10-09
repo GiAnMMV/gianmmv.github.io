@@ -3,7 +3,7 @@ title: GiAnMMV's homepage
 description: My page! [WIP]
 
 collections:
-  projects:
+  puzzles:
     output: true
     permalink: /puzzles/:name/
 
