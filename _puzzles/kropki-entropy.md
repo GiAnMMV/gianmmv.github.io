@@ -1,6 +1,6 @@
 ---
 title: "Kropki Entropy"
-image: "/assets/images/kropky-entropy.png"
+image: "/assets/images/kropki-entropy.png"
 sudokupad: "https://sudokupad.app/cyfk2rn9bl"
 rules:
   - name: "Classic Sudoku"
