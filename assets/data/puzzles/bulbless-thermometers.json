@@ -8,7 +8,6 @@
     "msgcorrect": "Congratulations, dear Sir or Madam. I admire you!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "592186437184327956376549821457213689631978245928654713843791562219865374765432198"
   },
-  "cages": [{}],
   "cells": [
     [{"value": 5}, {}, {}, {}, {}, {}, {}, {}, {}],
     [{}, {}, {}, {}, {"value": 2}, {}, {"value": 9}, {}, {}],

@@ -8,7 +8,6 @@
     "msgcorrect": "Yey! You did it!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "189365742637248159452791386328159674941627835576483921793514268864932517215876493"
   },
-  "cages": [{}],
   "cells": [
     [{}, {"value": 8}, {}, {}, {}, {}, {}, {}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {"value": 9}],
