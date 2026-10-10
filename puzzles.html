@@ -59,7 +59,7 @@ permalink: /puzzles/
         <img src="{{ puzzle.slug | prepend: '/assets/images/' | append: '.png' | relative_url }}" alt="{{ puzzle.title }}">
         <h3>{{ puzzle.title }}</h3>
         {% if puzzle.date %}
-          <time datetime="{{ puzzle.date }}">{{ puzzle.date | date: "%-d %B %Y" }}</div>
+          <time datetime="{{ puzzle.date }}">{{ puzzle.date | date: "%-d %B %Y" }}</time>
         {% endif %}
       </a>
     {% endfor %}
