@@ -1,0 +1,60 @@
+---
+layout: null
+permalink: /play/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to SudokuPad...</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <p id="status-text">Loading puzzle in SudokuPad...</p>
+
+  <script src="{{ '/assets/js/puzzle-converter.js' | relative_url }}"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Extract ?puzzle=slug from URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const puzzleSlug = urlParams.get('puzzle');
+
+      if (!puzzleSlug) {
+        document.getElementById("status-text").innerText = "No puzzle specified.";
+        return;
+      }
+
+      const jsonPath = `{{ '/assets/data/puzzles/' | relative_url }}${puzzleSlug}.json`;
+
+      fetch(jsonPath)
+        .then(res => {
+          if (!res.ok) throw new Error("Puzzle file not found");
+          return res.json();
+        })
+        .then(data => {
+          const targetUrl = convertJsonToUrl(data);
+          if (targetUrl) {
+            window.location.href = targetUrl;
+          } else {
+            document.getElementById("status-text").innerText = "Puzzle link generation failed.";
+          }
+        })
+        .catch(err => {
+          console.error(err);
+          document.getElementById("status-text").innerText = "Error loading puzzle data.";
+        });
+    });
+  </script>
+</body>
+</html>
