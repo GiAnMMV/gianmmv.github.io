@@ -1,6 +1,6 @@
 ---
 title: "Central Symmetry"
-date: 2026-09-21
+creation_date: 2026-09-21
 order: 13
 rules:
   - name: "Classic Sudoku"

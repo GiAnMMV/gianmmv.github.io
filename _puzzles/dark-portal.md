@@ -1,6 +1,6 @@
 ---
 title: "Dark Portal"
-date: 2026-09-13
+creation_date: 2026-09-13
 order: 7
 rules:
   - name: "Classic Sudoku"

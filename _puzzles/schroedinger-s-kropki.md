@@ -1,6 +1,6 @@
 ---
 title: "Schrödinger's Kropki"
-date: 2026-09-15
+creation_date: 2026-09-15
 order: 9
 rules:
   - name: "Classic Sudoku"

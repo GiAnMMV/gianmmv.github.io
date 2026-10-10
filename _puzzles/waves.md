@@ -1,6 +1,6 @@
 ---
 title: "Waves"
-date: 2026-09-09
+creation_date: 2026-09-09
 order: 6
 rules:
   - name: "Classic Sudoku"

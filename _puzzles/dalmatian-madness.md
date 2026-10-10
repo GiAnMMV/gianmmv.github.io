@@ -1,6 +1,6 @@
 ---
 title: "Dalmatian Madness"
-date: 2026-09-08
+creation_date: 2026-09-08
 order: 5
 rules:
   - name: "Classic Sudoku"

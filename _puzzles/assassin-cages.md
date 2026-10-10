@@ -1,6 +1,6 @@
 ---
 title: "Assassin Cages"
-date: 2026-09-14
+creation_date: 2026-09-14
 order: 8
 rules:
   - name: "Classic Sudoku"

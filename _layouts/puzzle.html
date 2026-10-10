@@ -4,8 +4,8 @@ layout: default
 
 <article class="project-detail">
   <h1>{{ page.title }}</h1>
-  {% if page.date %}
-  <p><time datetime="{{ page.date }}">{{ page.date | date: "%-d %B %Y" }}</time></p>
+  {% if page.creation_date %}
+  <p><time datetime="{{ page.creation_date }}">{{ page.creation_date | date: "%-d %B %Y" }}</time></p>
   {% endif %}
   <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
     <div style="flex: 1 1 300px; max-width: 416px;">

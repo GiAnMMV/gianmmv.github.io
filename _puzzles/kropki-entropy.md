@@ -1,6 +1,6 @@
 ---
 title: "Kropki Entropy"
-date: 2026-09-05
+creation_date: 2026-09-05
 order: 1
 rules:
   - name: "Classic Sudoku"

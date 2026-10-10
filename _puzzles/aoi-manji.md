@@ -1,6 +1,6 @@
 ---
 title: "Aoi Manji"
-date: 2026-09-05
+creation_date: 2026-09-05
 order: 2
 rules:
   - name: "Classic Sudoku"

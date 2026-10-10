@@ -1,6 +1,6 @@
 ---
 title: "Black & White"
-date: 2026-09-06
+creation_date: 2026-09-06
 order: 3
 rules:
   - name: "Classic Sudoku"

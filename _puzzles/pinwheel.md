@@ -1,6 +1,6 @@
 ---
 title: "Pinwheel"
-date: 2026-09-17
+creation_date: 2026-09-17
 order: 10
 rules:
   - name: "Classic Sudoku"

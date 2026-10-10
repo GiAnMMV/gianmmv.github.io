@@ -1,6 +1,6 @@
 ---
 title: "Number Fever"
-date: 2026-09-07
+creation_date: 2026-09-07
 order: 4
 rules:
   - name: "Classic Sudoku"
