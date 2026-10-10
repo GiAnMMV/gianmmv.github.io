@@ -5,7 +5,7 @@
     "title": "Sudogram",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nNonogram: The clues outside the grid indicate the lengths of all segments of shaded cells in the given row or column. Different segments in the same row or column must be separated by at least one unshaded cell. Every pair of orthogonally adjacent shaded cells must have a difference of at least 4.",
-    "msgcorrect": "Congrats! I hope you enjoyed!\n\nCheck out my other puzzles at: redd.it/1watdxv",
+    "msgcorrect": "Congrats! I hope you enjoyed!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "217846359659213487384597261948751623561329874723684915172938546836475192495162738"
   },
   "cages": [{}],

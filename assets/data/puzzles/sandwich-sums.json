@@ -5,7 +5,7 @@
     "title": "Sandwich Sums",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nSandwich Sum Lines: Every digit along an ochre line (except the ends) must equal the sum of its two neighbours; if the sum is greater than 9, it wraps around (e.g. 10→1, 11→2 etc.).\nCounting Circles: Any digit in a circle indicates exactly how many circles contain that digit.\nKropki: Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio.",
-    "msgcorrect": "Congrats! Thanks for playin'!",
+    "msgcorrect": "Congrats! Thanks for playin'!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "645931728198275463732648159417392586269857314583164297856423971924716835371589642"
   },
   "cages": [{}],

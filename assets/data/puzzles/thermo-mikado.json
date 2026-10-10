@@ -4,7 +4,7 @@
     "source": "SudokuMaker v2026.08.14-d47fc4b",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nThermometers: Along thermometers, digits must increase from the bulb.",
-    "msgcorrect": "You won! Nice!\n\nCheck out my other puzzles here: https://redd.it/1watdxv",
+    "msgcorrect": "You won! Nice!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "598643217124578396637291845369127584281456973745389162872934651913765428456812739",
     "title": "Thermo Mikado"
   },

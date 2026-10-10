@@ -4,7 +4,7 @@
     "source": "SudokuMaker v2026.08.14-d47fc4b",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nGerman Whispers: Every two consecutive digits along a green line must have a difference of at least 5.\nParity Lines: Every pair of consecutive cells along a brown line must contain an odd digit and an even digit.\nArrows: Numbers along an arrow sum up to the total in the circled cell.",
-    "msgcorrect": "Hope you liked it! Made for Monthly Puzzle Prompt of October 2026.\n\nCheck out my other puzzles here: redd.it/1watdxv",
+    "msgcorrect": "Hope you liked it! Made for Monthly Puzzle Prompt of October 2026.\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "153798462792364185468251973387142659529673814641589237916435728875926341234817596",
     "title": "Pine Tree"
   },

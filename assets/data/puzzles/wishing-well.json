@@ -5,6 +5,7 @@
     "title": "Wishing Well",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nRenban: All digits along a purple line must form a consecutive sequence (in no specific order).\nQuadruple Circles: Digits inside a white circle appear in at least one of the four cells surrounding that circle (if a digit repeats in a circle, it appears in two of the surrounding cells).",
+    "msgcorrect": "Thanks for playing!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles"
     "solution": "326475189195638472487912356548723961769154823231896745852341697914267538673589214"
   },
   "cages": [{}],

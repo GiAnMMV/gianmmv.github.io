@@ -1,5 +1,6 @@
 ---
 title: "Bulbless Thermometers"
+date: 2026-09-22
 order: 14
 rules:
   - name: "Classic Sudoku"

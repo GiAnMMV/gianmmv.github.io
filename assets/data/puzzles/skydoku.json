@@ -5,7 +5,7 @@
     "title": "Skydoku",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nSkyscrapers: Each digit in the grid represents the height of a building in its cell, and taller buildings obstruct the view of shorter ones behind them: clues outside the grid give the number of buildings visible from that vantage point in the clue's row or column.",
-    "msgcorrect": "Hope you found it enjoyable!\n\nCheck out my other puzzles here: redd.it/1watdxv",
+    "msgcorrect": "Hope you found it enjoyable!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "456371892987245163123689574871493256234568719569127438712836945345912687698754321"
   },
   "cages": [{}],

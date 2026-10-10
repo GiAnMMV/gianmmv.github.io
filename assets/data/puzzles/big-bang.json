@@ -5,7 +5,7 @@
     "title": "Big Bang",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nRegion Sum Lines: Box borders divide a blue line into multiple segments which have the same sum. Different lines may have different sums.\nArrows: Numbers along an arrow sum up to the total in the circled cell.\nKropki: Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio.\nV: Two digits separated by a V clue sum up to 5. If a clue is on the outer border, it applies to the digits at the two ends of that row/column.",
-    "msgcorrect": "Congrats!!!!!!!!! :D",
+    "msgcorrect": "Congrats!!!!!!!!! :D\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "257618493831594627469273815172459386985367241643821759518732964726945138394186572"
   },
   "cages": [{}],

@@ -5,7 +5,7 @@
     "title": "Mercury Nucleus",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nThermometers: Along thermometers, digits must increase from the bulb.\nKropki: Two digits separated by a white dot are consecutive.",
-    "msgcorrect": "Congrats, good job! :D",
+    "msgcorrect": "Congrats, good job! :D\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "597461238634582179812793465478936521356214987129857643285679314961348752743125896"
   },
   "cages": [{}],

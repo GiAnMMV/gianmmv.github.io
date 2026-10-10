@@ -4,7 +4,7 @@
     "source": "SudokuMaker v2026.10.05-a3aef4c",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nDouble Arrows: The sum of the digits along a grey line is equal to the sum of the two circles at its ends.",
-    "msgcorrect": "Yey, you did it! Congrats!\n\nCheck out my other puzzles here: redd.it/1watdxv",
+    "msgcorrect": "Yey, you did it! Congrats!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "576894132832671945941523678427319856158267394693458217264135789715982463389746521",
     "title": "Connections"
   },

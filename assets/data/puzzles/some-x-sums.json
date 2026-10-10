@@ -4,7 +4,7 @@
     "source": "SudokuMaker v2026.08.14-d47fc4b",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nX-Sums: A clue outside the grid indicates the sum of the first X digits of its row or column, where X is the digit placed in the first cell in that direction.",
-    "msgcorrect": "Big congrats! Thanks for playing!\n\nCheck out my other puzzles here: redd.it/1watdxv",
+    "msgcorrect": "Big congrats! Thanks for playing!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "467825193192736845583194276976381524348572961215469387824653719751948632639217458",
     "title": "Some X-Sums"
   },

@@ -5,7 +5,7 @@
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nDutch Whispers: Every two consecutive digits along an orange line must have a difference of at least 4.\nGerman Whispers: Every two consecutive digits along a green line must have a difference of at least 5.\nKropki: Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio.",
     "solution": "742951863351876294968423175416287359587394621239615487674538912123769548895142736",
-    "msgcorrect": "It is the Spooky Month!\n\nCheck out my other puzzles here: redd.it/1watdxv",
+    "msgcorrect": "It is the Spooky Month!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "title": "Spooky Month"
   },
   "cells": [

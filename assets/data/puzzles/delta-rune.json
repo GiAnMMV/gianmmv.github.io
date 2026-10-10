@@ -5,7 +5,7 @@
     "title": "Delta Rune",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nArrows: Numbers along an arrow sum up to the total in the circled cell.\nPalindrome Lines: Digits along a grey line read the same backwards and forwards.\nRegion Sum Lines: Box borders divide a blue line into multiple segments which have the same sum.\nRenban: All digits along a purple line must form a consecutive sequence (in no specific order).\nGerman Whispers: Every two consecutive digits along a green line must have a difference of at least 5.\nCounting Circles: Any digit in a circle indicates exactly how many circles contain that digit (arrow circles are NOT included).\nKropki: Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio.",
-    "msgcorrect": "Congrats! Did you get the reference? ;)",
+    "msgcorrect": "Congrats! Did you get the reference? ;)\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "169872453327954816845316729413728695596143278278569341934281567782695134651437982"
   },
   "cages": [

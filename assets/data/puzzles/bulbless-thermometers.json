@@ -5,7 +5,7 @@
     "title": "Bulbless Thermometers",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nBulbless Thermometers: Along grey lines, the digits must be in ascending or descending order (i.e. the missing bulb must be at one end of the line).\nKropki: Two digits separated by a white dot are consecutive.",
-    "msgcorrect": "Congratulations, dear Sir or Madam. I admire you!",
+    "msgcorrect": "Congratulations, dear Sir or Madam. I admire you!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "592186437184327956376549821457213689631978245928654713843791562219865374765432198"
   },
   "cages": [{}],

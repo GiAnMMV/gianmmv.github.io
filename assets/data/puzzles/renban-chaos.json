@@ -5,7 +5,7 @@
     "title": "Renban Chaos",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nRenban: All digits along a purple line must form a consecutive sequence (in no specific order).\nArrows: Numbers along an arrow sum up to the total in the circled cell.\nKropki: Two digits separated by a black dot have a 1:2 ratio.",
-    "msgcorrect": "Yey! You did it!\nCheck out my other puzzles here: redd.it/1watdxv",
+    "msgcorrect": "Yey! You did it!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "548729361693418275721635489369257148487961523215384796876143952932576814154892637"
   },
   "cages": [

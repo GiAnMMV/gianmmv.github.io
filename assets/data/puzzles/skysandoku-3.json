@@ -4,7 +4,7 @@
     "source": "SudokuMaker v2026.08.14-d47fc4b",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nSkyscrapers: Each digit in the grid represents the height of a building in its cell, and taller buildings obstruct the view of shorter ones behind them: clues outside the grid give the number of buildings visible from that vantage point in the clue's row or column.\nSandwich Sums: A circled clue indicates the sum of the digits between 1 and 9 in the indicated row or column. Circled clues are also Skyscraper clues.",
-    "msgcorrect": "Congrats! Thanks for playing!\n\nCheck out my other puzzles here: redd.it/1watdxv",
+    "msgcorrect": "Congrats! Thanks for playing!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "378149256146257389529368417687493125913582764452671893861735942795824631234916578",
     "title": "Skysandoku 3"
   },

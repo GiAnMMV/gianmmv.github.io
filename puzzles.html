@@ -37,9 +37,15 @@ permalink: /puzzles/
   
   .puzzle-card h3 {
     margin: 0;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 1.1rem;
     text-align: center;
+  }
+
+  .puzzle-card time {
+    font-size: small;
+    text-aling: center;
   }
 </style></head>
 
@@ -52,6 +58,9 @@ permalink: /puzzles/
       <a href="{{ puzzle.url | relative_url }}" class="puzzle-card">
         <img src="{{ puzzle.slug | prepend: '/assets/images/' | append: '.png' | relative_url }}" alt="{{ puzzle.title }}">
         <h3>{{ puzzle.title }}</h3>
+        {% if puzzle.date %}
+          <time datetime="{% puzzle.date %}">{{ puzzle.date | date: "%-d %B %Y" }}</div>
+        {% endif %}
       </a>
     {% endfor %}
   </div>

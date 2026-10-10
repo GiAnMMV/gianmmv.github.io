@@ -5,7 +5,7 @@
     "solution": "183947265249156738657832914921784356368591472475263189894375621532619847716428593",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nSum Letters: All pairs of orthogonally adjacent digits separated by the same letter must have the same sum. Different letters may not represent the same sum.\nGreater/Less: If two digits are separated by a '<', the smaller one in on the side where the '<' points to.",
-    "msgcorrect": "Congratulations! I hope you found solving this little puzzle entertaining!\n\nCheck out my other puzzles here: redd.it/1watdxv",
+    "msgcorrect": "Congratulations! I hope you found solving this little puzzle entertaining!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "title": "Alphabet Cereal"
   },
   "cells": [

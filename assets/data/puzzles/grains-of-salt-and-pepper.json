@@ -4,7 +4,7 @@
     "source": "SudokuMaker v2026.08.14-d47fc4b",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nKropki: Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio.",
-    "msgcorrect": "Thanks for playing! I intended to submit this for Monthly Puzzle Prompt of September 2026, but I already hit the limit.\n\nCheck out my other puzzles here: https://redd.it/1watdxv",
+    "msgcorrect": "Thanks for playing! I intended to submit this for Monthly Puzzle Prompt of September 2026, but I already hit the limit.\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "489276315176543289253918674945132768837694152621857943712489536398765421564321897",
     "title": "Grains of Salt & Pepper"
   },

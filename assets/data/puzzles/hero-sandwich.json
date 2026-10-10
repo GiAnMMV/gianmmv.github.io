@@ -4,7 +4,7 @@
     "source": "SudokuMaker v2026.08.14-d47fc4b",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nSandwich Sums: Clues outside the grid indicate the sum of the digits between 1 and 9 in the indicated row or column.",
-    "msgcorrect": "Thankies a million for playin'!\n\nCheck out my other puzzles here: redd.it/1watdxv",
+    "msgcorrect": "Thankies a million for playin'!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "641985723825713694739624185397548261256179438184236579418367952972851346563492817",
     "title": "Hero Sandwich"
   },

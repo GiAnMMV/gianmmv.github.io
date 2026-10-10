@@ -4,7 +4,7 @@
     "source": "SudokuMaker v2026.08.14-d47fc4b",
     "author": "GiAnMMV",
     "rules": "6x6 Sudoku: Every row, column and 2x3 box must contain every number from 1 to 6.\nKiller Cages: No digit may appear more than once within a cage.\nThermometers: Along thermometers, digits must increase from the bulb.",
-    "msgcorrect": "I hope you enjoyed it! (:",
+    "msgcorrect": "I hope you enjoyed it! (:\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "463215521436135624642153256341314562",
     "title": "Thermo Square"
   },

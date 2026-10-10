@@ -4,7 +4,7 @@
     "source": "SudokuMaker v2026.08.14-d47fc4b",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nAmbiguous Clues: All clues outside the grid with the same color represent the same rule; two clues of different colors cannot represent the same rule. The possible rules are:\n1) Skyscrapers: Each digit in the grid represents the height of a building in its cell, and taller buildings obstruct the view of shorter ones behind them: a clue gives the number of buildings visible from that vantage point in the clue's row or column.\n2) Sandwich Sums: A clue indicates the sum of the digits between 1 and 9 in the indicated row or column.\n3) X-Sums: A clue indicates the sum of the first X digits of its row or column, where X is the digit placed in the first cell in that direction.\n4) Numbered Rooms: A clue indicates the digit which has to be placed in the Xth cell in the corresponding direction, where X is the digit placed in the first cell in that direction.",
-    "msgcorrect": "Congratulations!\n\nCheck out my other puzzles here: redd.it/1watdxv",
+    "msgcorrect": "Congratulations!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "279368514653142897841579362728631459315497286964825173487953621532716948196284735",
     "title": "Ambiguous Clues"
   },

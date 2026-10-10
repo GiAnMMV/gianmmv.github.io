@@ -1,5 +1,6 @@
 ---
 title: "Big Bang"
+date: 2026-09-20
 order: 12
 rules:
   - name: "Classic Sudoku"

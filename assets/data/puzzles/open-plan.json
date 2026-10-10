@@ -5,7 +5,7 @@
     "title": "Open Plan",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nEntropic Lines: Every sequential group of 3 cells on a line must have a low digit {1,2,3}, a medium digit {4,5,6}, and a high digit {7,8,9}.\nKropki: Two digits separated by a white dot are consecutive.\nXV: Two digits separated by an X clue sum up to 10; two digits separated by a V clue sum up to 5.",
-    "msgcorrect": "Congrats! Good job!\n\nCheck out my other puzzles at: redd.it/1watdxv",
+    "msgcorrect": "Congrats! Good job!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "473582916251963748896417532319624875742835169685791423134259687967348251528176394"
   },
   "cages": [{}],

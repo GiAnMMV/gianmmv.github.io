@@ -1,5 +1,6 @@
 ---
 title: "Delta Rune"
+date: 2026-09-27
 order: 20
 rules:
   - name: "Classic Sudoku"

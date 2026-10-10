@@ -5,7 +5,7 @@
     "title": "Little Archers",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nPalindrome Lines: Digits along a grey line read the same backwards and forwards.\nSame Sum Little Killers: For every diagonal marked by an arrow, the sum of its digits amounts to the same value.",
-    "msgcorrect": "Yey! You did it!\n\nCheck out my other puzzles here: redd.it/1watdxv",
+    "msgcorrect": "Yey! You did it!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "189365742637248159452791386328159674941627835576483921793514268864932517215876493"
   },
   "cages": [{}],

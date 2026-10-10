@@ -4,7 +4,7 @@
     "source": "SudokuMaker v2026.10.05-a3aef4c",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nRegion Sum Lines: Box borders divide a blue line into multiple segments which have the same sum. Different lines may have different sums.\nEntropic Lines: Every sequential group of 3 cells on a peach line must have a low digit {1,2,3}, a medium digit {4,5,6}, and a high digit {7,8,9}.\nPalindrome Lines: Digits along a grey line read the same backwards and forwards.\nKropki: Digits separated by a white dot are consecutive; digits separated by a black dot have a 1:2 ratio.",
-    "msgcorrect": "Yey, congrats!\n\nCheck out my other puzzles here: redd.it/1watdxv",
+    "msgcorrect": "Yey, congrats!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "872435169635918427419726835328159674547263981196847253251384796783691542964572318",
     "title": "Midoku"
   },

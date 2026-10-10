@@ -5,7 +5,7 @@
     "title": "Equal Prison",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nSame Sum Killer Cages: The sum of the digits inside an outlined cage must be identical across all such cages. No digit may appear more than once within a cage.",
-    "msgcorrect": "Congratulations and thank you for playing!\n\nCheck out my other puzzles here: redd.it/1watdxv"
+    "msgcorrect": "Congratulations and thank you for playing!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles"
   },
   "cages": [
     {"cells": [[6, 1], [7, 0], [7, 1], [8, 0]], "unique": true},

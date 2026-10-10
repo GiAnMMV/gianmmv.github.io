@@ -4,7 +4,7 @@
     "source": "SudokuMaker v2026.08.14-d47fc4b",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nEntropic Lines: Every sequential group of 3 cells on a line must have a low digit {1,2,3}, a medium digit {4,5,6}, and a high digit {7,8,9}.\nArrows: Numbers along an arrow sum up to the total in the circled cells; the circled value is read left to right or top to down if composed by multiple digits.\nGreater/Less: If two digits are separated by a '<', the smaller one in on the side where the '<' points to.\nEven: A digit inside a grey square must be even.",
-    "msgcorrect": "Congratulations! You're great! :D",
+    "msgcorrect": "Congratulations! You're great! :D\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "249367581785921346613485279471653892326879154958142637597218463134596728862734915",
     "title": "Central Symmetry"
   },
