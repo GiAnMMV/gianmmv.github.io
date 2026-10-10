@@ -1,0 +1,104 @@
+{
+  "id": "sxsm_GiAnMMV_c66f70d7147335b1a01e99e865472667",
+  "metadata": {
+    "source": "SudokuMaker v2026.08.14-d47fc4b",
+    "author": "GiAnMMV",
+    "rules": "6x6 Sudoku: Every row, column and 2x3 box must contain every number from 1 to 6.\nKiller Cages: No digit may appear more than once within a cage.\nThermometers: Along thermometers, digits must increase from the bulb.",
+    "msgcorrect": "I hope you enjoyed it! (:",
+    "solution": "463215521436135624642153256341314562",
+    "title": "Thermo Square"
+  },
+  "cages": [
+    {"unique": true, "cells": [[0, 0], [0, 1], [1, 0], [1, 1], [2, 0], [2, 1]]},
+    {"unique": true, "cells": [[3, 0], [3, 1], [4, 0], [4, 1], [5, 0], [5, 1]]},
+    {"unique": true, "cells": [[3, 2], [3, 3], [4, 2], [4, 3], [5, 2], [5, 3]]},
+    {"unique": true, "cells": [[3, 4], [3, 5], [4, 4], [4, 5], [5, 4], [5, 5]]},
+    {"unique": true, "cells": [[0, 4], [0, 5], [1, 4], [1, 5], [2, 4], [2, 5]]},
+    {"unique": true, "cells": [[0, 2], [0, 3], [1, 2], [1, 3], [2, 2], [2, 3]]},
+    {"unique": true, "hidden": true, "cells": [[2, 0], [1, 1], [0, 2]]},
+    {"unique": true, "hidden": true, "cells": [[0, 3], [1, 4], [2, 5]]},
+    {"unique": true, "hidden": true, "cells": [[3, 5], [4, 4], [5, 3]]},
+    {"unique": true, "hidden": true, "cells": [[5, 2], [4, 1], [3, 0]]},
+    {"unique": true, "hidden": true, "cells": [[3, 3], [3, 2], [2, 2], [2, 3]]}
+  ],
+  "cells": [
+    [{}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}]
+  ],
+  "regions": [
+    [[0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2]],
+    [[0, 3], [0, 4], [0, 5], [1, 3], [1, 4], [1, 5]],
+    [[2, 0], [2, 1], [2, 2], [3, 0], [3, 1], [3, 2]],
+    [[2, 3], [2, 4], [2, 5], [3, 3], [3, 4], [3, 5]],
+    [[4, 0], [4, 1], [4, 2], [5, 0], [5, 1], [5, 2]],
+    [[4, 3], [4, 4], [4, 5], [5, 3], [5, 4], [5, 5]]
+  ],
+  "lines": [
+    {
+      "wayPoints": [[5.5, 2.5], [3.5, 0.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[2.5, 0.5], [0.5, 2.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[0.5, 3.5], [2.5, 5.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[3.5, 5.5], [5.5, 3.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[3.5, 3.5], [3.5, 2.5], [2.5, 2.5], [2.5, 3.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    }
+  ],
+  "overlays": [
+    {
+      "center": [5.5, 2.5],
+      "width": 0.8,
+      "height": 0.8,
+      "rounded": true,
+      "backgroundColor": "#cccf"
+    },
+    {
+      "center": [2.5, 0.5],
+      "width": 0.8,
+      "height": 0.8,
+      "rounded": true,
+      "backgroundColor": "#cccf"
+    },
+    {
+      "center": [0.5, 3.5],
+      "width": 0.8,
+      "height": 0.8,
+      "rounded": true,
+      "backgroundColor": "#cccf"
+    },
+    {
+      "center": [3.5, 5.5],
+      "width": 0.8,
+      "height": 0.8,
+      "rounded": true,
+      "backgroundColor": "#cccf"
+    },
+    {
+      "center": [3.5, 3.5],
+      "width": 0.8,
+      "height": 0.8,
+      "rounded": true,
+      "backgroundColor": "#cccf"
+    }
+  ]
+}

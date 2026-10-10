@@ -1,0 +1,136 @@
+{
+  "id": "sxsm_GiAnMMV_3c1f7896acc851c988ca2770281dfff2",
+  "metadata": {
+    "source": "SudokuMaker v2026.08.14-d47fc4b",
+    "title": "Bulbless Thermometers",
+    "author": "GiAnMMV",
+    "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nBulbless Thermometers: Along grey lines, the digits must be in ascending or descending order (i.e. the missing bulb must be at one end of the line).\nKropki: Two digits separated by a white dot are consecutive.",
+    "msgcorrect": "Congratulations, dear Sir or Madam. I admire you!",
+    "solution": "592186437184327956376549821457213689631978245928654713843791562219865374765432198"
+  },
+  "cages": [{}],
+  "cells": [
+    [{"value": 5}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {"value": 2}, {}, {"value": 9}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{"value": 8}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {"value": 9}, {}]
+  ],
+  "regions": [
+    [[0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]],
+    [[0, 3], [0, 4], [0, 5], [1, 3], [1, 4], [1, 5], [2, 3], [2, 4], [2, 5]],
+    [[0, 6], [0, 7], [0, 8], [1, 6], [1, 7], [1, 8], [2, 6], [2, 7], [2, 8]],
+    [[3, 0], [3, 1], [3, 2], [4, 0], [4, 1], [4, 2], [5, 0], [5, 1], [5, 2]],
+    [[3, 3], [3, 4], [3, 5], [4, 3], [4, 4], [4, 5], [5, 3], [5, 4], [5, 5]],
+    [[3, 6], [3, 7], [3, 8], [4, 6], [4, 7], [4, 8], [5, 6], [5, 7], [5, 8]],
+    [[6, 0], [6, 1], [6, 2], [7, 0], [7, 1], [7, 2], [8, 0], [8, 1], [8, 2]],
+    [[6, 3], [6, 4], [6, 5], [7, 3], [7, 4], [7, 5], [8, 3], [8, 4], [8, 5]],
+    [[6, 6], [6, 7], [6, 8], [7, 6], [7, 7], [7, 8], [8, 6], [8, 7], [8, 8]]
+  ],
+  "lines": [
+    {
+      "wayPoints": [[4.5, 2.5], [1.5, 5.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[8.5, 6.5], [8.5, 0.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[5.5, 1.5], [0.5, 1.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[5.5, 5.5], [8.5, 8.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[4.5, 5.5], [7.5, 8.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[2.5, 3.5], [0.5, 3.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[3.5, 4.5], [3.5, 8.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[7.5, 1.5], [4.5, 4.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[5.5, 0.5], [1.5, 0.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[7.5, 2.5], [5.5, 4.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[0.5, 4.5], [0.5, 7.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[3.5, 2.5], [0.5, 2.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[2.5, 5.5], [2.5, 8.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[4.5, 3.5], [7.5, 0.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[7.5, 3.5], [7.5, 6.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {"wayPoints": [[4.5, 6.5], [4.5, 8.5]], "color": "#cccf", "thickness": 19.2}
+  ],
+  "overlays": [
+    {
+      "center": [1.5, 8],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [7.5, 1],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    }
+  ]
+}

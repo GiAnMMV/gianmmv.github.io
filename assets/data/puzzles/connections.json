@@ -1,0 +1,301 @@
+{
+  "id": "sxsm_GiAnMMV_b95d01b0c8f5ecb10db5fd4a929aec86",
+  "metadata": {
+    "source": "SudokuMaker v2026.10.05-a3aef4c",
+    "author": "GiAnMMV",
+    "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nDouble Arrows: The sum of the digits along a grey line is equal to the sum of the two circles at its ends.",
+    "msgcorrect": "Yey, you did it! Congrats!\n\nCheck out my other puzzles here: redd.it/1watdxv",
+    "solution": "576894132832671945941523678427319856158267394693458217264135789715982463389746521",
+    "title": "Connections"
+  },
+  "cells": [
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}]
+  ],
+  "regions": [
+    [[0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]],
+    [[0, 3], [0, 4], [0, 5], [1, 3], [1, 4], [1, 5], [2, 3], [2, 4], [2, 5]],
+    [[0, 6], [0, 7], [0, 8], [1, 6], [1, 7], [1, 8], [2, 6], [2, 7], [2, 8]],
+    [[3, 0], [3, 1], [3, 2], [4, 0], [4, 1], [4, 2], [5, 0], [5, 1], [5, 2]],
+    [[3, 3], [3, 4], [3, 5], [4, 3], [4, 4], [4, 5], [5, 3], [5, 4], [5, 5]],
+    [[3, 6], [3, 7], [3, 8], [4, 6], [4, 7], [4, 8], [5, 6], [5, 7], [5, 8]],
+    [[6, 0], [6, 1], [6, 2], [7, 0], [7, 1], [7, 2], [8, 0], [8, 1], [8, 2]],
+    [[6, 3], [6, 4], [6, 5], [7, 3], [7, 4], [7, 5], [8, 3], [8, 4], [8, 5]],
+    [[6, 6], [6, 7], [6, 8], [7, 6], [7, 7], [7, 8], [8, 6], [8, 7], [8, 8]]
+  ],
+  "lines": [
+    {"wayPoints": [[6.5, 7.5], [2.5, 7.5]], "color": "#aaaf", "thickness": 3.2},
+    {
+      "wayPoints": [[2.5, 8.5], [8.5, 8.5], [8.5, 6.5], [7.5, 6.5], [8.5, 5.5]],
+      "color": "#aaaf",
+      "thickness": 3.2
+    },
+    {
+      "wayPoints": [
+        [2.5, 0.5],
+        [2.5, 5.5],
+        [1.5, 6.5],
+        [6.5, 6.5],
+        [6.5, 3.5],
+        [7.5, 3.5],
+        [7.5, 4.5]
+      ],
+      "color": "#aaaf",
+      "thickness": 3.2
+    },
+    {
+      "wayPoints": [[2.5, 5.5], [1.5, 4.5], [0.5, 5.5]],
+      "color": "#aaaf",
+      "thickness": 3.2
+    },
+    {
+      "wayPoints": [[6.5, 3.5], [3.5, 3.5], [3.5, 5.5]],
+      "color": "#aaaf",
+      "thickness": 3.2
+    },
+    {
+      "wayPoints": [[3.5, 1.5], [3.5, 2.5], [4.5, 1.5], [4.5, 2.5], [5.5, 2.5]],
+      "color": "#aaaf",
+      "thickness": 3.2
+    },
+    {
+      "wayPoints": [[0.5, 3.5], [0.5, 4.5], [1.5, 5.5]],
+      "color": "#aaaf",
+      "thickness": 3.2
+    },
+    {
+      "wayPoints": [[0.5, 0.5], [0.5, 1.5], [1.5, 2.5]],
+      "color": "#aaaf",
+      "thickness": 3.2
+    },
+    {
+      "wayPoints": [
+        [8.5, 1.5],
+        [8.5, 0.5],
+        [6.5, 0.5],
+        [6.5, 2.5],
+        [7.5, 2.5],
+        [7.5, 1.5],
+        [6.5, 0.5]
+      ],
+      "color": "#aaaf",
+      "thickness": 3.2
+    }
+  ],
+  "overlays": [
+    {
+      "center": [2.5, 6.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [6.5, 6.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [6.5, 7.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [2.5, 7.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [2.5, 8.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [6.5, 8.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [2.5, 5.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [2.5, 0.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [6.5, 3.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [6.5, 2.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [6.5, 0.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [3.5, 5.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [4.5, 1.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [3.5, 1.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [5.5, 2.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [0.5, 5.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [0.5, 3.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [1.5, 5.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [7.5, 4.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [0.5, 0.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [1.5, 2.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [8.5, 5.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    },
+    {
+      "center": [8.5, 1.5],
+      "width": 0.82,
+      "height": 0.82,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#aaaf"
+    }
+  ]
+}

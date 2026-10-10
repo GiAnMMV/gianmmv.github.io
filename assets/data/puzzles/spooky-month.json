@@ -1,0 +1,230 @@
+{
+  "id": "sxsm_unknown_e56d728e5ec49925df38d063f7f86d1a",
+  "metadata": {
+    "source": "SudokuMaker v2026.08.14-d47fc4b",
+    "author": "GiAnMMV",
+    "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nDutch Whispers: Every two consecutive digits along an orange line must have a difference of at least 4.\nGerman Whispers: Every two consecutive digits along a green line must have a difference of at least 5.\nKropki: Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio.",
+    "solution": "742951863351876294968423175416287359587394621239615487674538912123769548895142736",
+    "msgcorrect": "It is the Spooky Month!\n\nCheck out my other puzzles here: redd.it/1watdxv",
+    "title": "Spooky Month"
+  },
+  "cells": [
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}]
+  ],
+  "regions": [
+    [[0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]],
+    [[0, 3], [0, 4], [0, 5], [1, 3], [1, 4], [1, 5], [2, 3], [2, 4], [2, 5]],
+    [[0, 6], [0, 7], [0, 8], [1, 6], [1, 7], [1, 8], [2, 6], [2, 7], [2, 8]],
+    [[3, 0], [3, 1], [3, 2], [4, 0], [4, 1], [4, 2], [5, 0], [5, 1], [5, 2]],
+    [[3, 3], [3, 4], [3, 5], [4, 3], [4, 4], [4, 5], [5, 3], [5, 4], [5, 5]],
+    [[3, 6], [3, 7], [3, 8], [4, 6], [4, 7], [4, 8], [5, 6], [5, 7], [5, 8]],
+    [[6, 0], [6, 1], [6, 2], [7, 0], [7, 1], [7, 2], [8, 0], [8, 1], [8, 2]],
+    [[6, 3], [6, 4], [6, 5], [7, 3], [7, 4], [7, 5], [8, 3], [8, 4], [8, 5]],
+    [[6, 6], [6, 7], [6, 8], [7, 6], [7, 7], [7, 8], [8, 6], [8, 7], [8, 8]]
+  ],
+  "lines": [
+    {
+      "fill": "#fcd895ff",
+      "d": "M 448 96 Q 480 96 512 128 Q 544 160 544 192 Q 544 224 512 256 Q 480 288 512 320 Q 544 352 544 384 L 544 448 Q 544 480 512 512 Q 480 544 448 544 L 384 544 Q 352 544 320 512 Q 288 480 256 512 Q 224 544 192 544 L 128 544 Q 96 544 64 512 Q 32 480 32 448 L 32 384 Q 32 352 64 320 Q 96 288 64 256 Q 32 224 32 192 Q 32 160 64 128 Q 96 96 128 96 L 192 96 Q 224 96 256 128 Q 288 160 320 128 Q 352 96 384 96 L 448 96 Z",
+      "color": "#ffa600ff",
+      "thickness": 9.6
+    },
+    {
+      "d": "M 288 150 L 288 128 Q 288 96 320 64 L 352 32",
+      "color": "#67f067ff",
+      "thickness": 9.6
+    },
+    {
+      "wayPoints": [[3.5, 1.5], [2.5, 2.5], [3.5, 3.5]],
+      "color": "#ffa600ff",
+      "thickness": 9.6
+    },
+    {
+      "wayPoints": [[3.5, 5.5], [2.5, 6.5], [3.5, 7.5]],
+      "color": "#ffa600ff",
+      "thickness": 9.6
+    },
+    {
+      "fill": "#fcffa6ff",
+      "wayPoints": [
+        [5.5, 6.5],
+        [6.5, 5.5],
+        [5.5, 4.5],
+        [6.5, 3.5],
+        [5.5, 2.5],
+        [5.5, 1.5],
+        [6.5, 1.5],
+        [7.5, 2.5],
+        [7.5, 3.5],
+        [6.5, 4.5],
+        [7.5, 5.5],
+        [7.5, 6.5],
+        [6.5, 7.5],
+        [5.5, 7.5],
+        [5.5, 6.5]
+      ],
+      "color": "#ffa600ff",
+      "thickness": 9.6
+    },
+    {
+      "fill": "#fcffa6ff",
+      "wayPoints": [[4.5, 3.5], [4.5, 5.5], [3.5, 4.5], [4.5, 3.5]],
+      "color": "#ffa600ff",
+      "thickness": 9.6
+    }
+  ],
+  "overlays": [
+    {
+      "center": [8.5, 8],
+      "width": 0.33,
+      "height": 0.33,
+      "text": "",
+      "color": "#FFFFFF",
+      "rounded": true,
+      "backgroundColor": "#000000"
+    },
+    {
+      "center": [5, 3.5],
+      "width": 0.33,
+      "height": 0.33,
+      "text": "",
+      "color": "#FFFFFF",
+      "rounded": true,
+      "backgroundColor": "#000000"
+    },
+    {
+      "center": [4, 6.5],
+      "width": 0.33,
+      "height": 0.33,
+      "text": "",
+      "color": "#FFFFFF",
+      "rounded": true,
+      "backgroundColor": "#000000"
+    },
+    {
+      "center": [7.5, 8],
+      "width": 0.33,
+      "height": 0.33,
+      "text": "",
+      "color": "#FFFFFF",
+      "rounded": true,
+      "backgroundColor": "#000000"
+    },
+    {
+      "center": [6.5, 8],
+      "width": 0.33,
+      "height": 0.33,
+      "text": "",
+      "color": "#FFFFFF",
+      "rounded": true,
+      "backgroundColor": "#000000"
+    },
+    {
+      "center": [8.5, 1],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [5, 5.5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [4, 2.5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [7.5, 1],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [6.5, 1],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [7.5, 2],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [7.5, 7],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [6.5, 3],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [6.5, 6],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    }
+  ]
+}

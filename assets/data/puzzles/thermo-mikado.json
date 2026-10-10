@@ -1,0 +1,142 @@
+{
+  "id": "sxsm_GiAnMMV_35b89207022e76f241e5983c448a8f38",
+  "metadata": {
+    "source": "SudokuMaker v2026.08.14-d47fc4b",
+    "author": "GiAnMMV",
+    "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nThermometers: Along thermometers, digits must increase from the bulb.",
+    "msgcorrect": "You won! Nice!\n\nCheck out my other puzzles here: https://redd.it/1watdxv",
+    "solution": "598643217124578396637291845369127584281456973745389162872934651913765428456812739",
+    "title": "Thermo Mikado"
+  },
+  "cages": [
+    {
+      "unique": true,
+      "hidden": true,
+      "cells": [[2, 5], [3, 4], [4, 3], [5, 2], [6, 1]]
+    },
+    {
+      "unique": true,
+      "hidden": true,
+      "cells": [[7, 1], [6, 2], [5, 3], [4, 4], [3, 5], [2, 6], [1, 7]]
+    },
+    {"unique": true, "hidden": true, "cells": [[6, 3], [5, 4], [4, 5], [3, 6]]}
+  ],
+  "cells": [
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}]
+  ],
+  "regions": [
+    [[0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]],
+    [[0, 3], [0, 4], [0, 5], [1, 3], [1, 4], [1, 5], [2, 3], [2, 4], [2, 5]],
+    [[0, 6], [0, 7], [0, 8], [1, 6], [1, 7], [1, 8], [2, 6], [2, 7], [2, 8]],
+    [[3, 0], [3, 1], [3, 2], [4, 0], [4, 1], [4, 2], [5, 0], [5, 1], [5, 2]],
+    [[3, 3], [3, 4], [3, 5], [4, 3], [4, 4], [4, 5], [5, 3], [5, 4], [5, 5]],
+    [[3, 6], [3, 7], [3, 8], [4, 6], [4, 7], [4, 8], [5, 6], [5, 7], [5, 8]],
+    [[6, 0], [6, 1], [6, 2], [7, 0], [7, 1], [7, 2], [8, 0], [8, 1], [8, 2]],
+    [[6, 3], [6, 4], [6, 5], [7, 3], [7, 4], [7, 5], [8, 3], [8, 4], [8, 5]],
+    [[6, 6], [6, 7], [6, 8], [7, 6], [7, 7], [7, 8], [8, 6], [8, 7], [8, 8]]
+  ],
+  "lines": [
+    {
+      "wayPoints": [[7.5, 1.5], [1.5, 7.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[1.5, 1.5], [4.5, 1.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[3.5, 6.5], [6.5, 3.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[2.5, 5.5], [6.5, 1.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[6.5, 8.5], [0.5, 8.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[5.5, 0.5], [7.5, 0.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {
+      "wayPoints": [[7.5, 7.5], [3.5, 7.5]],
+      "color": "#cccf",
+      "thickness": 19.2
+    },
+    {"wayPoints": [[0.5, 6.5], [0.5, 2.5]], "color": "#cccf", "thickness": 19.2}
+  ],
+  "underlays": [
+    {
+      "center": [7.5, 1.5],
+      "width": 0.8,
+      "height": 0.8,
+      "rounded": true,
+      "backgroundColor": "#cccf"
+    },
+    {
+      "center": [1.5, 1.5],
+      "width": 0.8,
+      "height": 0.8,
+      "rounded": true,
+      "backgroundColor": "#cccf"
+    },
+    {
+      "center": [3.5, 6.5],
+      "width": 0.8,
+      "height": 0.8,
+      "rounded": true,
+      "backgroundColor": "#cccf"
+    },
+    {
+      "center": [2.5, 5.5],
+      "width": 0.8,
+      "height": 0.8,
+      "rounded": true,
+      "backgroundColor": "#cccf"
+    },
+    {
+      "center": [6.5, 8.5],
+      "width": 0.8,
+      "height": 0.8,
+      "rounded": true,
+      "backgroundColor": "#cccf"
+    },
+    {
+      "center": [5.5, 0.5],
+      "width": 0.8,
+      "height": 0.8,
+      "rounded": true,
+      "backgroundColor": "#cccf"
+    },
+    {
+      "center": [7.5, 7.5],
+      "width": 0.8,
+      "height": 0.8,
+      "rounded": true,
+      "backgroundColor": "#cccf"
+    },
+    {
+      "center": [0.5, 6.5],
+      "width": 0.8,
+      "height": 0.8,
+      "rounded": true,
+      "backgroundColor": "#cccf"
+    }
+  ]
+}

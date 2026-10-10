@@ -1,0 +1,359 @@
+{
+  "id": "sxsm_GiAnMMV_55d623ee7a1eb4baf73e418dbc106af9",
+  "metadata": {
+    "source": "SudokuMaker v2026.08.14-d47fc4b",
+    "author": "GiAnMMV",
+    "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nX-Sums: A clue outside the grid indicates the sum of the first X digits of its row or column, where X is the digit placed in the first cell in that direction.",
+    "msgcorrect": "Big congrats! Thanks for playing!\n\nCheck out my other puzzles here: redd.it/1watdxv",
+    "solution": "467825193192736845583194276976381524348572961215469387824653719751948632639217458",
+    "title": "Some X-Sums"
+  },
+  "cells": [
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}]
+  ],
+  "regions": [
+    [[0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]],
+    [[0, 3], [0, 4], [0, 5], [1, 3], [1, 4], [1, 5], [2, 3], [2, 4], [2, 5]],
+    [[0, 6], [0, 7], [0, 8], [1, 6], [1, 7], [1, 8], [2, 6], [2, 7], [2, 8]],
+    [[3, 0], [3, 1], [3, 2], [4, 0], [4, 1], [4, 2], [5, 0], [5, 1], [5, 2]],
+    [[3, 3], [3, 4], [3, 5], [4, 3], [4, 4], [4, 5], [5, 3], [5, 4], [5, 5]],
+    [[3, 6], [3, 7], [3, 8], [4, 6], [4, 7], [4, 8], [5, 6], [5, 7], [5, 8]],
+    [[6, 0], [6, 1], [6, 2], [7, 0], [7, 1], [7, 2], [8, 0], [8, 1], [8, 2]],
+    [[6, 3], [6, 4], [6, 5], [7, 3], [7, 4], [7, 5], [8, 3], [8, 4], [8, 5]],
+    [[6, 6], [6, 7], [6, 8], [7, 6], [7, 7], [7, 8], [8, 6], [8, 7], [8, 8]]
+  ],
+  "overlays": [
+    {
+      "center": [7.5, 9.5],
+      "width": 1,
+      "height": 1,
+      "text": 5,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [5.5, -0.5],
+      "width": 1,
+      "height": 1,
+      "text": 3,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [9.5, 4.5],
+      "width": 1,
+      "height": 1,
+      "text": 1,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [-0.5, 3.5],
+      "width": 1,
+      "height": 1,
+      "text": 43,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [3.5, 9.5],
+      "width": 1,
+      "height": 1,
+      "text": 12,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [4.5, -0.5],
+      "width": 1,
+      "height": 1,
+      "text": 15,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [4.5, 9.5],
+      "width": 1,
+      "height": 1,
+      "text": 1,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [9.5, 2.5],
+      "width": 1,
+      "height": 1,
+      "text": 45,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [-0.5, 7.5],
+      "width": 1,
+      "height": 1,
+      "text": 45,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [0.5, 9.5],
+      "width": 1,
+      "height": 1,
+      "text": 13,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [-0.5, 8.5],
+      "width": 1,
+      "height": 1,
+      "text": 14,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [1.5, -0.5],
+      "width": 1,
+      "height": 1,
+      "text": 1,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [-0.5, 0.5],
+      "width": 1,
+      "height": 1,
+      "text": 19,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [3.5, -0.5],
+      "width": 1,
+      "height": 1,
+      "text": 45,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [-0.5, 6.5],
+      "width": 1,
+      "height": 1,
+      "text": 1,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [9.5, 3.5],
+      "width": 1,
+      "height": 1,
+      "text": 11,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [5.5, 9.5],
+      "width": 1,
+      "height": 1,
+      "text": 42,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [6.5, 9.5],
+      "width": 1,
+      "height": 1,
+      "text": 45,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [8.5, 9.5],
+      "width": 1,
+      "height": 1,
+      "text": 39,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [9.5, 7.5],
+      "width": 1,
+      "height": 1,
+      "text": 23,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [9.5, 8.5],
+      "width": 1,
+      "height": 1,
+      "text": 42,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [9.5, 6.5],
+      "width": 1,
+      "height": 1,
+      "text": 20,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [9.5, 1.5],
+      "width": 1,
+      "height": 1,
+      "text": 10,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [9.5, 0.5],
+      "width": 1,
+      "height": 1,
+      "text": 35,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [8.5, -0.5],
+      "width": 1,
+      "height": 1,
+      "text": 28,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [-0.5, 4.5],
+      "width": 1,
+      "height": 1,
+      "text": 5,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [-0.5, 5.5],
+      "width": 1,
+      "height": 1,
+      "text": 18,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [0.5, -0.5],
+      "width": 1,
+      "height": 1,
+      "text": 25,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [2.5, -0.5],
+      "width": 1,
+      "height": 1,
+      "text": 26,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [7.5, -0.5],
+      "width": 1,
+      "height": 1,
+      "text": 40,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [6.5, -0.5],
+      "width": 1,
+      "height": 1,
+      "text": 36,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [9.5, 5.5],
+      "width": 1,
+      "height": 1,
+      "text": 34,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [-0.5, 1.5],
+      "width": 1,
+      "height": 1,
+      "text": 35,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [-0.5, 2.5],
+      "width": 1,
+      "height": 1,
+      "text": 35,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [2.5, 9.5],
+      "width": 1,
+      "height": 1,
+      "text": 29,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    },
+    {
+      "center": [1.5, 9.5],
+      "width": 1,
+      "height": 1,
+      "text": 26,
+      "fontSize": 32,
+      "color": "#000000",
+      "rounded": true
+    }
+  ]
+}
