@@ -162,6 +162,14 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(err => console.error("Converter error:", err));
 });
 
+function getPuzzleId(jsonData) {
+    return "scl" + encodeURIComponent(LZipper["compact64"](Zipper.zip(jsonData)));
+}
+
 function convertJsonToUrl(jsonData) {
-    return "https://sudokupad.app/scl" + encodeURIComponent(LZipper["compact64"](Zipper.zip(jsonData)));
+    return "https://sudokupad.app/" + getPuzzleId(jsonData);
+}
+
+function convertJsonToUrlNoShort(jsonData) {
+    return "https://sudokupad.app/scf?puzzleid=" + getPuzzleId(jsonData);
 }

@@ -1,5 +1,6 @@
 ---
 title: "Sandwich Sums"
+creation_date: 2026-09-23
 order: 15
 rules:
   - name: "Classic Sudoku"

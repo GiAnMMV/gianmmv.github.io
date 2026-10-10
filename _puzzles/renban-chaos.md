@@ -1,5 +1,6 @@
 ---
 title: "Renban Chaos"
+creation_date: 2026-09-25
 order: 17
 rules:
   - name: "Classic Sudoku"

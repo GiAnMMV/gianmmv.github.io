@@ -26,13 +26,15 @@ permalink: /play/
   <script src="{{ '/assets/js/puzzle-converter.js' | relative_url }}"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      // Extract ?puzzle=slug from URL
       const urlParams = new URLSearchParams(window.location.search);
       const puzzleSlug = urlParams.get('puzzle');
 
       if (!puzzleSlug) {
-        document.getElementById("status-text").innerText = "No puzzle specified.";
-        return;
+        puzzleSlug = urlParams.get('p');
+        if (!puzzleSlug) {
+          document.getElementById("status-text").innerText = "No puzzle specified.";
+          return;
+        }
       }
 
       const jsonPath = `{{ '/assets/data/puzzles/' | relative_url }}${puzzleSlug}.json`;
@@ -43,7 +45,7 @@ permalink: /play/
           return res.json();
         })
         .then(data => {
-          const targetUrl = convertJsonToUrl(data);
+          const targetUrl = urlParams.get('no-short') === 'true' ? convertJsonToUrlNoShort(data) : convertJsonToUrl(data);
           if (targetUrl) {
             window.location.href = targetUrl;
           } else {

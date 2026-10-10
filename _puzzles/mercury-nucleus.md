@@ -1,5 +1,6 @@
 ---
 title: "Mercury Nucleus"
+creation_date: 2026-09-20
 order: 11
 rules:
   - name: "Classic Sudoku"
