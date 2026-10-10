@@ -16,7 +16,7 @@ rules:
   - name: "German Whispers"
     desc: "Every two consecutive digits along a green line must have a difference of at least 5."
   - name: "Counting Circles"
-    desc: "Any digit in a circle indicates exactly how many circles contain that digit (arrow circles are NOT included)."
+    desc: "Any digit in a circle indicates exactly how many circles contain that digit (arrow circles are <ins>NOT</ins> included)."
   - name: "Kropki"
     desc: "Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio."
 ---

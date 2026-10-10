@@ -7,5 +7,5 @@ rules:
   - name: "Skyscrapers"
     desc: "Each digit in the grid represents the height of a building in its cell, and taller buildings obstruct the view of shorter ones behind them"
   - name: "Sandwich Sums"
-    desc: "A circled clue indicates the sum of the digits between 1 and 9 in the indicated row or column. Circled clues are also Skyscraper clues."
+    desc: "A circled clue indicates the sum of the digits between 1 and 9 in the indicated row or column. <ins>Circled clues are also Skyscraper clues.</ins>"
 ---

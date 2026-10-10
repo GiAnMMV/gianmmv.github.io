@@ -2,6 +2,12 @@
 layout: default
 ---
 
+<style>
+  .rule p {
+    display: inline;
+  }
+</style>
+
 <article class="project-detail">
   <h1>{{ page.title }}</h1>
   {% if page.creation_date %}
@@ -17,7 +23,9 @@ layout: default
         <h2>Rules:</h2>
         <ul>
         {% for rule in page.rules %}
-          <li><strong>{{ rule.name }}:</strong> {{ rule.desc | markdownify }}</li>
+          <span class="rule">
+            <li><strong>{{ rule.name }}:</strong> {{ rule.desc | markdownify }}</li>
+          </span>
         {% endfor %}
         </ul>
       {% endif %}
