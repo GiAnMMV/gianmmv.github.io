@@ -1,6 +1,7 @@
 ---
 sudokupad_url: "https://sudokupad.app/m1atf4lxf3"
 title: "Thermo Mikado"
+creation_date: 2026-09-29
 order: 23
 rules:
   - name: "Classic Sudoku"

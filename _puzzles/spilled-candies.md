@@ -1,6 +1,7 @@
 ---
 sudokupad_url: "https://sudokupad.app/sj8llb0qnm"
 title: "Spilled Candies"
+creation_date: 2026-09-30
 order: 27
 rules:
   - name: "Classic Sudoku"

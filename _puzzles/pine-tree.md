@@ -1,6 +1,7 @@
 ---
 sudokupad_url: "https://sudokupad.app/ddbyg1awsv"
 title: "Pine Tree"
+creation_date: 2026-10-02
 order: 30
 rules:
   - name: "Classic Sudoku"

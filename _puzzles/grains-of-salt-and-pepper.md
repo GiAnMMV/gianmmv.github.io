@@ -1,6 +1,7 @@
 ---
 sudokupad_url: "https://sudokupad.app/ctdl6zr7xc"
 title: "Grains of Salt & Pepper"
+creation_date: 2026-09-27
 order: 22
 rules:
   - name: "Classic Sudoku"

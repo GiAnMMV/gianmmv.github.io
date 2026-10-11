@@ -1,6 +1,7 @@
 ---
 sudokupad_url: "https://sudokupad.app/p3h7pj6z8r"
 title: "Sudogram"
+creation_date: 2026-09-29
 order: 24
 rules:
   - name: "Classic Sudoku"
