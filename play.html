@@ -27,7 +27,7 @@ permalink: /play/
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const urlParams = new URLSearchParams(window.location.search);
-      const puzzleSlug = urlParams.get('puzzle');
+      let puzzleSlug = urlParams.get('puzzle');
 
       if (!puzzleSlug) {
         puzzleSlug = urlParams.get('p');
@@ -38,7 +38,7 @@ permalink: /play/
       }
 
       if (urlParams.get('no-short') !== 'true') {
-        fetch('.puzzle-cache.json')
+        fetch('/.puzzle-cache.json')
           .then(res => {
             if (!res.ok) throw new Error("Cache file not found");
             return res.json();
