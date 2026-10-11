@@ -38,7 +38,7 @@ permalink: /play/
       }
 
       if (urlParams.get('no-short') !== 'true') {
-        fetch('/.puzzle-cache.json')
+        fetch(`{{ '/.puzzle-cache.json' | relative_url }}`)
           .then(res => {
             if (!res.ok) throw new Error("Cache file not found");
             return res.json();
