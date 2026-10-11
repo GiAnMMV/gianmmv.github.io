@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/o7v0i0phnm"
 title: "Hero Sandwich"
 order: 26
 rules:

@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/0gabrx0p8p"
 title: "Renban Chaos"
 creation_date: 2026-09-25
 order: 17

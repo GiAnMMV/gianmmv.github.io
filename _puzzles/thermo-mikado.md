@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/m1atf4lxf3"
 title: "Thermo Mikado"
 order: 23
 rules:

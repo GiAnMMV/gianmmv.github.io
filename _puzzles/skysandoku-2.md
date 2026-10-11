@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/32o99ii94q"
 title: "Skysandoku 2"
 order: 19
 rules:

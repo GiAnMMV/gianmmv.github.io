@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/9gz5upvi0m"
 title: "Pinwheel"
 creation_date: 2026-09-17
 order: 10

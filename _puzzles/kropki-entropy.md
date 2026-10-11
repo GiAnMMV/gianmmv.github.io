@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/2iaja40z4v"
 title: "Kropki Entropy"
 creation_date: 2026-09-05
 order: 1

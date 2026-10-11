@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/sary75xtrl"
 title: "Dark Portal"
 creation_date: 2026-09-13
 order: 7

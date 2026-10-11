@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/eznd62lu6b"
 title: "Mercury Nucleus"
 creation_date: 2026-09-20
 order: 11

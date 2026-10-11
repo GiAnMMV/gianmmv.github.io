@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/sj8llb0qnm"
 title: "Spilled Candies"
 order: 27
 rules:

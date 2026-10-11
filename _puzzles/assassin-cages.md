@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/bcde4gy7io"
 title: "Assassin Cages"
 creation_date: 2026-09-14
 order: 8

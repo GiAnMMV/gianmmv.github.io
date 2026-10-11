@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/ctdl6zr7xc"
 title: "Grains of Salt & Pepper"
 order: 22
 rules:

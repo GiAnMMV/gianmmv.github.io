@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/5lcifax0b3"
 title: "Central Symmetry"
 creation_date: 2026-09-21
 order: 13

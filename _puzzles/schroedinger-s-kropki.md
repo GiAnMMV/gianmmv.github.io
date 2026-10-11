@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/n70fyp370n"
 title: "Schrödinger's Kropki"
 creation_date: 2026-09-15
 order: 9

@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/ddbyg1awsv"
 title: "Pine Tree"
 order: 30
 rules:

@@ -139,6 +139,7 @@ const Zipper = {
     }
 };
 
+/*
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("puzzle-link");
   if (!container) return;
@@ -161,6 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(err => console.error("Converter error:", err));
 });
+*/
 
 function getPuzzleId(jsonData) {
     return "scl" + encodeURIComponent(LZipper["compact64"](Zipper.zip(jsonData)));

@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/sro3e3j53l"
 title: "Skysandoku 3"
 order: 25
 rules:

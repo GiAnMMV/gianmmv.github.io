@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/epm5ctk5fw"
 title: "Open Plan"
 order: 21
 rules:

@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/p3h7pj6z8r"
 title: "Sudogram"
 order: 24
 rules:

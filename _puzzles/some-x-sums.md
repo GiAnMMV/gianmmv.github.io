@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/bghew8zi62"
 title: "Some X-Sums"
 order: 28
 rules:

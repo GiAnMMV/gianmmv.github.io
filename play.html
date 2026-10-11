@@ -37,25 +37,43 @@ permalink: /play/
         }
       }
 
-      const jsonPath = `{{ '/assets/data/puzzles/' | relative_url }}${puzzleSlug}.json`;
+      if (urlParams.get('no-short') !== 'true') {
+        fetch('.puzzle-cache.json')
+          .then(res => {
+            if (!res.ok) throw new Error("Cache file not found");
+            return res.json();
+          })
+          .then(cache => {
+            if (puzzleSlug in cache)
+              window.location.href = cache[puzzleSlug]["shortUrl"];
+          })
+          .catch(err => {
+            console.error(err);
+            document.getElementById("status-text").innerText = "Error loading puzzle data.";
+          });
+      }
 
-      fetch(jsonPath)
-        .then(res => {
-          if (!res.ok) throw new Error("Puzzle file not found");
-          return res.json();
-        })
-        .then(data => {
-          const targetUrl = urlParams.get('no-short') === 'true' ? convertJsonToUrlNoShort(data) : convertJsonToUrl(data);
-          if (targetUrl) {
-            window.location.href = targetUrl;
-          } else {
-            document.getElementById("status-text").innerText = "Puzzle link generation failed.";
-          }
-        })
-        .catch(err => {
-          console.error(err);
-          document.getElementById("status-text").innerText = "Error loading puzzle data.";
-        });
+      if (!window.location.href) {
+        const jsonPath = `{{ '/assets/data/puzzles/' | relative_url }}${puzzleSlug}.json`;
+
+        fetch(jsonPath)
+          .then(res => {
+            if (!res.ok) throw new Error("Puzzle file not found");
+            return res.json();
+          })
+          .then(data => {
+            const targetUrl = urlParams.get('no-short') === 'true' ? convertJsonToUrlNoShort(data) : convertJsonToUrl(data);
+            if (targetUrl) {
+              window.location.href = targetUrl;
+            } else {
+              document.getElementById("status-text").innerText = "Puzzle link generation failed.";
+            }
+          })
+          .catch(err => {
+            console.error(err);
+            document.getElementById("status-text").innerText = "Error loading puzzle data.";
+          });
+      }
     });
   </script>
 </body>

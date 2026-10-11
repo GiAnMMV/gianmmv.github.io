@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/q5gth1v9qd"
 title: "Thermo Square"
 creation_date: 2026-09-25
 order: 18

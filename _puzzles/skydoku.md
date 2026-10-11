@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/35gvrdb4a5"
 title: "Skydoku"
 order: 29
 rules:
