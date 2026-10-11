@@ -25,6 +25,13 @@ permalink: /play/
 
   <script src="{{ '/assets/js/puzzle-converter.js' | relative_url }}"></script>
   <script>
+    const puzzleShortLinks = {
+      {% for puzzle in site.puzzles %}
+        "{{ puzzle.slug }}": "{{ puzzle.sudokupad_url }}"{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    };
+
+
     document.addEventListener("DOMContentLoaded", () => {
       const urlParams = new URLSearchParams(window.location.search);
       let puzzleSlug = urlParams.get('puzzle');
@@ -37,20 +44,8 @@ permalink: /play/
         }
       }
 
-      if (urlParams.get('no-short') !== 'true') {
-        fetch(`{{ '/.puzzle-cache.json' | relative_url }}`)
-          .then(res => {
-            if (!res.ok) throw new Error("Cache file not found");
-            return res.json();
-          })
-          .then(cache => {
-            if (puzzleSlug in cache)
-              window.location.href = cache[puzzleSlug]["shortUrl"];
-          })
-          .catch(err => {
-            console.error(err);
-            document.getElementById("status-text").innerText = "Error loading puzzle data.";
-          });
+      if (urlParams.get('no-short') !== 'true' && puzzleSlug && puzzleShortLinks[puzzleSlug]) {
+        window.location.href = puzzleShortLinks[puzzleSlug];
       }
 
       if (!window.location.href) {
