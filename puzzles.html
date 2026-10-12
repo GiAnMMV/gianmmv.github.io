@@ -77,6 +77,8 @@ permalink: /puzzles/
     page = Math.max(page, 0);
     page = Math.min(page, Math.floor(puzzles.length / 20));
 
+    console.log(page);
+
     let html = '<div class="puzzle-grid">';
     for (const puzzle of puzzles.slice(page*20, (page+1)*20)) {
       html += `
@@ -88,6 +90,6 @@ permalink: /puzzles/
       `;
     }
     html += '</div>';
-    document.body.innerHTML += html;
+    document.body.innerHTML += document.body.innerHTML.replace('</main>', html + '</main>');
   });
 </script>
