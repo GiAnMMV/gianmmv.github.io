@@ -67,3 +67,26 @@ permalink: /puzzles/
     </a>
   {% endfor %}
 </div>
+
+<script>
+  const puzzleSlugs = {
+    {% assign sorted_puzzles = site.puzzles | sort: "order" %}
+    {% for puzzle in sorted_puzzles %}
+      "{{ puzzle.slug }}": [
+        "{{ puzzle.url }}"
+        "{{ puzzle.title}}",
+        "{{ puzzle.creation_date }}",
+        "{{ puzzle.creation_date | date: "%-d %B %Y" }}"
+      ]{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+  for (const slug of puzzleSlugs) {
+    document.body.innerHTML += `
+      <a href="${slug[0]}" class="puzzle-card">
+        <img src="/assets/images/${slug}.png" alt="${slug[1]}">
+          <h3>${slug[1]}</h3>
+          <time datetime="${slug[2]}">${slug[3]}</time>
+      </a>
+    `;
+  }
+</script>
