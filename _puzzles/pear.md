@@ -1,4 +1,5 @@
 ---
+sudokupad_url: "https://sudokupad.app/8n1n60wxt2"
 title: "Pear"
 creation_date: 2026-10-12
 order: 41

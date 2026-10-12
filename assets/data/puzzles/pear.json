@@ -4,7 +4,7 @@
     "source": "SudokuMaker v2026.10.05-a3aef4c",
     "author": "GiAnMMV",
     "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nDutch Whispers: Every two consecutive digits along an orange line must have a difference of at least 4.\nParity Lines: Every pair of consecutive cells along a red line must contain an odd digit and an even digit.\nKropki: Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio.\nNegative XV: No pair of orthogonally adjacent digits can sum up to 5 or 10.",
-    "msgcorrect": "You did it! Thanks for playing!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
+    "msgcorrect": "You did it! Thanks for playing!\nYeah, that's Pearto.\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "927156384548392167136847295362481579479563812815279436681724953293615748754938621",
     "title": "Pear"
   },

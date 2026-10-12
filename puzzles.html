@@ -175,7 +175,7 @@ permalink: /puzzles/
       const pagination = paginate({current: page+1, max: maxPage + 1});
       let html = '<ul class="pagination">';
       if (pagination.prev !== null) {
-        html += `<li><a class="page-link" href="?page=${pagination.prev}">&lsaquo;</a></li>`
+        html += `<li><div class="page-link"><a href="?page=${pagination.prev}">&lsaquo;</a></div></li>`
       }
       for (const p of pagination.items) {
         if (p === page+1)
@@ -186,7 +186,7 @@ permalink: /puzzles/
           html += `<li><div class="page-link">&hellip;</div></li>`
       }
       if (pagination.next !== null) {
-        html += `<li><a class="page-link" href="?page=${pagination.next}">&rsaquo;</a></li>`
+        html += `<li><div class="page-link"><a href="?page=${pagination.next}">&rsaquo;</a></div></li>`
       }
       html += '</ul>';
 
