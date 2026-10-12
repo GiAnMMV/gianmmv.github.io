@@ -51,10 +51,33 @@ permalink: /puzzles/
     color: #666666;
     text-align: center;
   }
+
+  .pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: .25rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  }
+
+  .page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+  }
 </style>
 
 <h1>GiAnMMV's Puzzles</h1>
 <div id="puzzle-container"></div>
+<div id="paginator"></div>
 
 <script>
   const puzzles = [
@@ -70,6 +93,40 @@ permalink: /puzzles/
     {% endfor %}
   ];
 
+  function paginate({ current, max }) {
+    if (!current || !max) return null
+
+    let prev = current === 1 ? null : current - 1,
+      next = current === max ? null : current + 1,
+      items = [1]
+
+    if (current === 1 && max === 1) return { current, prev, next, items }
+    if (current > 4) items.push('e')
+
+    let r = 2, r1 = current - r, r2 = current + r
+
+    for (let i = r1 > 2 ? r1 : 2; i <= Math.min(max, r2); i++) items.push(i)
+
+    if (r2 + 1 < max) items.push('e')
+    if (r2 < max) items.push(max)
+
+    if (items[1] === "e" && items.length + r1 - 2 <= 10) {
+      for (var i = 2; i < r1; i++) {
+        items.splice(i, 0, i)
+      }
+      items.splice(1, 1);
+    }
+
+    if (items[items.length - 2] === "e" && max - r2 + items.length - 1 <= 10) {
+      for (var i = max - 1; i > r2; i--) {
+        items.splice(items.length - 2, 0, i)
+      }
+      items.splice(items.length - 2, 1);
+    }
+
+    return { current, prev, next, items }
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
 
@@ -80,23 +137,40 @@ permalink: /puzzles/
     const maxPage = Math.floor(puzzles.length / itemsPerPage);
     page = Math.min(page, maxPage);
 
-    console.log(page);
-
-    let html = '<div class="puzzle-grid">';
-    for (const puzzle of puzzles.slice(page*itemsPerPage, (page+1)*itemsPerPage)) {
-      html += `
+    {
+      let html = '<div class="puzzle-grid">';
+      for (const puzzle of puzzles.slice(page * itemsPerPage, (page + 1) * itemsPerPage)) {
+        html += `
         <a href="${puzzle[1]}" class="puzzle-card">
           <img src="/assets/images/${puzzle[0]}.png" alt="${puzzle[2]}">
             <h3>${puzzle[2]}</h3>
             <time datetime="${puzzle[3]}">${puzzle[4]}</time>
         </a>
       `;
-    }
-    html += '</div>';
+      }
+      html += '</div>';
 
-    const container = document.getElementById('puzzle-container') || document.querySelector('main');
-    if (container) {
-      container.insertAdjacentHTML('beforeend', html);
+      const container = document.getElementById('puzzle-container') || document.querySelector('main');
+      if (container) {
+        container.insertAdjacentHTML('beforeend', html);
+      }
+    }
+
+    if (maxPage !== 1) {
+      const pagination = paginate({current: page, max: maxPage});
+      let html = '<ul class="pagination">';
+      for (const p of pagination.items) {
+        if (p !== "e")
+          html += `<li><a class="page-link" href="?page=${p}">${p}</a></li>`
+        else
+          html += `<li><a class="page-link">...</a></li>`
+      }
+      html += '</ul>';
+
+      const container = document.getElementById('paginator') || document.querySelector('main');
+      if (container) {
+        container.insertAdjacentHTML('beforeend', html);
+      }
     }
   });
 </script>
