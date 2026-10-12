@@ -67,7 +67,7 @@ permalink: /puzzles/
       ]{% unless forloop.last %},{% endunless %}
     {% endfor %}
   };
-  document.body.innerHTML += "<div class="puzzle-grid">"
+  document.body.innerHTML += '<div class="puzzle-grid">'
   for (const slug of puzzleSlugs) {
     document.body.innerHTML += `
       <a href="${slug[0]}" class="puzzle-card">
@@ -77,5 +77,5 @@ permalink: /puzzles/
       </a>
     `;
   }
-  document.body.innerHTML += "</div>"
+  document.body.innerHTML += '</div>Funziona?'
 </script>
