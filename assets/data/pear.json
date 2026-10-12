@@ -1,0 +1,81 @@
+{
+  "id": "sxsm_GiAnMMV_5a2261608515bf4b029f2bd18f49f697",
+  "metadata": {
+    "source": "SudokuMaker v2026.10.05-a3aef4c",
+    "author": "GiAnMMV",
+    "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nDutch Whispers: Every two consecutive digits along an orange line must have a difference of at least 4.\nParity Lines: Every pair of consecutive cells along a red line must contain an odd digit and an even digit.\nKropki: Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio.\nNegative XV: No pair of orthogonally adjacent digits can sum up to 5 or 10.",
+    "msgcorrect": "You did it! Thanks for playing!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
+    "solution": "927156384548392167136847295362481579479563812815279436681724953293615748754938621",
+    "title": "Pear"
+  },
+  "cells": [
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}]
+  ],
+  "regions": [
+    [[0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]],
+    [[0, 3], [0, 4], [0, 5], [1, 3], [1, 4], [1, 5], [2, 3], [2, 4], [2, 5]],
+    [[0, 6], [0, 7], [0, 8], [1, 6], [1, 7], [1, 8], [2, 6], [2, 7], [2, 8]],
+    [[3, 0], [3, 1], [3, 2], [4, 0], [4, 1], [4, 2], [5, 0], [5, 1], [5, 2]],
+    [[3, 3], [3, 4], [3, 5], [4, 3], [4, 4], [4, 5], [5, 3], [5, 4], [5, 5]],
+    [[3, 6], [3, 7], [3, 8], [4, 6], [4, 7], [4, 8], [5, 6], [5, 7], [5, 8]],
+    [[6, 0], [6, 1], [6, 2], [7, 0], [7, 1], [7, 2], [8, 0], [8, 1], [8, 2]],
+    [[6, 3], [6, 4], [6, 5], [7, 3], [7, 4], [7, 5], [8, 3], [8, 4], [8, 5]],
+    [[6, 6], [6, 7], [6, 8], [7, 6], [7, 7], [7, 8], [8, 6], [8, 7], [8, 8]]
+  ],
+  "lines": [
+    {"wayPoints": [[4.5, 3.5], [5.5, 3.5]], "color": "#f66f", "thickness": 9.6},
+    {"wayPoints": [[4.5, 4.5], [5.5, 4.5]], "color": "#f66f", "thickness": 9.6},
+    {"d": "M 228.852 403.468 C 241.724 415.909 272.216 412.472 280.993 404.108", "color": "#f66f", "thickness": 9.6},
+    {
+      "d": "M 282.94 489.533 C 224.253 485.296 168.511 438.788 152.995 382.029 C 141.008 338.185 173.842 297.669 192 256 C 213.802 205.968 218.336 104.583 272.732 100.119 C 372.174 91.957 366.402 207.828 384 256 C 397.631 293.314 420.07 330.404 418.552 370.099 C 417.26 403.872 402.637 424.485 384 448 C 360.993 477.029 323.29 492.446 282.94 489.533 Z M 239.929 15.611 C 245.82 19.205 263.545 35.059 270.323 49.486 C 272.771 54.697 274.338 61.021 275.328 67.373 C 276.527 75.062 276.931 98.017 276.931 98.017 C 277.623 107.015 293.129 155.972 293.129 155.972",
+      "color": "#ffa600ff",
+      "thickness": 9.6
+    }
+  ],
+  "overlays": [
+    {"center": [5, 6.5], "width": 0.33, "height": 0.33, "text": "", "color": "#FFFFFF", "rounded": true, "backgroundColor": "#000000"},
+    {"center": [3, 3.5], "width": 0.33, "height": 0.33, "text": "", "color": "#FFFFFF", "rounded": true, "backgroundColor": "#000000"},
+    {"center": [1.5, 6], "width": 0.33, "height": 0.33, "text": "", "color": "#FFFFFF", "rounded": true, "backgroundColor": "#000000"},
+    {
+      "center": [0.5, 5],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [1.5, 1],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [1.5, 8],
+      "width": 0.34,
+      "height": 0.34,
+      "thickness": 1.28,
+      "text": "",
+      "color": "#000000",
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    }
+  ]
+}
