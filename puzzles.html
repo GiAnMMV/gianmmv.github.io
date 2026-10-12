@@ -68,14 +68,14 @@ permalink: /puzzles/
     {% endfor %}
   };
   document.body.innerHTML += '<div class="puzzle-grid">'
-  for (const slug of puzzleSlugs) {
+  for (const slug of Object.keys(puzzleSlugs)) {
     document.body.innerHTML += `
-      <a href="${slug[0]}" class="puzzle-card">
-        <img src="/assets/images/${slug}.png" alt="${slug[1]}">
-          <h3>${slug[1]}</h3>
-          <time datetime="${slug[2]}">${slug[3]}</time>
+      <a href="${puzzleSlugs[slug][0]}" class="puzzle-card">
+        <img src="/assets/images/${slug}.png" alt="${puzzleSlugs[slug][1]}">
+          <h3>${puzzleSlugs[slug][1]}</h3>
+          <time datetime="${puzzleSlugs[slug][2]}">${puzzleSlugs[slug][3]}</time>
       </a>
     `;
   }
-  document.body.innerHTML += '</div>Funziona?'
+  document.body.innerHTML += '</div>'
 </script>
