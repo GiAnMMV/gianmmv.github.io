@@ -72,10 +72,22 @@ permalink: /puzzles/
     line-height: 1.25;
     background-color: #fff;
     border: 1px solid #dee2e6;
+    color: #007bff;
   }
 
-  .page-link a {
-    color: #007bff;
+  .page-link:hover{
+    color:#0056b3;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+  }
+
+  .page-link.active {
+    z-index: 1;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    pointer-events: none;
   }
 </style>
 
@@ -175,18 +187,18 @@ permalink: /puzzles/
       const pagination = paginate({current: page+1, max: maxPage + 1});
       let html = '<ul class="pagination">';
       if (pagination.prev !== null) {
-        html += `<li><div class="page-link"><a href="?page=${pagination.prev}">&lsaquo;</a></div></li>`
+        html += `<li><a class="page-link" href="?page=${pagination.prev}">&lsaquo;</a></li>`
       }
       for (const p of pagination.items) {
         if (p === page+1)
-          html += `<li><div class="page-link"><strong>${p}</strong></div></li>`
+          html += `<li><a class="page-link active">${p}</a></li>`
         else if (p !== "e")
-          html += `<li><div class="page-link"><a href="?page=${p}">${p}</a></div></li>`
+          html += `<li><a class="page-link href="?page=${p}">${p}</a></li>`
         else
-          html += `<li><div class="page-link">&hellip;</div></li>`
+          html += `<li><a class="page-link">&hellip;</a></li>`
       }
       if (pagination.next !== null) {
-        html += `<li><div class="page-link"><a href="?page=${pagination.next}">&rsaquo;</a></div></li>`
+        html += `<li><a class="page-link" href="?page=${pagination.next}">&rsaquo;</a></li>`
       }
       html += '</ul>';
 
