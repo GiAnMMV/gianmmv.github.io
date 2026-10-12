@@ -94,37 +94,48 @@ permalink: /puzzles/
   ];
 
   function paginate({ current, max }) {
-    if (!current || !max) return null
+    if (!current || !max) return null;
 
-    let prev = current === 1 ? null : current - 1,
-      next = current === max ? null : current + 1,
-      items = [1]
+    current = Math.max(1, Math.min(current, max));
 
-    if (current === 1 && max === 1) return { current, prev, next, items }
-    if (current > 4) items.push('e')
+    let prev = current === 1 ? null : current - 1;
+    let next = current === max ? null : current + 1;
 
-    let r = 2, r1 = current - r, r2 = current + r
-
-    for (let i = r1 > 2 ? r1 : 2; i <= Math.min(max, r2); i++) items.push(i)
-
-    if (r2 + 1 < max) items.push('e')
-    if (r2 < max) items.push(max)
-
-    if (items[1] === "e" && items.length + r1 - 2 <= 10) {
-      for (var i = 2; i < r1; i++) {
-        items.splice(i, 0, i)
-      }
-      items.splice(1, 1);
+    if (max <= 9) {
+      let items = [];
+      for (let i = 1; i <= max; i++) items.push(i);
+      return { current, prev, next, items };
     }
 
-    if (items[items.length - 2] === "e" && max - r2 + items.length - 1 <= 10) {
-      for (var i = max - 1; i > r2; i--) {
-        items.splice(items.length - 2, 0, i)
-      }
-      items.splice(items.length - 2, 1);
+    let items = [1];
+
+    let left = Math.max(2, current - 2);
+    let right = Math.min(max - 1, current + 2);
+
+    if (current <= 4) {
+      right = Math.min(max - 1, 7);
+    } else if (current >= max - 3) {
+      left = Math.max(2, max - 6);
     }
 
-    return { current, prev, next, items }
+    if (left === 3) left = 2;
+    if (right === max - 2) right = max - 1;
+
+    if (left > 2) {
+      items.push('e');
+    }
+
+    for (let i = left; i <= right; i++) {
+      items.push(i);
+    }
+
+    if (right < max - 1) {
+      items.push('e');
+    }
+
+    items.push(max);
+
+    return { current, prev, next, items };
   }
 
   document.addEventListener("DOMContentLoaded", () => {
@@ -157,13 +168,21 @@ permalink: /puzzles/
     }
 
     if (maxPage !== 1) {
-      const pagination = paginate({current: page, max: maxPage});
+      const pagination = paginate({current: page+1, max: maxPage + 1});
       let html = '<ul class="pagination">';
+      if (pagination.prev !== null) {
+        html += `<li><a class="page-link" href="?page=${pagination.prev}">&lsaquo;</a></li>`
+      }
       for (const p of pagination.items) {
-        if (p !== "e")
+        if (p === page+1)
+          html += `<li><a class="page-link"><strong>${p}</strong></a></li>`
+        else if (p !== "e")
           html += `<li><a class="page-link" href="?page=${p}">${p}</a></li>`
         else
-          html += `<li><a class="page-link">...</a></li>`
+          html += `<li><a class="page-link">&hellip;</a></li>`
+      }
+      if (pagination.next !== null) {
+        html += `<li><a class="page-link" href="?page=${pagination.next}">&rsaquo;</a></li>`
       }
       html += '</ul>';
 
