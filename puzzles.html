@@ -54,6 +54,7 @@ permalink: /puzzles/
 </style>
 
 <h1>GiAnMMV's Puzzles</h1>
+<div id="puzzle-container"></div>
 
 <script>
   const puzzles = [
@@ -71,16 +72,19 @@ permalink: /puzzles/
 
   document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
+
+    const ItemsPerPage = 20;
     let page = parseInt(urlParams.get("page")) - 1;
     if (isNaN(page))
       page = 0;
     page = Math.max(page, 0);
-    page = Math.min(page, Math.floor(puzzles.length / 20));
+    const MaxPage = Math.floor(puzzles.length / ItemsPerPage);
+    page = Math.min(page, maxPage);
 
     console.log(page);
 
     let html = '<div class="puzzle-grid">';
-    for (const puzzle of puzzles.slice(page*20, (page+1)*20)) {
+    for (const puzzle of puzzles.slice(page*ItemsPerPage, (page+1)*ItemsPerPage)) {
       html += `
         <a href="${puzzle[0]}" class="puzzle-card">
           <img src="/assets/images/${puzzle[0]}.png" alt="${puzzle[2]}">
@@ -90,6 +94,10 @@ permalink: /puzzles/
       `;
     }
     html += '</div>';
-    document.body.innerHTML += document.body.innerHTML.replace('</main>', html + '</main>');
+
+    const container = document.getElementById('puzzle-container') || document.querySelector('main');
+    if (container) {
+      container.insertAdjacentHTML('beforeend', html);
+    }
   });
 </script>
