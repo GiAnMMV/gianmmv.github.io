@@ -56,26 +56,39 @@ permalink: /puzzles/
 <h1>GiAnMMV's Puzzles</h1>
 
 <script>
-  const puzzleSlugs = {
+  const puzzles = [
     {% assign sorted_puzzles = site.puzzles | sort: "order" %}
     {% for puzzle in sorted_puzzles %}
-      "{{ puzzle.slug }}": [
+      [
+        "{{ puzzle.slug }}",
         "{{ puzzle.url }}",
         "{{ puzzle.title}}",
         "{{ puzzle.creation_date }}",
         "{{ puzzle.creation_date | date: "%-d %B %Y" }}"
       ]{% unless forloop.last %},{% endunless %}
     {% endfor %}
-  };
-  document.body.innerHTML += '<div class="puzzle-grid">'
-  for (const slug of Object.keys(puzzleSlugs)) {
-    document.body.innerHTML += `
-      <a href="${puzzleSlugs[slug][0]}" class="puzzle-card">
-        <img src="/assets/images/${slug}.png" alt="${puzzleSlugs[slug][1]}">
-          <h3>${puzzleSlugs[slug][1]}</h3>
-          <time datetime="${puzzleSlugs[slug][2]}">${puzzleSlugs[slug][3]}</time>
+  ];
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+  });
+
+  let page = parseInt(urlParams.get("page")) - 1;
+  if (isNaN(page))
+    page = 0;
+  page = Math.min(page, 0);
+  page = Math.max(page, Math.floor(puzzles.length / 20));
+
+  var html = '<div class="puzzle-grid">';
+  for (const puzzle of puzzles.slice(page*20, (page+1)*20)) {
+    html += `
+      <a href="${puzzle[0]}" class="puzzle-card">
+        <img src="/assets/images/${puzzle[0]}.png" alt="${puzzle[2]}">
+          <h3>${puzzle[2]}</h3>
+          <time datetime="${puzzle[3]}">${puzzle[4]}</time>
       </a>
     `;
   }
-  document.body.innerHTML += '</div>'
+  html += '</div>';
+  document.body.innerHTML += html;
 </script>
