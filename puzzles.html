@@ -71,24 +71,23 @@ permalink: /puzzles/
 
   document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
+    let page = parseInt(urlParams.get("page")) - 1;
+    if (isNaN(page))
+      page = 0;
+    page = Math.max(page, 0);
+    page = Math.min(page, Math.floor(puzzles.length / 20));
+
+    let html = '<div class="puzzle-grid">';
+    for (const puzzle of puzzles.slice(page*20, (page+1)*20)) {
+      html += `
+        <a href="${puzzle[0]}" class="puzzle-card">
+          <img src="/assets/images/${puzzle[0]}.png" alt="${puzzle[2]}">
+            <h3>${puzzle[2]}</h3>
+            <time datetime="${puzzle[3]}">${puzzle[4]}</time>
+        </a>
+      `;
+    }
+    html += '</div>';
+    document.body.innerHTML += html;
   });
-
-  let page = parseInt(urlParams.get("page")) - 1;
-  if (isNaN(page))
-    page = 0;
-  page = Math.min(page, 0);
-  page = Math.max(page, Math.floor(puzzles.length / 20));
-
-  var html = '<div class="puzzle-grid">';
-  for (const puzzle of puzzles.slice(page*20, (page+1)*20)) {
-    html += `
-      <a href="${puzzle[0]}" class="puzzle-card">
-        <img src="/assets/images/${puzzle[0]}.png" alt="${puzzle[2]}">
-          <h3>${puzzle[2]}</h3>
-          <time datetime="${puzzle[3]}">${puzzle[4]}</time>
-      </a>
-    `;
-  }
-  html += '</div>';
-  document.body.innerHTML += html;
 </script>
