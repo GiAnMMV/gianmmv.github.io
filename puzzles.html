@@ -55,31 +55,19 @@ permalink: /puzzles/
 
 <h1>GiAnMMV's Puzzles</h1>
 
-<div class="puzzle-grid">
-  {% assign sorted_puzzles = site.puzzles | sort: "order" %}
-  {% for puzzle in sorted_puzzles %}
-    <a href="{{ puzzle.url | relative_url }}" class="puzzle-card">
-      <img src="{{ puzzle.slug | prepend: '/assets/images/' | append: '.png' | relative_url }}" alt="{{ puzzle.title }}">
-      <h3>{{ puzzle.title }}</h3>
-      {% if puzzle.creation_date %}
-        <time datetime="{{ puzzle.creation_date }}">{{ puzzle.creation_date | date: "%-d %B %Y" }}</time>
-      {% endif %}
-    </a>
-  {% endfor %}
-</div>
-
 <script>
   const puzzleSlugs = {
     {% assign sorted_puzzles = site.puzzles | sort: "order" %}
     {% for puzzle in sorted_puzzles %}
       "{{ puzzle.slug }}": [
-        "{{ puzzle.url }}"
+        "{{ puzzle.url }}",
         "{{ puzzle.title}}",
         "{{ puzzle.creation_date }}",
         "{{ puzzle.creation_date | date: "%-d %B %Y" }}"
       ]{% unless forloop.last %},{% endunless %}
     {% endfor %}
   };
+  document.body.innerHTML += "<div class="puzzle-grid">"
   for (const slug of puzzleSlugs) {
     document.body.innerHTML += `
       <a href="${slug[0]}" class="puzzle-card">
@@ -89,4 +77,5 @@ permalink: /puzzles/
       </a>
     `;
   }
+  document.body.innerHTML += "</div>"
 </script>
