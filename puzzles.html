@@ -104,6 +104,7 @@ permalink: /puzzles/
   }
 
   .btn {
+    anchor-name: --my-dropdown-anchor;
     position: relative;
     display: block;
     padding: .5rem .75rem;
@@ -137,6 +138,8 @@ permalink: /puzzles/
   }
 
   #my-menu:popover-open {
+    position-anchor: --my-dropdown-anchor;
+
     position: absolute;
     top: 100%;
     left: 0;
@@ -187,18 +190,7 @@ permalink: /puzzles/
 <h1>GiAnMMV's Puzzles</h1>
 <div id="paginator-top"></div>
 
-<div class="dropdown">
-  <button class="btn" popovertarget="my-menu">
-    Sort
-  </button>
-  <div popover class="dropdown-menu" id="my-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="?sort=date">Date</a>
-    <a class="dropdown-item" href="?sort=name">Name</a>
-    <div class="dropdown-divider"></div>
-    <a class="dropdown-item" href="?sort-order:asc">Ascending</a>
-    <a class="dropdown-item" href="?sort-order:desc">Descending</a>
-  </div>
-</div>
+<div id="dropdown"></div>
 
 <div id="puzzle-container"></div>
 <div id="paginator-bottom"></div>
@@ -333,6 +325,23 @@ permalink: /puzzles/
 
       const bottomPag = document.getElementById('paginator-bottom') || document.querySelector('main');
       if (bottomPag) bottomPag.insertAdjacentHTML('beforeend', html);
+
+      urlParams.set("page", page+1);
+    }
+
+    {
+      var html = `
+        <button class="btn" popovertarget="my-menu">Sort</button>
+        <div popover class="dropdown-menu" id="my-menu">
+          <a class="dropdown-item" href="?${urlParams.set("sort", "date") || urlParams.toString()}">Date</a>
+          <a class="dropdown-item" href="?${urlParams.set("sort", "name") || urlParams.toString()}">Name</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="?${urlParams.set("sort-order", "asc") || urlParams.toString()}">Ascending</a>
+          <a class="dropdown-item" href="?${urlParams.set("sort-order", "desc") || urlParams.toString()}">Descending</a>
+        </div>
+      `;
+      const container = document.getElementById('dropdown') || document.querySelector('main');
+      if (container) container.insertAdjacentHTML('beforeend', html);
     }
   });
 </script>
