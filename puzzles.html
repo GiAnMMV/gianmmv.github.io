@@ -89,13 +89,19 @@ permalink: /puzzles/
     border-color: #007bff;
   }
 
-  .li:last-child .page-link {
+  .page-item:first-child .page-link {
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+  }
+
+  .page-item:last-child .page-link {
     border-top-right-radius: .25rem;
     border-bottom-right-radius: .25rem;
   }
 </style>
 
 <h1>GiAnMMV's Puzzles</h1>
+<div id="paginator"></div>
 <div id="puzzle-container"></div>
 <div id="paginator"></div>
 
@@ -165,7 +171,9 @@ permalink: /puzzles/
   document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
 
-    const itemsPerPage = 20;
+    const itemsPerPage = Math.min(Math.max(
+        parseInt(urlParams.get("limit")), 0
+      ) || 20, 1000);
     let page = parseInt(urlParams.get("page")) - 1;
     if (isNaN(page)) page = 0;
     page = Math.max(page, 0);
@@ -204,22 +212,22 @@ permalink: /puzzles/
       let html = '<ul class="pagination">';
       if (pagination.prev !== null) {
         urlParams.set("page", pagination.prev);
-        html += `<li><a class="page-link" href="?${urlParams.toString()}">&laquo;</a></li>`;
+        html += `<li class="page-item"><a class="page-link" href="?${urlParams.toString()}">&laquo;</a></li>`;
       }
       for (const p of pagination.items) {
         if (p === page+1)
-          html += `<li><a class="page-link active" href="#">${p}</a></li>`;
+          html += `<li class="page-item"><a class="page-link active" href="#">${p}</a></li>`;
         else if (p === "e")
-          html += '<li><a class="page-link">&hellip;</a></li>';
+          html += '<li class="page-item"><a class="page-link">&hellip;</a></li>';
         else {
           urlParams.set("page", p);
-          html += `<li><a class="page-link" href="?${urlParams.toString()}">${p}</a></li>`;
+          html += `<li class="page-item"><a class="page-link" href="?${urlParams.toString()}">${p}</a></li>`;
         }
           
       }
       if (pagination.next !== null) {
         urlParams.set("page", pagination.next);
-        html += `<li><a class="page-link" href="?${urlParams.toString()}">&raquo;</a></li>`;
+        html += `<li class="page-item"><a class="page-link" href="?${urlParams.toString()}">&raquo;</a></li>`;
       }
       html += '</ul>';
 

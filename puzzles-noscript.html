@@ -16,7 +16,7 @@ permalink: /puzzles/noscript/
         {% for puzzle in sorted_puzzles %}
         <tr>
             <td>{{ puzzle.order }}</td>
-            <td><a src="{{ puzzle.url }}">{{ puzzle.title }}</a></td>
+            <td><a href="{{ puzzle.url }}">{{ puzzle.title }}</a></td>
             <td><time datetime="{{ puzzle.creation_date }}">{{ puzzle.creation_date | date: "%-d %B %Y" }}</time></td>
         </tr>
         {% endfor %}
