@@ -194,18 +194,23 @@ permalink: /puzzles/
       const pagination = paginate({current: page+1, max: maxPage + 1});
       let html = '<ul class="pagination">';
       if (pagination.prev !== null) {
-        html += `<li><a class="page-link" href="?page=${pagination.prev}">&laquo;</a></li>`
+        urlParams.set("page", pagination.prev);
+        html += `<li><a class="page-link" href="${urlParams.toString()}">&laquo;</a></li>`;
       }
       for (const p of pagination.items) {
         if (p === page+1)
-          html += `<li><a class="page-link active" href="#">${p}</a></li>`
+          html += `<li><a class="page-link active" href="#">${p}</a></li>`;
         else if (p !== "e")
-          html += `<li><a class="page-link" href="?page=${p}">${p}</a></li>`
-        else
-          html += `<li><a class="page-link">&hellip;</a></li>`
+          html += '<li><a class="page-link">&hellip;</a></li>';
+        else {
+          urlParams.set("page", p);
+          html += `<li><a class="page-link" href="${urlParams.toString()}">${p}</a></li>`;
+        }
+          
       }
       if (pagination.next !== null) {
-        html += `<li><a class="page-link" href="?page=${pagination.next}">&raquo;</a></li>`
+        urlParams.set("page", pagination.next);
+        html += `<li><a class="page-link" href="${urlParams.toString()}">&raquo;</a></li>`;
       }
       html += '</ul>';
 
