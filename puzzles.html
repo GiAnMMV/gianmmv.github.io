@@ -101,9 +101,9 @@ permalink: /puzzles/
 </style>
 
 <h1>GiAnMMV's Puzzles</h1>
-<div id="paginator"></div>
+<div id="paginator-top"></div>
 <div id="puzzle-container"></div>
-<div id="paginator"></div>
+<div id="paginator-bottom"></div>
 
 <noscript>
   <meta http-equiv="refresh" content="0;url=/puzzles/noscript/">
@@ -177,7 +177,7 @@ permalink: /puzzles/
     let page = parseInt(urlParams.get("page")) - 1;
     if (isNaN(page)) page = 0;
     page = Math.max(page, 0);
-    const maxPage = Math.floor(puzzles.length / itemsPerPage);
+    const maxPage = Math.ceil(puzzles.length / itemsPerPage);
     page = Math.min(page, maxPage);
 
     const sortRule = urlParams.get("sort");
@@ -202,13 +202,12 @@ permalink: /puzzles/
       html += '</div>';
 
       const container = document.getElementById('puzzle-container') || document.querySelector('main');
-      if (container) {
+      if (container)
         container.insertAdjacentHTML('beforeend', html);
-      }
     }
 
     if (maxPage !== 1) {
-      const pagination = paginate({current: page+1, max: maxPage + 1});
+      const pagination = paginate({current: page+1, max: maxPage});
       let html = '<ul class="pagination">';
       if (pagination.prev !== null) {
         urlParams.set("page", pagination.prev);
@@ -231,10 +230,11 @@ permalink: /puzzles/
       }
       html += '</ul>';
 
-      const container = document.getElementById('paginator') || document.querySelector('main');
-      if (container) {
-        container.insertAdjacentHTML('beforeend', html);
-      }
+      const topPag = document.getElementById('paginator-top') || document.querySelector('main');
+      if (topPag) topPag.insertAdjacentHTML('beforeend', html);
+
+      const bottomPag = document.getElementById('paginator-bottom') || document.querySelector('main');
+      if (bottomPag) bottomPag.insertAdjacentHTML('beforeend', html);
     }
   });
 </script>
