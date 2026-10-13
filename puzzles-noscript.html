@@ -1,0 +1,24 @@
+---
+layout: default
+title: Puzzles
+permalink: /puzzles/noscript/
+---
+
+<h1>GiAnMMV's Puzzles</h1>
+<table>
+    <tbody>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Date</th>
+        </tr>
+        {% assign sorted_puzzles = site.puzzles | sort: "order" %}
+        {% for puzzle in sorted_puzzles %}
+        <tr>
+            <td>{{ puzzle.order }}</td>
+            <td><a src="{{ puzzle.url }}">{{ puzzle.title }}</a></td>
+            <td><time datetime="{{ puzzle.creation_date }}">{{ puzzle.creation_date | date: "%-d %B %Y" }}</time></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

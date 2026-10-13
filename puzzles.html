@@ -99,6 +99,10 @@ permalink: /puzzles/
 <div id="puzzle-container"></div>
 <div id="paginator"></div>
 
+<noscript>
+  <meta http-equiv="refresh" content="0;url=/puzzles/noscript/">
+</noscript>
+
 <script>
   const puzzles = [
     {% assign sorted_puzzles = site.puzzles | sort: "order" %}
