@@ -341,15 +341,15 @@ permalink: /puzzles/
           <div>
             <span>Sort by</span>
             <ul class="pagination" style="justify-content: left;display: inline-flex;">
-              <li class="page-item${sortRule !== "name" ? " active" : ""}"><a class="page-link" href="${setParam("sort", "date")}">Date</a></li>
-              <li class="page-item${sortRule === "name" ? " active" : ""}"><a class="page-link" href="${setParam("sort", "name")}">Name</a></li>
+              <li class="page-item${sortRule !== "name" ? " active" : ""}"><a class="page-link" href="?${setParam("sort", "date")}">Date</a></li>
+              <li class="page-item${sortRule === "name" ? " active" : ""}"><a class="page-link" href="?${setParam("sort", "name")}">Name</a></li>
             </ul>
           </div>
           <div>
             <span>Order:</span>
             <ul class="pagination" style="justify-content: left;display: inline-flex;">
-              <li class="page-item${!sortOrder ? " active" : ""}"><a class="page-link" href="${setParam("sort-order", "asc")}">Ascending &nearr;</a></li>
-              <li class="page-item${sortOrder ? " active" : ""}"><a class="page-link" href="${setParam("sort-order", "desc")}">Descending &swarr;</a></li>
+              <li class="page-item${!sortOrder ? " active" : ""}"><a class="page-link" href="?${setParam("sort-order", "asc")}">Ascending &nearr;</a></li>
+              <li class="page-item${sortOrder ? " active" : ""}"><a class="page-link" href="?${setParam("sort-order", "desc")}">Descending &swarr;</a></li>
             </ul>
           </div>
         </p>
