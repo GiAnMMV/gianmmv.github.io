@@ -330,15 +330,29 @@ permalink: /puzzles/
     }
 
     {
+      const setParam = (p, v) => {
+        const sp = new URLSearchParams(urlParams);
+        sp.set(p, v);
+        sp.delete("page");
+        return sp.toString()
+      };
       var html = `
-        <button class="btn" popovertarget="my-menu">Sort</button>
-        <div popover class="dropdown-menu" id="my-menu">
-          <a class="dropdown-item" href="?${urlParams.set("sort", "date") || urlParams.toString()}">Date</a>
-          <a class="dropdown-item" href="?${urlParams.set("sort", "name") || urlParams.toString()}">Name</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="?${urlParams.set("sort-order", "asc") || urlParams.toString()}">Ascending</a>
-          <a class="dropdown-item" href="?${urlParams.set("sort-order", "desc") || urlParams.toString()}">Descending</a>
-        </div>
+        <p style="display: flex;justify-content: space-between;">
+          <div>
+            <span>Sort by</span>
+            <ul class="pagination" style="justify-content: left;display: inline-flex;">
+              <li class="page-item${sortRule !== "name" ? " active" : ""}"><a class="page-link" href="${setParam("sort", "date")}">Date</a></li>
+              <li class="page-item${sortRule === "name" ? " active" : ""}"><a class="page-link" href="${setParam("sort", "name")}">Name</a></li>
+            </ul>
+          </div>
+          <div>
+            <span>Order:</span>
+            <ul class="pagination" style="justify-content: left;display: inline-flex;">
+              <li class="page-item${!sortOrder ? " active" : ""}"><a class="page-link" href="${setParam("sort-order", "asc")}">Ascending &nearr;</a></li>
+              <li class="page-item${sortOrder ? " active" : ""}"><a class="page-link" href="${setParam("sort-order", "desc")}">Descending &swarr;</a></li>
+            </ul>
+          </div>
+        </p>
       `;
       const container = document.getElementById('dropdown') || document.querySelector('main');
       if (container) container.insertAdjacentHTML('beforeend', html);
