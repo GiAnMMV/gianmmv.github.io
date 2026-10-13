@@ -3,22 +3,31 @@ layout: default
 title: Puzzles
 permalink: /puzzles/noscript/
 ---
+<style>
+  .main-content table th, .main-content table td {
+    border-width: 0px;
+  }
+  table th, tr:nth-child(odd) td {
+    background-color: #eee;
+  }
+</style>
 
 <h1>GiAnMMV's Puzzles</h1>
-<table style="width: 100%; border-collapse: collapse;">
-    <tbody>
-        <tr>
-            <th style="width:1%; white-space:nowrap;">#</th>
-            <th style="width:100%;">Name</th>
-            <th style="width:1%; white-space:nowrap;">Date</th>
-        </tr>
-        {% assign sorted_puzzles = site.puzzles | sort: "order" %}
-        {% for puzzle in sorted_puzzles %}
-        <tr>
-            <td style="width:1%; white-space:nowrap;">{{ puzzle.order }}</td>
-            <td style="width:100%;"><a href="{{ puzzle.url }}">{{ puzzle.title }}</a></td>
-            <td style="width:1%; white-space:nowrap;"><time datetime="{{ puzzle.creation_date }}">{{ puzzle.creation_date | date: "%-d %B %Y" }}</time></td>
-        </tr>
-        {% endfor %}
-    </tbody>
+<table style="width: 100%; border: solid 1px #e9ebec; border-radius: .25rem">
+  <tbody>
+    <tr>
+      <th style="width:1%; white-space:nowrap;">#</th>
+      <th style="width:100%;">Name</th>
+      <th style="width:1%; white-space:nowrap;">Date</th>
+    </tr>
+    {% assign sorted_puzzles = site.puzzles | sort: "order" %}
+    {% for puzzle in sorted_puzzles %}
+    <tr>
+      <td style="width:1%; white-space:nowrap;">{{ puzzle.order }}</td>
+      <td style="width:100%;"><a href="{{ puzzle.url }}">{{ puzzle.title }}</a></td>
+      <td style="width:1%; white-space:nowrap;"><time datetime="{{ puzzle.creation_date }}">{{ puzzle.creation_date |
+          date: "%-d %B %Y" }}</time></td>
+    </tr>
+    {% endfor %}
+  </tbody>
 </table>
