@@ -82,11 +82,19 @@ permalink: /puzzles/
     border-color: #dee2e6;
   }
 
-  .page-link.active {
+  .page-item.active .page-link {
     z-index: 1;
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
+  }
+
+  .page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
   }
 
   .page-item:first-child .page-link {
@@ -177,7 +185,7 @@ permalink: /puzzles/
     let page = parseInt(urlParams.get("page")) - 1;
     if (isNaN(page)) page = 0;
     page = Math.max(page, 0);
-    const maxPage = Math.ceil(puzzles.length / itemsPerPage);
+    const maxPage = Math.ceil(puzzles.length / itemsPerPage) - 1;
     page = Math.min(page, maxPage);
 
     const sortRule = urlParams.get("sort");
@@ -207,7 +215,7 @@ permalink: /puzzles/
     }
 
     if (maxPage !== 1) {
-      const pagination = paginate({current: page+1, max: maxPage});
+      const pagination = paginate({current: page+1, max: maxPage+1});
       let html = '<ul class="pagination">';
       if (pagination.prev !== null) {
         urlParams.set("page", pagination.prev);
@@ -215,9 +223,9 @@ permalink: /puzzles/
       }
       for (const p of pagination.items) {
         if (p === page+1)
-          html += `<li class="page-item"><a class="page-link active" href="#">${p}</a></li>`;
+          html += `<li class="page-item active"><a class="page-link" href="#">${p}</a></li>`;
         else if (p === "e")
-          html += '<li class="page-item"><a class="page-link">&hellip;</a></li>';
+          html += '<li class="page-item disabled"><a class="page-link">&hellip;</a></li>';
         else {
           urlParams.set("page", p);
           html += `<li class="page-item"><a class="page-link" href="?${urlParams.toString()}">${p}</a></li>`;
