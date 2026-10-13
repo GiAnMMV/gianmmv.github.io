@@ -89,7 +89,7 @@ permalink: /puzzles/
     border-color: #007bff;
   }
 
-  .page-item:last-child .page-link {
+  .li:last-child .page-link {
     border-top-right-radius: .25rem;
     border-bottom-right-radius: .25rem;
   }
@@ -167,6 +167,9 @@ permalink: /puzzles/
     page = Math.max(page, 0);
     const maxPage = Math.floor(puzzles.length / itemsPerPage);
     page = Math.min(page, maxPage);
+
+    const sortOrder = urlParams.get("sort-order") === 'desc';
+    if (sortOrder) puzzles.reverse();
 
     {
       let html = '<div class="puzzle-grid">';
