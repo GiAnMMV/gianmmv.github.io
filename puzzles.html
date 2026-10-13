@@ -79,7 +79,6 @@ permalink: /puzzles/
     color:#0056b3;
     text-decoration: none;
     background-color: #e9ecef;
-    border-color: #dee2e6;
   }
 
   .page-item.active .page-link {
@@ -91,10 +90,7 @@ permalink: /puzzles/
 
   .page-item.disabled .page-link {
     color: #6c757d;
-    pointer-events: none;
-    cursor: auto;
-    background-color: #fff;
-    border-color: #dee2e6;
+    cursor: pointer;
   }
 
   .page-item:first-child .page-link {
@@ -106,10 +102,104 @@ permalink: /puzzles/
     border-top-right-radius: .25rem;
     border-bottom-right-radius: .25rem;
   }
+
+  .btn {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    cursor: pointer;
+    border-radius: .25rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+  }
+
+  .btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+
+  .dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+  }
+
+  #my-menu:popover-open {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .5rem .5rem 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    overflow-x: hidden;
+    transform: translate3d(0px, 38px, 0px);
+    top: 0px; left: 0px;
+    will-change: transform;
+  }
+
+  .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+  }
+
+  .dropdown-item:hover {
+    background-color: #e9ecef;
+  }
+
+  .dropdown-divider {
+    height: 0;
+    margin: .5rem 0;
+    overflow: hidden;
+    border-top: 1px solid #e9ecef;
+  }
 </style>
 
 <h1>GiAnMMV's Puzzles</h1>
 <div id="paginator-top"></div>
+
+<div class="dropdown">
+  <button class="btn" popovertarget="my-menu">
+    Sort
+  </button>
+  <div popover class="dropdown-menu" id="my-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="?sort=date">Date</a>
+    <a class="dropdown-item" href="?sort=name">Name</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="?sort-order:asc">Ascending</a>
+    <a class="dropdown-item" href="?sort-order:desc">Descending</a>
+  </div>
+</div>
+
 <div id="puzzle-container"></div>
 <div id="paginator-bottom"></div>
 
