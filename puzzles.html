@@ -186,13 +186,17 @@ permalink: /puzzles/
     const maxPage = Math.ceil(puzzles.length / itemsPerPage) - 1;
     page = Math.min(page, maxPage);
 
-    const sortRule = urlParams.get("sort");
-    if (sortRule === "name") {
+    var sortRule = urlParams.get("sort");
+    if (sortRule === "name")
       puzzles.sort((a,b) => (a[2] > b[2]) ? 1 : ((b[2] > a[2]) ? -1 : 0));
-    }
+    else if (sortRule !== "date")
+      sortRule = "date";
 
-    const sortOrder = urlParams.get("sort-order") === 'desc';
-    if (sortOrder) puzzles.reverse();
+    var sortOrder = urlParams.get("sort-order");
+    if (sortOrder === "desc")
+      puzzles.reverse();
+    else if (sortOrder !== "asc")
+      sortOrder = asc;
 
     {
       let html = '<div class="puzzle-grid">';
@@ -246,26 +250,38 @@ permalink: /puzzles/
     }
 
     {
-      const setParam = (p, v) => {
-        const sp = new URLSearchParams(urlParams);
-        sp.set(p, v);
-        sp.delete("page");
-        return sp.toString()
+      const isActive = (p, v) => {
+        return (
+          (p === "sort" && sortRule === v) ||
+          (p === "sort-order" && sortOrder === v)
+        );
+      }
+
+      const generateSortButton = (p, v, n) => {
+        let href = "#";
+        const active = isActive(p, v);
+        if (!active) {
+          const sp = new URLSearchParams(urlParams);
+          sp.set(p, v);
+          sp.delete("page");
+          href = "?" + sp.toString();
+        }
+        return `<li class="bar-item${active ? " active" : ""}"><a class="bar-link" href="${href}">${n}</a></li>`
       };
       var html = `
         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
           <div>
             <span>Sort by</span>
-            <ul class="control-bar" style="justify-content: left;display: inline-flex;">
-              <li class="bar-item${sortRule !== "name" ? " active" : ""}"><a class="bar-link" href="?${setParam("sort", "date")}">Date</a></li>
-              <li class="bar-item${sortRule === "name" ? " active" : ""}"><a class="bar-link" href="?${setParam("sort", "name")}">Name</a></li>
+            <ul class="control-bar" style="justify-content: left; display: inline-flex;">
+              ${generateSortButton("sort", "date", "Date")}
+              ${generateSortButton("sort", "name", "Name")}
             </ul>
           </div>
           <div>
             <span>Order:</span>
-            <ul class="control-bar" style="justify-content: left;display: inline-flex;">
-              <li class="bar-item${!sortOrder ? " active" : ""}"><a class="bar-link" href="?${setParam("sort-order", "asc")}">Ascending &nearr;</a></li>
-              <li class="bar-item${sortOrder ? " active" : ""}"><a class="bar-link" href="?${setParam("sort-order", "desc")}">Descending &swarr;</a></li>
+            <ul class="control-bar" style="justify-content: left; display: inline-flex;">
+              ${generateSortButton("sort-order", "asc", "Ascending &nearr;")}
+              ${generateSortButton("sort-order", "desc", "Descending &swarr;")}
             </ul>
           </div>
         </div>
