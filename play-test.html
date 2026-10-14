@@ -27,15 +27,18 @@ permalink: /play-test/
   <script>
     async function getShortLink(jsonData) {
       try {
-        const response = await fetch('https://sudokupad.app/admin/createlink', {
+        await fetch('https://sudokupad.app/admin/createlink', {
           method: 'POST',
           body: '{"puzzle":"' + getPuzzleId(jsonData) + '"}'
-        }).then(h => h.json());
-        if (response.result === "success" && response.shortid)
-          return "https://sudokupad.app/" + response.shortid;
-        else {
-          throw new Error("No response from SudokuPad API.")
-        }
+        })
+        .then(h => h.json())
+        .then(response => {
+          if (response.result === "success" && response.shortid)
+            return "https://sudokupad.app/" + response.shortid;
+          else {
+            throw new Error("No response from SudokuPad API.")
+          }
+        });
       } catch (err) {
         throw new Error("Failed to generate short URL:", err);
       }
