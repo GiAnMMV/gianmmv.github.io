@@ -52,7 +52,7 @@ permalink: /puzzles/
     text-align: center;
   }
 
-  .main-content .pagination {
+  .main-content .control-bar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -61,10 +61,9 @@ permalink: /puzzles/
     border-radius: .25rem;
     margin-top: .5rem;
     margin-bottom: .5rem;
-    justify-content: center;
   }
 
-  .page-link {
+  .bar-link {
     position: relative;
     display: block;
     padding: .5rem .75rem;
@@ -75,30 +74,30 @@ permalink: /puzzles/
     color: #007bff;
   }
 
-  .page-link:hover{
+  .bar-link:hover{
     color:#0056b3;
     text-decoration: none;
     background-color: #e9ecef;
   }
 
-  .page-item.active .page-link {
+  .bar-item.active .bar-link {
     z-index: 1;
     color: #fff;
     background-color: #007bff;
     border-color: #007bff;
   }
 
-  .page-item.disabled .page-link {
+  .bar-item.disabled .bar-link {
     color: #6c757d;
     cursor: pointer;
   }
 
-  .page-item:first-child .page-link {
+  .bar-item:first-child .bar-link {
     border-top-left-radius: .25rem;
     border-bottom-left-radius: .25rem;
   }
 
-  .page-item:last-child .page-link {
+  .bar-item:last-child .bar-link {
     border-top-right-radius: .25rem;
     border-bottom-right-radius: .25rem;
   }
@@ -213,27 +212,27 @@ permalink: /puzzles/
         container.insertAdjacentHTML('beforeend', html);
     }
 
-    if (maxPage !== 1) {
+    if (maxPage > 0) {
       const pagination = paginate({current: page+1, max: maxPage+1});
-      let html = '<ul class="pagination">';
+      let html = '<ul class="control-bar" style="justify-content: center;">';
       if (pagination.prev !== null) {
         urlParams.set("page", pagination.prev);
-        html += `<li class="page-item"><a class="page-link" href="?${urlParams.toString()}">&laquo;</a></li>`;
+        html += `<li class="bar-item"><a class="bar-link" href="?${urlParams.toString()}">&laquo;</a></li>`;
       }
       for (const p of pagination.items) {
         if (p === page+1)
-          html += `<li class="page-item active"><a class="page-link" href="#">${p}</a></li>`;
+          html += `<li class="bar-item active"><a class="bar-link" href="#">${p}</a></li>`;
         else if (p === "e")
-          html += '<li class="page-item disabled"><a class="page-link">&hellip;</a></li>';
+          html += '<li class="bar-item disabled"><a class="bar-link">&hellip;</a></li>';
         else {
           urlParams.set("page", p);
-          html += `<li class="page-item"><a class="page-link" href="?${urlParams.toString()}">${p}</a></li>`;
+          html += `<li class="bar-item"><a class="bar-link" href="?${urlParams.toString()}">${p}</a></li>`;
         }
           
       }
       if (pagination.next !== null) {
         urlParams.set("page", pagination.next);
-        html += `<li class="page-item"><a class="page-link" href="?${urlParams.toString()}">&raquo;</a></li>`;
+        html += `<li class="bar-item"><a class="bar-link" href="?${urlParams.toString()}">&raquo;</a></li>`;
       }
       html += '</ul>';
 
@@ -254,19 +253,19 @@ permalink: /puzzles/
         return sp.toString()
       };
       var html = `
-        <div style="display: flex; justify-content: space-between;">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
           <div>
             <span>Sort by</span>
-            <ul class="pagination" style="justify-content: left;display: inline-flex;">
-              <li class="page-item${sortRule !== "name" ? " active" : ""}"><a class="page-link" href="?${setParam("sort", "date")}">Date</a></li>
-              <li class="page-item${sortRule === "name" ? " active" : ""}"><a class="page-link" href="?${setParam("sort", "name")}">Name</a></li>
+            <ul class="control-bar" style="justify-content: left;display: inline-flex;">
+              <li class="bar-item${sortRule !== "name" ? " active" : ""}"><a class="bar-link" href="?${setParam("sort", "date")}">Date</a></li>
+              <li class="bar-item${sortRule === "name" ? " active" : ""}"><a class="bar-link" href="?${setParam("sort", "name")}">Name</a></li>
             </ul>
           </div>
           <div>
             <span>Order:</span>
-            <ul class="pagination" style="justify-content: left;display: inline-flex;">
-              <li class="page-item${!sortOrder ? " active" : ""}"><a class="page-link" href="?${setParam("sort-order", "asc")}">Ascending &nearr;</a></li>
-              <li class="page-item${sortOrder ? " active" : ""}"><a class="page-link" href="?${setParam("sort-order", "desc")}">Descending &swarr;</a></li>
+            <ul class="control-bar" style="justify-content: left;display: inline-flex;">
+              <li class="bar-item${!sortOrder ? " active" : ""}"><a class="bar-link" href="?${setParam("sort-order", "asc")}">Ascending &nearr;</a></li>
+              <li class="bar-item${sortOrder ? " active" : ""}"><a class="bar-link" href="?${setParam("sort-order", "desc")}">Descending &swarr;</a></li>
             </ul>
           </div>
         </div>
