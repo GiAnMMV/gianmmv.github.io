@@ -59,17 +59,20 @@ permalink: /play-test/
           return res.json();
         })
         .then(data => {
-          let targetUrl = false;
           if (urlParams.get('no-short') === 'true') {
-            targetUrl = convertJsonToUrlNoShort(data);
+            const targetUrl = convertJsonToUrlNoShort(data);
+            if (targetUrl) {
+              window.location.href = targetUrl;
+            } else {
+              document.getElementById("status-text").innerText = "Puzzle link generation failed.";
+            }
           } else {
-            targetUrl = getShortLink(data).then(link => {window.location.href = link; return link;});
-          }
-
-          if (targetUrl) {
-            window.location.href = targetUrl;
-          } else {
-            document.getElementById("status-text").innerText = "Puzzle link generation failed.";
+            getShortLink(data)
+              .then(link => {window.location.href = link;})
+              .catch(err => {
+                console.error(err);
+                document.getElementById("status-text").innerText = err.toString();
+              });
           }
         })
         .catch(err => {
