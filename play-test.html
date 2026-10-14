@@ -63,7 +63,7 @@ permalink: /play-test/
           if (urlParams.get('no-short') === 'true') {
             targetUrl = convertJsonToUrlNoShort(data);
           } else {
-            targetUrl = getShortLink(data);
+            targetUrl = getShortLink(data).then(link => {return link});
           }
 
           if (targetUrl) {
