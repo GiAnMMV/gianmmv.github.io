@@ -1,0 +1,82 @@
+---
+layout: null
+permalink: /play-test/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to SudokuPad...</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <p id="status-text">Loading puzzle in SudokuPad...</p>
+
+  <script src="{{ '/assets/js/puzzle-converter.js' | relative_url }}"></script>
+  <script>
+    async function getShortLink(jsonData) {
+      try {
+        const response = await fetch('https://sudokupad.app/admin/createlink', {
+          method: 'POST',
+          body: '{"puzzle":"' + getPuzzleId(jsonData) + '"}'
+        }).then(h => h.json());
+        if (response.result === "success" && response.shortid)
+          return "https://sudokupad.app/" + response.shortid;
+        else {
+          throw new Error("No response from SudokuPad API.")
+        }
+      } catch (err) {
+        throw new Error("Failed to generate short URL:", err);
+      }
+    }
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const puzzleSlug = urlParams.get('puzzle') || urlParams.get('p');
+
+      if (!puzzleSlug) {
+        document.getElementById("status-text").innerText = "No puzzle specified.";
+        return;
+      }
+
+      const jsonPath = `{{ '/assets/data/puzzles/' | relative_url }}${puzzleSlug}.json`;
+
+      fetch(jsonPath)
+        .then(res => {
+          if (!res.ok) throw new Error("Puzzle file not found");
+          return res.json();
+        })
+        .then(data => {
+          let targetUrl = false;
+          if (urlParams.get('no-short') === 'true') {
+            targetUrl = convertJsonToUrlNoShort(data);
+          } else {
+            targetUrl = getShortLink(data);
+          }
+
+          if (targetUrl) {
+            window.location.href = targetUrl;
+          } else {
+            document.getElementById("status-text").innerText = "Puzzle link generation failed.";
+          }
+        })
+        .catch(err => {
+          console.error(err);
+          document.getElementById("status-text").innerText = "Error loading puzzle data.";
+        });
+    });
+  </script>
+</body>
+</html>

@@ -45,7 +45,7 @@ async function processPuzzles() {
         const hash = crypto.createHash('md5').update(jsonContent).digest('hex');
 
         if (cache[slug] && cache[slug].hash === hash && cache[slug].shortUrl) {
-            console.log(`[Cache Hit] Skipping API call for ${slug}`);
+            //console.log(`[Cache Hit] Skipping API call for ${slug}`);
             continue;
         }
 
