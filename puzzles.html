@@ -180,9 +180,14 @@ permalink: /puzzles/
   document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
 
-    const itemsPerPage = Math.min(Math.max(
-        parseInt(urlParams.get("limit")), 0
-      ) || 20, 1000);
+    let itemsPerPage = urlParams.get("limit");
+    if (itemsPerPage === "inf")
+      itemsPerPage = puzzles.length;
+    else {
+      itemsPerPage = Math.min(Math.max(
+        parseInt(itemsPerPage), 0
+      ) || 20, puzzles.length);
+    }
     let page = parseInt(urlParams.get("page")) - 1;
     if (isNaN(page)) page = 0;
     page = Math.max(page, 0);
@@ -293,23 +298,25 @@ permalink: /puzzles/
       if (container) container.insertAdjacentHTML('beforeend', html);
     }
     {
-      const generateLimitButton = (v) => {
+      const generateLimitButton = (v, n=null) => {
+        if (n === null) n = v;
         let href = "#";
-        const active = itemsPerPage === v;
+        const active = v === "inf" && itemsPerPage === puzzles.length || itemsPerPage === v;
         if (!active) {
           const sp = new URLSearchParams(urlParams);
           sp.set("limit", v);
           sp.delete("page");
           href = "?" + sp.toString();
         }
-        return `<li class="bar-item${active ? " active" : ""}"><a class="bar-link" href="${href}">${v}</a></li>`
+        return `<li class="bar-item${active ? " active" : ""}"><a class="bar-link" href="${href}">${n}</a></li>`
       };
       const values = [10, 20, 50];
       const html = `
         <span>Puzzles per page:</span>
         <ul class="control-bar" style="justify-content: left; display: inline-flex;">
           ${values.map(v => generateLimitButton(v)).join("\n")}
-          ${(!values.includes(itemsPerPage)) ? generateLimitButton(itemsPerPage) : ""}
+          ${(!values.includes(itemsPerPage) && itemsPerPage !== puzzles.length) ? generateLimitButton(itemsPerPage) : ""}
+          ${generateLimitButton("inf", "Show All")}
         </ul>
       `;
       const container = document.getElementById('limit-selector') || document.querySelector('main');
