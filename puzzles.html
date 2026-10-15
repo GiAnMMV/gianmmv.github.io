@@ -194,7 +194,7 @@ permalink: /puzzles/
 
     var sortRule = urlParams.get("sort");
     if (sortRule === "name")
-      puzzles.sort((a,b) => (a[2] > b[2]) ? 1 : ((b[2] > a[2]) ? -1 : 0));
+      puzzles.sort();
     else if (sortRule !== "date")
       sortRule = "date";
 
@@ -309,11 +309,14 @@ permalink: /puzzles/
         return `<li class="bar-item${active ? " active" : ""}"><a class="bar-link" href="${href}">${n}</a></li>`
       };
       const values = [10, 20, 50];
+      if (!values.includes(itemsPerPage) && itemsPerPage !== Number.MAX_VALUE) {
+        values.push(itemsPerPage);
+        values.sort((a,b) => a-b);
+      }
       const html = `
         <span>Puzzles per page:</span>
         <ul class="control-bar" style="justify-content: left; display: inline-flex;">
           ${values.map(v => generateLimitButton(v)).join("\n")}
-          ${(!values.includes(itemsPerPage) && itemsPerPage !== Number.MAX_VALUE) ? generateLimitButton(itemsPerPage) : ""}
           ${generateLimitButton("inf", "Show All")}
         </ul>
       `;
