@@ -182,12 +182,10 @@ permalink: /puzzles/
 
     let itemsPerPage = urlParams.get("limit");
     if (itemsPerPage === "inf")
-      itemsPerPage = puzzles.length;
-    else {
-      itemsPerPage = Math.min(Math.max(
-        parseInt(itemsPerPage), 0
-      ) || 20, puzzles.length);
-    }
+      itemsPerPage = Number.MAX_VALUE;
+    else
+      itemsPerPage = Math.max(parseInt(itemsPerPage), 0) || 20;
+
     let page = parseInt(urlParams.get("page")) - 1;
     if (isNaN(page)) page = 0;
     page = Math.max(page, 0);
@@ -301,7 +299,7 @@ permalink: /puzzles/
       const generateLimitButton = (v, n=null) => {
         if (n === null) n = v;
         let href = "#";
-        const active = v === "inf" && itemsPerPage === puzzles.length || itemsPerPage === v;
+        const active = v === "inf" ? itemsPerPage === Number.MAX_VALUE : itemsPerPage === v;
         if (!active) {
           const sp = new URLSearchParams(urlParams);
           sp.set("limit", v);
@@ -315,7 +313,7 @@ permalink: /puzzles/
         <span>Puzzles per page:</span>
         <ul class="control-bar" style="justify-content: left; display: inline-flex;">
           ${values.map(v => generateLimitButton(v)).join("\n")}
-          ${(!values.includes(itemsPerPage) && itemsPerPage !== puzzles.length) ? generateLimitButton(itemsPerPage) : ""}
+          ${(!values.includes(itemsPerPage) && itemsPerPage !== Number.MAX_VALUE) ? generateLimitButton(itemsPerPage) : ""}
           ${generateLimitButton("inf", "Show All")}
         </ul>
       `;
