@@ -61,6 +61,10 @@ permalink: /puzzles/
     border-radius: .25rem;
     margin-top: .5rem;
     margin-bottom: .5rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 100%;
+    padding-bottom: 0.5rem;
   }
 
   .bar-link {
@@ -105,10 +109,9 @@ permalink: /puzzles/
 
 <h1>GiAnMMV's Puzzles</h1>
 <div id="paginator-top"></div>
-
 <div id="sort-manager"></div>
-
 <div id="puzzle-container"></div>
+<div id="limit-selector"></div>
 <div id="paginator-bottom"></div>
 
 <noscript>
@@ -193,10 +196,10 @@ permalink: /puzzles/
       sortRule = "date";
 
     var sortOrder = urlParams.get("sort-order");
-    if (sortOrder === "desc")
+    if (sortOrder !== "asc") {
+      sortOrder = "desc";
       puzzles.reverse();
-    else if (sortOrder !== "asc")
-      sortOrder = "asc";
+    }
 
     {
       let html = '<div class="puzzle-grid">';
@@ -287,6 +290,29 @@ permalink: /puzzles/
         </div>
       `;
       const container = document.getElementById('sort-manager') || document.querySelector('main');
+      if (container) container.insertAdjacentHTML('beforeend', html);
+    }
+    {
+      const generateLimitButton = (v) => {
+        let href = "#";
+        const active = itemsPerPage === v;
+        if (!active) {
+          const sp = new URLSearchParams(urlParams);
+          sp.set("limit", v);
+          sp.delete("page");
+          href = "?" + sp.toString();
+        }
+        return `<li class="bar-item${active ? " active" : ""}"><a class="bar-link" href="${href}">${v}</a></li>`
+      };
+      const html = `
+        <span>Puzzles per page:</span>
+        <ul class="control-bar" style="justify-content: left; display: inline-flex;">
+          ${generateLimitButton(10)}
+          ${generateLimitButton(20)}
+          ${generateLimitButton(50)}
+        </ul>
+      `;
+      const container = document.getElementById('limit-selector') || document.querySelector('main');
       if (container) container.insertAdjacentHTML('beforeend', html);
     }
   });
