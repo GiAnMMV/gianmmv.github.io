@@ -304,12 +304,12 @@ permalink: /puzzles/
         }
         return `<li class="bar-item${active ? " active" : ""}"><a class="bar-link" href="${href}">${v}</a></li>`
       };
+      const values = [10, 20, 50];
       const html = `
         <span>Puzzles per page:</span>
         <ul class="control-bar" style="justify-content: left; display: inline-flex;">
-          ${generateLimitButton(10)}
-          ${generateLimitButton(20)}
-          ${generateLimitButton(50)}
+          ${values.map(v => generateLimitButton(v)).join("\n")}
+          ${(!values.includes(itemsPerPage)) ? generateLimitButton(itemsPerPage) : ""}
         </ul>
       `;
       const container = document.getElementById('limit-selector') || document.querySelector('main');
