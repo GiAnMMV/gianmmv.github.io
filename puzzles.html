@@ -108,6 +108,7 @@ permalink: /puzzles/
 </style>
 
 <h1>GiAnMMV's Puzzles</h1>
+<button id="prova">Prova</button>
 <div id="paginator-top"></div>
 <div id="sort-manager"></div>
 <div id="puzzle-container"></div>
@@ -176,6 +177,23 @@ permalink: /puzzles/
 
     return { current, prev, next, items };
   }
+
+  function generateCards(page=3, itemsPerPage=20) {
+    let html = '<div class="puzzle-grid">';
+    for (const puzzle of puzzles.slice(page * itemsPerPage, (page + 1) * itemsPerPage))
+      html += `
+        <a href="${puzzle[1]}" class="puzzle-card">
+        <img src="/assets/images/${puzzle[0]}.png" alt="${puzzle[2]}">
+          <h3>${puzzle[2]}</h3>
+          <time datetime="${puzzle[3]}">${puzzle[4]}</time>
+        </a>
+      `;
+    const container = document.getElementById('puzzle-container') || document.querySelector('main');
+      if (container)
+        container.innerHTML = html;
+  }
+
+  document.getElementById('prova').addEventListener("click", generateCards);
 
   document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
