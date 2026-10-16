@@ -1,6 +1,7 @@
 ---
 sudokupad_url: "https://sudokupad.app/bghew8zi62"
 title: "Some X-Sums"
+creation_date: 2026-10-01
 order: 28
 rules:
   - name: "Classic Sudoku"
