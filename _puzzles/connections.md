@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/5nrzbltlrk"
 title: "Connections"
 creation_date: 2026-10-06
 order: 37

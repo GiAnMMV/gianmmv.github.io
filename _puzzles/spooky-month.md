@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/3g4cracxm9"
 title: "Spooky Month"
 creation_date: 2026-10-02
 order: 31

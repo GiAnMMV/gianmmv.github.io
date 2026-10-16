@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/odgv620p0a"
 title: "Delta Rune"
 creation_date: 2026-09-27
 order: 20

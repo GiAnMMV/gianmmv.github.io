@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/56gll9z75y"
 title: "Equal Prison"
 creation_date: 2026-10-04
 order: 34

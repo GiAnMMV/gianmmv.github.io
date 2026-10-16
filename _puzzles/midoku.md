@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/b891s080k2"
 title: "Midoku"
 creation_date: 2026-10-08
 order: 40

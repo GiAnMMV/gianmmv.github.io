@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/dqxiv2ve31"
 title: "Sandwich Sums"
 creation_date: 2026-09-23
 order: 15

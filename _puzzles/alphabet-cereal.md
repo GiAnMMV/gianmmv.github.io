@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/keum0w11yz"
 title: "Alphabet Cereal"
 creation_date: 2026-10-03
 order: 32

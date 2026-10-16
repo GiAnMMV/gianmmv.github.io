@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/tlwty0cnn5"
 title: "Black & White"
 creation_date: 2026-09-06
 order: 3

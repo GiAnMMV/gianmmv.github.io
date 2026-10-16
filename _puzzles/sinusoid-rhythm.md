@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/w7tibjyugd"
 title: "Sinusoid Rhythm"
 creation_date: 2026-10-07
 order: 38

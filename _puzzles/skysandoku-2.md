@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/32o99ii94q"
 title: "Skysandoku 2"
 creation_date: 2026-09-26
 order: 19

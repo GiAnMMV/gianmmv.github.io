@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/epm5ctk5fw"
 title: "Open Plan"
 creation_date: 2026-09-27
 order: 21

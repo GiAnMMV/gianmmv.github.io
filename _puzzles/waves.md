@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/evbqridrhj"
 title: "Waves"
 creation_date: 2026-09-09
 order: 6

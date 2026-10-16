@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/4i1t91suvq"
 title: "Little Archers"
 creation_date: 2026-10-04
 order: 35

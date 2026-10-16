@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/35gvrdb4a5"
 title: "Skydoku"
 creation_date: 2026-10-01
 order: 29

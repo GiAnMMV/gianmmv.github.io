@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/md3bap0lnb"
 title: "Bulbless Thermometers"
 creation_date: 2026-09-22
 order: 14

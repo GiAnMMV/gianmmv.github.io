@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/2wf7bhtth9"
 title: "Aoi Manji"
 creation_date: 2026-09-05
 order: 2

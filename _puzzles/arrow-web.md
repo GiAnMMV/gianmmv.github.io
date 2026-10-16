@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/f3330hxsuz"
 title: "Arrow Web"
 creation_date: 2026-10-07
 order: 39

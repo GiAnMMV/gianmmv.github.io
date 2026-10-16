@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/m6hbikxlyp"
 title: "Number Fever"
 creation_date: 2026-09-07
 order: 4

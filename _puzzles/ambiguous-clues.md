@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/4329a4l0ub"
 title: "Ambiguous Clues"
 creation_date: 2026-10-03
 order: 33

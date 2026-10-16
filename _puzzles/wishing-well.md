@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/4k1ixodjik"
 title: "Wishing Well"
 creation_date: 2026-10-05
 order: 36

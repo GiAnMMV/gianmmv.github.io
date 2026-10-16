@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/o7v0i0phnm"
 title: "Hero Sandwich"
 creation_date: 2026-09-29
 order: 26

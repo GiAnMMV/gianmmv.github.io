@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/9obt9do8e5"
 title: "Dalmatian Madness"
 creation_date: 2026-09-08
 order: 5

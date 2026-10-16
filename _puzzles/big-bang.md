@@ -1,5 +1,4 @@
 ---
-sudokupad_url: "https://sudokupad.app/vl9j17qd0e"
 title: "Big Bang"
 creation_date: 2026-09-20
 order: 12
