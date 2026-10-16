@@ -178,8 +178,10 @@ permalink: /puzzles/
     return { current, prev, next, items };
   }
 
-  function generateCards(page=3, itemsPerPage=20) {
+  function generateCards() {
     let html = '<div class="puzzle-grid">';
+    const page=3;
+    const itemsPerPage=20;
     for (const puzzle of puzzles.slice(page * itemsPerPage, (page + 1) * itemsPerPage))
       html += `
         <a href="${puzzle[1]}" class="puzzle-card">
@@ -188,6 +190,7 @@ permalink: /puzzles/
           <time datetime="${puzzle[3]}">${puzzle[4]}</time>
         </a>
       `;
+    html += '</div>';
     const container = document.getElementById('puzzle-container') || document.querySelector('main');
       if (container)
         container.innerHTML = html;
