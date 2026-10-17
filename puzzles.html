@@ -178,19 +178,32 @@ permalink: /puzzles/
   }
   
   function updateCards() {
-    let html = '<div class="puzzle-grid">';
-    for (const puzzle of puzzles.slice((page-1) * itemsPerPage, page * itemsPerPage))
-      html += `
-        <a href="${puzzle[1]}" class="puzzle-card">
-          <img src="/assets/images/${puzzle[0]}.png" alt="${puzzle[2]}">
-          <h3>${puzzle[2]}</h3>
-          <time datetime="${puzzle[3]}">${puzzle[4]}</time>
-        </a>
-      `;
-    html += '</div>';
+    const div = document.createElement("div");
+    div.className = "puzzle-grid";
+    for (const puzzle of puzzles.slice((page-1) * itemsPerPage, page * itemsPerPage)) {
+      const a = document.createElement("a");
+      a.className = "puzzle-card";
+      a.href = puzzle[1];
+
+      const img = document.createElement("img");
+      img.src = "/assets/images/" + puzzle[0] + ".png";
+      img.alt = puzzle[2];
+      a.appendChild(img);
+
+      const h3 = document.createElement("h3");
+      h3.innerText = puzzle[2];
+      a.appendChild(h3);
+
+      const time = document.createElement("time");
+      time.dateTime = puzzle[3];
+      time.innerText = puzzle[4];
+      a.appendChild(time);
+
+      div.appendChild(a);
+    }
     const container = document.getElementById('puzzle-container') || document.querySelector('main');
       if (container)
-        container.innerHTML = html;
+        container.replaceChildren(div);
   }
   
   function changePage(p) {
@@ -214,12 +227,11 @@ permalink: /puzzles/
       if (isActive) li.classList.add('active');
       if (isDisabled) li.classList.add('disabled');
 
-      const a = document.createElement('a');
-      a.className = 'bar-link';
-      a.innerText = text;
-      a.href = "#";
+      const button = document.createElement('button');
+      button.className = 'bar-link';
+      button.innerText = text;
       if (newPage) {
-        a.addEventListener("click", (e) => {
+        button.addEventListener("click", (e) => {
           changePage(newPage);
           window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
           updateCards();
@@ -227,7 +239,7 @@ permalink: /puzzles/
         });
       }
 
-      li.appendChild(a);
+      li.appendChild(button);
       ul.appendChild(li);
     };
 
@@ -308,12 +320,11 @@ permalink: /puzzles/
       li.className = 'bar-item';
       if (active) li.classList.add('active');
     
-      const a = document.createElement('a');
-      a.className = 'bar-link';
-      a.innerText = n;
-      a.href = "#";
-      li.appendChild(a);
-      a.addEventListener("click", (e) => {
+      const button = document.createElement('button');
+      button.className = 'bar-link';
+      button.innerText = n;
+      li.appendChild(button);
+      button.addEventListener("click", (e) => {
         if (active)
           return;
         updateItemsPerPage(v);
@@ -395,15 +406,14 @@ permalink: /puzzles/
       const generateSortButton = (p, v, n) => {
         const active = isActive(p, v);
         
-        const li = document.createElement("li");
+        const li = document.createElement('li');
         li.className = 'bar-item';
         if (active) li.classList.add('active');
         
-        const a = document.createElement('a');
-        a.className = 'bar-link';
-        a.innerText = n;
-        a.href = "#";
-        a.addEventListener("click", (e) => {
+        const button = document.createElement('button');
+        button.className = 'bar-link';
+        button.innerText = n;
+        button.addEventListener("click", (e) => {
           if (isActive(p,v))
             return;
           urlParams.set(p, v);
@@ -419,7 +429,7 @@ permalink: /puzzles/
           li.classList.add("active");
         });
         
-        li.appendChild(a);
+        li.appendChild(button);
         
         return li;
       };
