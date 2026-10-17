@@ -216,7 +216,7 @@ permalink: /puzzles/
 
       const a = document.createElement('a');
       a.className = 'bar-link';
-      a.innerHTML = text;
+      a.innerText = text;
       a.href = "#";
       if (newPage) {
         a.addEventListener("click", (e) => {
@@ -232,27 +232,21 @@ permalink: /puzzles/
     };
 
     if (pagination.prev !== null) {
-      const params = new URLSearchParams(urlParams);
-      params.set("page", pagination.prev);
-      addItem('&laquo;', pagination.prev);
+      addItem('\u00AB', pagination.prev);
     }
 
     for (const p of pagination.items) {
       if (p === page) {
         addItem(p, null, { isActive: true });
       } else if (p === "e") {
-        addItem('&hellip;', null, { isDisabled: true });
+        addItem('\u2026', null, { isDisabled: true });
       } else {
-        const params = new URLSearchParams(urlParams);
-        params.set("page", p);
         addItem(p, p);
       }
     }
 
     if (pagination.next !== null) {
-      const params = new URLSearchParams(urlParams);
-      params.set("page", pagination.next);
-      addItem('&raquo;', pagination.next);
+      addItem('\u00BB', pagination.next);
     }
 
     return ul;
