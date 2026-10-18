@@ -135,7 +135,7 @@ permalink: /puzzles/
 
   function updateURL() {
     const uri = urlParams.toString();
-    window.history.replaceState({}, '', window.location.pathname + uri ? "?" + uri : "");
+    window.history.replaceState({}, '', window.location.pathname + (uri ? "?" + uri : "");
   }
   
   function paginate({ current, max }) {
