@@ -363,7 +363,7 @@ permalink: /puzzles/
   let sortRule, sortOrder
 
 
-  async function mainLogic() {
+  document.addEventListener("DOMContentLoaded", async () => {
     try {
       const response = await fetch("/assets/data/puzzleList.json");
 
@@ -375,118 +375,114 @@ permalink: /puzzles/
       console.error("Loading error: ", error)
     }
 
-    document.addEventListener("DOMContentLoaded", () => {
-      urlParams = new URLSearchParams(window.location.search);
+    urlParams = new URLSearchParams(window.location.search);
 
-      itemsPerPage = urlParams.get("limit");
-      if (itemsPerPage === "max")
-        itemsPerPage = Number.MAX_VALUE;
-      else
-        itemsPerPage = Math.max(parseInt(itemsPerPage), 0) || 20;
+    itemsPerPage = urlParams.get("limit");
+    if (itemsPerPage === "max")
+      itemsPerPage = Number.MAX_VALUE;
+    else
+      itemsPerPage = Math.max(parseInt(itemsPerPage), 0) || 20;
 
-      page = parseInt(urlParams.get("page"));
-      if (isNaN(page)) page = 1;
-      page = Math.max(page, 1);
-      maxPage = Math.ceil(puzzles.length / itemsPerPage);
-      page = Math.min(page, maxPage);
+    page = parseInt(urlParams.get("page"));
+    if (isNaN(page)) page = 1;
+    page = Math.max(page, 1);
+    maxPage = Math.ceil(puzzles.length / itemsPerPage);
+    page = Math.min(page, maxPage);
 
-      sortRule = urlParams.get("sort");
-      if (sortRule !== "date")
-        sortRule = "date";
+    sortRule = urlParams.get("sort");
+    if (sortRule !== "date")
+      sortRule = "date";
 
-      sortOrder = urlParams.get("sort-order");
-      if (sortOrder !== "asc") {
-        sortOrder = "desc";
+    sortOrder = urlParams.get("sort-order");
+    if (sortOrder !== "asc") {
+      sortOrder = "desc";
+    }
+    sortPuzzles();
+
+    updatePagination();
+    updateCards();
+
+    {
+      const isActive = (p, v) => {
+        return (
+          (p === "sort" && sortRule === v) ||
+          (p === "sort-order" && sortOrder === v)
+        );
       }
-      sortPuzzles();
-      
-      updatePagination();
-      updateCards();
 
+      const generateSortButton = (p, v, n) => {
+        const active = isActive(p, v);
+
+        const li = document.createElement('li');
+        li.className = 'bar-item';
+        if (active) li.classList.add('active');
+
+        const button = document.createElement('button');
+        button.className = 'bar-link';
+        button.innerText = n;
+        button.addEventListener("click", (e) => {
+          if (isActive(p, v))
+            return;
+          changePage(1);
+          if (p === "sort") sortRule = v;
+          else if (p === "sort-order") sortOrder = v;
+          sortPuzzles();
+          updateURL();
+          updateCards();
+          updatePagination();
+
+          li.parentElement.querySelectorAll('.bar-item').forEach(item => item.classList.remove('active'));
+          li.classList.add("active");
+        });
+
+        li.appendChild(button);
+
+        return li;
+      };
+
+      const mainDiv = document.createElement("div");
+      mainDiv.style.display = "flex";
+      mainDiv.style.justifyContent = "space-between";
+      mainDiv.style.alignItems = "center";
+      mainDiv.style.flexWrap = "wrap";
       {
-        const isActive = (p, v) => {
-          return (
-            (p === "sort" && sortRule === v) ||
-            (p === "sort-order" && sortOrder === v)
-          );
-        }
+        const subDiv = document.createElement("div");
 
-        const generateSortButton = (p, v, n) => {
-          const active = isActive(p, v);
-          
-          const li = document.createElement('li');
-          li.className = 'bar-item';
-          if (active) li.classList.add('active');
-          
-          const button = document.createElement('button');
-          button.className = 'bar-link';
-          button.innerText = n;
-          button.addEventListener("click", (e) => {
-            if (isActive(p,v))
-              return;
-            changePage(1);
-            if (p === "sort") sortRule = v;
-            else if (p === "sort-order") sortOrder = v;
-            sortPuzzles();
-            updateURL();
-            updateCards();
-            updatePagination();
-            
-            li.parentElement.querySelectorAll('.bar-item').forEach(item => item.classList.remove('active'));
-            li.classList.add("active");
-          });
-          
-          li.appendChild(button);
-          
-          return li;
-        };
-        
-        const mainDiv = document.createElement("div");
-        mainDiv.style.display = "flex";
-        mainDiv.style.justifyContent = "space-between";
-        mainDiv.style.alignItems = "center";
-        mainDiv.style.flexWrap = "wrap";
-        {
-          const subDiv = document.createElement("div");
-          
-          const span = document.createElement("span");
-          span.innerText = "Sort by";
-          subDiv.appendChild(span);
-          
-          const ul = document.createElement("ul");
-          ul.className = "control-bar";
-          ul.style.justifyContent = "left";
-          ul.style.display = "inline-flex";
-          ul.appendChild(generateSortButton("sort", "date", "Date"));
-          ul.appendChild(generateSortButton("sort", "name", "Name"));
-          subDiv.appendChild(ul);
-          
-          mainDiv.appendChild(subDiv);
-        }
-        {
-          const subDiv = document.createElement("div");
-          
-          const span = document.createElement("span");
-          span.innerText = "Order:";
-          subDiv.appendChild(span);
-          
-          const ul = document.createElement("ul");
-          ul.className = "control-bar";
-          ul.style.justifyContent = "right";
-          ul.style.display = "inline-flex";
-          ul.appendChild(generateSortButton("sort-order", "asc", "Ascending \u2197"));
-          ul.appendChild(generateSortButton("sort-order", "desc", "Descending \u2199"));
-          subDiv.appendChild(ul);
-          
-          mainDiv.appendChild(subDiv);
-        }
-        const container = document.getElementById('sort-manager') || document.querySelector('main');
-        if (container) container.appendChild(mainDiv);
+        const span = document.createElement("span");
+        span.innerText = "Sort by";
+        subDiv.appendChild(span);
+
+        const ul = document.createElement("ul");
+        ul.className = "control-bar";
+        ul.style.justifyContent = "left";
+        ul.style.display = "inline-flex";
+        ul.appendChild(generateSortButton("sort", "date", "Date"));
+        ul.appendChild(generateSortButton("sort", "name", "Name"));
+        subDiv.appendChild(ul);
+
+        mainDiv.appendChild(subDiv);
       }
-      
-      updateLimitBar();
-    });
-  }
+      {
+        const subDiv = document.createElement("div");
 
-  mainLogic();
+        const span = document.createElement("span");
+        span.innerText = "Order:";
+        subDiv.appendChild(span);
+
+        const ul = document.createElement("ul");
+        ul.className = "control-bar";
+        ul.style.justifyContent = "right";
+        ul.style.display = "inline-flex";
+        ul.appendChild(generateSortButton("sort-order", "asc", "Ascending \u2197"));
+        ul.appendChild(generateSortButton("sort-order", "desc", "Descending \u2199"));
+        subDiv.appendChild(ul);
+
+        mainDiv.appendChild(subDiv);
+      }
+      const container = document.getElementById('sort-manager') || document.querySelector('main');
+      if (container) container.appendChild(mainDiv);
+    }
+
+    updateLimitBar();
+  });
 </script>
