@@ -132,6 +132,12 @@ permalink: /puzzles/
       ]{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ];
+
+  function updateURL() {
+    const uri = urlParams.toString();
+    window.history.replaceState({}, '', window.location.pathname + uri ? "?" + uri : "");
+  }
+  
   function paginate({ current, max }) {
     if (!current || !max) return null;
 
@@ -232,7 +238,7 @@ permalink: /puzzles/
       if (newPage) {
         button.addEventListener("click", (e) => {
           changePage(newPage);
-          window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
+          updateURL();
           updateCards();
           updatePagination();
         });
@@ -329,7 +335,7 @@ permalink: /puzzles/
           return;
         changeItemsPerPage(v);
         changePage(1);
-        window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
+        updateURL();
         updateLimitBar();
         updateCards();
         updatePagination();
@@ -420,7 +426,7 @@ permalink: /puzzles/
           if (p === "sort") sortRule = v;
           else if (p === "sort-order") sortOrder = v;
           sortPuzzles();
-          window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
+          updateURL();
           updateCards();
           updatePagination();
           
