@@ -285,12 +285,17 @@ permalink: /puzzles/
   
   function sortPuzzles() {
     if (sortRule === "name") {
+      urlParams.set("sort", sortRule);
       puzzles.sort();
     } else if (sortRule === "date") {
+      urlParams.delete("sort");
       puzzles.sort((a,b) => a[5] - b[5]);
     }
     
-    if (sortOrder === "desc") {
+    if (sortOrder === "asc") {
+      urlParams.set("sort-order", sortOrder);
+    else {
+      urlParams.delete("sort-order");
       puzzles.reverse();
     }
   }
@@ -411,7 +416,6 @@ permalink: /puzzles/
         button.addEventListener("click", (e) => {
           if (isActive(p,v))
             return;
-          urlParams.set(p, v);
           changePage(1);
           if (p === "sort") sortRule = v;
           else if (p === "sort-order") sortOrder = v;
