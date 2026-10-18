@@ -207,12 +207,11 @@ permalink: /puzzles/
   }
   
   function changePage(p) {
-    if (p === 0) {
-      page = 1;
+    page = p;
+    if (p === 1) {
       urlParams.delete("page");
       return;
     }
-    page = p;
     urlParams.set("page", p);
   }
 
@@ -296,11 +295,13 @@ permalink: /puzzles/
     }
   }
   
-  function updateItemsPerPage(l) {
+  function changeItemsPerPage(l) {
     itemsPerPage = l;
     maxPage = Math.ceil(puzzles.length / itemsPerPage);
     if (l === Number.MAX_VALUE)
       urlParams.set("limit", "max");
+    else if (l === 20)
+      urlParams.delete("limit");
     else
       urlParams.set("limit", l);
   }
@@ -309,12 +310,6 @@ permalink: /puzzles/
     const generateLimitButton = (v, n=null) => {
       if (n === null) n = v;
       const active = itemsPerPage === v;
-      if (!active) {
-        const sp = new URLSearchParams(urlParams);
-        sp.set("limit", v);
-        sp.delete("page");
-        href = "?" + sp.toString();
-      }
     
       const li = document.createElement('li');
       li.className = 'bar-item';
@@ -327,8 +322,8 @@ permalink: /puzzles/
       button.addEventListener("click", (e) => {
         if (active)
           return;
-        updateItemsPerPage(v);
-        changePage(0);
+        changeItemsPerPage(v);
+        changePage(1);
         window.history.replaceState({}, '', `${window.location.pathname}?${urlParams.toString()}`);
         updateLimitBar();
         updateCards();
@@ -417,7 +412,7 @@ permalink: /puzzles/
           if (isActive(p,v))
             return;
           urlParams.set(p, v);
-          changePage(0);
+          changePage(1);
           if (p === "sort") sortRule = v;
           else if (p === "sort-order") sortOrder = v;
           sortPuzzles();
