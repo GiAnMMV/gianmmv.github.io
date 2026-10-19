@@ -196,8 +196,13 @@ permalink: /puzzles/
       div.appendChild(a);
     }
     const container = document.getElementById('puzzle-container') || document.querySelector('main');
-      if (container)
+      if (container) {
         container.replaceChildren(div);
+
+        const p = document.createElement("p");
+        p.innerText = `Showing puzzles ${(page - 1) * itemsPerPage + 1}-${Math.min(page * itemsPerPage, puzzles.length)} of ${puzzles.length}`;
+        container.appendChild(p);
+      }
   }
   
   function changePage(p) {
