@@ -5,7 +5,6 @@
   {% for puzzle in sorted_puzzles %}
   [
     "{{ puzzle.slug }}",
-    "{{ puzzle.url }}",
     "{{ puzzle.title}}",
     "{{ puzzle.creation_date }}",
     "{{ puzzle.creation_date | date: "%-d %B %Y" }}",
