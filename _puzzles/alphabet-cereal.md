@@ -2,6 +2,7 @@
 title: "Alphabet Cereal"
 creation_date: 2026-10-03
 order: 32
+sudokupad_url: https://sudokupad.app/keum0w11yz
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

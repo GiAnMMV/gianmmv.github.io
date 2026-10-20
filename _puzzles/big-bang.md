@@ -2,6 +2,7 @@
 title: "Big Bang"
 creation_date: 2026-09-20
 order: 12
+sudokupad_url: https://sudokupad.app/vl9j17qd0e
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

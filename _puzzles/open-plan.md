@@ -2,6 +2,7 @@
 title: "Open Plan"
 creation_date: 2026-09-27
 order: 21
+sudokupad_url: https://sudokupad.app/epm5ctk5fw
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

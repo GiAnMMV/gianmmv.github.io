@@ -2,6 +2,7 @@
 title: "The Power of Three"
 creation_date: 2026-10-15
 order: 43
+sudokupad_url: https://sudokupad.app/v521hf1huv
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

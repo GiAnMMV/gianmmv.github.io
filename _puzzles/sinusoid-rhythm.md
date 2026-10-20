@@ -2,6 +2,7 @@
 title: "Sinusoid Rhythm"
 creation_date: 2026-10-07
 order: 38
+sudokupad_url: https://sudokupad.app/w7tibjyugd
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

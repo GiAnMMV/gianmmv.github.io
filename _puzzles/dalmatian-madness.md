@@ -2,6 +2,7 @@
 title: "Dalmatian Madness"
 creation_date: 2026-09-08
 order: 5
+sudokupad_url: https://sudokupad.app/9obt9do8e5
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

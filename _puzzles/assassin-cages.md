@@ -2,6 +2,7 @@
 title: "Assassin Cages"
 creation_date: 2026-09-14
 order: 8
+sudokupad_url: https://sudokupad.app/bcde4gy7io
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

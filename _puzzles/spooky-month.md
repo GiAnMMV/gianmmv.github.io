@@ -2,6 +2,7 @@
 title: "Spooky Month"
 creation_date: 2026-10-02
 order: 31
+sudokupad_url: https://sudokupad.app/3g4cracxm9
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

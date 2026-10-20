@@ -2,6 +2,7 @@
 title: "Skysandoku 3"
 creation_date: 2026-09-29
 order: 25
+sudokupad_url: https://sudokupad.app/sro3e3j53l
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

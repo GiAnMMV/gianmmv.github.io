@@ -2,6 +2,7 @@
 title: "Thermo Square"
 creation_date: 2026-09-25
 order: 18
+sudokupad_url: https://sudokupad.app/q5gth1v9qd
 rules:
   - name: "6x6 Sudoku"
     desc: "Every row, column and 2x3 box must contain every number from 1 to 6."

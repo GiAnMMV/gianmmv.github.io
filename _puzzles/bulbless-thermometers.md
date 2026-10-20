@@ -2,6 +2,7 @@
 title: "Bulbless Thermometers"
 creation_date: 2026-09-22
 order: 14
+sudokupad_url: https://sudokupad.app/md3bap0lnb
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

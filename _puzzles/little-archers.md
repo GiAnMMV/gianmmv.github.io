@@ -2,6 +2,7 @@
 title: "Little Archers"
 creation_date: 2026-10-04
 order: 35
+sudokupad_url: https://sudokupad.app/4i1t91suvq
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."
