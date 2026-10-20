@@ -172,12 +172,14 @@ permalink: /puzzles/
   }
   
   function updateCards() {
+    const container = document.getElementById('puzzle-container') || document.querySelector('main');
+    if (!container) return;
     const div = document.createElement("div");
     div.className = "puzzle-grid";
     for (const puzzle of puzzles.slice((page-1) * itemsPerPage, page * itemsPerPage)) {
       const a = document.createElement("a");
       a.className = "puzzle-card";
-      a.href = puzzle[1];
+      a.href = "/puzzles/" + puzzle[0];
 
       const img = document.createElement("img");
       img.src = "/assets/images/" + puzzle[0] + ".png";
@@ -185,24 +187,21 @@ permalink: /puzzles/
       a.appendChild(img);
 
       const h3 = document.createElement("h3");
-      h3.innerText = puzzle[2];
+      h3.innerText = puzzle[1];
       a.appendChild(h3);
 
       const time = document.createElement("time");
-      time.dateTime = puzzle[3];
-      time.innerText = puzzle[4];
+      time.dateTime = puzzle[2];
+      time.innerText = puzzle[3];
       a.appendChild(time);
 
       div.appendChild(a);
     }
-    const container = document.getElementById('puzzle-container') || document.querySelector('main');
-      if (container) {
-        container.replaceChildren(div);
-
-        const p = document.createElement("p");
-        p.innerText = `Showing puzzles ${(page - 1) * itemsPerPage + 1}-${Math.min(page * itemsPerPage, puzzles.length)} of ${puzzles.length}`;
-        container.appendChild(p);
-      }
+    container.replaceChildren(div);
+    
+    const p = document.createElement("p");
+    p.innerText = `Showing puzzles ${(page - 1) * itemsPerPage + 1}-${Math.min(page * itemsPerPage, puzzles.length)} of ${puzzles.length}`;
+    container.appendChild(p);
   }
   
   function changePage(p) {
@@ -265,30 +264,24 @@ permalink: /puzzles/
   function updatePagination() {
     const topPag = document.getElementById('paginator-top') || document.querySelector('main');
     const bottomPag = document.getElementById('paginator-bottom') || document.querySelector('main');
+    if (!topPag || !bottomPag) return;
     if (maxPage > 1) {
       const pagination = paginate({ current: page, max: maxPage });
-
-      if (topPag)
-        topPag.replaceChildren(createPaginationDOM(pagination));
-
-      if (bottomPag)
-        bottomPag.replaceChildren(createPaginationDOM(pagination));
+      topPag.replaceChildren(createPaginationDOM(pagination));
+      bottomPag.replaceChildren(createPaginationDOM(pagination));
     } else {
-      if (topPag)
-        topPag.replaceChildren();
-      
-      if (bottomPag)
-        bottomPag.replaceChildren();
+      topPag.replaceChildren();
+      bottomPag.replaceChildren();
     }
   }
   
   function sortPuzzles() {
     if (sortRule === "name") {
       urlParams.set("sort", sortRule);
-      puzzles.sort();
+      puzzles.sort((a,b) => a[1] > b[1]);
     } else if (sortRule === "date") {
       urlParams.delete("sort");
-      puzzles.sort((a,b) => a[5] - b[5]);
+      puzzles.sort((a,b) => a[4] - b[4]);
     }
     
     if (sortOrder === "asc")
@@ -311,6 +304,9 @@ permalink: /puzzles/
   }
   
   function updateLimitBar() {
+    const container = document.getElementById('limit-selector') || document.querySelector('main');
+    if (!container) return;
+    
     const generateLimitButton = (v, n=null) => {
       if (n === null) n = v;
       const active = itemsPerPage === v;
@@ -336,14 +332,12 @@ permalink: /puzzles/
     
       return li;
     };
+    
     const values = [10, 20, 50];
     if (!values.includes(itemsPerPage) && itemsPerPage !== Number.MAX_VALUE) {
       values.push(itemsPerPage);
       values.sort((a,b) => a-b);
     }
-
-    const container = document.getElementById('limit-selector') || document.querySelector('main');
-    if (!container) return;
     
     container.replaceChildren();
   
