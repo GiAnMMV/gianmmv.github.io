@@ -278,7 +278,7 @@ permalink: /puzzles/
   function sortPuzzles() {
     if (sortRule === "name") {
       urlParams.set("sort", sortRule);
-      puzzles.sort((a,b) => a[1] > b[1]);
+      puzzles.sort((a,b) => a[1].localeCompare(b[1]));
     } else if (sortRule === "date") {
       urlParams.delete("sort");
       puzzles.sort((a,b) => a[4] - b[4]);
