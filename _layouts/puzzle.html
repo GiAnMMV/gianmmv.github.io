@@ -2,6 +2,15 @@
 layout: default
 ---
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has("play")) {
+      window.location.href = "{{ page.sudokupad_url | relative_url }}";
+    }
+  });
+</script>
+
 <style>
   .rule p {
     display: inline;
@@ -38,12 +47,3 @@ layout: default
     </div>
   </div>
 </article>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has("play")) {
-      window.location.href = "{{ page.sudokupad_url | relative_url }}";
-    }
-  });
-</script>
