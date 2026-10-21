@@ -1,46 +1,50 @@
 ---
 layout: default
 ---
+<head>
+  <script>  
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has("play"))
+      window.location.href = "{{ page.sudokupad_url | relative_url }}";
+  </script>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
 
-<script>  
-  const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.has("play"))
-    window.location.href = "{{ page.sudokupad_url | relative_url }}";
-</script>
+<body>
+  <style>
+    .rule p {
+      display: inline;
+    }
+  </style>
 
-<style>
-  .rule p {
-    display: inline;
-  }
-</style>
-
-<article class="project-detail">
-  <h1>{{ page.title }}</h1>
-  {% if page.creation_date %}
-  <p><time datetime="{{ page.creation_date }}">{{ page.creation_date | date: "%-d %B %Y" }}</time></p>
-  {% endif %}
-  <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
-    <div style="flex: 1 1 300px; max-width: 416px;">
-      <img src="{{ page.slug | prepend: '/assets/images/' | append: '.png' | relative_url }}" style="width: 100%; height: auto; display: block;" alt="{{ page.title }}" />
-    </div>
-  
-    <div style="flex: 2 1 300px; min-width: 0;">
-      {% if page.rules %}
-        <h2>Rules:</h2>
-        <ul>
-        {% for rule in page.rules %}
-          <span class="rule">
-            <li><strong>{{ rule.name }}:</strong> {{ rule.desc | markdownify }}</li>
-          </span>
-        {% endfor %}
-        </ul>
-      {% endif %}
-      <p>Play it online in <a id="puzzle-link" href="{{ page.sudokupad_url | relative_url }}">SudokuPad</a>.</p>
-      {% if page.content %}
-      <div class="content">
-        {{ content }}
+  <article class="project-detail">
+    <h1>{{ page.title }}</h1>
+    {% if page.creation_date %}
+    <p><time datetime="{{ page.creation_date }}">{{ page.creation_date | date: "%-d %B %Y" }}</time></p>
+    {% endif %}
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
+      <div style="flex: 1 1 300px; max-width: 416px;">
+        <img src="{{ page.slug | prepend: '/assets/images/' | append: '.png' | relative_url }}" style="width: 100%; height: auto; display: block;" alt="{{ page.title }}" />
       </div>
-      {% endif %}
+    
+      <div style="flex: 2 1 300px; min-width: 0;">
+        {% if page.rules %}
+          <h2>Rules:</h2>
+          <ul>
+          {% for rule in page.rules %}
+            <span class="rule">
+              <li><strong>{{ rule.name }}:</strong> {{ rule.desc | markdownify }}</li>
+            </span>
+          {% endfor %}
+          </ul>
+        {% endif %}
+        <p>Play it online in <a id="puzzle-link" href="{{ page.sudokupad_url | relative_url }}">SudokuPad</a>.</p>
+        {% if page.content %}
+        <div class="content">
+          {{ content }}
+        </div>
+        {% endif %}
+      </div>
     </div>
-  </div>
-</article>
+  </article>
+</body>

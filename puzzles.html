@@ -357,9 +357,27 @@ permalink: /puzzles/
     ul.appendChild(generateLimitButton(Number.MAX_VALUE, "Show All"));
   }
 
-  let urlParams
-  let itemsPerPage, page, maxPage
-  let sortRule, sortOrder
+  const urlParams = URLSearchParams(window.location.search);
+
+  let itemsPerPage = urlParams.get("limit");
+  if (itemsPerPage === "max")
+    itemsPerPage = Number.MAX_VALUE;
+  else
+    itemsPerPage = Math.max(parseInt(itemsPerPage), 0) || 20;
+
+  let page = parseInt(urlParams.get("page"));
+  if (isNaN(page)) page = 1;
+  page = Math.max(page, 1);
+
+  let maxPage;
+
+  let sortRule = urlParams.get("sort");
+  if (sortRule !== "date")
+    sortRule = "date";
+  
+  let sortOrder = urlParams.get("sort-order");
+  if (sortOrder !== "asc")
+    sortOrder = "desc";
 
 
   document.addEventListener("DOMContentLoaded", async () => {
@@ -374,30 +392,10 @@ permalink: /puzzles/
       console.error("Loading error: ", error)
     }
 
-    urlParams = new URLSearchParams(window.location.search);
-
-    itemsPerPage = urlParams.get("limit");
-    if (itemsPerPage === "max")
-      itemsPerPage = Number.MAX_VALUE;
-    else
-      itemsPerPage = Math.max(parseInt(itemsPerPage), 0) || 20;
-
-    page = parseInt(urlParams.get("page"));
-    if (isNaN(page)) page = 1;
-    page = Math.max(page, 1);
     maxPage = Math.ceil(puzzles.length / itemsPerPage);
     page = Math.min(page, maxPage);
 
-    sortRule = urlParams.get("sort");
-    if (sortRule !== "date")
-      sortRule = "date";
-
-    sortOrder = urlParams.get("sort-order");
-    if (sortOrder !== "asc") {
-      sortOrder = "desc";
-    }
     sortPuzzles();
-
     updatePagination();
     updateCards();
 
