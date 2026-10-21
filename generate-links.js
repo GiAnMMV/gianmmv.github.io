@@ -31,8 +31,11 @@ async function getShortLink(jsonData) {
     }
 }
 
-async function processPuzzles() {
-    const files = fs.readdirSync(puzzlesDir).filter(f => f.endsWith('.md'));
+async function processPuzzles(puzzles=null) {
+    const files = fs.readdirSync(puzzlesDir).filter(f => (
+        f.endsWith('.md') &&
+        (puzzles === null || puzzles.includes(f.replace(/\.md$/, '')))
+    ));
 
     for (const file of files) {
         const mdPath = path.join(puzzlesDir, file);
@@ -69,4 +72,11 @@ async function processPuzzles() {
     fs.writeFileSync(cacheFile, JSON.stringify(cache, null, 2));
 }
 
-processPuzzles();
+if (process.argv[1] === ".") {
+    if (process.argv.length > 2)
+        throw new Error("Error in reading parameters.");
+    processPuzzles();
+} else if (process.argv.length > 1) {
+    processPuzzles(process.argv.slice(1));
+} else
+    throw new Error("No puzzle specified!");
