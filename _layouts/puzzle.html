@@ -2,13 +2,10 @@
 layout: default
 ---
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has("play")) {
-      window.location.href = "{{ page.sudokupad_url | relative_url }}";
-    }
-  });
+<script>  
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has("play"))
+    window.location.href = "{{ page.sudokupad_url | relative_url }}";
 </script>
 
 <style>
