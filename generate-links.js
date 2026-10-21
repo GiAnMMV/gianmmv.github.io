@@ -32,14 +32,18 @@ async function getShortLink(jsonData) {
 }
 
 async function processPuzzles(puzzles=null) {
-    const files = fs.readdirSync(puzzlesDir).filter(f => (
-        f.endsWith('.md') &&
-        (puzzles === null || puzzles.includes(f.replace(/\.md$/, '')))
-    ));
+    const files = fs.readdirSync(puzzlesDir).filter(f => f.endsWith('.md'));
+    if (puzzles !== null)
+        puzzles.forEach(p => {
+            if (!files.includes(p + ".md"))
+                console.warn(`Puzzle "${p}" not found!`);
+        });
 
     for (const file of files) {
-        const mdPath = path.join(puzzlesDir, file);
         const slug = file.replace(/\.md$/, '');
+        if (puzzles !== null && !puzzles.includes(slug))
+            continue;
+        const mdPath = path.join(puzzlesDir, file);
         const jsonPath = path.join(jsonDir, `${slug}.json`);
 
         if (!fs.existsSync(jsonPath)) continue;
@@ -48,7 +52,7 @@ async function processPuzzles(puzzles=null) {
         const hash = crypto.createHash('md5').update(jsonContent).digest('hex');
 
         if (cache[slug] && cache[slug].hash === hash && cache[slug].shortUrl) {
-            //console.log(`[Cache Hit] Skipping API call for ${slug}`);
+            console.log(`[Cache Hit] Skipping API call for ${slug}`);
             continue;
         }
 
@@ -72,11 +76,15 @@ async function processPuzzles(puzzles=null) {
     fs.writeFileSync(cacheFile, JSON.stringify(cache, null, 2));
 }
 
-if (process.argv[1] === ".") {
-    if (process.argv.length > 2)
-        throw new Error("Error in reading parameters.");
-    processPuzzles();
-} else if (process.argv.length > 1) {
-    processPuzzles(process.argv.slice(1));
-} else
-    throw new Error("No puzzle specified!");
+try {
+    if (process.argv[2] === ".") {
+        if (process.argv.length > 3)
+            throw new Error("Error in reading parameters.");
+        processPuzzles();
+    } else if (process.argv.length > 2) {
+        processPuzzles(process.argv.slice(2));
+    } else
+        throw new Error("No puzzle specified!");
+} catch (e) {
+    console.error(e);
+}

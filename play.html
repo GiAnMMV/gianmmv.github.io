@@ -59,7 +59,7 @@ permalink: /play/
           return res.json();
         })
         .then(data => {
-          if (urlParams.get('no-short') === 'true') {
+          if (urlParams.get('no-short') === '1') {
             const targetUrl = convertJsonToUrlNoShort(data);
             if (targetUrl) {
               window.location.href = targetUrl;

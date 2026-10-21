@@ -29,7 +29,7 @@ layout: default
         {% endfor %}
         </ul>
       {% endif %}
-      <p>Play it online in <a id="puzzle-link" href="{{ page.slug | prepend: '/play/?p=' | relative_url }}">SudokuPad</a>.</p>
+      <p>Play it online in <a id="puzzle-link" href="{{ page.sudokupad_url | relative_url }}">SudokuPad</a>.</p>
       {% if page.content %}
       <div class="content">
         {{ content }}
@@ -38,3 +38,12 @@ layout: default
     </div>
   </div>
 </article>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has("play")) {
+      window.location.href = "{{ page.sudokupad_url | relative_url }}";
+    }
+  });
+</script>
