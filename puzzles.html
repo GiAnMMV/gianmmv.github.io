@@ -357,7 +357,7 @@ permalink: /puzzles/
     ul.appendChild(generateLimitButton(Number.MAX_VALUE, "Show All"));
   }
 
-  const urlParams = URLSearchParams(window.location.search);
+  const urlParams = new URLSearchParams(window.location.search);
 
   let itemsPerPage = urlParams.get("limit");
   if (itemsPerPage === "max")
