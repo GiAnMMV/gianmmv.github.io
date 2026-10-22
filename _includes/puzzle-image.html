@@ -1,16 +1,16 @@
-{% assign svg_path = include.puzzle.slug | prepend: "/assets/puzzles/" | append: ".svg" %}
-{% assign png_path = include.puzzle.slug | prepend: "/assets/puzzles/" | append: ".png" %}
+{%- assign svg_path = include.puzzle.slug | prepend: "/assets/puzzles/" | append: ".svg" -%}
+{%- assign png_path = include.puzzle.slug | prepend: "/assets/puzzles/" | append: ".png" -%}
 
-{% assign svg_exists = false %}
-{% for file in site.static_files %}
-  {% if file.path == svg_path %}
-    {% assign svg_exists = true %}
-    {% break %}
-  {% endif %}
-{% endfor %}
+{%- assign svg_exists = false -%}
+{%- for file in site.static_files -%}
+  {%- if file.path == svg_path -%}
+    {%- assign svg_exists = true -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
 
-{% if svg_exists %}
-  {{ svg_path | relative_url }}
-{% else %}
-  {{ png_path | relative_url }}
-{% endif %}
+{%- if svg_exists -%}
+  {{- svg_path | relative_url -}}
+{%- else -%}
+  {{- png_path | relative_url -}}
+{%- endif -%}
