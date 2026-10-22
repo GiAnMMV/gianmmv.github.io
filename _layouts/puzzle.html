@@ -20,7 +20,7 @@ layout: default
   {% endif %}
   <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
     <div style="flex: 1 1 300px; max-width: 416px;">
-      <img src="{{ page.slug | prepend: '/assets/images/' | append: '.png' | relative_url }}" style="width: 100%; height: auto; display: block;" alt="{{ page.title }}" />
+      <img src="{% include puzzle-image.html puzzle=page %}" style="width: 100%; height: auto; display: block;" alt="{{ page.title }}" />
     </div>
   
     <div style="flex: 2 1 300px; min-width: 0;">

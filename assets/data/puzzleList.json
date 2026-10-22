@@ -8,7 +8,8 @@
     "{{ puzzle.title}}",
     "{{ puzzle.creation_date }}",
     "{{ puzzle.creation_date | date: "%-d %B %Y" }}",
-    {{ puzzle.order | default: 0 }}
+    {{ puzzle.order | default: 0 }},
+    "{% include puzzle-image.html puzzle=page %}"
   ]{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
