@@ -1,5 +1,5 @@
-{%- assign svg_path = include.puzzle.slug | prepend: "/assets/puzzles/" | append: ".svg" -%}
-{%- assign png_path = include.puzzle.slug | prepend: "/assets/puzzles/" | append: ".png" -%}
+{%- assign svg_path = include.puzzle.slug | prepend: "/assets/images/" | append: ".svg" -%}
+{%- assign png_path = include.puzzle.slug | prepend: "/assets/images/" | append: ".png" -%}
 
 {%- assign svg_exists = false -%}
 {%- for file in site.static_files -%}

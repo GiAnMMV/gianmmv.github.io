@@ -9,7 +9,7 @@
     "{{ puzzle.creation_date }}",
     "{{ puzzle.creation_date | date: "%-d %B %Y" }}",
     {{ puzzle.order | default: 0 }},
-    "{% include puzzle-image.html puzzle=page %}"
+    "{% include puzzle-image.html puzzle=puzzle %}"
   ]{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
