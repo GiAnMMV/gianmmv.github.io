@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-.02 -.02 9.04 9.04" width="832px" height="832px">
+  <rect width="9" height="9" fill="#fff"/>
+
+  <path fill="none" stroke-width=".15" stroke-linecap="round" stroke-linejoin="round" stroke="#f067f0" d="M3.5 7.5H1.5V4.5H.5M1.5 3.5V1.5H4.5V.5M5.5 1.5H7.5V4.5H8.5M7.5 5.5V7.5H4.5V8.5M2.5 4.5V2.5M4.5 2.5H6.5M6.5 4.5V6.5M4.5 6.5H2.5"/>
+
+  <path d="M1 0V9M2 0V9M3 0V9M4 0V9M5 0V9M6 0V9M7 0V9M8 0V9M0 1H9M0 2H9M0 3H9M0 4H9M0 5H9M0 6H9M0 7H9M0 8H9M0 0H9V9H0Z" stroke="#000" stroke-width=".015625" fill="none"/>
+  <path d="M0 0H9V9H0ZM3 0V9M6 0V9M0 3H9M0 6H9" stroke="#000" stroke-width=".046875" stroke-linejoin="round" fill="none"/>
+
+  <g fill="#fff" stroke="#000" stroke-width=".02">
+    <circle r=".3" cx="2" cy="7"/>
+    <circle r=".3" cx="2" cy="2"/>
+    <circle r=".3" cx="7" cy="2"/>
+    <circle r=".3" cx="7" cy="7"/>
+    <circle r=".3" cx="1" cy="8"/>
+    <circle r=".3" cx="1" cy="1"/>
+    <circle r=".3" cx="8" cy="1"/>
+    <circle r=".3" cx="8" cy="8"/>
+    <circle r=".3" cx="3" cy="3"/>
+    <circle r=".3" cx="6" cy="6"/>
+    <circle r=".3" cx="3" cy="6"/>
+    <circle r=".3" cx="6" cy="3"/>
+    <circle r=".3" cx="2" cy="5"/>
+    <circle r=".3" cx="4" cy="2"/>
+    <circle r=".3" cx="7" cy="4"/>
+    <circle r=".3" cx="5" cy="7"/>
+  </g>
+  <g text-anchor="middle" dominant-baseline="middle" font-size=".25" font-family="sans-serif">
+    <text x="1.915625" y="7.00625">4</text>
+    <text x="2.084375" y="7.00625">5</text>
+    <text x="1.915625" y="2.00625">5</text>
+    <text x="2.084375" y="2.00625">9</text>
+    <text x="6.915625" y="2.00625">4</text>
+    <text x="7.084375" y="2.00625">5</text>
+    <text x="6.915625" y="7.00625">5</text>
+    <text x="7.084375" y="7.00625">9</text>
+    <text x="0.915625" y="8.00625">1</text>
+    <text x="1.084375" y="8.00625">9</text>
+    <text x="0.915625" y="1.00625">3</text>
+    <text x="1.084375" y="1.00625">9</text>
+    <text x="7.915625" y="1.00625">9</text>
+    <text x="8.084375" y="1.00625">8</text>
+    <text x="7.915625" y="8.00625">1</text>
+    <text x="8.084375" y="8.00625">8</text>
+    <text x="2.915625" y="3.00625">7</text>
+    <text x="3.084375" y="3.00625">7</text>
+    <text x="5.915625" y="6.00625">6</text>
+    <text x="6.084375" y="6.00625">6</text>
+    <text x="2.915625" y="6.00625">3</text>
+    <text x="3.084375" y="6.00625">8</text>
+    <text x="5.915625" y="3.00625">3</text>
+    <text x="6.084375" y="3.00625">3</text>
+    <text x="1.915625" y="5.00625">6</text>
+    <text x="2.084375" y="5.00625">9</text>
+    <text x="3.915625" y="2.00625">1</text>
+    <text x="4.084375" y="2.00625">6</text>
+    <text x="6.915625" y="4.00625">6</text>
+    <text x="7.084375" y="4.00625">9</text>
+    <text x="4.915625" y="7.00625">1</text>
+    <text x="5.084375" y="7.00625">6</text>
+  </g>
+</svg>

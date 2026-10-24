@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-.02 -.02 9.04 9.04" width="832px" height="832px">
+  <rect width="9" height="9" fill="#fff"/>
+
+  <path fill="none" stroke-width=".15" stroke-linecap="round" stroke-linejoin="round" stroke="#fca" d="M1.5 1.5H7.5V7.5H1.5ZM.5 3.5V8.5H2.5M3.5 8.5H8.5V6.5M6.5.5H8.5V5.5M5.5.5H.5V2.5"/>
+
+  <path d="M1 0V9M2 0V9M3 0V9M4 0V9M5 0V9M6 0V9M7 0V9M8 0V9M0 1H9M0 2H9M0 3H9M0 4H9M0 5H9M0 6H9M0 7H9M0 8H9M0 0H9V9H0Z" stroke="#000" stroke-width=".015625" fill="none"/>
+  <path d="M0 0H9V9H0ZM3 0V9M6 0V9M0 3H9M0 6H9" stroke="#000" stroke-width=".046875" stroke-linejoin="round" fill="none"/>
+
+  <g stroke="#000" stroke-width=".02">
+    <circle r=".17" fill="#fff" cx="0.5" cy="5"/>
+    <circle r=".17" fill="#fff" cx="7.5" cy="2"/>
+  </g>
+
+  <g fill="#fff">
+    <circle r=".175" cx="8.5" cy="2"/>
+    <circle r=".175" cx="7.5" cy="6"/>
+    <circle r=".175" cx="3" cy="7.5"/>
+    <circle r=".175" cx="3" cy="1.5"/>
+    <circle r=".175" cx="0.5" cy="4"/>
+    <circle r=".175" cx="8.5" cy="8"/>
+  </g>
+  <g stroke="#000" stroke-width=".015625" text-anchor="middle" dominant-baseline="middle" stroke-linejoin="round" font-size=".28125" font-family="sans-serif">
+    <text x="8.5" y="2.0203125">X</text>
+    <text x="7.5" y="6.0203125">X</text>
+    <text x="3" y="7.5203125">X</text>
+    <text x="3" y="1.5203125">X</text>
+    <text x="0.5" y="4.0203125">X</text>
+    <text x="8.5" y="8.0203125">V</text>
+  </g>
+</svg>

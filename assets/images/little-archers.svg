@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-.3692 -.3692 9.7384 9.7384" width="832px" height="832px">
+  <defs>
+    <marker id="arrow" markerUnits="userSpaceOnUse" markerWidth=".72" markerHeight=".72" refX=".324" refY=".36" orient="auto">
+      <path fill="none" stroke="#000" stroke-width=".05" stroke-linejoin="miter" d="M.1967.4873.3241.36.1967.2327"/>
+    </marker>
+  </defs>
+
+  <rect x="-.3692" y="-.3692" width="9.7384" height="9.7384" fill="#fff"/>
+
+  <path fill="none" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width=".15" d="M7.5 1.5H6.5L7.5 2.5H8.5V6.5H7.5V7.5L6.5 6.5H5.5V5.5L1.5 1.5.5 2.5 2.5 4.5H3.5L4.5 5.5V6.5H3.5L2.5 7.5H.5L1.5 8.5H2.5"/>
+
+  <path d="M1 0V9M2 0V9M3 0V9M4 0V9M5 0V9M6 0V9M7 0V9M8 0V9M0 1H9M0 2H9M0 3H9M0 4H9M0 5H9M0 6H9M0 7H9M0 8H9M0 0H9V9H0Z" stroke="#000" stroke-width=".015625" fill="none"/>
+  <path d="M0 0H9V9H0ZM3 0V9M6 0V9M0 3H9M0 6H9" stroke="#000" stroke-width=".046875" stroke-linejoin="round" fill="none"/>
+
+  <g fill="none" stroke="#000" stroke-width=".05" stroke-linejoin="round" marker-end="url(#arrow)">
+    <path d="M-.2659-.2659-.1033-.1033"/>
+    <path d="M-.2659 1.7341l.1627.1627"/>
+    <path d="M9.2659 3.7341l-.1627.1627"/>
+    <path d="M4.7341-.2659l.1627.1627"/>
+    <path d="M-.2659 4.2659l.1627-.1627"/>
+    <path d="M2.7341-.2659l.1627.1627"/>
+    <path d="M5.7341-.2659l.1627.1627"/>
+    <path d="M9.2659 4.7341l-.1627.1627"/>
+    <path d="M-.2659 5.7341l.1627.1627"/>
+  </g>
+
+  <g text-anchor="middle" dominant-baseline="middle" stroke-miterlimit=".75" font-size=".8" font-family="sans-serif">
+    <text x="1.5" y=".559375">8</text>
+    <text x="8.5" y="1.559375">9</text>
+    <text x="3.5" y="8.559375">8</text>
+  </g>
+</svg>

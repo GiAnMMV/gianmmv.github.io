@@ -1,42 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-.02 -.02 9.04 9.04" width="832px" height="832px">
-  <rect width="9" height="9" fill="#fff" />
+  <rect width="9" height="9" fill="#fff"/>
   
-  <path d="M1.5 3.5L2.5 3.5L3.5 3.5M5.5 3.5L6.5 3.5L7.5 3.5M2.5 8.5L1.5 8.5L.5 8.5M6.5 8.5L7.5 7.5L8.5 6.5M3.5 2.5L2.5 2.5L1.5 2.5M2.5 7.5L1.5 6.5L.5 5.5M5.5 2.5L6.5 2.5L7.5 2.5" fill="none" stroke="#aaa" stroke-width=".05" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M1.5 3.5L2.5 3.5L3.5 3.5M5.5 3.5L6.5 3.5L7.5 3.5M2.5 8.5L1.5 8.5L.5 8.5M6.5 8.5L7.5 7.5L8.5 6.5M3.5 2.5L2.5 2.5L1.5 2.5M2.5 7.5L1.5 6.5L.5 5.5M5.5 2.5L6.5 2.5L7.5 2.5" fill="none" stroke="#aaa" stroke-width=".05" stroke-linecap="round" stroke-linejoin="round"/>
   <g stroke="#000" stroke-width=".02" fill="#fff">
-    <circle r=".4" cx="1.5" cy="3.5" />
-    <circle r=".4" cx="3.5" cy="3.5" />
-    <circle r=".4" cx="5.5" cy="3.5" />
-    <circle r=".4" cx="7.5" cy="3.5" />
-    <circle r=".4" cx="2.5" cy="8.5" />
-    <circle r=".4" cx=".5" cy="8.5" />
-    <circle r=".4" cx="6.5" cy="8.5" />
-    <circle r=".4" cx="8.5" cy="6.5" />
-    <circle r=".4" cx="3.5" cy="2.5" />
-    <circle r=".4" cx="1.5" cy="2.5" />
-    <circle r=".4" cx="2.5" cy="7.5" />
-    <circle r=".4" cx=".5" cy="5.5" />
-    <circle r=".4" cx="5.5" cy="2.5" />
-    <circle r=".4" cx="7.5" cy="2.5" />
+    <circle r=".4" cx="1.5" cy="3.5"/>
+    <circle r=".4" cx="3.5" cy="3.5"/>
+    <circle r=".4" cx="5.5" cy="3.5"/>
+    <circle r=".4" cx="7.5" cy="3.5"/>
+    <circle r=".4" cx="2.5" cy="8.5"/>
+    <circle r=".4" cx=".5" cy="8.5"/>
+    <circle r=".4" cx="6.5" cy="8.5"/>
+    <circle r=".4" cx="8.5" cy="6.5"/>
+    <circle r=".4" cx="3.5" cy="2.5"/>
+    <circle r=".4" cx="1.5" cy="2.5"/>
+    <circle r=".4" cx="2.5" cy="7.5"/>
+    <circle r=".4" cx=".5" cy="5.5"/>
+    <circle r=".4" cx="5.5" cy="2.5"/>
+    <circle r=".4" cx="7.5" cy="2.5"/>
   </g>
-  <path d="M4.5 4.5L4.5 5.5L4.5 6.5L5.5 7.5L5.5 8.5M4.5 4.5L3.5 4.5L2.5 3.5M4.5 4.5L5.5 4.5L6.5 3.5M4.5 6.5L3.5 7.5L3.5 8.5" fill="none" stroke="#ccc" stroke-width=".3" stroke-linecap="round" stroke-linejoin="round" />
-  <circle cx="4.5" cy="4.5" fill="#ccc" r=".4" stroke-width=".02" stroke="#000" />
+  <path d="M4.5 4.5L4.5 5.5L4.5 6.5L5.5 7.5L5.5 8.5M4.5 4.5L3.5 4.5L2.5 3.5M4.5 4.5L5.5 4.5L6.5 3.5M4.5 6.5L3.5 7.5L3.5 8.5" fill="none" stroke="#ccc" stroke-width=".3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="4.5" cy="4.5" fill="#ccc" r=".4" stroke-width=".02" stroke="#000"/>
 
-  <path d="M1 0V9M2 0V9M3 0V9M4 0V9M5 0V9M6 0V9M7 0V9M8 0V9M0 1H9M0 2H9M0 3H9M0 4H9M0 5H9M0 6H9M0 7H9M0 8H9M0 0H9V9H0Z" stroke="#000" stroke-width=".015" fill="none" />
-  <path d="M0 0H9V9H0ZM3 0V9M6 0V9M0 3H9M0 6H9" stroke="#000" stroke-width=".04" stroke-linejoin="round" fill="none" />
+  <path d="M1 0V9M2 0V9M3 0V9M4 0V9M5 0V9M6 0V9M7 0V9M8 0V9M0 1H9M0 2H9M0 3H9M0 4H9M0 5H9M0 6H9M0 7H9M0 8H9M0 0H9V9H0Z" stroke="#000" stroke-width=".015625" fill="none"/>
+  <path d="M0 0H9V9H0ZM3 0V9M6 0V9M0 3H9M0 6H9" stroke="#000" stroke-width=".046875" stroke-linejoin="round" fill="none"/>
 
   <g stroke="#000" stroke-width=".02">
-    <circle r=".16" fill="#000" cx="1.5" cy="4" />
-    <circle r=".16" fill="#000" cx="7.5" cy="4" />
-    <circle r=".16" fill="#fff" cx="6.5" cy="8" />
-    <circle r=".16" fill="#fff" cx="2.5" cy="8" />
-    <circle r=".16" fill="#fff" cx="8.5" cy="7" />
-    <circle r=".16" fill="#fff" cx=".5" cy="7" />
-    <circle r=".16" fill="#fff" cx="4.5" cy="2" />
-    <circle r=".16" fill="#fff" cx="1.5" cy="2" />
-    <circle r=".16" fill="#fff" cx="7.5" cy="2" />
-    <circle r=".16" fill="#fff" cx="2" cy="4.5" />
-    <circle r=".16" fill="#fff" cx="7" cy="4.5" />
-    <circle r=".16" fill="#fff" cx="1.5" cy="3" />
-    <circle r=".16" fill="#fff" cx="7.5" cy="3" />
+    <circle r=".17" fill="#000" cx="1.5" cy="4"/>
+    <circle r=".17" fill="#000" cx="7.5" cy="4"/>
+    <circle r=".17" fill="#fff" cx="6.5" cy="8"/>
+    <circle r=".17" fill="#fff" cx="2.5" cy="8"/>
+    <circle r=".17" fill="#fff" cx="8.5" cy="7"/>
+    <circle r=".17" fill="#fff" cx=".5" cy="7"/>
+    <circle r=".17" fill="#fff" cx="4.5" cy="2"/>
+    <circle r=".17" fill="#fff" cx="1.5" cy="2"/>
+    <circle r=".17" fill="#fff" cx="7.5" cy="2"/>
+    <circle r=".17" fill="#fff" cx="2" cy="4.5"/>
+    <circle r=".17" fill="#fff" cx="7" cy="4.5"/>
+    <circle r=".17" fill="#fff" cx="1.5" cy="3"/>
+    <circle r=".17" fill="#fff" cx="7.5" cy="3"/>
   </g>
 </svg>

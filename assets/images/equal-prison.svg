@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.02 -0.02 9.04 9.04" width="832px" height="832px">
+  <rect width="9" height="9" fill="#fff"></rect>
+
+  <path d="M1 0V9M2 0V9M3 0V9M4 0V9M5 0V9M6 0V9M7 0V9M8 0V9M0 1H9M0 2H9M0 3H9M0 4H9M0 5H9M0 6H9M0 7H9M0 8H9M0 0H9V9H0Z" stroke="#000" stroke-width=".015625" fill="none"/>
+  <path d="M0 0H9V9H0ZM3 0V9M6 0V9M0 3H9M0 6H9" stroke="#000" stroke-width=".046875" stroke-linejoin="round" fill="none"/>
+
+  <g text-anchor="middle" dominant-baseline="middle" stroke-miterlimit=".75" font-size=".8" font-family="sans-serif">
+    <text x="3.5" y="3.559375">1</text>
+    <text x="8.5" y="3.559375">3</text>
+    <text x="5.5" y="5.559375">9</text>
+    <text x="1.5" y="8.559375">3</text>
+  </g>
+  
+  <path fill="none" stroke="#000" stroke-width=".0234375px" stroke-dasharray=".078125 .046875" stroke-dashcorner="4" shape-rendering="geometricprecision" d="
+    M1.08 6.08H1.92V7.92H.92V8.92H.08V7.08H1.08Z
+    M2.08 7.08H2.92V8.92H2.08Z
+    M4.08 5.08H4.92V6.08H5.92V8.92H5.08V6.92H4.08Z
+    M7.08 7.08H7.92V8.08H8.92V8.92H7.08Z
+    M8.08 5.08H8.92V6.92H7.08V6.08H8.08Z
+    M6.08 6.08H6.92V7.92H6.08Z
+    M6.08 3.08H6.92V4.08H7.92V4.92H6.92V5.92H6.08V4.5Z
+    M4.08 4.92V4.08H5.92V4.92Z
+    M2.08 4.08H2.92V5.08H3.92V5.92H2.92V6.92H2.08V5.5Z
+    M3.08 2.92V2.08H4.5 5.5 6.5 7.92V2.92H6.5 5.5 4.5Z
+    M1.08 3.08H1.92V4.92H1.08Z
+    M.08 5.92V5.08H1.92V5.92Z
+    M.08.92V.08H1.5 2.92V1.92H1.08V.92Z
+    M1.08 2.92V2.08H2.92V2.92Z
+    M.08 1.08H.92V2.92H.08Z
+    M4.08.08H4.92V1.92H3.08V1.08H4.08Z
+    M6.08.08H6.92V1.92H5.08V1.08H6.08Z
+    M7.08.08H7.92V1.08H8.92V1.92H7.08Z
+    M3.08 6.08H3.92V7.5 8.92H3.08V7.5Z
+  "/>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-.02 -.02 9.04 9.04" width="832px" height="832px">
+  <rect width="9" height="9" fill="#fff"/>
+
+  <g fill="none" stroke-width=".15" stroke-linecap="round" stroke-linejoin="round">
+    <path fill="#ffff0040" stroke="none" d="
+      M3.5 4.5H5.5L4.5 3.5Z
+      M6.5 5.5 5.5 6.5 4.5 5.5 3.5 6.5 2.5 5.5H1.5V6.5L2.5 7.5H3.5L4.5 6.5 5.5 7.5H6.5L7.5 6.5V5.5Z
+    "/>
+    <path fill="#ffa60040" stroke="#ffa600" d="
+      M7 1.5Q7.5 1.5 8 2T8.5 3 8 4 8 5 8.5 6V7Q8.5 7.5 8 8T7 8.5H6Q5.5 8.5 5 8T4 8 3 8.5H2Q1.5 8.5 1 8T.5 7V6Q.5 5.5 1 5T1 4 .5 3 1 2 2 1.5H3Q3.5 1.5 4 2T5 2 6 1.5H7Z
+      M3.5 4.5H5.5L4.5 3.5Z
+      M6.5 5.5 5.5 6.5 4.5 5.5 3.5 6.5 2.5 5.5H1.5V6.5L2.5 7.5H3.5L4.5 6.5 5.5 7.5H6.5L7.5 6.5V5.5Z
+      M1.5 3.5L2.5 2.5L3.5 3.5
+      M5.5 3.5L6.5 2.5L7.5 3.5
+    "/>
+    <path stroke="#67f067" d="M5.5.5 5 1Q4.5 1.5 4.5 2V2.3438"/>
+  </g>
+
+  <path d="M1 0V9M2 0V9M3 0V9M4 0V9M5 0V9M6 0V9M7 0V9M8 0V9M0 1H9M0 2H9M0 3H9M0 4H9M0 5H9M0 6H9M0 7H9M0 8H9M0 0H9V9H0Z" stroke="#000" stroke-width=".015625" fill="none"/>
+  <path d="M0 0H9V9H0ZM3 0V9M6 0V9M0 3H9M0 6H9" stroke="#000" stroke-width=".046875" stroke-linejoin="round" fill="none"/>
+
+  <g stroke="#000" stroke-width=".02">
+    <circle r=".17" cx="8" cy="8.5"/>
+    <circle r=".17" cx="3.5" cy="5"/>
+    <circle r=".17" cx="6.5" cy="4"/>
+    <circle r=".17" cx="8" cy="7.5"/>
+    <circle r=".17" cx="8" cy="6.5"/>
+    <circle r=".17" fill="#fff" cx="1" cy="8.5"/>
+    <circle r=".17" fill="#fff" cx="5.5" cy="5"/>
+    <circle r=".17" fill="#fff" cx="2.5" cy="4"/>
+    <circle r=".17" fill="#fff" cx="1" cy="7.5"/>
+    <circle r=".17" fill="#fff" cx="1" cy="6.5"/>
+    <circle r=".17" fill="#fff" cx="2" cy="7.5"/>
+    <circle r=".17" fill="#fff" cx="7" cy="7.5"/>
+    <circle r=".17" fill="#fff" cx="3" cy="6.5"/>
+    <circle r=".17" fill="#fff" cx="6" cy="6.5"/>
+  </g>
+</svg>
