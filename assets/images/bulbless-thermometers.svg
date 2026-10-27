@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-.02 -.02 9.04 9.04" width="832px" height="832px">
+  <path fill="#fff" d="M0 0h9v9H0z"/>
+
+  <path stroke="#ccc" fill="none" stroke-width=".3" stroke-linecap="round" stroke-linejoin="round" d="M2.5 4.5 5.5 1.5M6.5 8.5H.5M1.5 5.5V.5M5.5 5.5 8.5 8.5M5.5 4.5 8.5 7.5M3.5 2.5V.5M4.5 3.5H8.5M1.5 7.5 4.5 4.5M.5 5.5V1.5M2.5 7.5 4.5 5.5M4.5.5H7.5M2.5 3.5V.5M5.5 2.5H8.5M3.5 4.5.5 7.5M3.5 7.5H6.5M6.5 4.5H8.5"/>
+
+  <path d="M1 0V9M2 0V9M4 0V9M5 0V9M7 0V9M8 0V9M0 1H9M0 2H9M0 4H9M0 5H9M0 7H9M0 8H9Z" stroke="#000" stroke-width=".015625" fill="none"/>
+  <path d="M0 0H9V9H0ZM3 0V9M6 0V9M0 3H9M0 6H9" stroke="#000" stroke-width=".046875" stroke-linejoin="round" fill="none"/>
+
+  <g stroke="#000" fill="#fff" stroke-width=".02">
+    <circle r=".16" cx="8" cy="1.5"/>
+    <circle r=".16" cx="1" cy="7.5"/>
+  </g>
+
+  <g text-anchor="middle" dominant-baseline="central" font-size=".8" font-family="sans-serif">
+    <text x=".5" y=".5">5</text>
+    <text x="4.5" y="1.5">2</text>
+    <text x="6.5" y="1.5">9</text>
+    <text x=".5" y="6.5">8</text>
+    <text x="7.5" y="8.5">9</text>
+  </g>
+</svg>

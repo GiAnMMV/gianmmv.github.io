@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-.02 -.02 9.04 9.04" width="832px" height="832px" text-anchor="middle" dominant-baseline="central" font-family="sans-serif">
+  <defs>
+    <symbol id="kropki-black" overflow="visible">
+      <circle r=".165"/>
+      <text fill="#fff" font-size=".25">3</text>
+    </symbol>
+    <symbol id="kropki-white" overflow="visible">
+      <circle fill="#fff" stroke="#000" stroke-width=".02" r=".16"/>
+      <text font-size=".25">3</text>
+    </symbol>
+  </defs>
+
+  <path fill="#fff" d="M0 0h9v9H0z"/>
+
+  <path d="M1 0V9M2 0V9M4 0V9M5 0V9M7 0V9M8 0V9M0 1H9M0 2H9M0 4H9M0 5H9M0 7H9M0 8H9Z" stroke="#000" stroke-width=".015625" fill="none"/>
+  <path d="M0 0H9V9H0ZM3 0V9M6 0V9M0 3H9M0 6H9" stroke="#000" stroke-width=".046875" stroke-linejoin="round" fill="none"/>
+
+  <use href="#kropki-black" x="4.5" y="4"/>
+  <use href="#kropki-black" x="8.5" y="4"/>
+  <use href="#kropki-black" x="1" y="8.5"/>
+  <use href="#kropki-black" x="8" y="8.5"/>
+  <use href="#kropki-black" x="1.5" y="3"/>
+  <use href="#kropki-black" x="8" y="3.5"/>
+  <use href="#kropki-black" x="4.5" y="1"/>
+  <use href="#kropki-black" x="4" y="7.5"/>
+  <use href="#kropki-black" x="5.5" y="5"/>
+  <use href="#kropki-black" x=".5" y="6"/>
+  <use href="#kropki-white" x="3" y="6.5"/>
+  <use href="#kropki-white" x="5" y="3.5"/>
+  <use href="#kropki-white" x="3.5" y="1"/>
+  <use href="#kropki-white" x="5.5" y="1"/>
+  <use href="#kropki-white" x="6" y="2.5"/>
+  <use href="#kropki-white" x="3" y="4.5"/>
+  <use href="#kropki-white" x="6" y="7.5"/>
+  <use href="#kropki-white" x="7" y=".5"/>
+  <use href="#kropki-white" x="8.5" y="7"/>
+  <use href="#kropki-white" x="4.5" y="6"/>
+  <use href="#kropki-white" x="4.5" y="5"/>
+</svg>

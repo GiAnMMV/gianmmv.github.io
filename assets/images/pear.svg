@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-.02 -.02 9.04 9.04" width="832px" height="832px">
+  <path fill="#fff" d="M0 0h9v9H0z"/>
+
+  <g fill="none" stroke-width=".15" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="#ffa600" d="M4.4209 7.649C3.504 7.5827 2.633 6.8561 2.3905 5.9692 2.2033 5.2841 2.7163 4.6511 3 4 3.3407 3.2182 3.4115 1.6341 4.2614 1.5644 5.8152 1.4368 5.725 3.2473 6 4 6.213 4.583 6.5636 5.1626 6.5399 5.7828 6.5197 6.3105 6.2912 6.6326 6 7 5.6405 7.4536 5.0514 7.6945 4.4209 7.649ZM3.7489.2439C3.8409.3001 4.1179.5478 4.2238.7732 4.262.8546 4.2865.9535 4.302 1.0527 4.3207 1.1728 4.327 1.5315 4.327 1.5315 4.3379 1.6721 4.5801 2.4371 4.5801 2.4371"/>
+    <path stroke="#f66" d="M3.5 4.5V5.5M4.5 4.5V5.5M3.5758 6.3042C3.7769 6.4986 4.2534 6.4449 4.3905 6.3142"/>
+  </g>
+
+  <path d="M1 0V9M2 0V9M4 0V9M5 0V9M7 0V9M8 0V9M0 1H9M0 2H9M0 4H9M0 5H9M0 7H9M0 8H9Z" stroke="#000" stroke-width=".015625" fill="none"/>
+  <path d="M0 0H9V9H0ZM3 0V9M6 0V9M0 3H9M0 6H9" stroke="#000" stroke-width=".046875" stroke-linejoin="round" fill="none"/>
+
+  <g stroke="#000" stroke-width=".02">
+    <circle r=".17" fill="#000" cx="6" cy="1.5"/>
+    <circle r=".17" fill="#000" cx="3.5" cy="3"/>
+    <circle r=".17" fill="#000" cx="6.5" cy="5"/>
+    <circle r=".17" fill="#fff" cx="5" cy=".5"/>
+    <circle r=".17" fill="#fff" cx="1" cy="1.5"/>
+    <circle r=".17" fill="#fff" cx="8" cy="1.5"/>
+  </g>
+</svg>

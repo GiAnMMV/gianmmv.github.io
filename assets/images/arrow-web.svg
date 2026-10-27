@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-.02 -.02 9.04 9.04" width="832px" height="832px">
+  <defs>
+    <marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="1.4" markerHeight="1.4" refX=".63" refY=".7" orient="auto">
+      <path stroke="#aaa" stroke-width=".05" fill="none" stroke-linejoin="miter" d="M.3825.9475.63.7.3825.4525"/>
+    </marker>
+  </defs>
+
+  <path fill="#fff" d="M0 0h9v9H0z"/>
+
+  <g stroke="#aaa" stroke-width=".05" fill="none" stroke-linecap="butt" stroke-linejoin="round" marker-end="url(#arrow)">
+    <path d="M1.5 2.8991 1.5 4.45"/>
+    <path d="M1.782 2.782 2.5 3.5 2.5 4.45"/>
+    <path d="M1.218 2.782.5 3.5.5 4.45"/>
+    <path d="M1.5 2.1009 1.5.55"/>
+    <path d="M1.218 2.218.5 1.5.5.55"/>
+    <path d="M7.5 6.1009 7.5 4.55"/>
+    <path d="M7.218 6.218 6.5 5.5 6.5 4.55"/>
+    <path d="M7.782 6.218 8.5 5.5 8.5 4.55"/>
+    <path d="M7.5 6.8991 7.5 8.45"/>
+    <path d="M7.782 6.782 8.5 7.5 8.5 8.45"/>
+    <path d="M4.8991 5.5 5.5 5.5 5.5 4.55"/>
+    <path d="M4.5 5.8991 4.5 7.45"/>
+    <path d="M4.782 5.782 6.4647 7.4647"/>
+    <path d="M4.1009 3.5 3.5 3.5 3.5 4.45"/>
+    <path d="M4.5 3.1009 4.5 1.55"/>
+    <path d="M4.218 3.218 2.5353 1.5353"/>
+    <path d="M.5 8.1009.5 6.55"/>
+    <path d="M.782 8.218 2.4647 6.5353"/>
+    <path d="M.8991 8.5 2.45 8.5"/>
+    <path d="M8.218.782 6.5353 2.4647"/>
+    <path d="M8.5.8991 8.5 2.45"/>
+    <path d="M8.1009.5 6.55.5"/>
+    <path d="M.8991 5.5 2.45 5.5"/>
+    <path d="M8.1009 3.5 6.55 3.5"/>
+    <path d="M5.5 8.1009 5.5 7.5 4.5353 8.4647"/>
+    <path d="M3.8991.5 4.5.5 5.4647 1.4647"/>
+  </g>
+
+  <path d="M1 0V9M2 0V9M4 0V9M5 0V9M7 0V9M8 0V9M0 1H9M0 2H9M0 4H9M0 5H9M0 7H9M0 8H9Z" stroke="#000" stroke-width=".015625" fill="none"/>
+  <path d="M0 0H9V9H0ZM3 0V9M6 0V9M0 3H9M0 6H9" stroke="#000" stroke-width=".046875" stroke-linejoin="round" fill="none"/>
+
+  <g stroke="#aaa" stroke-width=".02" fill="none">
+    <circle r=".4" cx="3.5" cy=".5"/>
+    <circle r=".4" cx="8.5" cy=".5"/>
+    <circle r=".4" cx="1.5" cy="2.5"/>
+    <circle r=".4" cx="4.5" cy="3.5"/>
+    <circle r=".4" cx="8.5" cy="3.5"/>
+    <circle r=".4" cx=".5" cy="5.5"/>
+    <circle r=".4" cx="4.5" cy="5.5"/>
+    <circle r=".4" cx="7.5" cy="6.5"/>
+    <circle r=".4" cx=".5" cy="8.5"/>
+    <circle r=".4" cx="5.5" cy="8.5"/>
+  </g>
+
+  <g fill="#fff" stroke="#000" stroke-width=".02">
+    <circle r=".16" cx="7" cy=".5"/>
+    <circle r=".16" cx="3" cy="1.5"/>
+    <circle r=".16" cx=".5" cy="2"/>
+    <circle r=".16" cx="8.5" cy="7"/>
+    <circle r=".16" cx="6" cy="7.5"/>
+    <circle r=".16" cx="2" cy="8.5"/>
+  </g>
+</svg>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-.02 -.02 9.04 9.04" width="832px" height="832px">
+  <defs>
+    <marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="1.4" markerHeight="1.4" refX=".63" refY=".7" orient="auto">
+      <path stroke="#aaa" stroke-width=".05" fill="none" stroke-linejoin="miter" d="M.3825.9475.63.7.3825.4525"/>
+    </marker>
+  </defs>
+
+  <path fill="#fff" d="M0 0h9v9H0z"/>
+
+  <path fill="#0003" d="M2.9 5.1V5.9H2.1V5.1ZM3.9 2.9H3.1V2.1H3.9ZM6.1 3.9V3.1H6.9V3.9ZM5.1 6.1H5.9V6.9H5.1Z"/>
+
+  <g stroke="#aaa" stroke-width=".05" fill="none" stroke-linecap="butt" stroke-linejoin="round" marker-end="url(#arrow)">
+    <path d="M.782.782 4.4647 4.4647"/>
+    <path d="M8.218.782 4.5353 4.4647"/>
+    <path d="M8.218 8.218 4.5353 4.5353"/>
+    <path d="M.782 8.218 4.4647 4.5353"/>
+  </g>
+
+  <path fill="none" stroke-width=".15" stroke-linecap="round" stroke-linejoin="round" stroke="#fca" d="
+    M6.5 4.5V3.5L5.5 2.5V.5H.5V2.5
+    M6.5.5H8.5V5.5H6.5L5.5 6.5H4.5
+    M8.5 6.5V8.5H3.5V6.5L2.5 5.5V4.5
+    M2.5 8.5H.5V3.5H2.5L3.5 2.5H4.5
+    M6.5 1.5H7.5V2.5
+    M7.5 6.5V7.5H6.5
+    M2.5 7.5H1.5V6.5
+    M1.5 2.5V1.5H2.5
+    M4.5 3.5H5.5
+    M5.5 4.5V5.5
+    M3.5 5.5H4.5
+    M3.5 3.5V4.5
+    M1.5 4.5V5.5
+    M3.5 1.5H4.5
+    M7.5 3.5V4.5
+    M4.5 7.5H5.5
+  "/>
+
+  <path d="M1 0V9M2 0V9M4 0V9M5 0V9M7 0V9M8 0V9M0 1H9M0 2H9M0 4H9M0 5H9M0 7H9M0 8H9Z" stroke="#000" stroke-width=".015625" fill="none"/>
+  <path d="M0 0H9V9H0ZM3 0V9M6 0V9M0 3H9M0 6H9" stroke="#000" stroke-width=".046875" stroke-linejoin="round" fill="none"/>
+
+  <g stroke="#aaa" stroke-width=".02" fill="none">
+    <rect width="1.8" height=".8" x=".1" y=".1" rx=".4" ry=".4"/>
+    <rect width="1.8" height=".8" x="7.1" y="8.1" rx=".4" ry=".4"/>
+    <rect width=".8" height="1.8" x="8.1" y=".1" rx=".4" ry=".4"/>
+    <rect width=".8" height="1.8" x=".1" y="7.1" rx=".4" ry=".4"/>
+  </g>
+
+  <path fill="#fff" d="
+    M2 6.34A.16.16 0 112 6.66.16.16 0 112 6.34
+    M2.5 1.84A.16.16 0 112.5 2.16.16.16 0 112.5 1.84
+    M5 .34A.16.16 0 115 .66.16.16 0 115 .34
+    M6 6.34A.16.16 0 116 6.66.16.16 0 116 6.34
+    M7 2.34A.16.16 0 117 2.66.16.16 0 117 2.34
+    M3 2.34A.16.16 0 113 2.66.16.16 0 113 2.34
+    M4 8.34A.16.16 0 114 8.66.16.16 0 114 8.34
+    M6.5 6.84A.16.16 0 116.5 7.16.16.16 0 116.5 6.84
+    M6.5 2.84A.16.16 0 116.5 3.16.16.16 0 116.5 2.84
+    M2.5 5.84A.16.16 0 112.5 6.16.16.16 0 112.5 5.84
+    M8.5 4.84A.16.16 0 118.5 5.16.16.16 0 118.5 4.84
+    M.5 3.84A.16.16 0 11.5 4.16.16.16 0 11.5 3.84
+  "/>
+
+  <g text-anchor="middle" dominant-baseline="central" stroke="#000" stroke-width=".015625" stroke-linejoin="round" font-size=".38125" font-family="sans-serif">
+    <text x=".5" y="4" transform="rotate(90 .5 4)">&gt;</text>
+    <text x="8.5" y="5" transform="rotate(90 8.5 5)">&lt;</text>
+    <text x="2.5" y="6" transform="rotate(90 2.5 6)">&gt;</text>
+    <text x="6.5" y="3" transform="rotate(90 6.5 3)">&lt;</text>
+    <text x="6.5" y="7" transform="rotate(90 6.5 7)">&lt;</text>
+    <text x="4" y="8.5">&gt;</text>
+    <text x="3" y="2.5">&lt;</text>
+    <text x="7" y="2.5">&lt;</text>
+    <text x="6" y="6.5">&gt;</text>
+    <text x="5" y=".5">&lt;</text>
+    <text x="2.5" y="2" transform="rotate(90 2.5 2)">&gt;</text>
+    <text x="2" y="6.5">&gt;</text>
+  </g>
+
+  <text text-anchor="middle" dominant-baseline="central" font-size=".8" font-family="sans-serif" x="4.5" y="4.5">7</text>
+</svg>
