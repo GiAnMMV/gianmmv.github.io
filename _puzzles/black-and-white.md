@@ -3,6 +3,7 @@ title: "Black & White"
 creation_date: 2026-09-06
 order: 3
 sudokupad_url: https://sudokupad.app/tlwty0cnn5
+lmd_id: "000UUW"
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

@@ -3,6 +3,7 @@ title: "Dark Portal"
 creation_date: 2026-09-13
 order: 7
 sudokupad_url: https://sudokupad.app/sary75xtrl
+lmd_id: "000UUO"
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

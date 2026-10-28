@@ -3,6 +3,7 @@ title: "Aoi Manji"
 creation_date: 2026-09-05
 order: 2
 sudokupad_url: https://sudokupad.app/2wf7bhtth9
+lmd_id: "000UZM"
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

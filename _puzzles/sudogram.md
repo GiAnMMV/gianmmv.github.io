@@ -3,6 +3,7 @@ title: "Sudogram"
 creation_date: 2026-09-29
 order: 24
 sudokupad_url: https://sudokupad.app/p3h7pj6z8r
+lmd_id: "000V9N"
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

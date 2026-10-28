@@ -3,6 +3,7 @@ title: "Ambiguous Clues"
 creation_date: 2026-10-03
 order: 33
 sudokupad_url: https://sudokupad.app/4329a4l0ub
+lmd_id: "000VIR"
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

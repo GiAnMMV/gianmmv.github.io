@@ -3,6 +3,7 @@ title: "Skysandoku"
 creation_date: 2026-09-24
 order: 16
 sudokupad_url: https://sudokupad.app/6v759z86lx
+lmd_id: "000V44"
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

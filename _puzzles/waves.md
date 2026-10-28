@@ -3,6 +3,7 @@ title: "Waves"
 creation_date: 2026-09-09
 order: 6
 sudokupad_url: https://sudokupad.app/evbqridrhj
+lmd_id: "000USM"
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

@@ -3,6 +3,7 @@ title: "Delta Rune"
 creation_date: 2026-09-27
 order: 20
 sudokupad_url: https://sudokupad.app/odgv620p0a
+lmd_id: "000V74"
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

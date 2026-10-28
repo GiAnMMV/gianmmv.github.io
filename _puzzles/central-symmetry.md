@@ -3,6 +3,7 @@ title: "Central Symmetry"
 creation_date: 2026-09-21
 order: 13
 sudokupad_url: https://sudokupad.app/5lcifax0b3
+lmd_id: "000V27"
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

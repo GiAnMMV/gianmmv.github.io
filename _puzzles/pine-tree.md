@@ -3,6 +3,7 @@ title: "Pine Tree"
 creation_date: 2026-10-02
 order: 30
 sudokupad_url: https://sudokupad.app/ddbyg1awsv
+lmd_id: "000VDM"
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."
