@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-.02 -.02 9.04 9.04" width="832px" height="832px">
+  <defs>
+    <marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="1.4" markerHeight="1.4" refX=".63" refY=".7" orient="auto">
+      <path stroke="#aaa" stroke-width=".05" fill="none" stroke-linejoin="miter" d="M.3825.9475.63.7.3825.4525"/>
+    </marker>
+  </defs>
+
+  <path fill="#fff" d="M0 0h9v9H0z"/>
+
+  <g stroke="#aaa" stroke-width=".05" fill="none" stroke-linecap="butt" stroke-linejoin="round" marker-end="url(#arrow)">
+    <path d="M3.218 5.218 2.5 4.5V3.55"/>
+    <path d="M1.218 3.218.5 2.5V.55"/>
+    <path d="M1.782 3.218 2.5 2.5H3.45"/>
+    <path d="M7.782 3.218 8.5 2.5V.55"/>
+    <path d="M7.5 3.1009V1.55"/>
+    <path d="M6.218 4.782 5.5 5.5H4.55"/>
+    <path d="M1.218 7.218.5 6.5V5.55"/>
+    <path d="M2.782 7.218 3.4647 6.5353"/>
+    <path d="M6.218 7.218 5.5 6.5H4.55"/>
+    <path d="M1.5 4.8991V6.45"/>
+    <path d="M5.782 2.218 6.4647 1.5353"/>
+    <path d="M5.218 2.218 4.5 1.5V.55"/>
+    <path d="M5.218 2.782 4.5 3.5H3.55"/>
+    <path d="M5.218 3.782 4.5 4.5H3.55"/>
+    <path d="M3.782 8.218 4.5 7.5H5.5L6.4647 8.4647"/>
+  </g>
+
+  <path d="M1 0V9M2 0V9M4 0V9M5 0V9M7 0V9M8 0V9M0 1H9M0 2H9M0 4H9M0 5H9M0 7H9M0 8H9Z" stroke="#000" stroke-width=".015625" fill="none"/>
+  <path d="M0 0H9V9H0ZM3 0V9M6 0V9M0 3H9M0 6H9" stroke="#000" stroke-width=".046875" stroke-linejoin="round" fill="none"/>
+
+  <g stroke="#aaa" stroke-width=".02" fill="#fff">
+    <circle r=".4" cx="3.5" cy="5.5"/>
+    <circle r=".4" cx="1.5" cy="3.5"/>
+    <circle r=".4" cx="7.5" cy="3.5"/>
+    <circle r=".4" cx="6.5" cy="4.5"/>
+    <circle r=".4" cx="1.5" cy="7.5"/>
+    <circle r=".4" cx="2.5" cy="7.5"/>
+    <circle r=".4" cx="6.5" cy="7.5"/>
+    <circle r=".4" cx="1.5" cy="4.5"/>
+    <circle r=".4" cx="5.5" cy="2.5"/>
+    <circle r=".4" cx="5.5" cy="3.5"/>
+    <circle r=".4" cx="3.5" cy="8.5"/>
+  </g>
+</svg>
