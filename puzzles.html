@@ -96,26 +96,28 @@ permalink: /puzzles/
     background-color: #e9ecef;
   }
 
-  .bar-item.active .bar-link {
+  .bar-link.active {
     z-index: 1;
     color: #fff;
     background-color: #0056b3;
     border-color: #0056b3;
   }
 
-  .bar-item.disabled .bar-link {
+  .bar-link.disabled {
     color: #6c757d;
     cursor: not-allowed;
   }
 
-  .bar-item:first-child .bar-link {
+  .bar-link:first-child {
     border-top-left-radius: .25rem;
     border-bottom-left-radius: .25rem;
+    margin-left: auto;
   }
 
-  .bar-item:last-child .bar-link {
+  .bar-link:last-child {
     border-top-right-radius: .25rem;
     border-bottom-right-radius: .25rem;
+    margin-right: auto;
   }
 </style>
 
@@ -227,18 +229,14 @@ permalink: /puzzles/
   }
 
   function createPaginationDOM(pagination) {
-    const ul = document.createElement('ul');
-    ul.className = 'control-bar';
-    ul.style.justifyContent = 'center';
+    const bar = document.createElement('span');
+    bar.className = 'control-bar';
 
     const addItem = (text, newPage, { isActive = false, isDisabled = false } = {}) => {
-      const li = document.createElement('li');
-      li.className = 'bar-item';
-      if (isActive) li.classList.add('active');
-      if (isDisabled) li.classList.add('disabled');
-
       const button = document.createElement('button');
       button.className = 'bar-link';
+      if (isActive) button.classList.add('active');
+      if (isDisabled) button.classList.add('disabled');
       button.innerText = text;
       if (newPage) {
         button.addEventListener("click", (e) => {
@@ -249,8 +247,7 @@ permalink: /puzzles/
         });
       }
 
-      li.appendChild(button);
-      ul.appendChild(li);
+      bar.appendChild(button);
     };
 
     if (pagination.prev !== null) {
@@ -271,7 +268,7 @@ permalink: /puzzles/
       addItem('\u00BB', pagination.next);
     }
 
-    return ul;
+    return bar;
   }
 
   function updatePagination() {
@@ -324,14 +321,10 @@ permalink: /puzzles/
       if (n === null) n = v;
       const active = itemsPerPage === v;
     
-      const li = document.createElement('li');
-      li.className = 'bar-item';
-      if (active) li.classList.add('active');
-    
       const button = document.createElement('button');
       button.className = 'bar-link';
+      if (active) button.classList.add('active');
       button.innerText = n;
-      li.appendChild(button);
       button.addEventListener("click", (e) => {
         if (active)
           return;
@@ -343,7 +336,7 @@ permalink: /puzzles/
         updatePagination();
       });
     
-      return li;
+      return button;
     };
     
     const values = [10, 20, 50];
@@ -358,16 +351,16 @@ permalink: /puzzles/
     span.innerText = "Puzzles per page:";
     container.appendChild(span);
   
-    const ul = document.createElement("ul");
-    ul.className = "control-bar";
-    ul.style.justifyContent = "left";
-    ul.style.display = "inline-flex";
-    container.appendChild(ul);
+    const bar = document.createElement("span");
+    bar.className = "control-bar";
+    bar.style.justifyContent = "left";
+    bar.style.display = "inline-flex";
+    container.appendChild(bar);
   
     for (const v of values) {
-      ul.appendChild(generateLimitButton(v));
+      bar.appendChild(generateLimitButton(v));
     }
-    ul.appendChild(generateLimitButton(Number.MAX_VALUE, "Show All"));
+    bar.appendChild(generateLimitButton(Number.MAX_VALUE, "Show All"));
   }
 
   const urlParams = new URLSearchParams(window.location.search);
@@ -423,12 +416,9 @@ permalink: /puzzles/
       const generateSortButton = (p, v, n) => {
         const active = isActive(p, v);
 
-        const li = document.createElement('li');
-        li.className = 'bar-item';
-        if (active) li.classList.add('active');
-
         const button = document.createElement('button');
         button.className = 'bar-link';
+        if (active) button.classList.add('active');
         button.innerText = n;
         button.addEventListener("click", (e) => {
           if (isActive(p, v))
@@ -441,13 +431,11 @@ permalink: /puzzles/
           updateCards();
           updatePagination();
 
-          li.parentElement.querySelectorAll('.bar-item').forEach(item => item.classList.remove('active'));
-          li.classList.add("active");
+          button.parentElement.querySelectorAll('.bar-link').forEach(item => item.classList.remove('active'));
+          button.classList.add("active");
         });
 
-        li.appendChild(button);
-
-        return li;
+        return button;
       };
 
       const mainDiv = document.createElement("div");
@@ -462,13 +450,13 @@ permalink: /puzzles/
         span.innerText = "Sort by";
         subDiv.appendChild(span);
 
-        const ul = document.createElement("ul");
-        ul.className = "control-bar";
-        ul.style.justifyContent = "left";
-        ul.style.display = "inline-flex";
-        ul.appendChild(generateSortButton("sort", "date", "Date"));
-        ul.appendChild(generateSortButton("sort", "name", "Name"));
-        subDiv.appendChild(ul);
+        const bar = document.createElement("span");
+        bar.className = "control-bar";
+        bar.style.justifyContent = "left";
+        bar.style.display = "inline-flex";
+        bar.appendChild(generateSortButton("sort", "date", "Date"));
+        bar.appendChild(generateSortButton("sort", "name", "Name"));
+        subDiv.appendChild(bar);
 
         mainDiv.appendChild(subDiv);
       }
@@ -479,13 +467,13 @@ permalink: /puzzles/
         span.innerText = "Order:";
         subDiv.appendChild(span);
 
-        const ul = document.createElement("ul");
-        ul.className = "control-bar";
-        ul.style.justifyContent = "right";
-        ul.style.display = "inline-flex";
-        ul.appendChild(generateSortButton("sort-order", "asc", "Ascending \u2197"));
-        ul.appendChild(generateSortButton("sort-order", "desc", "Descending \u2199"));
-        subDiv.appendChild(ul);
+        const bar = document.createElement("span");
+        bar.className = "control-bar";
+        bar.style.justifyContent = "right";
+        bar.style.display = "inline-flex";
+        bar.appendChild(generateSortButton("sort-order", "asc", "Ascending \u2197"));
+        bar.appendChild(generateSortButton("sort-order", "desc", "Descending \u2198"));
+        subDiv.appendChild(bar);
 
         mainDiv.appendChild(subDiv);
       }
