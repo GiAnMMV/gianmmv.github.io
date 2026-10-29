@@ -15,4 +15,5 @@ defaults:
       layout: "puzzle"
       header_title: GiAnMMV's Puzzles
       header_description: Here you can find all the puzzles I created thus far. More to come!
-      description: By GiAnMMV
+      subsite_title: GiAnMMV's Puzzles
+      description: A puzzle by GiAnMMV
