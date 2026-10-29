@@ -12,6 +12,12 @@ permalink: /puzzles/
     gap: 1.5rem;
     margin-top: 1.5rem;
   }
+  
+  @media screen and (max-width: 42em) {
+    .puzzle-grid {
+        grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+    } 
+  }
 
   .puzzle-card {
     display: flex;

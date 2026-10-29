@@ -17,3 +17,13 @@
     font-weight: bold;
     color: #666;
 }
+
+  @media screen and (max-width: 42em) {
+    .page-header {
+      padding: 1rem 4rem;
+    }
+    .project-tagline {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+  }
