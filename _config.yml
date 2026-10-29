@@ -13,4 +13,6 @@ defaults:
       type: "puzzles"
     values:
       layout: "puzzle"
-      description: "By GiAnMMV"
+      header_title: GiAnMMV's Puzzles
+      header_description: Here you can find all the puzzles I created thus far. More to come!
+      description: By GiAnMMV
