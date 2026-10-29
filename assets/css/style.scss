@@ -3,10 +3,12 @@
 
 @import "{{ site.theme }}";
 
-header {
+.page-header header {
   padding: 2.5rem 4rem;
+  background-color: #0056b3;
+  background-image: linear-gradient(0, #fff0, #fff4);
 }
 
 .main-content {
-  max-width: 72rem;
+  max-width: 80rem;
 }
