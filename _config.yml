@@ -13,3 +13,4 @@ defaults:
       type: "puzzles"
     values:
       layout: "puzzle"
+      description: "By GiAnMMV"

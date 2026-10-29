@@ -4,9 +4,9 @@
 @import "{{ site.theme }}";
 
 .page-header {
-  padding: 2.5rem 4rem;
+  padding: 2rem 4rem;
   background-color: #0056b3;
-  background-image: linear-gradient(0, #fff0, #fff4);
+  background-image: linear-gradient(0, #fff0, #fff2);
 }
 
 .main-content {
@@ -14,6 +14,6 @@
 }
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
-    font-weight: normal;
+    font-weight: bold;
     color: #666;
 }
