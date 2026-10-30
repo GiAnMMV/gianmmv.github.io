@@ -2,7 +2,7 @@
 title: "Consensus"
 creation_date: 2026-10-27
 order: 45
-sudokupad_url: https://sudokupad.app/yuqej3us8o
+sudokupad_url: https://sudokupad.app/bf7qfuzwsj
 lmd_id: "000VS3"
 rules:
   - name: "Classic Sudoku"
@@ -12,5 +12,5 @@ rules:
   - name: "Same Groups"
     desc: "The group formed by all the marked maximum cells and the group formed by all the marked minimum cells must contain the same values."
   - name: "Kropki"
-    desc: "Two digits separated by a black dot must have a ratio of 1:2."
+    desc: "Two digits separated by a black dot have a ratio of 1:2."
 ---

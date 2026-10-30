@@ -3,7 +3,7 @@
   "metadata": {
     "source": "SudokuMaker v2026.10.05-a3aef4c",
     "author": "GiAnMMV",
-    "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nMaximum/Minimum: A grey cell with arrows pointing outward must have a value greater than all its orthogonal neighbours; a grey cell with arrows pointing inward must have a value lesser than all its orthogonal neighbours.\nSame Groups: The group formed by all the marked maximum cells and the group formed by all the marked minimum cells must contain the same values.\nKropki: Two digits separated by a black dot must have a ratio of 1:2.",
+    "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nMaximum/Minimum: A grey cell with arrows pointing outward must have a value greater than all its orthogonal neighbours; a grey cell with arrows pointing inward must have a value lesser than all its orthogonal neighbours.\nSame Groups: The group formed by all the marked maximum cells and the group formed by all the marked minimum cells must contain the same values.\nKropki: Two digits separated by a black dot have a ratio of 1:2.",
     "msgcorrect": "Congrats, you won! I hope you liked it!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "title": "Consensus",
     "solution": "841523769576149283932687541493765812627418935185392674759834126264971358318256497"
