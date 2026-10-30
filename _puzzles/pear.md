@@ -3,6 +3,7 @@ title: "Pear"
 creation_date: 2026-10-12
 order: 41
 sudokupad_url: https://sudokupad.app/8n1n60wxt2
+lmd_id: "000VRZ"
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

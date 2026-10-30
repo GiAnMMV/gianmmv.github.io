@@ -1,0 +1,76 @@
+---
+layout: null
+permalink: /puzzles/random/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Random puzzle...</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        margin: 0;
+        background: #f9f9f9;
+        color: #333;
+      }
+    </style>
+  </head>
+
+  <body>
+    <span>
+      <p id="status-text"></p>
+      <p id="puzzle-name"></p>
+    </span>
+    <noscript>
+      <p>Sorry, this page needs JavaScript to work.</p>
+      <p>Check out all my puzzles <a href="/puzzles/">here</a>.</p>
+    </noscript>
+
+    <script>
+    (async () => {
+      const params = new URLSearchParams(location.search);
+      const statusText = document.getElementById("status-text");
+      const puzzleName = document.getElementById("puzzle-name");
+
+      statusText.textContent = "We're picking a random puzzle just for you...";
+
+      const REVEAL = 500;
+      
+      const data = await (await fetch("/assets/data/puzzleList.json", {cache: "no-store"})).json();
+
+      const from = params.get("from");
+      const pool = data.length > 1 ? data.filter((c) => c[0] !== from) : data;
+
+      for (let i = pool.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [pool[i], pool[j]] = [pool[j], pool[i]];
+      }
+      
+      let pick = 0;
+
+      const shuffle = (interval) => {
+        setTimeout(() => {
+          puzzleName.textContent = pool[++pick][1];
+          interval *= 1.15;
+          if (interval < 600)
+            shuffle(interval);
+          else {
+            statusText.textContent = "We've got a winner!";
+            puzzleName.style.fontWeight = 'bold';
+            setTimeout(() => location.replace(`/puzzles/${pool[pick][0]}`), REVEAL);
+          }
+        }, interval)
+      };
+
+      shuffle(40);
+    })();
+    </script>
+  </body>
+</html>

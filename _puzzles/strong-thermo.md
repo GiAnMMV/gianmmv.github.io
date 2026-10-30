@@ -2,7 +2,8 @@
 title: "Strong Thermo"
 creation_date: 2026-10-22
 order: 44
-sudokupad_url: "https://sudokupad.app/iclan06dqn"
+sudokupad_url: https://sudokupad.app/iclan06dqn
+lmd_id: "000VS2"
 rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."

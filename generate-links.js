@@ -67,7 +67,7 @@ async function processPuzzles(puzzles=null) {
             if (mdContent.includes('sudokupad_url:')) {
                 mdContent = mdContent.replace(/sudokupad_url:.*/g, `sudokupad_url: "${shortUrl}"`);
             } else {
-                mdContent = mdContent.replace(/^rules:/m, `sudokupad_url: "${shortUrl}"\nrules:`);
+                mdContent = mdContent.replace(/^rules:/m, `sudokupad_url: ${shortUrl}\nrules:`);
             }
             fs.writeFileSync(mdPath, mdContent, 'utf8');
         }
