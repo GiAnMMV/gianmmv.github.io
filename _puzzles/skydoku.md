@@ -8,5 +8,5 @@ rules:
   - name: "Classic Sudoku"
     desc: "Every row, column and 3x3 box must contain every number from 1 to 9."
   - name: "Skyscrapers"
-    desc: "Each digit in the grid represents the height of a building in its cell, and taller buildings obstruct the view of shorter ones behind them"
+    desc: "Each digit in the grid represents the height of a building in its cell, and taller buildings obstruct the view of shorter ones behind them: clues outside the grid give the number of buildings visible from that vantage point in the clue's row or column."
 ---
