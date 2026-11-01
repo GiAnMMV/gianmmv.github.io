@@ -41,10 +41,15 @@ layout: default
         {% endfor %}
         </ul>
       {% endif %}
-      <p>Play it online in <a title="{{ page.title }} by GiAnMMV" href="{{ page.sudokupad_url | relative_url }}">SudokuPad</a>.</p>
-      {% if page.lmd_id %}
-        <p>This puzzle is also on <a title="{{ page.title }} — Rätselportal — Logic Masters Deutschland" href="https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?id={{ page.lmd_id }}&amp;chlang=en">Logic Masters Germany</a>.</p>
-      {% endif %}
+      <hr/>
+      <div style="text-align: center;">
+        <a class="btn" title="{{ page.title }} by GiAnMMV" href="{{ page.sudokupad_url | relative_url}}">Play in SudokuPad</a>
+        {% if page.lmd_id %}
+        <a class="btn" title="{{ page.title }} — Rätselportal — Logic Masters Deutschland" href="https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?id={{ page.lmd_id }}">Logic Masters Germany</a>
+        {% endif %}
+        <br/>
+        <a class="btn random" title="Random Puzzle..." href="/puzzles/random/?from={{ page.slug }}">Random Puzzle</a>
+      </div>
       {% if page.content %}
       <div class="content">
         {{ content }}
