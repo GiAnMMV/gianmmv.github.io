@@ -15,103 +15,123 @@
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
     font-weight: bold;
-    color: #666;
+    color: #606c71;
 }
 
-  @media screen and (max-width: 42em) {
-    .page-header {
-      padding: 1rem 4rem;
-    }
-    .project-tagline {
-        font-size: 1rem;
-        margin-bottom: 1rem;
-    }
-  }
+.main-content hr {
+  background-color: #dee2e6;
+}
 
-  .btn {
-    position: relative;
-    padding: .5rem .75rem;
-    line-height: 1.25;
-    background-color: #0056b3;
-    border: 1px solid #0056b3;
-    color: #fff;
-    transition: color 0.2s ease, background-color 0.2s ease;
-    border-radius: .25rem;
-  }
+.site-footer {
+  border-top-color: #dee2e6;
+}
 
-  .btn:hover{
-    background-color: #004085;
-    border-color: #004085;
-    color: #fff;
-    text-decoration: none;
+@media screen and (max-width: 42em) {
+  .page-header {
+    padding: 1rem 4rem;
   }
+  .project-tagline {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+  }
+}
 
-  .btn-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-left: .5rem;
-    list-style: none;
-    border-radius: .25rem;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    max-width: 100%;
-    padding-bottom: .5rem;
-  }
+.btn {
+  position: relative;
+  padding: .5rem .75rem;
+  line-height: 1.25;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  color: #0056b3;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  border-radius: .25rem;
+  width: auto;
+}
 
-  .btn-bar > .btn {
-    display: block;
-    border-radius: 0;
-    color: #0056b3;
-    background-color: #fff;
-    border-color: #dee2e6;
-  }
+.btn:hover{
+  background-color: #e9ecef;
+  color: #0056b3;
+  text-decoration: none;
+}
 
-  .btn-bar > .btn:hover {
-    background-color: #e9ecef;
-  }
+.btn.primary {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  color: #fff;
+}
 
-  .btn-bar > .btn.active {
-    z-index: 1;
-    color: #fff;
-    background-color: #0056b3;
-    border-color: #0056b3;
-  }
+.btn.primary:hover {
+  background-color: #004085;
+  border-color: #004085;
+}
 
-  .btn-bar > .btn.disabled {
-    color: #6c757d;
-    cursor: not-allowed;
-  }
+.btn-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: .5rem;
+  padding-bottom: .5rem;
+  border-radius: .25rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
 
-  .btn-bar > .btn:first-child {
-    border-top-left-radius: .25rem;
-    border-bottom-left-radius: .25rem;
-    margin-left: auto;
-  }
+.btn-bar > .btn {
+  display: block;
+  border-radius: 0;
+  color: #0056b3;
+  background-color: #fff;
+  border-color: #dee2e6;
+}
 
-  .btn-bar > .btn:last-child {
-    border-top-right-radius: .25rem;
-    border-bottom-right-radius: .25rem;
-    margin-right: auto;
-  }
+.btn-bar > .btn:hover {
+  background-color: #e9ecef;
+}
 
-  .btn-bar > .btn+.btn {
-    margin-left: -1px;
-  }
+.btn-bar > .btn.active {
+  z-index: 1;
+  color: #fff;
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
 
-  .btn.random {
-    background-image: linear-gradient(in hsl longer hue 0deg, blue 0 100%);
-    background-position: 0 0;
-    background-size: 100% 200%;
-    border-color: currentColor;
-  }
+.btn-bar > .btn.disabled {
+  color: #606c71;
+  cursor: not-allowed;
+}
 
-  .btn.random:hover {
-    animation: moveRandomGradient 2s linear infinite;
-  }
+.btn-bar > .btn:first-child {
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+  margin-left: auto;
+}
 
-  @keyframes moveRandomGradient {
-    to {background-position: 0 -200%}
-  }
+.btn-bar > .btn:last-child {
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  margin-right: auto;
+}
+
+.btn-bar > .btn+.btn {
+  margin-left: -1px;
+  margin-top: auto;
+}
+
+.btn.random {
+  background-image: linear-gradient(in hsl longer hue 0deg, blue 0 100%);
+  background-position: 0 0;
+  background-size: 100% 200%;
+  color: #fff;
+  border-color: #0000;
+}
+
+.btn.random:hover {
+  animation: moveRandomGradient 2s linear infinite;
+}
+
+@keyframes moveRandomGradient {
+  to {background-position: 0 -200%}
+}
