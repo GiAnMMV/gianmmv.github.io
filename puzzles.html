@@ -331,14 +331,14 @@ permalink: /puzzles/
 
   document.addEventListener("DOMContentLoaded", async () => {
     try {
-      const response = await fetch("/assets/data/puzzleList.json");
+      const response = await fetch("/assets/data/puzzleList.json?t={{ site.time | date: '%s' }}");
 
       if (!response.ok)
         throw new Error("Network error: " + response.status);
 
       puzzles.push(...(await response.json()));
     } catch (error) {
-      console.error("Loading error: ", error)
+      console.error("Loading error: ", error);
     }
 
     maxPage = Math.ceil(puzzles.length / itemsPerPage);

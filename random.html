@@ -8,6 +8,7 @@ permalink: /puzzles/random/
   <head>
     <meta charset="UTF-8">
     <title>Random puzzle...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       body {
         font-family: system-ui, sans-serif;
@@ -41,9 +42,7 @@ permalink: /puzzles/random/
 
       statusText.textContent = "We're picking a random puzzle just for you...";
 
-      const REVEAL = 500;
-      
-      const data = await (await fetch("/assets/data/puzzleList.json", {cache: "no-store"})).json();
+      const data = await (await fetch("/assets/data/puzzleList.json?t={{ site.time | date: '%s' }}")).json();
 
       const from = params.get("from");
       const pool = data.length > 1 ? data.filter((c) => c[0] !== from) : data;
@@ -64,7 +63,7 @@ permalink: /puzzles/random/
           else {
             statusText.textContent = "We've got a winner!";
             puzzleName.style.fontWeight = 'bold';
-            setTimeout(() => location.replace(`/puzzles/${pool[pick][0]}`), REVEAL);
+            setTimeout(() => location.replace(`/puzzles/${pool[pick][0]}`), 500);
           }
         }, interval)
       };
