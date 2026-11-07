@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-.02 -.02 9.04 9.04" width="832px" height="832px">
+  <path fill="#fff" d="M0 0h9v9H0z"/>
+
+  <path d="M1 0V9M2 0V9M4 0V9M5 0V9M7 0V9M8 0V9M0 1H9M0 2H9M0 4H9M0 5H9M0 7H9M0 8H9Z" stroke="#000" stroke-width=".015625" fill="none"/>
+  <path d="M0 0H9V9H0ZM3 0V9M6 0V9M0 3H9M0 6H9" stroke="#000" stroke-width=".046875" stroke-linejoin="round" fill="none"/>
+
+  <g text-anchor="middle" dominant-baseline="central" font-size=".8" font-family="sans-serif">
+    <text x="0.5 3.5" y="0.5">41</text>
+    <text x="6.5" y="1.5">5</text>
+    <text x="2.5" y="2.5">1</text>
+    <text x="4.5 8.5" y="3.5">96</text>
+    <text x="1.5 5.5" y="4.5">56</text>
+    <text x="2.5 8.5" y="5.5">28</text>
+    <text x="4.5" y="7.5">7</text>
+    <text x="3.5" y="8.5">9</text>
+  </g>
+
+  <path fill="none" stroke="#000" stroke-width=".0234375px" stroke-dasharray=".078125 .046875" stroke-dashcorner="4" shape-rendering="geometricprecision" d="
+    M9 .92H7.08V0M0 7.08H.92V9M7.08 9V7.08H9
+    M0 .92H.92V0M0 4.08H.92V6.92H0
+    M9 4.08H7.08V6.92H9
+    M4.08 0V.92H6.92V0
+    M4.08 9V7.08H6.92V9
+    M1.08 5.08H3.92V7.92H1.08Z
+    M4.08 4.08H6.92V6.92H4.08Z
+    M1.08 1.08H3.92V3.92H1.08Z
+    M5.08 1.08H7.92V3.92H5.08Z
+  "/>
+</svg>
