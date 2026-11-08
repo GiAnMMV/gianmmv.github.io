@@ -217,6 +217,8 @@ async function uploadImage(slug) {
   if (!(slug in lmdData))
     lmdData[slug] = {};
 
+  const yml = ymlFromSlug(slug);
+
   const formData = new FormData();
   formData.append('datei', fileBlob, 'image.png');
   formData.append('MAX_FILE_SIZE', '4194304');
@@ -249,7 +251,10 @@ async function main() {
   if (rawArgs[1] === '--update-image')
     await uploadImage(slug);
   else if (rawArgs[1] === '--update-puzzle') {
-    await uploadPuzzle(slug);
+    if (rawArgs.length > 1)
+      await uploadPuzzle(slug, {comment: rawArgs[2]});
+    else
+      await uploadPuzzle(slug);
   }
 
   const lmdData_ordered = Object.keys(lmdData).sort().reduce(

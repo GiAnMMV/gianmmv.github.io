@@ -78,7 +78,6 @@
       "width": 0.62,
       "height": 0.62,
       "thickness": 1.28,
-      "text": "",
       "rounded": true,
       "backgroundColor": "#FFFFFF",
       "borderColor": "#000000"
@@ -90,7 +89,6 @@
       "width": 0.62,
       "height": 0.62,
       "thickness": 1.28,
-      "text": "",
       "rounded": true,
       "backgroundColor": "#FFFFFF",
       "borderColor": "#000000"
@@ -102,7 +100,6 @@
       "width": 0.62,
       "height": 0.62,
       "thickness": 1.28,
-      "text": "",
       "rounded": true,
       "backgroundColor": "#FFFFFF",
       "borderColor": "#000000"
@@ -114,7 +111,6 @@
       "width": 0.62,
       "height": 0.62,
       "thickness": 1.28,
-      "text": "",
       "rounded": true,
       "backgroundColor": "#FFFFFF",
       "borderColor": "#000000"
@@ -126,7 +122,6 @@
       "width": 0.62,
       "height": 0.62,
       "thickness": 1.28,
-      "text": "",
       "rounded": true,
       "backgroundColor": "#FFFFFF",
       "borderColor": "#000000"
@@ -138,7 +133,6 @@
       "width": 0.62,
       "height": 0.62,
       "thickness": 1.28,
-      "text": "",
       "rounded": true,
       "backgroundColor": "#FFFFFF",
       "borderColor": "#000000"
@@ -150,19 +144,17 @@
       "width": 0.62,
       "height": 0.62,
       "thickness": 1.28,
-      "text": "",
       "rounded": true,
       "backgroundColor": "#FFFFFF",
       "borderColor": "#000000"
     },
-    {"center": [1, 7.915], "width": 0.1, "height": 0.1, "text": 9},
-    {"center": [1, 8.085], "width": 0.1, "height": 0.1, "text": 8},
+    {"center": [1, 7.915], "width": 0.1, "height": 0.1, "text": 8},
+    {"center": [1, 8.085], "width": 0.1, "height": 0.1, "text": 9},
     {
       "center": [8, 8],
       "width": 0.62,
       "height": 0.62,
       "thickness": 1.28,
-      "text": "",
       "rounded": true,
       "backgroundColor": "#FFFFFF",
       "borderColor": "#000000"
@@ -174,7 +166,6 @@
       "width": 0.62,
       "height": 0.62,
       "thickness": 1.28,
-      "text": "",
       "rounded": true,
       "backgroundColor": "#FFFFFF",
       "borderColor": "#000000"
@@ -186,7 +177,6 @@
       "width": 0.62,
       "height": 0.62,
       "thickness": 1.28,
-      "text": "",
       "rounded": true,
       "backgroundColor": "#FFFFFF",
       "borderColor": "#000000"
@@ -198,7 +188,6 @@
       "width": 0.62,
       "height": 0.62,
       "thickness": 1.28,
-      "text": "",
       "rounded": true,
       "backgroundColor": "#FFFFFF",
       "borderColor": "#000000"
@@ -210,7 +199,6 @@
       "width": 0.62,
       "height": 0.62,
       "thickness": 1.28,
-      "text": "",
       "rounded": true,
       "backgroundColor": "#FFFFFF",
       "borderColor": "#000000"
@@ -222,7 +210,6 @@
       "width": 0.62,
       "height": 0.62,
       "thickness": 1.28,
-      "text": "",
       "rounded": true,
       "backgroundColor": "#FFFFFF",
       "borderColor": "#000000"
@@ -234,7 +221,6 @@
       "width": 0.62,
       "height": 0.62,
       "thickness": 1.28,
-      "text": "",
       "rounded": true,
       "backgroundColor": "#FFFFFF",
       "borderColor": "#000000"
@@ -246,7 +232,6 @@
       "width": 0.62,
       "height": 0.62,
       "thickness": 1.28,
-      "text": "",
       "rounded": true,
       "backgroundColor": "#FFFFFF",
       "borderColor": "#000000"
@@ -258,7 +243,6 @@
       "width": 0.62,
       "height": 0.62,
       "thickness": 1.28,
-      "text": "",
       "rounded": true,
       "backgroundColor": "#FFFFFF",
       "borderColor": "#000000"

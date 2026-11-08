@@ -2,7 +2,7 @@
 title: "Wishing Well"
 creation_date: 2026-10-05
 order: 36
-sudokupad_url: https://sudokupad.app/4k1ixodjik
+sudokupad_url: https://sudokupad.app/hu32bawv1f
 lmd_id: "000VN7"
 rules:
   - name: "Classic Sudoku"
