@@ -2,12 +2,24 @@ const fs = require('fs');
 const {load: cheerioLoad} = require('cheerio');
 const { load: ymlLoad } = require('js-yaml');
 const { marked } = require('marked');
+const { Resvg } = require('@resvg/resvg-js');
 
 const EDIT_PUZZLE_URL = 'https://logic-masters.de/Raetselportal/Eigene/einstellen.php';
+const UPLOAD_IMAGE_URL = 'https://logic-masters.de/Dateien/index.php';
 
 function ymlFromSlug(slug) {
   return ymlLoad(fs.readFileSync(`./_puzzles/${slug}.md`,'utf-8')
     .trim().slice(0, -3));
+}
+
+async function sessionFetchCheerio(url, options = {}) {
+  const postResponse = await sessionFetch(url, {...options});
+  const $ = cheerioLoad(await postResponse.text());
+
+  if ($('form.login').length > 0)
+    throw new Error("You're not logged in!");
+
+  return $;
 }
 
 async function sessionFetch(url, options = {}) {
@@ -16,7 +28,11 @@ async function sessionFetch(url, options = {}) {
     'Cookie': `lm_data=${process.env.LMD_COOKIE_ID}`
   };
 
-  return await fetch(url, { ...options, headers });
+  const postResponse = await fetch(url, { ...options, headers });
+  if (!postResponse.ok)
+    throw new Error(`HTTP request failed with status ${postResponse.status}`);
+
+  return postResponse;
 }
 
 function generateHtml(slug, imgCode) {
@@ -64,7 +80,7 @@ function solutionCode(slug, indication) {
       ];
     case 'c':
       return [
-        [...solution].filter((_, i) => i >= 1 && (i - 1) % 9 === 0).join(''),
+        [...solution].filter((_, i) => i % 9 === number).join(''),
         `Column ${number+1}, top to bottom.`
       ];
     case 'b':
@@ -76,111 +92,171 @@ function solutionCode(slug, indication) {
   }
 }
 
-function extractForm($form, $) {
-  const payload = {};
-
-  $form.find('input, textarea, select').each((_, element) => {
-    const $el = $(element);
-    const name = $el.attr('name');
-
-    if (!name) return;
-
-    const tagName = element.tagName.toLowerCase();
-    const type = $el.attr('type') ? $el.attr('type').toLowerCase() : '';
-    let value = $el.attr('value') || '';
-
-    if (type === 'checkbox') {
-      if ($el.is(':checked') || $el.attr('checked') !== undefined) {
-        value = $el.attr('value') || '1';
-      } else {
-        return;
-      }
-    }
-    if (tagName === 'select') {
-      const $selectedOption = $el.find('option[selected], option:selected').first();
-      if ($selectedOption.length > 0) {
-        value = $selectedOption.attr('value') || '';
-      } else {
-        const $firstOption = $el.find('option').first();
-        value = $firstOption.length > 0 ? ($firstOption.attr('value') || '') : '';
-      }
-    } else if (tagName === 'textarea') {
-      value = $el.text() || '';
-    }
-
-    payload[name] = value;
-  });
-
-  return payload;
+function extractForm($form) {
+  return Object.fromEntries(
+    $form.serializeArray().map(item => [item.name, item.value])
+  );
 }
 
-async function getPuzzlePayload(lmd_id = null) {
-  if (!lmd_id)
-    return {
-      Sudoku_JaNein: 'Ja',
-      name: '',
-      htmlcode: '',
-      codedescr: '',
-      htmlcode_en: '',
-      codedescr_en: '',
-      code: '',
-      dif: '3',
-      frei: 'ja',
-      day: '06',
-      month: '11',
-      year: '2026',
-      hour: '16',
-      min: '23',
-      sec: '34',
-      freetags: '',
-      einstellen: 'Create'
-    };
+function extractPuzzleForm($form) {
+  const payload = extractForm($form);
 
-  const url = EDIT_PUZZLE_URL + `?id=${lmd_id}`;
-
-  const pageResponse = await sessionFetch(url);
-  const pageHtml = await pageResponse.text();
-  const $ = cheerioLoad(pageHtml);
-  const $formHtml = $('form').first();
-  
-  return extractForm($formHtml, $);
-}
-
-async function postPuzzlePayload(lmd_id = null, payload = {}) {
-  const url = EDIT_PUZZLE_URL + (lmd_id ? `?id=${lmd_id}` : '');
-
-  const postResponse = await sessionFetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
-    },
-    body: new URLSearchParams(payload)
-  });
-  console.log('Status code:', postResponse.status);
-}
-
-async function editRequest(lmd_id = null, callback = (pl) => [pl, '']) {
-  const payload = await getPuzzlePayload(lmd_id);
-
-  const [editedPayload, comment] = callback({...payload});
-
-  if (JSON.stringify(payload) !== JSON.stringify(editedPayload)) {
-    if ('comment' in payload)
-      editedPayload.comment = comment;
-    await postPuzzlePayload(lmd_id, editedPayload);
-  } else {
-    console.log('No difference found; action skipped.');
+  return {
+    htmlcode: payload.htmlcode || undefined,
+    codedescr: payload.codedescr || undefined,
+    code: [payload.code, payload.codedescr_en],
+    dif: parseInt(payload.dif),
+    date: (payload.frei === 'ja') ? (
+      `${payload.year}-${payload.month.padStart(2, 0)}-${payload.day.padStart(2, 0)} `+
+      `${payload.hour.padStart(2, 0)}:${payload.min.padStart(2, 0)}:${payload.sec.padStart(2, 0)}`
+    ) : null,
+    labels: Object.keys(payload)
+      .reduce((res, l) => {
+        const match = l.match(/(?<=label_)\d+$/gm);
+        if (match) res.push(parseInt(match[0]));
+        return res;
+      }, []),
+    tags: payload.freetags.split(/\s*,\s*/)
   }
+}
+
+async function uploadPuzzle(slug, params={}) {
+  let url = EDIT_PUZZLE_URL;
+
+  const formData = new FormData();
+
+  const yml = ymlFromSlug(slug);
+
+  if (!(slug in lmdData))
+    lmdData[slug] = {};
+
+  if (!('payload' in lmdData[slug]))
+    lmdData[slug].payload = {};
+
+  if (!('img_id' in lmdData[slug]))
+    uploadImage(slug);
+
+  const createMode = !('id' in lmdData[slug]);
+  if (!createMode)
+    url += `?id=${lmdData[slug].id}`
+
+  const DEFAULTS = {
+    code: ['', ''],
+    dif: 3,
+    date: null,
+    labels: [4],
+    tags: ['Sudoku'],
+  };
+
+  if (!createMode &&
+    Object.keys(DEFAULTS).some((key) => (params[key] ?? lmdData[slug].payload[key]) === undefined)
+  ) Object.assign(params, extractPuzzleForm((await sessionFetchCheerio(url))('form').first()));
   
-  return editedPayload;
+  const { code, dif, date, labels, tags } = Object.keys(DEFAULTS).reduce((acc, key) => {
+    acc[key] = params[key] ?? lmdData[slug].payload[key] ?? DEFAULTS[key];
+    return acc;
+  }, {});
+
+  const comment = params.comment ?? '';
+
+  if (createMode)
+    formData.append('Sudoku_JaNein', tags.includes('Sudoku') ? 'Ja' : 'Nein');
+  formData.append('name', yml.title);
+  formData.append('htmlcode', lmdData[slug].payload.htmlcode || '');
+  formData.append('codedescr', lmdData[slug].payload.codedescr || '');
+  formData.append('htmlcode_en', generateHtml(slug, lmdData[slug].img_id));
+  ((arr) => {
+    formData.append('codedescr_en', arr[1]);
+    formData.append('code', arr[0]);
+  })((typeof code === 'string') ? solutionCode(slug, code) : code);
+  formData.append('dif', dif.toString());
+  if (date === null)
+    formData.append('frei', 'nein');
+  else {
+    formData.append('frei', 'ja');
+    ((d) => {
+      formData.append('day', d.getDate().toString().padStart(2, 0));
+      formData.append('month', (d.getMonth() + 1).toString().padStart(2, 0));
+      formData.append('year', d.getFullYear().toString());
+      formData.append('hour', d.getHours().toString().padStart(2, 0));
+      formData.append('min', d.getMinutes().toString().padStart(2, 0));
+      formData.append('sec', d.getSeconds().toString().padStart(2, 0));
+    })(new Date(date));
+  }
+  labels.forEach((l) => formData.append(`label_${l}`, '1'));
+  formData.append('freetags', tags.join(', '));
+  formData.append('comment', comment);
+  if (createMode)
+    formData.append('einstellen', 'Create');
+  else
+    formData.append('einstellen', 'Change');
+
+  const $ = await sessionFetchCheerio(url, {
+    method: 'POST',
+    body: formData
+  });
+  const $formHtml = $('form').first();
+  if (createMode)
+    lmdData[slug].id = $formHtml.attr('action').match(/(?<=id=)[\dA-Z]{6}(?!\S)/gm)[0];
+
+  const warning = $('.rp_wichtig').text();
+  if (warning) console.warn(warning);
+
+  Object.assign(lmdData[slug].payload, extractPuzzleForm($formHtml));
 }
 
-async function editRequestFromSlug(slug, callback = null) {
-  const lmd_id = ymlFromSlug(slug).lmd_id;
-  if (callback === null)
-    return await editRequest(lmd_id);
-  return await editRequest(lmd_id, callback);
+async function uploadImage(slug) {
+  let url = UPLOAD_IMAGE_URL;
+
+  const fileBuffer = new Resvg(fs.readFileSync(`./assets/images/${slug}.svg`), {
+    font: { loadSystemFonts: true }
+  }).render().asPng();
+
+  const fileBlob = new Blob([fileBuffer], { type: 'image/png' });
+
+  if (!(slug in lmdData))
+    lmdData[slug] = {};
+
+  const formData = new FormData();
+  formData.append('datei', fileBlob, 'image.png');
+  formData.append('MAX_FILE_SIZE', '4194304');
+  formData.append('name', yml.title);
+  formData.append('anmerkung', "I'm the author of this puzzle.");
+  
+  if ('img_id' in lmdData[slug]) {
+    url += `?id=${lmdData[slug].img_id}`;
+    formData.append('new', 'Neue Version hochladen');
+    formData.append('status', 'geheim');
+  } else {
+    formData.append('offen', 'on');
+    formData.append('dateiupload', 'Hochladen');
+  }
+
+  const $ = await sessionFetchCheerio(url, {
+    method: 'POST',
+    body: formData
+  });
+
+  if (!('img_id' in lmdData[slug])) {
+    lmdData[slug].img_id = $('.note').text().match(/(?<=:\s?)[\dA-Z]{6}(?!\S)/gm)[0];
+  }
 }
 
-(async () => {console.log(await getPuzzlePayload(ymlFromSlug('pear').lmd_id));})();
-console.log(generateHtml('pear', '0015VO'));
+const lmdData = JSON.parse(fs.readFileSync('lmd-data.json'));
+async function main() {
+  const rawArgs = process.argv.slice(2);
+  const slug = rawArgs[0];
+  if (rawArgs[1] === '--update-image')
+    await uploadImage(slug);
+  else if (rawArgs[1] === '--update-puzzle') {
+    await uploadPuzzle(slug);
+  }
+
+  const lmdData_ordered = Object.keys(lmdData).sort().reduce(
+    (obj, key) => {
+      obj[key] = lmdData[key];
+      return obj;
+    }, {});
+  fs.writeFileSync('lmd-data.json', JSON.stringify(lmdData_ordered, null, 2));
+}
+main();

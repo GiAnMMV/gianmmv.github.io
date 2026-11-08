@@ -37,7 +37,7 @@
     <circle r=".175" cx="8.5" cy="9"/>
   </g>
 
-  <g text-anchor="middle" dominant-baseline="central" font-family="sans-serif" stroke="#000" stroke-width=".015625" stroke-linejoin="round" font-size=".28125">
+  <g text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif" stroke="#000" stroke-width=".015625" stroke-linejoin="round" font-size=".28125">
     <text x=".5 8.5" y="0">VV</text>
     <text x="0 9" y=".5">VV</text>
     <text x="0 9" y="8.5">VV</text>

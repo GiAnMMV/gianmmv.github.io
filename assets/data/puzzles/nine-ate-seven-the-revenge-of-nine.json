@@ -3,7 +3,7 @@
   "metadata": {
     "source": "SudokuMaker v2026.10.05-a3aef4c",
     "author": "GiAnMMV",
-    "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nNine Ate Seven: The following rules apply to 7, 8 and 9:\n- Nine Eats Seven: If a 7 and a 9 on the same row/column are one cell apart, the digit between them must be an 8.\n- Seven Flees From Nine: 7 and 9 are never orthogonally adjacent.\n- Nine Only Eats Seven: If 9 and 8 are adjacent, the digit on the other side of 8 must be a 7.\n- Only Nine Eats Seven: If 7 and 8 are adjacent, the digit on the other side of 8 must be a 9.\nKropki: Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio.",
+    "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nNine Ate Seven: Considering the grid as a finite plan (opposite sides are not connected), the following rules apply to 7, 8 and 9:\n- Nine Eats Seven: If a 7 and a 9 on the same row/column are one cell apart, the digit between them must be an 8.\n- Seven Flees From Nine: 7 and 9 are never orthogonally adjacent.\n- Nine Only Eats Seven: If 9 and 8 are adjacent, the digit on the other side of 8 must be a 7.\n- Only Nine Eats Seven: If 7 and 8 are adjacent, the digit on the other side of 8 must be a 9.\nKropki: Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio.",
     "msgcorrect": "Thanks for playing' Hope you enjoyed this li'l puzzle!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "483129567752863914691574823239416758145987632876352149328691475914735286567248391",
     "title": "Nine Ate Seven – The Revenge of Nine"

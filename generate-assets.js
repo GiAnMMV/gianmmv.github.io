@@ -21,7 +21,7 @@ const allSlugs = fs.readdirSync(puzzlesDir)
 
 function getChangedSlugs() {
   try {
-    let output = execSync('git diff --staged --name-only', { encoding: 'utf-8' });
+    let output = execSync('git diff --name-only', { encoding: 'utf-8' });
     //if (!output.trim()) {
     //  output = execSync('git diff --name-only HEAD~1 HEAD', { encoding: 'utf-8' });
     //}

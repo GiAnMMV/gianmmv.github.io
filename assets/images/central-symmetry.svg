@@ -60,7 +60,7 @@
     M.5 3.84A.16.16 0 11.5 4.16.16.16 0 11.5 3.84
   "/>
 
-  <g text-anchor="middle" dominant-baseline="central" stroke="#000" stroke-width=".015625" stroke-linejoin="round" font-size=".38125" font-family="sans-serif">
+  <g text-anchor="middle" dominant-baseline="central" stroke="#000" stroke-width=".015625" stroke-linejoin="round" font-size=".38125" font-family="Arial, Helvetica, sans-serif">
     <text x=".5" y="4" transform="rotate(90 .5 4)">&gt;</text>
     <text x="8.5" y="5" transform="rotate(90 8.5 5)">&lt;</text>
     <text x="2.5" y="6" transform="rotate(90 2.5 6)">&gt;</text>
@@ -75,5 +75,5 @@
     <text x="2" y="6.5">&gt;</text>
   </g>
 
-  <text text-anchor="middle" dominant-baseline="central" font-size=".8" font-family="sans-serif" x="4.5" y="4.5">7</text>
+  <text text-anchor="middle" dominant-baseline="central" font-size=".8" font-family="Arial, Helvetica, sans-serif" x="4.5" y="4.5">7</text>
 </svg>

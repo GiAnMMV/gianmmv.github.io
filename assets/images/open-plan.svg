@@ -19,7 +19,7 @@
     <circle r=".175" cx=".5" cy="4"/>
     <circle r=".175" cx="8.5" cy="8"/>
   </g>
-  <g stroke="#000" stroke-width=".015625" text-anchor="middle" dominant-baseline="central" stroke-linejoin="round" font-size=".28125" font-family="sans-serif">
+  <g stroke="#000" stroke-width=".015625" text-anchor="middle" dominant-baseline="central" stroke-linejoin="round" font-size=".28125" font-family="Arial, Helvetica, sans-serif">
     <text x="8.5" y="2">X</text>
     <text x="7.5" y="6">X</text>
     <text x="3" y="7.5">X</text>
