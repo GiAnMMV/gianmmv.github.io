@@ -1,14 +1,14 @@
 ---
-title: "Thermo Square"
-creation_date: 2026-09-25
+title: Thermo Square
+creation_date: "2026-09-25"
 order: 18
 sudokupad_url: https://sudokupad.app/q5gth1v9qd
-lmd_id: "000V67"
+lmd_id: 000V67
 rules:
-  - name: "6x6 Sudoku"
-    desc: "Every row, column and 2x3 box must contain every number from 1 to 6."
-  - name: "Killer Cages"
-    desc: "No digit may appear more than once within a cage."
-  - name: "Thermometers"
-    desc: "Along thermometers, digits must increase from the bulb."
+  - name: 6x6 Sudoku
+    desc: Every row, column and 2x3 box must contain every number from 1 to 6.
+  - name: Killer Cages
+    desc: No digit may appear more than once within a cage.
+  - name: Thermometers
+    desc: Along thermometers, digits must increase from the bulb.
 ---

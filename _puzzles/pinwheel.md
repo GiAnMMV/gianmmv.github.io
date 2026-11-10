@@ -1,14 +1,14 @@
 ---
-title: "Pinwheel"
-creation_date: 2026-09-17
+title: Pinwheel
+creation_date: "2026-09-17"
 order: 10
 sudokupad_url: https://sudokupad.app/9gz5upvi0m
-lmd_id: "000UZ1"
+lmd_id: 000UZ1
 rules:
-  - name: "Classic Sudoku"
-    desc: "Every row, column and 3x3 box must contain every number from 1 to 9."
-  - name: "German Whispers"
-    desc: "Every two consecutive digits along a green line must have a difference of at least 5."
-  - name: "Kropki"
-    desc: "Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio."
+  - name: Classic Sudoku
+    desc: Every row, column and 3x3 box must contain every number from 1 to 9.
+  - name: German Whispers
+    desc: Every two consecutive digits along a green line must have a difference of at least 5.
+  - name: Kropki
+    desc: Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio.
 ---

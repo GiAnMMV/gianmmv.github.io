@@ -4,7 +4,7 @@
     "source": "SudokuMaker v2026.11.08-800383e",
     "title": "Toroidal German Whispers",
     "author": "GiAnMMV",
-    "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nGerman Whispers: Every two consecutive digits along a green line must have a difference of at least 5.\nToroidal Grid: A line wrapping around from one side of the grid continues on the opposite side.",
+    "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nGerman Whispers: Every two consecutive digits along a green line must have a difference of at least 5.\nToroidal Grid: A line wrapping around from one side of the grid continues on the opposite side.\nKropki: Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio.",
     "msgcorrect": "You did it! Thank you so much for playing!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "176935248983427516425816793237651984851294367694378152369582471742169835518743629"
   },

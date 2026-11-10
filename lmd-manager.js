@@ -1,17 +1,13 @@
 const fs = require('fs');
 const { load: cheerioLoad } = require('cheerio');
-const { load: ymlLoad } = require('js-yaml');
+const { load: ymlLoad, dump: ymlDump } = require('js-yaml');
 const { marked } = require('marked');
 const { Resvg } = require('@resvg/resvg-js');
 
+const { ymlFromSlug, writeYml } = require('./generate-assets.js');
+
 const EDIT_PUZZLE_URL = 'https://logic-masters.de/Raetselportal/Eigene/einstellen.php';
 const UPLOAD_IMAGE_URL = 'https://logic-masters.de/Dateien/index.php';
-
-function ymlFromSlug(slug) {
-  if (!slug)
-    return ymlLoad(fs.readFileSync(`./_puzzles/${slug}.md`, 'utf-8')
-      .trim().slice(0, -3));
-}
 
 async function sessionFetchCheerio(url, options = {}) {
   const postResponse = await sessionFetch(url, { ...options });
@@ -92,7 +88,7 @@ function solutionCode(slug, indication) {
     case 'b':
       return [
         [...solution].filter((_, i) => boxes[number].includes(i)).join(''),
-        `${number === (boxes.length - 1) / 2 ? 'Middle box' : `Box ${number + 1}`}, in reading order.`
+        `${number === (boxes.length - 1) / 2 ? 'Central box' : `Box ${number + 1}`}, in reading order.`
       ];
   }
 }
@@ -117,7 +113,7 @@ function extractPuzzleForm($form) {
     ) : null,
     labels: Object.keys(payload)
       .reduce((res, l) => {
-        const match = l.match(/(?<=label_)\d+$/gm);
+        const match = l.match(/(?<=^label_)\d+$/);
         if (match) res.push(parseInt(match[0]));
         return res;
       }, []),
@@ -135,9 +131,6 @@ async function uploadPuzzle(slug, params = {}) {
   if (!(slug in lmdData))
     lmdData[slug] = {};
 
-  if (!('payload' in lmdData[slug]))
-    lmdData[slug].payload = {};
-
   if (!('img_id' in lmdData[slug]))
     uploadImage(slug);
 
@@ -154,11 +147,11 @@ async function uploadPuzzle(slug, params = {}) {
   };
 
   if (!createMode &&
-    Object.keys(DEFAULTS).some((key) => (params[key] ?? lmdData[slug].payload[key]) === undefined)
+    Object.keys(DEFAULTS).some((key) => (params[key] ?? lmdData[slug][key]) === undefined)
   ) Object.assign(params, extractPuzzleForm((await sessionFetchCheerio(url))('form').first()));
 
   const { code, dif, date, labels, tags } = Object.keys(DEFAULTS).reduce((acc, key) => {
-    acc[key] = params[key] ?? lmdData[slug].payload[key] ?? DEFAULTS[key];
+    acc[key] = params[key] ?? lmdData[slug][key] ?? DEFAULTS[key];
     return acc;
   }, {});
 
@@ -167,8 +160,8 @@ async function uploadPuzzle(slug, params = {}) {
   if (createMode)
     formData.append('Sudoku_JaNein', tags.includes('Sudoku') ? 'Ja' : 'Nein');
   formData.append('name', yml.title);
-  formData.append('htmlcode', lmdData[slug].payload.htmlcode || '');
-  formData.append('codedescr', lmdData[slug].payload.codedescr || '');
+  formData.append('htmlcode', lmdData[slug].htmlcode || '');
+  formData.append('codedescr', lmdData[slug].codedescr || '');
   formData.append('htmlcode_en', generateHtml(slug, lmdData[slug].img_id));
   ((arr) => {
     formData.append('codedescr_en', arr[1]);
@@ -201,13 +194,17 @@ async function uploadPuzzle(slug, params = {}) {
     body: formData
   });
   const $formHtml = $('form').first();
-  if (createMode)
-    lmdData[slug].id = $formHtml.attr('action').match(/(?<=id=)[\dA-Z]{6}(?!\S)/gm)[0];
+  if (createMode) {
+    const id = $formHtml.attr('action').match(/(?<=id=)[\dA-Z]{6}(?!\S)/gm)[0];
+    lmdData[slug].id = id;
+    yml.lmd_id = id;
+    writeYml(yml, slug);
+  }
 
   const warning = $('.rp_wichtig').text();
   if (warning) console.warn(warning);
 
-  Object.assign(lmdData[slug].payload, extractPuzzleForm($formHtml));
+  Object.assign(lmdData[slug], extractPuzzleForm($formHtml));
 }
 
 async function uploadImage(slug) {
@@ -245,7 +242,7 @@ async function uploadImage(slug) {
   });
 
   if (!('img_id' in lmdData[slug])) {
-    lmdData[slug].img_id = $('.note').text().match(/(?<=:\s?)[\dA-Z]{6}(?!\S)/gm)[0];
+    lmdData[slug].img_id = $('.note').text().match(/:\s*([\dA-Z]{6})\s*$/)[1];
   }
 }
 

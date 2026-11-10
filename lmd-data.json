@@ -2,987 +2,907 @@
   "alphabet-cereal": {
     "id": "000VHF",
     "img_id": "0015EA",
-    "payload": {
-      "code": [
-        "183947265",
-        "Row 1, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Greater Than (Variant)",
-        "Sudoku"
-      ]
-    }
+    "code": [
+      "183947265",
+      "Row 1, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Greater Than (Variant)",
+      "Sudoku"
+    ]
   },
   "ambiguous-clues": {
     "id": "000VIR",
     "img_id": "0015FY",
-    "payload": {
-      "code": [
-        "279368514",
-        "Row 1, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Sandwich (Variant)",
-        "Skyscrapers",
-        "Sudoku",
-        "X-Sums (Variant)"
-      ]
-    }
+    "code": [
+      "279368514",
+      "Row 1, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Sandwich (Variant)",
+      "Skyscrapers",
+      "Sudoku",
+      "X-Sums (Variant)"
+    ]
   },
   "aoi-manji": {
     "id": "000UZM",
     "img_id": "0014SK",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Aoi Manji by GiAnMMV\" href=\"https://sudokupad.app/2wf7bhtth9\">\r\n      <img:0014SK style=\"width: 100%; height: auto; display: block;\" alt=\"Aoi Manji\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n<li><strong>Region Sum Lines:</strong> Die Grenzen der 3x3-Blöcke unterteilen eine blaue Linie in mehrere Abschnitte, die dieselbe Summe aufweisen. Alle derartigen Linien müssen dieselbe Summe haben.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Palindrom:</strong> Ziffern entlang einer grauen Linie lesen sich vorwärts und rückwärts gleich.</li>\r\n      <li style=\"max-width: 100%;\"><strong>X:</strong> Zwei durch ein „X“ getrennte Ziffern ergeben in der Summe 10.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Aoi Manji by GiAnMMV\" href=\"https://sudokupad.app/2wf7bhtth9\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"aoi-manji title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 9, von links nach rechts.",
-      "code": [
-        "192876543",
-        "Row 9, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Palindrome (Variant)",
-        "Region Sum Lines (Variant)",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Aoi Manji by GiAnMMV\" href=\"https://sudokupad.app/2wf7bhtth9\">\r\n      <img:0014SK style=\"width: 100%; height: auto; display: block;\" alt=\"Aoi Manji\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n<li><strong>Region Sum Lines:</strong> Die Grenzen der 3x3-Blöcke unterteilen eine blaue Linie in mehrere Abschnitte, die dieselbe Summe aufweisen. Alle derartigen Linien müssen dieselbe Summe haben.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Palindrom:</strong> Ziffern entlang einer grauen Linie lesen sich vorwärts und rückwärts gleich.</li>\r\n      <li style=\"max-width: 100%;\"><strong>X:</strong> Zwei durch ein „X“ getrennte Ziffern ergeben in der Summe 10.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Aoi Manji by GiAnMMV\" href=\"https://sudokupad.app/2wf7bhtth9\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"aoi-manji title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 9, von links nach rechts.",
+    "code": [
+      "192876543",
+      "Row 9, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Palindrome (Variant)",
+      "Region Sum Lines (Variant)",
+      "Sudoku"
+    ]
   },
   "arrow-web": {
     "id": "000VRV",
     "img_id": "0015VL",
-    "payload": {
-      "code": [
-        "219864573",
-        "Row 8, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Arrows",
-        "Kropki",
-        "Sudoku"
-      ]
-    }
+    "code": [
+      "219864573",
+      "Row 8, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Arrows",
+      "Kropki",
+      "Sudoku"
+    ]
   },
   "assassin-cages": {
     "id": "000UW3",
     "img_id": "0014OJ",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Assassin Cages by GiAnMMV\" href=\"https://sudokupad.app/bcde4gy7io\">\r\n      <img:0014OJ style=\"width: 100%; height: auto; display: block;\" alt=\"Assassin Cages\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Killer Käfige:</strong> Keine Ziffer darf innerhalb eines Käfigs mehr als einmal vorkommen.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Assassin Cages by GiAnMMV\" href=\"https://sudokupad.app/bcde4gy7io\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"assassin-cages title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 6, von links nach rechts.",
-      "code": [
-        "897214365",
-        "Row 6, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        3
-      ],
-      "tags": [
-        "Killer (Variant)",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Assassin Cages by GiAnMMV\" href=\"https://sudokupad.app/bcde4gy7io\">\r\n      <img:0014OJ style=\"width: 100%; height: auto; display: block;\" alt=\"Assassin Cages\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Killer Käfige:</strong> Keine Ziffer darf innerhalb eines Käfigs mehr als einmal vorkommen.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Assassin Cages by GiAnMMV\" href=\"https://sudokupad.app/bcde4gy7io\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"assassin-cages title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 6, von links nach rechts.",
+    "code": [
+      "897214365",
+      "Row 6, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      3
+    ],
+    "tags": [
+      "Killer (Variant)",
+      "Sudoku"
+    ]
   },
   "big-bang": {
     "id": "000V1A",
     "img_id": "0014UN",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Big Bang by GiAnMMV\" href=\"https://sudokupad.app/vl9j17qd0e\">\r\n      <img:0014UN style=\"width: 100%; height: auto; display: block;\" alt=\"Big Bang\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Region Sum Lines:</strong> Die Grenzen der 3x3-Blöcke unterteilen eine blaue Linie in mehrere Abschnitte, die dieselbe Summe aufweisen. Alle derartigen Linien müssen dieselbe Summe haben.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Pfeile:</strong> Die Zahlen entlang eines Pfeils ergeben in der Summe den Wert in der eingekreisten Zelle.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n      <li style=\"max-width: 100%;\"><strong>V:</strong> Zwei Ziffern, die durch einen V-Hinweis getrennt sind, summieren sich zu 5. Befindet sich ein Hinweis am äußeren Rand, gilt er für die Ziffern an den beiden Enden dieser Zeile/Spalte.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Big Bang by GiAnMMV\" href=\"https://sudokupad.app/vl9j17qd0e\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"big-bang title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 7, von links nach rechts.",
-      "code": [
-        "518732964",
-        "Row 7, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Arrows (Variant)",
-        "Kropki",
-        "Region Sum Lines (Variant)",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Big Bang by GiAnMMV\" href=\"https://sudokupad.app/vl9j17qd0e\">\r\n      <img:0014UN style=\"width: 100%; height: auto; display: block;\" alt=\"Big Bang\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Region Sum Lines:</strong> Die Grenzen der 3x3-Blöcke unterteilen eine blaue Linie in mehrere Abschnitte, die dieselbe Summe aufweisen. Alle derartigen Linien müssen dieselbe Summe haben.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Pfeile:</strong> Die Zahlen entlang eines Pfeils ergeben in der Summe den Wert in der eingekreisten Zelle.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n      <li style=\"max-width: 100%;\"><strong>V:</strong> Zwei Ziffern, die durch einen V-Hinweis getrennt sind, summieren sich zu 5. Befindet sich ein Hinweis am äußeren Rand, gilt er für die Ziffern an den beiden Enden dieser Zeile/Spalte.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Big Bang by GiAnMMV\" href=\"https://sudokupad.app/vl9j17qd0e\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"big-bang title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 7, von links nach rechts.",
+    "code": [
+      "518732964",
+      "Row 7, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Arrows (Variant)",
+      "Kropki",
+      "Region Sum Lines (Variant)",
+      "Sudoku"
+    ]
   },
   "black-and-white": {
     "id": "000UUW",
     "img_id": "0014N9",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Black &amp; White by GiAnMMV\" href=\"https://sudokupad.app/tlwty0cnn5\">\r\n      <img:0014N9 style=\"width: 100%; height: auto; display: block;\" alt=\"Black &amp; White\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Killer Käfige:</strong> Die Ziffern innerhalb eines Käfigs müssen sich zu der Zahl in der Ecke summieren.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Palindrom:</strong> Ziffern entlang einer grauen Linie lesen sich vorwärts und rückwärts gleich.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Black &amp; White by GiAnMMV\" href=\"https://sudokupad.app/tlwty0cnn5\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"black-and-white title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 9, von links nach rechts.",
-      "code": [
-        "174658932",
-        "Row 9, left to right."
-      ],
-      "dif": 3,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Killer (Variant)",
-        "Kropki",
-        "Palindrome (Variant)",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Black &amp; White by GiAnMMV\" href=\"https://sudokupad.app/tlwty0cnn5\">\r\n      <img:0014N9 style=\"width: 100%; height: auto; display: block;\" alt=\"Black &amp; White\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Killer Käfige:</strong> Die Ziffern innerhalb eines Käfigs müssen sich zu der Zahl in der Ecke summieren.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Palindrom:</strong> Ziffern entlang einer grauen Linie lesen sich vorwärts und rückwärts gleich.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Black &amp; White by GiAnMMV\" href=\"https://sudokupad.app/tlwty0cnn5\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"black-and-white title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 9, von links nach rechts.",
+    "code": [
+      "174658932",
+      "Row 9, left to right."
+    ],
+    "dif": 3,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Killer (Variant)",
+      "Kropki",
+      "Palindrome (Variant)",
+      "Sudoku"
+    ]
   },
   "bulbless-thermometers": {
     "id": "000V3N",
     "img_id": "0014XL",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Bulbless Thermometers by GiAnMMV\" href=\"https://sudokupad.app/md3bap0lnb\">\r\n      <img:0014XL style=\"width: 100%; height: auto; display: block;\" alt=\"Bulbless Thermometers\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Bulbless Thermometer:</strong> Entlang grauer Linien müssen die Ziffern in aufsteigender oder absteigender Reihenfolge angeordnet sein (d. h. das fehlende Thermometer-Ende muss sich an einem der beiden Enden der Linie befinden).</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Bulbless Thermometers by GiAnMMV\" href=\"https://sudokupad.app/md3bap0lnb\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"bulbless-thermometers title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 4, von links nach rechts.",
-      "code": [
-        "457213689",
-        "Row 4, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Kropki",
-        "Sudoku",
-        "Thermometers"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Bulbless Thermometers by GiAnMMV\" href=\"https://sudokupad.app/md3bap0lnb\">\r\n      <img:0014XL style=\"width: 100%; height: auto; display: block;\" alt=\"Bulbless Thermometers\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Bulbless Thermometer:</strong> Entlang grauer Linien müssen die Ziffern in aufsteigender oder absteigender Reihenfolge angeordnet sein (d. h. das fehlende Thermometer-Ende muss sich an einem der beiden Enden der Linie befinden).</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Bulbless Thermometers by GiAnMMV\" href=\"https://sudokupad.app/md3bap0lnb\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"bulbless-thermometers title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 4, von links nach rechts.",
+    "code": [
+      "457213689",
+      "Row 4, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Kropki",
+      "Sudoku",
+      "Thermometers"
+    ]
   },
   "central-symmetry": {
     "id": "000V27",
     "img_id": "0014VV",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Central Symmetry by GiAnMMV\" href=\"https://sudokupad.app/5lcifax0b3\">\r\n      <img:0014VV style=\"width: 100%; height: auto; display: block;\" alt=\"Central Symmetry\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Entropische Linien:</strong> Jede Gruppe von drei aufeinanderfolgenden Zellen auf einer Linie muss eine niedrige Ziffer {1,2,3}, eine mittlere Ziffer {4,5,6} und eine hohe Ziffer {7,8,9} enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Pfeile:</strong> Die Zahlen entlang eines Pfeils ergeben in der Summe den Wert in der eingekreisten Zelle; der eingekreiste Wert wird von links nach rechts oder von oben nach unten gelesen, wenn er aus mehreren Ziffern besteht.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Größer/Kleiner:</strong> Wenn zwei Ziffern durch ein „&lt;“ getrennt sind, steht die kleinere auf der Seite, auf die das „&lt;“ zeigt.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Parität:</strong> Eine Ziffer in einem grauen Quadrat muss gerade sein.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Central Symmetry by GiAnMMV\" href=\"https://sudokupad.app/5lcifax0b3\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"central-symmetry title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Spalte 8, von oben nach unten.",
-      "code": [
-        "847953621",
-        "Column 8, top to down."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Arrows (Variant)",
-        "Entropy (Theme)",
-        "Greater Than (Variant)",
-        "Parity (Theme)",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Central Symmetry by GiAnMMV\" href=\"https://sudokupad.app/5lcifax0b3\">\r\n      <img:0014VV style=\"width: 100%; height: auto; display: block;\" alt=\"Central Symmetry\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Entropische Linien:</strong> Jede Gruppe von drei aufeinanderfolgenden Zellen auf einer Linie muss eine niedrige Ziffer {1,2,3}, eine mittlere Ziffer {4,5,6} und eine hohe Ziffer {7,8,9} enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Pfeile:</strong> Die Zahlen entlang eines Pfeils ergeben in der Summe den Wert in der eingekreisten Zelle; der eingekreiste Wert wird von links nach rechts oder von oben nach unten gelesen, wenn er aus mehreren Ziffern besteht.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Größer/Kleiner:</strong> Wenn zwei Ziffern durch ein „&lt;“ getrennt sind, steht die kleinere auf der Seite, auf die das „&lt;“ zeigt.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Parität:</strong> Eine Ziffer in einem grauen Quadrat muss gerade sein.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Central Symmetry by GiAnMMV\" href=\"https://sudokupad.app/5lcifax0b3\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"central-symmetry title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Spalte 8, von oben nach unten.",
+    "code": [
+      "847953621",
+      "Column 8, top to down."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Arrows (Variant)",
+      "Entropy (Theme)",
+      "Greater Than (Variant)",
+      "Parity (Theme)",
+      "Sudoku"
+    ]
   },
   "connections": {
     "id": "000VOA",
     "img_id": "0015U2",
-    "payload": {
-      "code": [
-        "389746521",
-        "Row 9, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Arrows (Variant)",
-        "Sudoku"
-      ]
-    }
+    "code": [
+      "389746521",
+      "Row 9, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Arrows (Variant)",
+      "Sudoku"
+    ]
   },
   "consensus": {
     "id": "000VS3",
     "img_id": "0015VS",
-    "payload": {
-      "code": [
-        "397582416",
-        "Column 6, top to bottom."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Kropki",
-        "Maximum (Variant)",
-        "MinMax (Variant)",
-        "Sudoku"
-      ]
-    }
+    "code": [
+      "397582416",
+      "Column 6, top to bottom."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Kropki",
+      "Maximum (Variant)",
+      "MinMax (Variant)",
+      "Sudoku"
+    ]
   },
   "dalmatian-madness": {
     "id": "000UT0",
     "img_id": "0014L4",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Dalmatian Madness by GiAnMMV\" href=\"https://sudokupad.app/9obt9do8e5\">\r\n      <img:0014L4 style=\"width: 100%; height: auto; display: block;\" alt=\"Dalmatian Madness\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>German Whisper:</strong> Die Differenz zwischen zwei benachbarten Ziffern auf einer grünen Linie muss mindestens 5 betragen.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2; sind zwei Ziffern durch einen schwarz-weißen Punkt getrennt, muss eine ein Vielfaches der anderen sein.<br/>\r\nEin Punkt am Eckpunkt, an dem vier Zellen zusammentreffen, bedeutet, dass die entsprechende Bedingung für beide diagonalen Paare gilt (oben-links/unten-rechts und oben-rechts/unten-links).</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Dalmatian Madness by GiAnMMV\" href=\"https://sudokupad.app/9obt9do8e5\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"dalmatian-madness title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 1, von links nach rechts.",
-      "code": [
-        "875642319",
-        "Row 1, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "German Whispers (Variant)",
-        "Kropki",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Dalmatian Madness by GiAnMMV\" href=\"https://sudokupad.app/9obt9do8e5\">\r\n      <img:0014L4 style=\"width: 100%; height: auto; display: block;\" alt=\"Dalmatian Madness\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>German Whisper:</strong> Die Differenz zwischen zwei benachbarten Ziffern auf einer grünen Linie muss mindestens 5 betragen.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2; sind zwei Ziffern durch einen schwarz-weißen Punkt getrennt, muss eine ein Vielfaches der anderen sein.<br/>\r\nEin Punkt am Eckpunkt, an dem vier Zellen zusammentreffen, bedeutet, dass die entsprechende Bedingung für beide diagonalen Paare gilt (oben-links/unten-rechts und oben-rechts/unten-links).</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Dalmatian Madness by GiAnMMV\" href=\"https://sudokupad.app/9obt9do8e5\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"dalmatian-madness title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 1, von links nach rechts.",
+    "code": [
+      "875642319",
+      "Row 1, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "German Whispers (Variant)",
+      "Kropki",
+      "Sudoku"
+    ]
   },
   "dark-portal": {
     "id": "000UUO",
     "img_id": "0014N0",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Dark Portal by GiAnMMV\" href=\"https://sudokupad.app/sary75xtrl\">\r\n      <img:0014N0 style=\"width: 100%; height: auto; display: block;\" alt=\"Dark Portal\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Palindrom:</strong> Ziffern entlang einer grauen Linie lesen sich vorwärts und rückwärts gleich.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Pfeile:</strong> Die Zahlen entlang eines Pfeils ergeben in der Summe den Wert in der eingekreisten Zelle.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Dark Portal by GiAnMMV\" href=\"https://sudokupad.app/sary75xtrl\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"dark-portal title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 9, von links nach rechts.",
-      "code": [
-        "714623895",
-        "Row 9, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Arrows (Variant)",
-        "Kropki",
-        "Palindrome (Variant)",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Dark Portal by GiAnMMV\" href=\"https://sudokupad.app/sary75xtrl\">\r\n      <img:0014N0 style=\"width: 100%; height: auto; display: block;\" alt=\"Dark Portal\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Palindrom:</strong> Ziffern entlang einer grauen Linie lesen sich vorwärts und rückwärts gleich.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Pfeile:</strong> Die Zahlen entlang eines Pfeils ergeben in der Summe den Wert in der eingekreisten Zelle.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Dark Portal by GiAnMMV\" href=\"https://sudokupad.app/sary75xtrl\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"dark-portal title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 9, von links nach rechts.",
+    "code": [
+      "714623895",
+      "Row 9, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Arrows (Variant)",
+      "Kropki",
+      "Palindrome (Variant)",
+      "Sudoku"
+    ]
   },
   "delta-rune": {
     "id": "000V74",
     "img_id": "00151O",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Delta Rune by GiAnMMV\" href=\"https://sudokupad.app/odgv620p0a\">\r\n      <img:00151O style=\"width: 100%; height: auto; display: block;\" alt=\"Delta Rune\"/>\r\n    </a>\r\n  </div>\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Pfeile:</strong> Die Zahlen entlang eines Pfeils ergeben in der Summe den Wert in der eingekreisten Zelle.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Palindrom:</strong> Ziffern entlang einer grauen Linie lesen sich vorwärts und rückwärts gleich.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Region Sum Lines:</strong> Die Grenzen der 3x3-Blöcke unterteilen eine blaue Linie in mehrere Abschnitte, die dieselbe Summe aufweisen. Verschiedene Linien können unterschiedliche Summen haben.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Renban:</strong> Alle Ziffern entlang einer violetten Linie müssen eine aufeinanderfolgende Zahlenfolge bilden (in beliebiger Reihenfolge).</li>\r\n      <li style=\"max-width: 100%;\"><strong>German Whisper:</strong> Die Differenz zwischen zwei benachbarten Ziffern auf einer grünen Linie muss mindestens 5 betragen.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Counting Circles (Zählkreise):</strong> Jede Ziffer in einem Kreis gibt genau an, in wie vielen Kreisen diese Ziffer enthalten ist (Pfeilkreise sind <span style=\"text-decoration: underline;\">NICHT</span> enthalten).</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Delta Rune by GiAnMMV\" href=\"https://sudokupad.app/odgv620p0a\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"delta-rune title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 8, von links nach rechts.",
-      "code": [
-        "782695134",
-        "Row 8, left to right."
-      ],
-      "dif": 1,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Arrows (Variant)",
-        "German Whispers (Variant)",
-        "Kropki",
-        "Palindrome (Variant)",
-        "Region Sum Lines (Variant)",
-        "Renban (Variant)",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Delta Rune by GiAnMMV\" href=\"https://sudokupad.app/odgv620p0a\">\r\n      <img:00151O style=\"width: 100%; height: auto; display: block;\" alt=\"Delta Rune\"/>\r\n    </a>\r\n  </div>\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Pfeile:</strong> Die Zahlen entlang eines Pfeils ergeben in der Summe den Wert in der eingekreisten Zelle.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Palindrom:</strong> Ziffern entlang einer grauen Linie lesen sich vorwärts und rückwärts gleich.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Region Sum Lines:</strong> Die Grenzen der 3x3-Blöcke unterteilen eine blaue Linie in mehrere Abschnitte, die dieselbe Summe aufweisen. Verschiedene Linien können unterschiedliche Summen haben.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Renban:</strong> Alle Ziffern entlang einer violetten Linie müssen eine aufeinanderfolgende Zahlenfolge bilden (in beliebiger Reihenfolge).</li>\r\n      <li style=\"max-width: 100%;\"><strong>German Whisper:</strong> Die Differenz zwischen zwei benachbarten Ziffern auf einer grünen Linie muss mindestens 5 betragen.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Counting Circles (Zählkreise):</strong> Jede Ziffer in einem Kreis gibt genau an, in wie vielen Kreisen diese Ziffer enthalten ist (Pfeilkreise sind <span style=\"text-decoration: underline;\">NICHT</span> enthalten).</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Delta Rune by GiAnMMV\" href=\"https://sudokupad.app/odgv620p0a\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"delta-rune title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 8, von links nach rechts.",
+    "code": [
+      "782695134",
+      "Row 8, left to right."
+    ],
+    "dif": 1,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Arrows (Variant)",
+      "German Whispers (Variant)",
+      "Kropki",
+      "Palindrome (Variant)",
+      "Region Sum Lines (Variant)",
+      "Renban (Variant)",
+      "Sudoku"
+    ]
   },
   "equal-prison": {
     "id": "000VL3",
     "img_id": "0015I4",
-    "payload": {
-      "code": [
-        "143967528",
-        "Row 1, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Killer (Variant)",
-        "Sudoku"
-      ]
-    }
+    "code": [
+      "143967528",
+      "Row 1, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Killer (Variant)",
+      "Sudoku"
+    ]
   },
   "follow-the-arrows": {
     "id": "000VS0",
     "img_id": "0015VP",
-    "payload": {
-      "code": [
-        "394867152",
-        "Column 9, top to bottom."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Arrows",
-        "Arrows (Variant)",
-        "Sudoku"
-      ]
-    }
+    "code": [
+      "394867152",
+      "Column 9, top to bottom."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Arrows",
+      "Arrows (Variant)",
+      "Sudoku"
+    ]
   },
   "general-whisper": {
     "id": "000VSN",
     "img_id": "0015WJ",
-    "payload": {
-      "code": [
-        "162738495",
-        "Row 3, left to right."
-      ],
-      "dif": 1,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Difference (Variant)",
-        "Kropki",
-        "Sudoku"
-      ]
-    }
+    "code": [
+      "162738495",
+      "Row 3, left to right."
+    ],
+    "dif": 1,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Difference (Variant)",
+      "Kropki",
+      "Sudoku"
+    ]
   },
   "grains-of-salt-and-pepper": {
     "id": "000V8V",
     "img_id": "00153Y",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Grains of Salt &amp; Pepper by GiAnMMV\" href=\"https://sudokupad.app/ctdl6zr7xc\">\r\n      <img:00153Y style=\"width: 100%; height: auto; display: block;\" alt=\"Grains of Salt &amp; Pepper\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Grains of Salt &amp; Pepper by GiAnMMV\" href=\"https://sudokupad.app/ctdl6zr7xc\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"grains-of-salt-and-pepper title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Mittelblock, in Leserichtung.",
-      "code": [
-        "132694857",
-        "Central box, in reading order."
-      ],
-      "dif": 1,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Kropki",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Grains of Salt &amp; Pepper by GiAnMMV\" href=\"https://sudokupad.app/ctdl6zr7xc\">\r\n      <img:00153Y style=\"width: 100%; height: auto; display: block;\" alt=\"Grains of Salt &amp; Pepper\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Grains of Salt &amp; Pepper by GiAnMMV\" href=\"https://sudokupad.app/ctdl6zr7xc\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"grains-of-salt-and-pepper title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Mittelblock, in Leserichtung.",
+    "code": [
+      "132694857",
+      "Central box, in reading order."
+    ],
+    "dif": 1,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Kropki",
+      "Sudoku"
+    ]
   },
   "hero-sandwich": {
     "id": "000V9X",
     "img_id": "00155H",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Hero Sandwich by GiAnMMV\" href=\"https://sudokupad.app/o7v0i0phnm\">\r\n      <img:00155H style=\"width: 100%; height: auto; display: block;\" alt=\"Hero Sandwich\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Sandwich Sums:</strong> Hinweise außerhalb des Rasters geben die Summe der Ziffern von 1 bis 9 in der jeweiligen Zeile oder Spalte an.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Hero Sandwich by GiAnMMV\" href=\"https://sudokupad.app/o7v0i0phnm\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"hero-sandwich title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 9, von links nach rechts.",
-      "code": [
-        "563492817",
-        "Row 9, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Sandwich (Variant)",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Hero Sandwich by GiAnMMV\" href=\"https://sudokupad.app/o7v0i0phnm\">\r\n      <img:00155H style=\"width: 100%; height: auto; display: block;\" alt=\"Hero Sandwich\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Sandwich Sums:</strong> Hinweise außerhalb des Rasters geben die Summe der Ziffern von 1 bis 9 in der jeweiligen Zeile oder Spalte an.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Hero Sandwich by GiAnMMV\" href=\"https://sudokupad.app/o7v0i0phnm\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"hero-sandwich title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 9, von links nach rechts.",
+    "code": [
+      "563492817",
+      "Row 9, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Sandwich (Variant)",
+      "Sudoku"
+    ]
   },
   "just-your-average-arrow-sudoku": {
     "id": "000VS4",
     "img_id": "0015VT",
-    "payload": {
-      "code": [
-        "359164782",
-        "Row 1, left to right."
-      ],
-      "dif": 3,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Arrows",
-        "Arrows (Variant)",
-        "Sudoku"
-      ]
-    }
+    "code": [
+      "359164782",
+      "Row 1, left to right."
+    ],
+    "dif": 3,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Arrows",
+      "Arrows (Variant)",
+      "Sudoku"
+    ]
   },
   "kropki-entropy": {
     "id": "000USP",
     "img_id": "0014KN",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Kropki Entropy by GiAnMMV\" href=\"https://sudokupad.app/2iaja40z4v\">\r\n      <img:0014KN style=\"width: 100%; height: auto; display: block;\" alt=\"Kropki Entropy\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Entropische Linien:</strong> Jede Gruppe von drei aufeinanderfolgenden Zellen auf einer Linie muss eine niedrige Ziffer {1,2,3}, eine mittlere Ziffer {4,5,6} und eine hohe Ziffer {7,8,9} enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Kropki Entropy by GiAnMMV\" href=\"https://sudokupad.app/2iaja40z4v\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"kropki-entropy title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 6, von links nach rechts.",
-      "code": [
-        "419387562",
-        "Row 6, left to right."
-      ],
-      "dif": 1,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Entropy (Theme)",
-        "Kropki",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Kropki Entropy by GiAnMMV\" href=\"https://sudokupad.app/2iaja40z4v\">\r\n      <img:0014KN style=\"width: 100%; height: auto; display: block;\" alt=\"Kropki Entropy\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Entropische Linien:</strong> Jede Gruppe von drei aufeinanderfolgenden Zellen auf einer Linie muss eine niedrige Ziffer {1,2,3}, eine mittlere Ziffer {4,5,6} und eine hohe Ziffer {7,8,9} enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Kropki Entropy by GiAnMMV\" href=\"https://sudokupad.app/2iaja40z4v\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"kropki-entropy title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 6, von links nach rechts.",
+    "code": [
+      "419387562",
+      "Row 6, left to right."
+    ],
+    "dif": 1,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Entropy (Theme)",
+      "Kropki",
+      "Sudoku"
+    ]
   },
   "little-archers": {
     "id": "000VMW",
     "img_id": "0015KC",
-    "payload": {
-      "code": [
-        "189365742",
-        "Row 1, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Little Killer (Variant)",
-        "Palindrome (Variant)",
-        "Sudoku"
-      ]
-    }
+    "code": [
+      "189365742",
+      "Row 1, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Little Killer (Variant)",
+      "Palindrome (Variant)",
+      "Sudoku"
+    ]
   },
   "mercury-nucleus": {
     "id": "000V0T",
     "img_id": "0014U4",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Mercury Nucleus by GiAnMMV\" href=\"https://sudokupad.app/eznd62lu6b\">\r\n      <img:0014U4 style=\"width: 100%; height: auto; display: block;\" alt=\"Mercury Nucleus\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Thermometer:</strong> Bei Thermometern steigen die Ziffern von der Glühbirne an.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Mercury Nucleus by GiAnMMV\" href=\"https://sudokupad.app/eznd62lu6b\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"mercury-nucleus title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 1, von links nach rechts.",
-      "code": [
-        "597461238",
-        "Row 1, left to right."
-      ],
-      "dif": 1,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Kropki",
-        "Sudoku",
-        "Thermometers"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Mercury Nucleus by GiAnMMV\" href=\"https://sudokupad.app/eznd62lu6b\">\r\n      <img:0014U4 style=\"width: 100%; height: auto; display: block;\" alt=\"Mercury Nucleus\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Thermometer:</strong> Bei Thermometern steigen die Ziffern von der Glühbirne an.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Mercury Nucleus by GiAnMMV\" href=\"https://sudokupad.app/eznd62lu6b\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"mercury-nucleus title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 1, von links nach rechts.",
+    "code": [
+      "597461238",
+      "Row 1, left to right."
+    ],
+    "dif": 1,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Kropki",
+      "Sudoku",
+      "Thermometers"
+    ]
   },
   "midoku": {
     "id": "000VRX",
     "img_id": "0015VM",
-    "payload": {
-      "code": [
-        "312564897",
-        "Column 5, top to bottom."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Entropy (Theme)",
-        "Kropki",
-        "Palindrome (Variant)",
-        "Region Sum Lines (Variant)",
-        "Sudoku"
-      ]
-    }
+    "code": [
+      "312564897",
+      "Column 5, top to bottom."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Entropy (Theme)",
+      "Kropki",
+      "Palindrome (Variant)",
+      "Region Sum Lines (Variant)",
+      "Sudoku"
+    ]
   },
   "nine-ate-seven-the-revenge-of-nine": {
     "id": "000VW6",
     "img_id": "00160Y",
-    "payload": {
-      "code": [
-        "914735286",
-        "Row 8, left to right."
-      ],
-      "dif": 2,
-      "labels": [],
-      "tags": [
-        "Sudoku"
-      ]
-    }
+    "code": [
+      "914735286",
+      "Row 8, left to right."
+    ],
+    "dif": 2,
+    "labels": [],
+    "tags": [
+      "Sudoku"
+    ]
   },
   "number-fever": {
     "id": "000UTU",
     "img_id": "0014LZ",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Number Fever by GiAnMMV\" href=\"https://sudokupad.app/m6hbikxlyp\">\r\n      <img:0014LZ style=\"width: 100%; height: auto; display: block;\" alt=\"Number Fever\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Thermometer:</strong> Bei Thermometern steigen die Ziffern von der Glühbirne an.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Number Fever by GiAnMMV\" href=\"https://sudokupad.app/m6hbikxlyp\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"number-fever title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 9, von links nach rechts.",
-      "code": [
-        "512683497",
-        "Row 9, left to right."
-      ],
-      "dif": 3,
-      "labels": [
-        3
-      ],
-      "tags": [
-        "Sudoku",
-        "Thermo (Variant)",
-        "Thermometers"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Number Fever by GiAnMMV\" href=\"https://sudokupad.app/m6hbikxlyp\">\r\n      <img:0014LZ style=\"width: 100%; height: auto; display: block;\" alt=\"Number Fever\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Thermometer:</strong> Bei Thermometern steigen die Ziffern von der Glühbirne an.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Number Fever by GiAnMMV\" href=\"https://sudokupad.app/m6hbikxlyp\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"number-fever title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 9, von links nach rechts.",
+    "code": [
+      "512683497",
+      "Row 9, left to right."
+    ],
+    "dif": 3,
+    "labels": [
+      3
+    ],
+    "tags": [
+      "Sudoku",
+      "Thermo (Variant)",
+      "Thermometers"
+    ]
   },
   "open-plan": {
     "id": "000V7X",
     "img_id": "00152X",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Open Plan by GiAnMMV\" href=\"https://sudokupad.app/epm5ctk5fw\">\r\n      <img:00152X style=\"width: 100%; height: auto; display: block;\" alt=\"Open Plan\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Entropische Linien:</strong> Jede Gruppe von drei aufeinanderfolgenden Zellen auf einer Linie muss eine niedrige Ziffer {1,2,3}, eine mittlere Ziffer {4,5,6} und eine hohe Ziffer {7,8,9} enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend.</li>\r\n      <li style=\"max-width: 100%;\"><strong>XV:</strong> Zwei durch ein „X“ getrennte Ziffern ergeben in der Summe 10; zwei durch ein „V“ getrennte Ziffern ergeben in der Summe 5.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Open Plan by GiAnMMV\" href=\"https://sudokupad.app/epm5ctk5fw\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"open-plan title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Mittelblock, in Leserichtung.",
-      "code": [
-        "624835791",
-        "Central box, in reading order."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Entropy (Theme)",
-        "Kropki",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Open Plan by GiAnMMV\" href=\"https://sudokupad.app/epm5ctk5fw\">\r\n      <img:00152X style=\"width: 100%; height: auto; display: block;\" alt=\"Open Plan\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Entropische Linien:</strong> Jede Gruppe von drei aufeinanderfolgenden Zellen auf einer Linie muss eine niedrige Ziffer {1,2,3}, eine mittlere Ziffer {4,5,6} und eine hohe Ziffer {7,8,9} enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend.</li>\r\n      <li style=\"max-width: 100%;\"><strong>XV:</strong> Zwei durch ein „X“ getrennte Ziffern ergeben in der Summe 10; zwei durch ein „V“ getrennte Ziffern ergeben in der Summe 5.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Open Plan by GiAnMMV\" href=\"https://sudokupad.app/epm5ctk5fw\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"open-plan title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Mittelblock, in Leserichtung.",
+    "code": [
+      "624835791",
+      "Central box, in reading order."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Entropy (Theme)",
+      "Kropki",
+      "Sudoku"
+    ]
   },
   "pear": {
     "id": "000VRZ",
     "img_id": "0015VO",
-    "payload": {
-      "code": [
-        null,
-        null
-      ],
-      "dif": null,
-      "labels": []
-    }
+    "code": [
+      null,
+      null
+    ],
+    "dif": null,
+    "labels": []
   },
   "pine-tree": {
     "id": "000VDM",
     "img_id": "00159V",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Pine Tree by GiAnMMV\" href=\"https://sudokupad.app/ddbyg1awsv\">\r\n      <img:00159V style=\"width: 100%; height: auto; display: block;\" alt=\"Pine Tree\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>German Whisper:</strong> Die Differenz zwischen zwei benachbarten Ziffern auf einer grünen Linie muss mindestens 5 betragen.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Paritätslinien:</strong> Jedes Paar aufeinanderfolgender Zellen entlang einer braunen Linie muss eine ungerade und eine gerade Ziffer enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Pfeile:</strong> Die Zahlen entlang eines Pfeils ergeben in der Summe den Wert in der eingekreisten Zelle.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Pine Tree by GiAnMMV\" href=\"https://sudokupad.app/ddbyg1awsv\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"pine-tree title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 1, von links nach rechts.",
-      "code": [
-        "153798462",
-        "Row 1, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Arrows (Variant)",
-        "German Whispers (Variant)",
-        "Parity (Theme)",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Pine Tree by GiAnMMV\" href=\"https://sudokupad.app/ddbyg1awsv\">\r\n      <img:00159V style=\"width: 100%; height: auto; display: block;\" alt=\"Pine Tree\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>German Whisper:</strong> Die Differenz zwischen zwei benachbarten Ziffern auf einer grünen Linie muss mindestens 5 betragen.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Paritätslinien:</strong> Jedes Paar aufeinanderfolgender Zellen entlang einer braunen Linie muss eine ungerade und eine gerade Ziffer enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Pfeile:</strong> Die Zahlen entlang eines Pfeils ergeben in der Summe den Wert in der eingekreisten Zelle.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Pine Tree by GiAnMMV\" href=\"https://sudokupad.app/ddbyg1awsv\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"pine-tree title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 1, von links nach rechts.",
+    "code": [
+      "153798462",
+      "Row 1, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Arrows (Variant)",
+      "German Whispers (Variant)",
+      "Parity (Theme)",
+      "Sudoku"
+    ]
   },
   "pinwheel": {
     "id": "000UZ1",
     "img_id": "0014RS",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Pinwheel by GiAnMMV\" href=\"https://sudokupad.app/9gz5upvi0m\">\r\n      <img:0014RS style=\"width: 100%; height: auto; display: block;\" alt=\"Pinwheel\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>German Whisper:</strong> Die Differenz zwischen zwei benachbarten Ziffern auf einer grünen Linie muss mindestens 5 betragen.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Pinwheel by GiAnMMV\" href=\"https://sudokupad.app/9gz5upvi0m\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"pinwheel title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Mittelblock, in Leserichtung.",
-      "code": [
-        "486372195",
-        "Central box, in reading order."
-      ],
-      "dif": 1,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "German Whispers (Variant)",
-        "Kropki",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Pinwheel by GiAnMMV\" href=\"https://sudokupad.app/9gz5upvi0m\">\r\n      <img:0014RS style=\"width: 100%; height: auto; display: block;\" alt=\"Pinwheel\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>German Whisper:</strong> Die Differenz zwischen zwei benachbarten Ziffern auf einer grünen Linie muss mindestens 5 betragen.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Pinwheel by GiAnMMV\" href=\"https://sudokupad.app/9gz5upvi0m\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"pinwheel title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Mittelblock, in Leserichtung.",
+    "code": [
+      "486372195",
+      "Central box, in reading order."
+    ],
+    "dif": 1,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "German Whispers (Variant)",
+      "Kropki",
+      "Sudoku"
+    ]
   },
   "renban-chaos": {
     "id": "000V51",
     "img_id": "0014Z6",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Renban Chaos by GiAnMMV\" href=\"https://sudokupad.app/0gabrx0p8p\">\r\n      <img:0014Z6 style=\"width: 100%; height: auto; display: block;\" alt=\"Renban Chaos\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Renban:</strong> Alle Ziffern entlang einer violetten Linie müssen eine aufeinanderfolgende Zahlenfolge bilden (in beliebiger Reihenfolge).</li>\r\n      <li style=\"max-width: 100%;\"><strong>Pfeile:</strong> Die Zahlen entlang eines Pfeils ergeben in der Summe den Wert in der eingekreisten Zelle.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Renban Chaos by GiAnMMV\" href=\"https://sudokupad.app/0gabrx0p8p\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"renban-chaos title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Die Reihe, die mit der 9 beginnt, von links nach rechts.",
-      "code": [
-        "932576814",
-        "The row starting with 9, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Arrows (Variant)",
-        "Kropki",
-        "Renban (Variant)",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Renban Chaos by GiAnMMV\" href=\"https://sudokupad.app/0gabrx0p8p\">\r\n      <img:0014Z6 style=\"width: 100%; height: auto; display: block;\" alt=\"Renban Chaos\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Renban:</strong> Alle Ziffern entlang einer violetten Linie müssen eine aufeinanderfolgende Zahlenfolge bilden (in beliebiger Reihenfolge).</li>\r\n      <li style=\"max-width: 100%;\"><strong>Pfeile:</strong> Die Zahlen entlang eines Pfeils ergeben in der Summe den Wert in der eingekreisten Zelle.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Renban Chaos by GiAnMMV\" href=\"https://sudokupad.app/0gabrx0p8p\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"renban-chaos title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Die Reihe, die mit der 9 beginnt, von links nach rechts.",
+    "code": [
+      "932576814",
+      "The row starting with 9, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Arrows (Variant)",
+      "Kropki",
+      "Renban (Variant)",
+      "Sudoku"
+    ]
   },
   "sandwich-sums": {
     "id": "000V40",
     "img_id": "0014Y0",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Sandwich Sums by GiAnMMV\" href=\"https://sudokupad.app/dqxiv2ve31\">\r\n      <img:0014Y0 style=\"width: 100%; height: auto; display: block;\" alt=\"Sandwich Sums\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Sandwich Sum Lines:</strong> Jede Ziffer auf einer ockerfarbenen Linie (mit Ausnahme der Enden) muss der Summe ihrer beiden Nachbarn entsprechen; übersteigt die Summe den Wert 9, erfolgt ein Übertrag (z. B. 10 → 1, 11 → 2 usw.).</li>\r\n      <li style=\"max-width: 100%;\"><strong>Counting Circles (Zählkreise):</strong> Jede Ziffer in einem Kreis gibt genau an, in wie vielen Kreisen diese Ziffer enthalten ist.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Sandwich Sums by GiAnMMV\" href=\"https://sudokupad.app/dqxiv2ve31\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"sandwich-sums title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Mittelblock, in Leserichtung.",
-      "code": [
-        "392857164",
-        "Central box, in reading order."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Kropki",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Sandwich Sums by GiAnMMV\" href=\"https://sudokupad.app/dqxiv2ve31\">\r\n      <img:0014Y0 style=\"width: 100%; height: auto; display: block;\" alt=\"Sandwich Sums\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Sandwich Sum Lines:</strong> Jede Ziffer auf einer ockerfarbenen Linie (mit Ausnahme der Enden) muss der Summe ihrer beiden Nachbarn entsprechen; übersteigt die Summe den Wert 9, erfolgt ein Übertrag (z. B. 10 → 1, 11 → 2 usw.).</li>\r\n      <li style=\"max-width: 100%;\"><strong>Counting Circles (Zählkreise):</strong> Jede Ziffer in einem Kreis gibt genau an, in wie vielen Kreisen diese Ziffer enthalten ist.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Sandwich Sums by GiAnMMV\" href=\"https://sudokupad.app/dqxiv2ve31\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"sandwich-sums title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Mittelblock, in Leserichtung.",
+    "code": [
+      "392857164",
+      "Central box, in reading order."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Kropki",
+      "Sudoku"
+    ]
   },
   "schroedinger-s-kropki": {
     "id": "000UWJ",
     "img_id": "0014P2",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Schrödinger's Kropki by GiAnMMV\" href=\"https://sudokupad.app/n70fyp370n\">\r\n      <img:0014P2 style=\"width: 100%; height: auto; display: block;\" alt=\"Schrödinger's Kropki\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Mystery Kropki:</strong> Zwei orthogonal benachbarte Ziffern, die durch einen grauen Punkt getrennt sind, sind entweder aufeinanderfolgend oder stehen in einem Verhältnis von 1:2 (oder beides). Alle Punkte sind angegeben.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Schrödinger's Kropki by GiAnMMV\" href=\"https://sudokupad.app/n70fyp370n\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"schroedinger-s-kropki title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 1, von links nach rechts.",
-      "code": [
-        "374958621",
-        "Row 1, left to right."
-      ],
-      "dif": 1,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Kropki",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Schrödinger's Kropki by GiAnMMV\" href=\"https://sudokupad.app/n70fyp370n\">\r\n      <img:0014P2 style=\"width: 100%; height: auto; display: block;\" alt=\"Schrödinger's Kropki\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Mystery Kropki:</strong> Zwei orthogonal benachbarte Ziffern, die durch einen grauen Punkt getrennt sind, sind entweder aufeinanderfolgend oder stehen in einem Verhältnis von 1:2 (oder beides). Alle Punkte sind angegeben.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Schrödinger's Kropki by GiAnMMV\" href=\"https://sudokupad.app/n70fyp370n\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"schroedinger-s-kropki title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 1, von links nach rechts.",
+    "code": [
+      "374958621",
+      "Row 1, left to right."
+    ],
+    "dif": 1,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Kropki",
+      "Sudoku"
+    ]
   },
   "sinusoid-rhythm": {
     "id": "000VQW",
     "img_id": "0015UE",
-    "payload": {
-      "code": [
-        "267139485",
-        "Row 1, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "German Whispers (Variant)",
-        "Kropki",
-        "Sudoku"
-      ]
-    }
+    "code": [
+      "267139485",
+      "Row 1, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "German Whispers (Variant)",
+      "Kropki",
+      "Sudoku"
+    ]
   },
   "skydoku": {
     "id": "000VDK",
     "img_id": "00159T",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Skydoku by GiAnMMV\" href=\"https://sudokupad.app/35gvrdb4a5\">\r\n      <img:00159T style=\"width: 100%; height: auto; display: block;\" alt=\"Skydoku\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Hochhäuser:</strong> Jede Ziffer im Gitter steht für die Höhe eines Gebäudes in der jeweiligen Zelle, wobei höhere Gebäude die Sicht auf dahinterliegende, niedrigere Gebäude versperren; Hinweise außerhalb des Gitters geben an, wie viele Gebäude von der jeweiligen Position aus in der entsprechenden Zeile oder Spalte sichtbar sind.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Skydoku by GiAnMMV\" href=\"https://sudokupad.app/35gvrdb4a5\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"skydoku title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 1, von links nach rechts.",
-      "code": [
-        "456371892",
-        "Row 1, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        2
-      ],
-      "tags": [
-        "Skyscrapers",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Skydoku by GiAnMMV\" href=\"https://sudokupad.app/35gvrdb4a5\">\r\n      <img:00159T style=\"width: 100%; height: auto; display: block;\" alt=\"Skydoku\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Hochhäuser:</strong> Jede Ziffer im Gitter steht für die Höhe eines Gebäudes in der jeweiligen Zelle, wobei höhere Gebäude die Sicht auf dahinterliegende, niedrigere Gebäude versperren; Hinweise außerhalb des Gitters geben an, wie viele Gebäude von der jeweiligen Position aus in der entsprechenden Zeile oder Spalte sichtbar sind.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Skydoku by GiAnMMV\" href=\"https://sudokupad.app/35gvrdb4a5\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"skydoku title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 1, von links nach rechts.",
+    "code": [
+      "456371892",
+      "Row 1, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      2
+    ],
+    "tags": [
+      "Skyscrapers",
+      "Sudoku"
+    ]
   },
   "skysandoku": {
     "id": "000V44",
     "img_id": "0014Y4",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Skysandoku by GiAnMMV\" href=\"https://sudokupad.app/6v759z86lx\">\r\n      <img:0014Y4 style=\"width: 100%; height: auto; display: block;\" alt=\"Skysandoku\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Hochhäuser:</strong> Jede Ziffer im Gitter steht für die Höhe eines Gebäudes in der jeweiligen Zelle, wobei höhere Gebäude die Sicht auf dahinterliegende, niedrigere Gebäude versperren; Hinweise außerhalb des Gitters geben an, wie viele Gebäude von der jeweiligen Position aus in der entsprechenden Zeile oder Spalte sichtbar sind.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Sandwich Sums:</strong> Eine eingekreiste Hinweiszahl gibt die Summe der Ziffern von 1 bis 9 in der jeweiligen Zeile oder Spalte an. <span style=\"text-decoration: underline;\">Eingekreiste Hinweise sind zugleich Hochhäuser-Hinweise.</span></li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Skysandoku by GiAnMMV\" href=\"https://sudokupad.app/6v759z86lx\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=skysandoku\" title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 3, von links nach rechts.",
-      "code": [
-        "587963124",
-        "Row 3, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Sandwich (Variant)",
-        "Skyscrapers",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Skysandoku by GiAnMMV\" href=\"https://sudokupad.app/6v759z86lx\">\r\n      <img:0014Y4 style=\"width: 100%; height: auto; display: block;\" alt=\"Skysandoku\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Hochhäuser:</strong> Jede Ziffer im Gitter steht für die Höhe eines Gebäudes in der jeweiligen Zelle, wobei höhere Gebäude die Sicht auf dahinterliegende, niedrigere Gebäude versperren; Hinweise außerhalb des Gitters geben an, wie viele Gebäude von der jeweiligen Position aus in der entsprechenden Zeile oder Spalte sichtbar sind.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Sandwich Sums:</strong> Eine eingekreiste Hinweiszahl gibt die Summe der Ziffern von 1 bis 9 in der jeweiligen Zeile oder Spalte an. <span style=\"text-decoration: underline;\">Eingekreiste Hinweise sind zugleich Hochhäuser-Hinweise.</span></li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Skysandoku by GiAnMMV\" href=\"https://sudokupad.app/6v759z86lx\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=skysandoku\" title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 3, von links nach rechts.",
+    "code": [
+      "587963124",
+      "Row 3, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Sandwich (Variant)",
+      "Skyscrapers",
+      "Sudoku"
+    ]
   },
   "skysandoku-2": {
     "id": "000V6L",
     "img_id": "001511",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Skysandoku 2 by GiAnMMV\" href=\"https://sudokupad.app/32o99ii94q\">\r\n      <img:001511 style=\"width: 100%; height: auto; display: block;\" alt=\"Skysandoku 2\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Hochhäuser:</strong> Jede Ziffer im Gitter steht für die Höhe eines Gebäudes in der jeweiligen Zelle, wobei höhere Gebäude die Sicht auf dahinterliegende, niedrigere Gebäude versperren; Hinweise außerhalb des Gitters geben an, wie viele Gebäude von der jeweiligen Position aus in der entsprechenden Zeile oder Spalte sichtbar sind.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Sandwich Sums:</strong> Eine eingekreiste Hinweiszahl gibt die Summe der Ziffern von 1 bis 9 in der jeweiligen Zeile oder Spalte an. <span style=\"text-decoration: underline;\">Eingekreiste Hinweise sind zugleich Hochhäuser-Hinweise.</span></li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Skysandoku 2 by GiAnMMV\" href=\"https://sudokupad.app/32o99ii94q\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"skysandoku-2 title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 3, von links nach rechts.",
-      "code": [
-        "981462735",
-        "Row 3, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Sandwich (Variant)",
-        "Skyscrapers",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Skysandoku 2 by GiAnMMV\" href=\"https://sudokupad.app/32o99ii94q\">\r\n      <img:001511 style=\"width: 100%; height: auto; display: block;\" alt=\"Skysandoku 2\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Hochhäuser:</strong> Jede Ziffer im Gitter steht für die Höhe eines Gebäudes in der jeweiligen Zelle, wobei höhere Gebäude die Sicht auf dahinterliegende, niedrigere Gebäude versperren; Hinweise außerhalb des Gitters geben an, wie viele Gebäude von der jeweiligen Position aus in der entsprechenden Zeile oder Spalte sichtbar sind.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Sandwich Sums:</strong> Eine eingekreiste Hinweiszahl gibt die Summe der Ziffern von 1 bis 9 in der jeweiligen Zeile oder Spalte an. <span style=\"text-decoration: underline;\">Eingekreiste Hinweise sind zugleich Hochhäuser-Hinweise.</span></li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Skysandoku 2 by GiAnMMV\" href=\"https://sudokupad.app/32o99ii94q\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"skysandoku-2 title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 3, von links nach rechts.",
+    "code": [
+      "981462735",
+      "Row 3, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Sandwich (Variant)",
+      "Skyscrapers",
+      "Sudoku"
+    ]
   },
   "skysandoku-3": {
     "id": "000V9P",
     "img_id": "001556",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Skysandoku 3 by GiAnMMV\" href=\"https://sudokupad.app/sro3e3j53l\">\r\n      <img:001556 style=\"width: 100%; height: auto; display: block;\" alt=\"Skysandoku 3\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Hochhäuser:</strong> Jede Ziffer im Gitter steht für die Höhe eines Gebäudes in der jeweiligen Zelle, wobei höhere Gebäude die Sicht auf dahinterliegende, niedrigere Gebäude versperren; Hinweise außerhalb des Gitters geben an, wie viele Gebäude von der jeweiligen Position aus in der entsprechenden Zeile oder Spalte sichtbar sind.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Sandwich Sums:</strong> Eine eingekreiste Hinweiszahl gibt die Summe der Ziffern von 1 bis 9 in der jeweiligen Zeile oder Spalte an. <span style=\"text-decoration: underline;\">Eingekreiste Hinweise sind zugleich Hochhäuser-Hinweise.</span></li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Skysandoku 3 by GiAnMMV\" href=\"https://sudokupad.app/sro3e3j53l\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"skysandoku-3 title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 9, von links nach rechts.",
-      "code": [
-        "234916578",
-        "Row 9, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Sandwich (Variant)",
-        "Skyscrapers",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Skysandoku 3 by GiAnMMV\" href=\"https://sudokupad.app/sro3e3j53l\">\r\n      <img:001556 style=\"width: 100%; height: auto; display: block;\" alt=\"Skysandoku 3\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Hochhäuser:</strong> Jede Ziffer im Gitter steht für die Höhe eines Gebäudes in der jeweiligen Zelle, wobei höhere Gebäude die Sicht auf dahinterliegende, niedrigere Gebäude versperren; Hinweise außerhalb des Gitters geben an, wie viele Gebäude von der jeweiligen Position aus in der entsprechenden Zeile oder Spalte sichtbar sind.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Sandwich Sums:</strong> Eine eingekreiste Hinweiszahl gibt die Summe der Ziffern von 1 bis 9 in der jeweiligen Zeile oder Spalte an. <span style=\"text-decoration: underline;\">Eingekreiste Hinweise sind zugleich Hochhäuser-Hinweise.</span></li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Skysandoku 3 by GiAnMMV\" href=\"https://sudokupad.app/sro3e3j53l\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=\"skysandoku-3 title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 9, von links nach rechts.",
+    "code": [
+      "234916578",
+      "Row 9, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Sandwich (Variant)",
+      "Skyscrapers",
+      "Sudoku"
+    ]
   },
   "some-x-sums": {
     "id": "000VD3",
     "img_id": "001598",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Some X-Sums by GiAnMMV\" href=\"https://sudokupad.app/bghew8zi62\">\r\n      <img:001598 style=\"width: 100%; height: auto; display: block;\" alt=\"Some X-Sums\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>X-Sums:</strong> Ein Hinweis außerhalb des Gitters gibt die Summe der ersten X Ziffern der jeweiligen Zeile oder Spalte an, wobei X die Ziffer ist, die in der ersten Zelle in dieser Richtung steht.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Some X-Sums by GiAnMMV\" href=\"https://sudokupad.app/bghew8zi62\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=some-x-sums\" title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 9, von links nach rechts.",
-      "code": [
-        "639217458",
-        "Row 9, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Sudoku",
-        "X-Sums (Variant)"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Some X-Sums by GiAnMMV\" href=\"https://sudokupad.app/bghew8zi62\">\r\n      <img:001598 style=\"width: 100%; height: auto; display: block;\" alt=\"Some X-Sums\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>X-Sums:</strong> Ein Hinweis außerhalb des Gitters gibt die Summe der ersten X Ziffern der jeweiligen Zeile oder Spalte an, wobei X die Ziffer ist, die in der ersten Zelle in dieser Richtung steht.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Some X-Sums by GiAnMMV\" href=\"https://sudokupad.app/bghew8zi62\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=some-x-sums\" title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 9, von links nach rechts.",
+    "code": [
+      "639217458",
+      "Row 9, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Sudoku",
+      "X-Sums (Variant)"
+    ]
   },
   "spilled-candies": {
     "id": "000VAW",
     "img_id": "00156H",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Spilled Candies by GiAnMMV\" href=\"https://sudokupad.app/sj8llb0qnm\">\r\n      <img:00156H style=\"width: 100%; height: auto; display: block;\" alt=\"Spilled Candies\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Farbige Punkte:</strong> Alle Paare orthogonal benachbarter Ziffern, die durch einen Punkt derselben Farbe getrennt sind, müssen die gleiche Differenz aufweisen. Punkte unterschiedlicher Farben dürfen nicht die gleiche Differenz darstellen.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Größer/Kleiner:</strong> Wenn zwei Ziffern durch ein „&#8288;&lt;&#8288;“ getrennt sind, steht die kleinere auf der Seite, auf die das „&#8288;&lt;&#8288;“ zeigt.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Spilled Candies by GiAnMMV\" href=\"https://sudokupad.app/sj8llb0qnm\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=spilled-candies\" title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 9, von links nach rechts.",
-      "code": [
-        "645217983",
-        "Row 9, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Greater Than (Variant)",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Spilled Candies by GiAnMMV\" href=\"https://sudokupad.app/sj8llb0qnm\">\r\n      <img:00156H style=\"width: 100%; height: auto; display: block;\" alt=\"Spilled Candies\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Farbige Punkte:</strong> Alle Paare orthogonal benachbarter Ziffern, die durch einen Punkt derselben Farbe getrennt sind, müssen die gleiche Differenz aufweisen. Punkte unterschiedlicher Farben dürfen nicht die gleiche Differenz darstellen.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Größer/Kleiner:</strong> Wenn zwei Ziffern durch ein „&#8288;&lt;&#8288;“ getrennt sind, steht die kleinere auf der Seite, auf die das „&#8288;&lt;&#8288;“ zeigt.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Spilled Candies by GiAnMMV\" href=\"https://sudokupad.app/sj8llb0qnm\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=spilled-candies\" title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 9, von links nach rechts.",
+    "code": [
+      "645217983",
+      "Row 9, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Greater Than (Variant)",
+      "Sudoku"
+    ]
   },
   "spooky-month": {
     "id": "000VFS",
     "img_id": "0015C8",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Spooky Month by GiAnMMV\" href=\"https://sudokupad.app/3g4cracxm9\">\r\n      <img:0015C8 style=\"width: 100%; height: auto; display: block;\" alt=\"Spooky Month\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Dutch Whisper:</strong> Die Differenz zwischen zwei benachbarten Ziffern auf einer orangefarbenen Linie muss mindestens 4 betragen.</li>\r\n      <li style=\"max-width: 100%;\"><strong>German Whisper:</strong> Die Differenz zwischen zwei benachbarten Ziffern auf einer grünen Linie muss mindestens 5 betragen.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Spooky Month by GiAnMMV\" href=\"https://sudokupad.app/3g4cracxm9\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=spooky-month\" title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 1, von links nach rechts.",
-      "code": [
-        "742951863",
-        "Row 1, left to right."
-      ],
-      "dif": 1,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "German Whispers (Variant)",
-        "Kropki",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Spooky Month by GiAnMMV\" href=\"https://sudokupad.app/3g4cracxm9\">\r\n      <img:0015C8 style=\"width: 100%; height: auto; display: block;\" alt=\"Spooky Month\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Dutch Whisper:</strong> Die Differenz zwischen zwei benachbarten Ziffern auf einer orangefarbenen Linie muss mindestens 4 betragen.</li>\r\n      <li style=\"max-width: 100%;\"><strong>German Whisper:</strong> Die Differenz zwischen zwei benachbarten Ziffern auf einer grünen Linie muss mindestens 5 betragen.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Spooky Month by GiAnMMV\" href=\"https://sudokupad.app/3g4cracxm9\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=spooky-month\" title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 1, von links nach rechts.",
+    "code": [
+      "742951863",
+      "Row 1, left to right."
+    ],
+    "dif": 1,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "German Whispers (Variant)",
+      "Kropki",
+      "Sudoku"
+    ]
   },
   "strong-thermo": {
     "id": "000VS2",
     "img_id": "0015VR",
-    "payload": {
-      "code": [
-        "231654978",
-        "Row 1, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Arrows",
-        "Sudoku",
-        "Thermometers"
-      ]
-    }
+    "code": [
+      "231654978",
+      "Row 1, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Arrows",
+      "Sudoku",
+      "Thermometers"
+    ]
   },
   "sudogram": {
     "id": "000V9N",
     "img_id": "001554",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Sudogram by GiAnMMV\" href=\"https://sudokupad.app/p3h7pj6z8r\">\r\n      <img:001554 style=\"width: 100%; height: auto; display: block;\" alt=\"Sudogram\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Nonogramm:</strong> Die Hinweise außerhalb des Rasters geben die Längen aller Abschnitte schattierter Zellen in der jeweiligen Zeile oder Spalte an. Verschiedene Abschnitte innerhalb derselben Zeile oder Spalte müssen durch mindestens eine unschattierte Zelle voneinander getrennt sein. Bei jedem Paar orthogonal benachbarter schattierter Zellen muss die Differenz mindestens 4 betragen.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Sudogram by GiAnMMV\" href=\"https://sudokupad.app/p3h7pj6z8r\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=sudogram\" title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Die schattierten Zellen in Spalte 9, von oben nach unten.",
-      "code": [
-        "71528",
-        "The shaded cells in column 9, top to bottom."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Nonogram",
-        "Sudoku"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Sudogram by GiAnMMV\" href=\"https://sudokupad.app/p3h7pj6z8r\">\r\n      <img:001554 style=\"width: 100%; height: auto; display: block;\" alt=\"Sudogram\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Nonogramm:</strong> Die Hinweise außerhalb des Rasters geben die Längen aller Abschnitte schattierter Zellen in der jeweiligen Zeile oder Spalte an. Verschiedene Abschnitte innerhalb derselben Zeile oder Spalte müssen durch mindestens eine unschattierte Zelle voneinander getrennt sein. Bei jedem Paar orthogonal benachbarter schattierter Zellen muss die Differenz mindestens 4 betragen.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Sudogram by GiAnMMV\" href=\"https://sudokupad.app/p3h7pj6z8r\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=sudogram\" title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Die schattierten Zellen in Spalte 9, von oben nach unten.",
+    "code": [
+      "71528",
+      "The shaded cells in column 9, top to bottom."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Nonogram",
+      "Sudoku"
+    ]
   },
   "the-power-of-three": {
     "id": "000VS1",
     "img_id": "0015VQ",
-    "payload": {
-      "code": [
-        "219635487",
-        "Row 2, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Kropki",
-        "Sudoku"
-      ]
-    }
+    "code": [
+      "219635487",
+      "Row 2, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Kropki",
+      "Sudoku"
+    ]
   },
   "thermo-mikado": {
     "id": "000V8W",
     "img_id": "001540",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Thermo Mikado by GiAnMMV\" href=\"https://sudokupad.app/m1atf4lxf3\">\r\n      <img:001540 style=\"width: 100%; height: auto; display: block;\" alt=\"Thermo Mikado\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Thermometer:</strong> Bei Thermometern steigen die Ziffern von der Glühbirne an.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Thermo Mikado by GiAnMMV\" href=\"https://sudokupad.app/m1atf4lxf3\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n    <p style=\"max-width: 100%;\">Du kannst auch die ursprüngliche, schwierigere Version <a title=\"Thermo Mikado by GiAnMMV\" href=\"https://sudokupad.app/o7e26cq18a\">hier</a> spielen (die Lösung ist dieselbe).</p>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=thermo-mikado\" title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 9, von links nach rechts.",
-      "code": [
-        "456812739",
-        "Row 9, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Sudoku",
-        "Thermometers"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Thermo Mikado by GiAnMMV\" href=\"https://sudokupad.app/m1atf4lxf3\">\r\n      <img:001540 style=\"width: 100%; height: auto; display: block;\" alt=\"Thermo Mikado\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Thermometer:</strong> Bei Thermometern steigen die Ziffern von der Glühbirne an.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Thermo Mikado by GiAnMMV\" href=\"https://sudokupad.app/m1atf4lxf3\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n    <p style=\"max-width: 100%;\">Du kannst auch die ursprüngliche, schwierigere Version <a title=\"Thermo Mikado by GiAnMMV\" href=\"https://sudokupad.app/o7e26cq18a\">hier</a> spielen (die Lösung ist dieselbe).</p>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=thermo-mikado\" title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 9, von links nach rechts.",
+    "code": [
+      "456812739",
+      "Row 9, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Sudoku",
+      "Thermometers"
+    ]
   },
   "thermo-square": {
     "id": "000V67",
     "img_id": "00150O",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Thermo Square by GiAnMMV\" href=\"https://sudokupad.app/q5gth1v9qd\">\r\n      <img:00150O style=\"width: 100%; height: auto; display: block;\" alt=\"Thermo Square\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>6x6 Sudoku:</strong> Jede Zeile, jede Spalte und jedes 2x3-Block muss alle Zahlen von 1 bis 6 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Killer Käfige:</strong> Keine Ziffer darf innerhalb eines Käfigs mehr als einmal vorkommen.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Thermometer:</strong> Bei Thermometern steigen die Ziffern von der Glühbirne an.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Thermo Square by GiAnMMV\" href=\"https://sudokupad.app/q5gth1v9qd\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=thermo-square\" title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 1, von links nach rechts.",
-      "code": [
-        "463215",
-        "Row 1, left to right."
-      ],
-      "dif": 3,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Killer (Variant)",
-        "Sudoku",
-        "Thermometers"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Thermo Square by GiAnMMV\" href=\"https://sudokupad.app/q5gth1v9qd\">\r\n      <img:00150O style=\"width: 100%; height: auto; display: block;\" alt=\"Thermo Square\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>6x6 Sudoku:</strong> Jede Zeile, jede Spalte und jedes 2x3-Block muss alle Zahlen von 1 bis 6 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Killer Käfige:</strong> Keine Ziffer darf innerhalb eines Käfigs mehr als einmal vorkommen.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Thermometer:</strong> Bei Thermometern steigen die Ziffern von der Glühbirne an.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Thermo Square by GiAnMMV\" href=\"https://sudokupad.app/q5gth1v9qd\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=thermo-square\" title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 1, von links nach rechts.",
+    "code": [
+      "463215",
+      "Row 1, left to right."
+    ],
+    "dif": 3,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Killer (Variant)",
+      "Sudoku",
+      "Thermometers"
+    ]
+  },
+  "toroidal-german-whispers": {
+    "code": [
+      "651294378",
+      "Central box, in reading order."
+    ],
+    "dif": 2,
+    "date": "2026-11-10 20:00:00",
+    "labels": [
+      4
+    ],
+    "tags": [
+      "German Whispers (Variant)",
+      "Kropki",
+      "Sudoku"
+    ],
+    "id": "000VZ8",
+    "img_id": "00164W"
   },
   "toroidal-killer-jail": {
     "id": "000VYB",
     "img_id": "00162V",
-    "payload": {
-      "code": [
-        "467159283",
-        "Row 1, left to right."
-      ],
-      "dif": 2,
-      "tags": [
-        "Killer (Variant)",
-        "Sudoku"
-      ],
-      "date": "2026-11-09 10:15:00",
-      "labels": [
-        4
-      ]
-    }
+    "code": [
+      "467159283",
+      "Row 1, left to right."
+    ],
+    "dif": 2,
+    "tags": [
+      "Killer (Variant)",
+      "Sudoku"
+    ],
+    "date": "2026-11-09 10:15:00",
+    "labels": [
+      4
+    ]
   },
   "waves": {
     "id": "000USM",
     "img_id": "0014KJ",
-    "payload": {
-      "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Waves by GiAnMMV\" href=\"https://sudokupad.app/evbqridrhj\">\r\n      <img:0014KJ style=\"width: 100%; height: auto; display: block;\" alt=\"Waves\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Region Sum Lines:</strong> Die Grenzen der 3x3-Blöcke unterteilen eine blaue Linie in mehrere Abschnitte, die dieselbe Summe aufweisen. Verschiedene Linien können unterschiedliche Summen haben.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Käfige mit gleicher Summe:</strong> Die Summe der Ziffern innerhalb eines abgegrenzten Käfigs muss für alle Käfige dieses Typs identisch sein.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n      <li style=\"max-width: 100%;\"><strong>X:</strong> Zwei durch ein „X“ getrennte Ziffern ergeben in der Summe 10.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Parität:</strong> Eine Ziffer in einem grauen Quadrat muss gerade sein.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Waves by GiAnMMV\" href=\"https://sudokupad.app/evbqridrhj\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=waves\" title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
-      "codedescr": "Zeile 7, von links nach rechts.",
-      "code": [
-        "679182543",
-        "Row 7, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Kropki",
-        "Parity (Theme)",
-        "Region Sum Lines (Variant)",
-        "Sudoku",
-        "XV (Variant)"
-      ]
-    }
+    "htmlcode": "<div style=\"display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;\">\r\n  <div style=\"flex: 1 1 300px; max-width: 416px;\">\r\n    <a title=\"Waves by GiAnMMV\" href=\"https://sudokupad.app/evbqridrhj\">\r\n      <img:0014KJ style=\"width: 100%; height: auto; display: block;\" alt=\"Waves\" />\r\n    </a>\r\n  </div>\r\n\r\n  <div style=\"flex: 2 1 300px; min-width: 0;\">\r\n    <p style=\"font-size: medium; margin-top: 0; max-width: 100%;\"><strong>Regeln:</strong></p>\r\n    <ul>\r\n      <li style=\"max-width: 100%;\"><strong>Klassisches Sudoku:</strong> Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Region Sum Lines:</strong> Die Grenzen der 3x3-Blöcke unterteilen eine blaue Linie in mehrere Abschnitte, die dieselbe Summe aufweisen. Verschiedene Linien können unterschiedliche Summen haben.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Käfige mit gleicher Summe:</strong> Die Summe der Ziffern innerhalb eines abgegrenzten Käfigs muss für alle Käfige dieses Typs identisch sein.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Kropki:</strong> Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.</li>\r\n      <li style=\"max-width: 100%;\"><strong>X:</strong> Zwei durch ein „X“ getrennte Ziffern ergeben in der Summe 10.</li>\r\n      <li style=\"max-width: 100%;\"><strong>Parität:</strong> Eine Ziffer in einem grauen Quadrat muss gerade sein.</li>\r\n    </ul>\r\n    <hr/>\r\n    <div style=\"text-align: center;\">\r\n      <a title=\"Waves by GiAnMMV\" href=\"https://sudokupad.app/evbqridrhj\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;\">In SudokuPad spielen</a>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div style=\"text-align: center; margin: 1em; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;\">\r\n  <a href=\"https://gianmmv.github.io/puzzles/\" title=\"GiAnMMV's Puzzles\" style=\"color:#0056b3;font-weight:bold;text-decoration:none; margin:10px 0px;\">← Weitere Rätsel von GiAnMMV</a>\r\n  <a href=\"https://gianmmv.github.io/puzzles/random/?from=waves\" title=\"Random Puzzle...\" style=\"display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);\">Zufälliges Rätsel</a>\r\n</div>",
+    "codedescr": "Zeile 7, von links nach rechts.",
+    "code": [
+      "679182543",
+      "Row 7, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Kropki",
+      "Parity (Theme)",
+      "Region Sum Lines (Variant)",
+      "Sudoku",
+      "XV (Variant)"
+    ]
   },
   "wishing-well": {
     "id": "000VN7",
     "img_id": "0015KW",
-    "payload": {
-      "code": [
-        "195638472",
-        "Row 2, left to right."
-      ],
-      "dif": 2,
-      "labels": [
-        4
-      ],
-      "tags": [
-        "Quadruple (Variant)",
-        "Renban (Variant)",
-        "Sudoku"
-      ],
-      "date": null
-    }
+    "code": [
+      "195638472",
+      "Row 2, left to right."
+    ],
+    "dif": 2,
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Quadruple (Variant)",
+      "Renban (Variant)",
+      "Sudoku"
+    ],
+    "date": null
   }
 }

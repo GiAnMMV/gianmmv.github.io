@@ -3,7 +3,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 const puppeteer = require('puppeteer-core');
 const { marked } = require('marked');
-const { load: ymlLoad } = require('js-yaml');
+const { load: ymlLoad, dump: ymlDump } = require('js-yaml');
 
 const { getPuzzleId } = require('./assets/js/puzzle-converter.js');
 
@@ -14,6 +14,30 @@ const imgDir = path.join(__dirname, 'assets/images');
 const CHROME_PATH = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
 const WIDTH = 1200;
 const HEIGHT = 630;
+
+const VALID_YML_KEYS = [
+  "title",
+  "creation_date",
+  "order",
+  "sudokupad_url",
+  "lmd_id",
+  "rules"
+]
+
+function ymlFromSlug(slug) {
+  if (!slug) throw new Error('Slug must be defined.');
+  return ymlLoad(fs.readFileSync(`./_puzzles/${slug}.md`, 'utf-8')
+    .trim().slice(0, -3));
+}
+
+function writeYml(yml, slug) {
+  const filteredYml = Object.fromEntries(VALID_YML_KEYS.map(k => [k, yml[k]]));
+  fs.writeFileSync(
+    `./_puzzles/${slug}.md`,
+    '---\n' + ymlDump(filteredYml, {lineWidth: -1, quoteStyle: 'double'}) + '---',
+    'utf8'
+  );
+}
 
 const allSlugs = fs.readdirSync(puzzlesDir)
   .filter(f => f.endsWith('.md'))
@@ -80,13 +104,9 @@ async function processSingleLink(slug) {
   const shortUrl = await getShortLink(jsonData);
 
   if (shortUrl) {
-    let mdContent = fs.readFileSync(mdPath, 'utf8');
-    if (mdContent.includes('sudokupad_url:')) {
-      mdContent = mdContent.replace(/^sudokupad_url:.*/mg, `sudokupad_url: ${shortUrl}`);
-    } else {
-      mdContent = mdContent.replace(/^rules:/m, `sudokupad_url: ${shortUrl}\nrules:`);
-    }
-    fs.writeFileSync(mdPath, mdContent, 'utf8');
+    const yml = ymlFromSlug(slug);
+    yml.sudokupad_url = shortUrl;
+    writeYml(yml, slug);
   }
 }
 
@@ -215,4 +235,10 @@ async function main() {
   }
 }
 
-main().catch(console.error);
+if (require.main === module) {
+  main().catch(console.error);
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { ymlFromSlug, writeYml };
+}
