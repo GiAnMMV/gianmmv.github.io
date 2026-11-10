@@ -1,10 +1,9 @@
 const fs = require('fs');
 const { load: cheerioLoad } = require('cheerio');
-const { load: ymlLoad, dump: ymlDump } = require('js-yaml');
 const { marked } = require('marked');
 const { Resvg } = require('@resvg/resvg-js');
 
-const { ymlFromSlug, writeYml } = require('./generate-assets.js');
+const { ymlFromSlug, writeYml } = require('./_generate-assets.js');
 
 const EDIT_PUZZLE_URL = 'https://logic-masters.de/Raetselportal/Eigene/einstellen.php';
 const UPLOAD_IMAGE_URL = 'https://logic-masters.de/Dateien/index.php';
@@ -35,14 +34,20 @@ async function sessionFetch(url, options = {}) {
 function generateHtml(slug, imgCode) {
   const { title, sudokupad_url: url, rules } = ymlFromSlug(slug);
 
+  const escapedTitle = title
+    .replaceAll('&', "&amp;")
+    .replaceAll('<', "&lt;")
+    .replaceAll('>', "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
   const rules_html = marked(rules.map(r => `- **${r.name}:** ` + r.desc.replaceAll('\n', '\n    ')).join("\n"))
     .replaceAll(/<(p|li)>/g, '<$1 style="max-width:100%">');
 
-  const html = `
+  return `
     <div style="display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start;">
       <div style="flex:1 1 300px;max-width:416px;">
-        <a title="${title} by GiAnMMV" href="${url}">
-          <img:${imgCode} style="width:100%;height:auto;display:block;" alt="${title}" />
+        <a title="${escapedTitle} by GiAnMMV" href="${url}">
+          <img:${imgCode} style="width:100%;height:auto;display:block;" alt="${escapedTitle}" />
         </a>
       </div>
       <div style="flex:2 1 300px;min-width:0;">
@@ -50,16 +55,14 @@ function generateHtml(slug, imgCode) {
           ${rules_html}
         <hr/>
         <div style="text-align:center;">
-          <a title="${title} by GiAnMMV" href="${url}" style="display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;">Play in SudokuPad</a>
+          <a title="${escapedTitle} by GiAnMMV" href="${url}" style="display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;">Play in SudokuPad</a>
         </div>
       </div>
     </div>
     <div style="text-align:center;margin:1em;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;">
       <a href="https://gianmmv.github.io/puzzles/" title="GiAnMMV's Puzzles" style="color:#0056b3;font-weight:bold;text-decoration:none;margin:10px 0px;">← More puzzles by GiAnMMV</a>
       <a href="https://gianmmv.github.io/puzzles/random/?from=${slug}" title="Random Puzzle..." style="display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);">Random Puzzle</a>
-    </div>`;
-
-  return html
+    </div>`
     .replace(/^\s+|\s+$/gm, '')
     .replace(/[\r\n]+/g, '');
 }
@@ -131,8 +134,10 @@ async function uploadPuzzle(slug, params = {}) {
   if (!(slug in lmdData))
     lmdData[slug] = {};
 
-  if (!('img_id' in lmdData[slug]))
+  if (!('img_id' in lmdData[slug])) {
     uploadImage(slug);
+    await sleep(5000);
+  }
 
   const createMode = !('id' in lmdData[slug]);
   if (!createMode)
@@ -246,7 +251,7 @@ async function uploadImage(slug) {
   }
 }
 
-const lmdData = JSON.parse(fs.readFileSync('lmd-data.json'));
+const lmdData = JSON.parse(fs.readFileSync('_lmd-data.json'));
 async function main() {
   const rawArgs = process.argv.slice(2);
   const slug = rawArgs[0];
@@ -264,6 +269,6 @@ async function main() {
       obj[key] = lmdData[key];
       return obj;
     }, {});
-  fs.writeFileSync('lmd-data.json', JSON.stringify(lmdData_ordered, null, 2));
+  fs.writeFileSync('_lmd-data.json', JSON.stringify(lmdData_ordered, null, 2));
 }
 main().catch(console.error);

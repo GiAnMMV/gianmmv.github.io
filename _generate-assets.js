@@ -45,10 +45,7 @@ const allSlugs = fs.readdirSync(puzzlesDir)
 
 function getChangedSlugs() {
   try {
-    let output = execSync('git diff --name-only', { encoding: 'utf-8' });
-    //if (!output.trim()) {
-    //  output = execSync('git diff --name-only HEAD~1 HEAD', { encoding: 'utf-8' });
-    //}
+    let output = execSync('git diff --name-only HEAD', { encoding: 'utf-8' });
     const changedFiles = output.split('\n').filter(Boolean);
 
     const linkSlugs = new Set();
@@ -156,7 +153,7 @@ async function generateOGImage(slug, browser) {
 
     await page.setContent(fullHtml);
 
-    const outputPath = path.join(imgDir, slug + '-og.png');
+    const outputPath = path.join(imgDir, 'og', slug + '.png');
 
     await page.screenshot({
       path: outputPath,
