@@ -3,7 +3,7 @@
   "metadata": {
     "source": "SudokuMaker v2026.10.05-a3aef4c",
     "author": "GiAnMMV",
-    "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nKiller Cages: No digit may appear more than once within a cage. The grid is a torus: a cage wrapping around from one side continues on the opposite side.",
+    "rules": "Classic Sudoku: Every row, column and 3x3 box must contain every number from 1 to 9.\nKiller Cages: No digit may appear more than once within a cage.\nToroidal Grid: A cage wrapping around from one side of the grid continues on the opposite side.",
     "msgcorrect": "You did it! Hope you had fun!\n\nCheck out my other puzzles at gianmmv.github.io/puzzles",
     "solution": "467159283289637541531248697874592136153486729692713458316825974945371862728964315",
     "title": "Toroidal Killer Jail"

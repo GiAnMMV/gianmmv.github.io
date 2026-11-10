@@ -1,5 +1,5 @@
 const fs = require('fs');
-const {load: cheerioLoad} = require('cheerio');
+const { load: cheerioLoad } = require('cheerio');
 const { load: ymlLoad } = require('js-yaml');
 const { marked } = require('marked');
 const { Resvg } = require('@resvg/resvg-js');
@@ -8,12 +8,13 @@ const EDIT_PUZZLE_URL = 'https://logic-masters.de/Raetselportal/Eigene/einstelle
 const UPLOAD_IMAGE_URL = 'https://logic-masters.de/Dateien/index.php';
 
 function ymlFromSlug(slug) {
-  return ymlLoad(fs.readFileSync(`./_puzzles/${slug}.md`,'utf-8')
-    .trim().slice(0, -3));
+  if (!slug)
+    return ymlLoad(fs.readFileSync(`./_puzzles/${slug}.md`, 'utf-8')
+      .trim().slice(0, -3));
 }
 
 async function sessionFetchCheerio(url, options = {}) {
-  const postResponse = await sessionFetch(url, {...options});
+  const postResponse = await sessionFetch(url, { ...options });
   const $ = cheerioLoad(await postResponse.text());
 
   if ($('form.login').length > 0)
@@ -36,7 +37,7 @@ async function sessionFetch(url, options = {}) {
 }
 
 function generateHtml(slug, imgCode) {
-  const {title, sudokupad_url: url, rules} = ymlFromSlug(slug);
+  const { title, sudokupad_url: url, rules } = ymlFromSlug(slug);
 
   const rules_html = marked(rules.map(r => `- **${r.name}:** ` + r.desc.replaceAll('\n', '\n    ')).join("\n"))
     .replaceAll(/<(p|li)>/g, '<$1 style="max-width:100%">');
@@ -61,33 +62,37 @@ function generateHtml(slug, imgCode) {
       <a href="https://gianmmv.github.io/puzzles/" title="GiAnMMV's Puzzles" style="color:#0056b3;font-weight:bold;text-decoration:none;margin:10px 0px;">← More puzzles by GiAnMMV</a>
       <a href="https://gianmmv.github.io/puzzles/random/?from=${slug}" title="Random Puzzle..." style="display:inline-block;padding:10px 24px;border-radius:999px;background:#0056b3;color:#fff;font-weight:bold;text-decoration:none;background-image:linear-gradient(in hsl longer hue 45deg, red 0 100%);">Random Puzzle</a>
     </div>`;
-  
+
   return html
     .replace(/^\s+|\s+$/gm, '')
     .replace(/[\r\n]+/g, '');
 }
 
 function solutionCode(slug, indication) {
-  const solution = JSON.parse(fs.readFileSync(`./assets/data/puzzles/${slug}.json`, 'utf-8')).metadata.solution;
-  
+  const puzzle = JSON.parse(fs.readFileSync(`./assets/data/puzzles/${slug}.json`, 'utf-8'));
+  const solution = puzzle.metadata.solution;
+  const w = puzzle.cells[0].length;
+  const boxes = puzzle.regions
+    .map(box => box.map(c => c[0] * w + c[1]).sort((a, b) => a - b))
+    .sort((a, b) => a[0] - b[0]);
+
   const rcb = indication.charAt(0);
   const number = parseInt(indication.slice(1)) - 1;
   switch (rcb) {
     case 'r':
       return [
-        solution.slice(number*9, (number+1)*9),
-        `Row ${number+1}, left to right.`
+        solution.slice(number * w, (number + 1) * w),
+        `Row ${number + 1}, left to right.`
       ];
     case 'c':
       return [
-        [...solution].filter((_, i) => i % 9 === number).join(''),
-        `Column ${number+1}, top to bottom.`
+        [...solution].filter((_, i) => i % w === number).join(''),
+        `Column ${number + 1}, top to bottom.`
       ];
     case 'b':
-      const off = Math.floor(number / 3) * 27 + number % 3 * 3;
       return [
-        solution.slice(off, off+3) + solution.slice(off+9, off+12) + solution.slice(off+18, off+21),
-        `${number === 4 ? 'Middle box' : `Box ${number+1}`}, in reading order.`
+        [...solution].filter((_, i) => boxes[number].includes(i)).join(''),
+        `${number === (boxes.length - 1) / 2 ? 'Middle box' : `Box ${number + 1}`}, in reading order.`
       ];
   }
 }
@@ -107,7 +112,7 @@ function extractPuzzleForm($form) {
     code: [payload.code, payload.codedescr_en],
     dif: parseInt(payload.dif),
     date: (payload.frei === 'ja') ? (
-      `${payload.year}-${payload.month.padStart(2, 0)}-${payload.day.padStart(2, 0)} `+
+      `${payload.year}-${payload.month.padStart(2, 0)}-${payload.day.padStart(2, 0)} ` +
       `${payload.hour.padStart(2, 0)}:${payload.min.padStart(2, 0)}:${payload.sec.padStart(2, 0)}`
     ) : null,
     labels: Object.keys(payload)
@@ -120,7 +125,7 @@ function extractPuzzleForm($form) {
   }
 }
 
-async function uploadPuzzle(slug, params={}) {
+async function uploadPuzzle(slug, params = {}) {
   let url = EDIT_PUZZLE_URL;
 
   const formData = new FormData();
@@ -151,7 +156,7 @@ async function uploadPuzzle(slug, params={}) {
   if (!createMode &&
     Object.keys(DEFAULTS).some((key) => (params[key] ?? lmdData[slug].payload[key]) === undefined)
   ) Object.assign(params, extractPuzzleForm((await sessionFetchCheerio(url))('form').first()));
-  
+
   const { code, dif, date, labels, tags } = Object.keys(DEFAULTS).reduce((acc, key) => {
     acc[key] = params[key] ?? lmdData[slug].payload[key] ?? DEFAULTS[key];
     return acc;
@@ -214,17 +219,17 @@ async function uploadImage(slug) {
 
   const fileBlob = new Blob([fileBuffer], { type: 'image/png' });
 
+  const yml = ymlFromSlug(slug);
+
   if (!(slug in lmdData))
     lmdData[slug] = {};
-
-  const yml = ymlFromSlug(slug);
 
   const formData = new FormData();
   formData.append('datei', fileBlob, 'image.png');
   formData.append('MAX_FILE_SIZE', '4194304');
   formData.append('name', yml.title);
   formData.append('anmerkung', "I'm the author of this puzzle.");
-  
+
   if ('img_id' in lmdData[slug]) {
     url += `?id=${lmdData[slug].img_id}`;
     formData.append('new', 'Neue Version hochladen');
@@ -252,7 +257,7 @@ async function main() {
     await uploadImage(slug);
   else if (rawArgs[1] === '--update-puzzle') {
     if (rawArgs.length > 1)
-      await uploadPuzzle(slug, {comment: rawArgs[2]});
+      await uploadPuzzle(slug, { comment: rawArgs[2] });
     else
       await uploadPuzzle(slug);
   }
@@ -264,4 +269,4 @@ async function main() {
     }, {});
   fs.writeFileSync('lmd-data.json', JSON.stringify(lmdData_ordered, null, 2));
 }
-main();
+main().catch(console.error);
