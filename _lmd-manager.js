@@ -136,7 +136,7 @@ async function uploadPuzzle(slug, params = {}) {
 
   if (!('img_id' in lmdData[slug])) {
     uploadImage(slug);
-    await sleep(5000);
+    await setTimeout(5000);
   }
 
   const createMode = !('id' in lmdData[slug]);
@@ -207,7 +207,7 @@ async function uploadPuzzle(slug, params = {}) {
   }
 
   const warning = $('.rp_wichtig').text();
-  if (warning) console.warn(warning);
+  if (warning) console.log(warning);
 
   Object.assign(lmdData[slug], extractPuzzleForm($formHtml));
 }
@@ -247,7 +247,9 @@ async function uploadImage(slug) {
   });
 
   if (!('img_id' in lmdData[slug])) {
-    lmdData[slug].img_id = $('.note').text().match(/:\s*([\dA-Z]{6})\s*$/)[1];
+    const note = $('.note').text();
+    console.log(note);
+    lmdData[slug].img_id = note.match(/:\s*([\dA-Z]{6})\s*$/)[1];
   }
 }
 

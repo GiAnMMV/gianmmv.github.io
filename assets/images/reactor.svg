@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-.02 -.02 9.04 9.04" width="832px" height="832px">
+  <path fill="#fff" d="M0 0h9v9H0z"/>
+
+  <g fill="none" stroke-width=".15" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="#67f067ff" d="M2.5 3.5H6.5V2.5H2.5Z"/>
+    <path stroke="#aaa" d="M8.5 4.5V5.5H7.5L6.5 6.5V8.5M.5 4.5V5.5H1.5L2.5 6.5V8.5"/>
+  </g>
+
+  <path d="M1 0V9M2 0V9M4 0V9M5 0V9M7 0V9M8 0V9M0 1H9M0 2H9M0 4H9M0 5H9M0 7H9M0 8H9Z" stroke="#000" stroke-width=".015625" fill="none"/>
+  <path d="M0 0H9V9H0ZM3 0V9M6 0V9M0 3H9M0 6H9" stroke="#000" stroke-width=".046875" stroke-linejoin="round" fill="none"/>
+
+  <g fill="#fff">
+    <circle r=".175" cx="0.5" cy="1"/>
+    <circle r=".175" cx="8.5" cy="1"/>
+    <circle r=".175" cx="1" cy="1.5"/>
+    <circle r=".175" cx="8" cy="1.5"/>
+    <circle r=".175" cx="3.5" cy="3"/>
+    <circle r=".175" cx="5.5" cy="3"/>
+    <circle r=".175" cx="4.5" cy="3"/>
+    <circle r=".175" cx="3" cy="5.5"/>
+    <circle r=".175" cx="6" cy="5.5"/>
+    <circle r=".175" cx="6" cy="8.5"/>
+    <circle r=".175" cx="3" cy="8.5"/>
+    <circle r=".175" cx="3" cy="7.5"/>
+    <circle r=".175" cx="6" cy="7.5"/>
+    <circle r=".175" cx="4.5" cy="6"/>
+    <rect width=".525" height=".35" rx=".175" ry=".175" x="1.7375" y="1.325"/>
+    <rect width=".525" height=".35" rx=".175" ry=".175" x="6.7375" y="1.325"/>
+    <rect width=".525" height=".35" rx=".175" ry=".175" x="1.7375" y="4.325"/>
+    <rect width=".525" height=".35" rx=".175" ry=".175" x="6.7375" y="4.325"/>
+    <rect width=".525" height=".35" rx=".175" ry=".175" x="4.2375" y="6.825"/>
+  </g>
+  <g stroke="#000" stroke-width=".015625" text-anchor="middle" dominant-baseline="central" stroke-linejoin="round" font-size=".28125" font-family="Arial, Helvetica, sans-serif">
+    <text x="0.5 8.5" y="1">VV</text>
+    <text x="1 8" y="1.5">XX</text>
+    <text x="3.5 4.5 5.5" y="3">XXX</text>
+    <text x="3 6" y="5.5">XX</text>
+    <text x="4.5" y="6">X</text>
+    <text x="3 6" y="7.5">XX</text>
+    <text x="3 6" y="8.5">XV</text>
+    <text x="2" y="1.5">XV</text>
+    <text x="7" y="1.5">XV</text>
+    <text x="2" y="4.5">XV</text>
+    <text x="7" y="4.5">XV</text>
+    <text x="4.5" y="7">XV</text>
+  </g>
+</svg>

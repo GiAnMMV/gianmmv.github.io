@@ -540,6 +540,25 @@
       "Sudoku"
     ]
   },
+  "reactor": {
+    "img_id": "00165Q",
+    "id": "000VZV",
+    "code": [
+      "615398274",
+      "Row 7, left to right."
+    ],
+    "dif": 3,
+    "date": "2026-11-11 20:00:00",
+    "labels": [
+      4
+    ],
+    "tags": [
+      "German Whispers (Variant)",
+      "Palindrome (Variant)",
+      "Sudoku",
+      "XV (Variant)"
+    ]
+  },
   "renban-chaos": {
     "id": "000V51",
     "img_id": "0014Z6",
