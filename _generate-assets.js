@@ -34,7 +34,8 @@ function writeYml(yml, slug) {
   const filteredYml = Object.fromEntries(VALID_YML_KEYS.map(k => [k, yml[k]]));
   fs.writeFileSync(
     `./_puzzles/${slug}.md`,
-    '---\n' + ymlDump(filteredYml, {lineWidth: -1, quoteStyle: 'double'}) + '---',
+    '---\n' + ymlDump(filteredYml, {lineWidth: -1, quoteStyle: 'double'}) + '---'
+      .replace(/\r?\n/g, '\r\n'),
     'utf8'
   );
 }

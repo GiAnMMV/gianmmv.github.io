@@ -2,6 +2,7 @@ const fs = require('fs');
 const { load: cheerioLoad } = require('cheerio');
 const { marked } = require('marked');
 const { Resvg } = require('@resvg/resvg-js');
+const { setTimeout } = require("timers/promises");
 
 const { ymlFromSlug, writeYml } = require('./_generate-assets.js');
 
@@ -31,8 +32,8 @@ async function sessionFetch(url, options = {}) {
   return postResponse;
 }
 
-function generateHtml(slug, imgCode) {
-  const { title, sudokupad_url: url, rules } = ymlFromSlug(slug);
+function generateHtml(slug, imgCode, yml = ymlFromSlug(slug)) {
+  const { title, sudokupad_url: url, rules } = yml;
 
   const escapedTitle = title
     .replaceAll('&', "&amp;")
@@ -124,18 +125,16 @@ function extractPuzzleForm($form) {
   }
 }
 
-async function uploadPuzzle(slug, params = {}) {
+async function uploadPuzzle(slug, params = {}, yml = ymlFromSlug(slug)) {
   let url = EDIT_PUZZLE_URL;
 
   const formData = new FormData();
-
-  const yml = ymlFromSlug(slug);
 
   if (!(slug in lmdData))
     lmdData[slug] = {};
 
   if (!('img_id' in lmdData[slug])) {
-    uploadImage(slug);
+    await uploadImage(slug, yml);
     await setTimeout(5000);
   }
 
@@ -148,7 +147,7 @@ async function uploadPuzzle(slug, params = {}) {
     dif: 3,
     date: null,
     labels: [4],
-    tags: ['Sudoku'],
+    tags: ['Sudoku']
   };
 
   if (!createMode &&
@@ -167,7 +166,7 @@ async function uploadPuzzle(slug, params = {}) {
   formData.append('name', yml.title);
   formData.append('htmlcode', lmdData[slug].htmlcode || '');
   formData.append('codedescr', lmdData[slug].codedescr || '');
-  formData.append('htmlcode_en', generateHtml(slug, lmdData[slug].img_id));
+  formData.append('htmlcode_en', generateHtml(slug, lmdData[slug].img_id, yml));
   ((arr) => {
     formData.append('codedescr_en', arr[1]);
     formData.append('code', arr[0]);
@@ -212,7 +211,7 @@ async function uploadPuzzle(slug, params = {}) {
   Object.assign(lmdData[slug], extractPuzzleForm($formHtml));
 }
 
-async function uploadImage(slug) {
+async function uploadImage(slug, yml = ymlFromSlug(slug)) {
   let url = UPLOAD_IMAGE_URL;
 
   const fileBuffer = new Resvg(fs.readFileSync(`./assets/images/${slug}.svg`), {
@@ -220,8 +219,6 @@ async function uploadImage(slug) {
   }).render().asPng();
 
   const fileBlob = new Blob([fileBuffer], { type: 'image/png' });
-
-  const yml = ymlFromSlug(slug);
 
   if (!(slug in lmdData))
     lmdData[slug] = {};
@@ -266,11 +263,28 @@ async function main() {
       await uploadPuzzle(slug);
   }
 
+  const KEYS = [
+    "id",
+    "img_id",
+    "htmlcode",
+    "codedescr",
+    "code",
+    "dif",
+    "date",
+    "labels",
+    "tags"
+  ];
+
   const lmdData_ordered = Object.keys(lmdData).sort().reduce(
     (obj, key) => {
-      obj[key] = lmdData[key];
+      obj[key] = Object.fromEntries(KEYS.map(k => [k, lmdData[key][k]]));
       return obj;
     }, {});
-  fs.writeFileSync('_lmd-data.json', JSON.stringify(lmdData_ordered, null, 2));
+
+  fs.writeFileSync(
+    '_lmd-data.json',
+    JSON.stringify(lmdData_ordered, null, 2)
+      .replace(/\r?\n/g, '\r\n')
+  );
 }
 main().catch(console.error);

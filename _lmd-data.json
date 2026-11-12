@@ -7,6 +7,7 @@
       "Row 1, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -23,6 +24,7 @@
       "Row 1, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -43,6 +45,7 @@
       "Row 9, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -60,6 +63,7 @@
       "Row 8, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -79,6 +83,7 @@
       "Row 6, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       3
     ],
@@ -97,6 +102,7 @@
       "Row 7, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -117,6 +123,7 @@
       "Row 9, left to right."
     ],
     "dif": 3,
+    "date": null,
     "labels": [
       4
     ],
@@ -124,6 +131,24 @@
       "Killer (Variant)",
       "Kropki",
       "Palindrome (Variant)",
+      "Sudoku"
+    ]
+  },
+  "blue-roots": {
+    "id": "000W0Q",
+    "img_id": "00166X",
+    "code": [
+      "283546917",
+      "Row 6, left to right."
+    ],
+    "dif": 1,
+    "date": "2026-11-12 20:00:00",
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Kropki",
+      "Region Sum Lines (Variant)",
       "Sudoku"
     ]
   },
@@ -137,6 +162,7 @@
       "Row 4, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -156,6 +182,7 @@
       "Column 8, top to down."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -175,6 +202,7 @@
       "Row 9, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -191,6 +219,7 @@
       "Column 6, top to bottom."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -211,6 +240,7 @@
       "Row 1, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -230,6 +260,7 @@
       "Row 9, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -250,6 +281,7 @@
       "Row 8, left to right."
     ],
     "dif": 1,
+    "date": null,
     "labels": [
       4
     ],
@@ -271,6 +303,7 @@
       "Row 1, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -287,6 +320,7 @@
       "Column 9, top to bottom."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -304,6 +338,7 @@
       "Row 3, left to right."
     ],
     "dif": 1,
+    "date": null,
     "labels": [
       4
     ],
@@ -323,6 +358,7 @@
       "Central box, in reading order."
     ],
     "dif": 1,
+    "date": null,
     "labels": [
       4
     ],
@@ -341,6 +377,7 @@
       "Row 9, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -357,6 +394,7 @@
       "Row 1, left to right."
     ],
     "dif": 3,
+    "date": null,
     "labels": [
       4
     ],
@@ -376,6 +414,7 @@
       "Row 6, left to right."
     ],
     "dif": 1,
+    "date": null,
     "labels": [
       4
     ],
@@ -393,6 +432,7 @@
       "Row 1, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -412,6 +452,7 @@
       "Row 1, left to right."
     ],
     "dif": 1,
+    "date": null,
     "labels": [
       4
     ],
@@ -429,6 +470,7 @@
       "Column 5, top to bottom."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -448,6 +490,7 @@
       "Row 8, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [],
     "tags": [
       "Sudoku"
@@ -463,6 +506,7 @@
       "Row 9, left to right."
     ],
     "dif": 3,
+    "date": null,
     "labels": [
       3
     ],
@@ -482,6 +526,7 @@
       "Central box, in reading order."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -499,7 +544,9 @@
       null
     ],
     "dif": null,
-    "labels": []
+    "date": null,
+    "labels": [],
+    "tags": null
   },
   "pine-tree": {
     "id": "000VDM",
@@ -511,6 +558,7 @@
       "Row 1, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -531,6 +579,7 @@
       "Central box, in reading order."
     ],
     "dif": 1,
+    "date": null,
     "labels": [
       4
     ],
@@ -541,8 +590,8 @@
     ]
   },
   "reactor": {
-    "img_id": "00165Q",
     "id": "000VZV",
+    "img_id": "00165Q",
     "code": [
       "615398274",
       "Row 7, left to right."
@@ -569,6 +618,7 @@
       "The row starting with 9, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -589,6 +639,7 @@
       "Central box, in reading order."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -607,6 +658,7 @@
       "Row 1, left to right."
     ],
     "dif": 1,
+    "date": null,
     "labels": [
       4
     ],
@@ -623,6 +675,7 @@
       "Row 1, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -642,6 +695,7 @@
       "Row 1, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       2
     ],
@@ -660,6 +714,7 @@
       "Row 3, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -679,6 +734,7 @@
       "Row 3, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -698,6 +754,7 @@
       "Row 9, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -717,6 +774,7 @@
       "Row 9, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -735,6 +793,7 @@
       "Row 9, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -753,6 +812,7 @@
       "Row 1, left to right."
     ],
     "dif": 1,
+    "date": null,
     "labels": [
       4
     ],
@@ -770,6 +830,7 @@
       "Row 1, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -789,6 +850,7 @@
       "The shaded cells in column 9, top to bottom."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -805,6 +867,7 @@
       "Row 2, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -823,6 +886,7 @@
       "Row 9, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -841,6 +905,7 @@
       "Row 1, left to right."
     ],
     "dif": 3,
+    "date": null,
     "labels": [
       4
     ],
@@ -851,6 +916,8 @@
     ]
   },
   "toroidal-german-whispers": {
+    "id": "000VZ8",
+    "img_id": "00164W",
     "code": [
       "651294378",
       "Central box, in reading order."
@@ -864,9 +931,7 @@
       "German Whispers (Variant)",
       "Kropki",
       "Sudoku"
-    ],
-    "id": "000VZ8",
-    "img_id": "00164W"
+    ]
   },
   "toroidal-killer-jail": {
     "id": "000VYB",
@@ -876,13 +941,13 @@
       "Row 1, left to right."
     ],
     "dif": 2,
-    "tags": [
-      "Killer (Variant)",
-      "Sudoku"
-    ],
     "date": "2026-11-09 10:15:00",
     "labels": [
       4
+    ],
+    "tags": [
+      "Killer (Variant)",
+      "Sudoku"
     ]
   },
   "waves": {
@@ -895,6 +960,7 @@
       "Row 7, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -914,6 +980,7 @@
       "Row 2, left to right."
     ],
     "dif": 2,
+    "date": null,
     "labels": [
       4
     ],
@@ -921,7 +988,6 @@
       "Quadruple (Variant)",
       "Renban (Variant)",
       "Sudoku"
-    ],
-    "date": null
+    ]
   }
 }
