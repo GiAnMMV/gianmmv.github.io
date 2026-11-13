@@ -2,7 +2,7 @@
 title: Black & White
 creation_date: "2026-09-06"
 order: 3
-sudokupad_url: https://sudokupad.app/tlwty0cnn5
+sudokupad_url: https://sudokupad.app/k605s0d81d
 lmd_id: 000UUW
 rules:
   - name: Classic Sudoku
@@ -12,5 +12,5 @@ rules:
   - name: Palindrome Lines
     desc: Digits along a grey line read the same backwards and forwards.
   - name: Kropki
-    desc: Digits separated by a white dot are consecutive; digits separated by a black dot have a 1:2 ratio.
+    desc: Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio.
 ---

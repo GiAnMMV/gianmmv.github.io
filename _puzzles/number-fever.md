@@ -2,7 +2,7 @@
 title: Number Fever
 creation_date: "2026-09-07"
 order: 4
-sudokupad_url: https://sudokupad.app/m6hbikxlyp
+sudokupad_url: https://sudokupad.app/uo43fdoylc
 lmd_id: 000UTU
 rules:
   - name: Classic Sudoku

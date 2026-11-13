@@ -2,7 +2,7 @@
 title: Aoi Manji
 creation_date: "2026-09-05"
 order: 2
-sudokupad_url: https://sudokupad.app/2wf7bhtth9
+sudokupad_url: https://sudokupad.app/azawrvx16s
 lmd_id: 000UZM
 rules:
   - name: Classic Sudoku

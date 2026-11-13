@@ -10,7 +10,7 @@ rules:
   - name: Entropic Lines
     desc: Every sequential group of 3 cells on a line must have a low digit {1,2,3}, a medium digit {4,5,6}, and a high digit {7,8,9}.
   - name: Kropki
-    desc: Digits separated by a white dot are consecutive.
+    desc: Two digits separated by a white dot are consecutive.
   - name: XV
     desc: Two digits separated by an X clue sum up to 10; two digits separated by a V clue sum up to 5.
 ---

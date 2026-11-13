@@ -2,7 +2,7 @@
 title: Waves
 creation_date: "2026-09-09"
 order: 6
-sudokupad_url: https://sudokupad.app/evbqridrhj
+sudokupad_url: https://sudokupad.app/a4wuhgw45t
 lmd_id: 000USM
 rules:
   - name: Classic Sudoku

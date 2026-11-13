@@ -2,7 +2,7 @@
 title: Central Symmetry
 creation_date: "2026-09-21"
 order: 13
-sudokupad_url: https://sudokupad.app/5lcifax0b3
+sudokupad_url: https://sudokupad.app/nb18hxtkvf
 lmd_id: 000V27
 rules:
   - name: Classic Sudoku

@@ -2,7 +2,7 @@
 title: Kropki Entropy
 creation_date: "2026-09-05"
 order: 1
-sudokupad_url: https://sudokupad.app/2iaja40z4v
+sudokupad_url: https://sudokupad.app/xvygqiydrh
 lmd_id: 000USP
 rules:
   - name: Classic Sudoku
@@ -10,5 +10,5 @@ rules:
   - name: Entropic Lines
     desc: Every sequential group of 3 cells on a line must have a low digit {1,2,3}, a medium digit {4,5,6}, and a high digit {7,8,9}.
   - name: Kropki
-    desc: Digits separated by a white dot are consecutive; digits separated by a black dot have a 1:2 ratio.
+    desc: Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio.
 ---

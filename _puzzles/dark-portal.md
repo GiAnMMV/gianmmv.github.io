@@ -2,7 +2,7 @@
 title: Dark Portal
 creation_date: "2026-09-13"
 order: 7
-sudokupad_url: https://sudokupad.app/sary75xtrl
+sudokupad_url: https://sudokupad.app/q6t2qnrph5
 lmd_id: 000UUO
 rules:
   - name: Classic Sudoku
@@ -12,5 +12,5 @@ rules:
   - name: Arrows
     desc: Numbers along an arrow sum up to the total in the circled cell.
   - name: Kropki
-    desc: Digits separated by a white dot are consecutive; digits separated by a black dot have a 1:2 ratio.
+    desc: Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio.
 ---

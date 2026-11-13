@@ -2,7 +2,7 @@
 title: Ambiguous Clues
 creation_date: "2026-10-03"
 order: 33
-sudokupad_url: https://sudokupad.app/4329a4l0ub
+sudokupad_url: https://sudokupad.app/ps357uih2j
 lmd_id: 000VIR
 rules:
   - name: Classic Sudoku
