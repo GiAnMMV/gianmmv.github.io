@@ -5,13 +5,14 @@ const puppeteer = require('puppeteer-core');
 const { marked } = require('marked');
 const { load: ymlLoad, dump: ymlDump } = require('js-yaml');
 const { load: cheerioLoad } = require('cheerio');
-const { setTimeout } = require('timers/promises');
 
 const { getPuzzleId } = require('./sudokupad-id-generator.js');
 
-const puzzlesDir = path.join(__dirname, '..', '_puzzles');
-const jsonDir = path.join(__dirname, 'sudokupad');
-const imgDir = path.join(__dirname, '..', 'assets', 'images');
+const ROOT_DIR = path.resolve('..');
+
+const puzzlesDir = path.join(ROOT_DIR, '_puzzles');
+const jsonDir = path.join(ROOT_DIR, '_tools', 'sudokupad');
+const imgDir = path.join(ROOT_DIR, 'assets', 'images');
 
 const CHROME_PATH = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe";
 const WIDTH = 1200;
@@ -28,14 +29,14 @@ const VALID_YML_KEYS = [
 
 function ymlFromSlug(slug) {
   if (!slug) throw new Error('Slug must be defined.');
-  return ymlLoad(fs.readFileSync(`./_puzzles/${slug}.md`, 'utf-8')
+  return ymlLoad(fs.readFileSync(path.join(puzzlesDir, slug + '.md'), 'utf-8')
     .trim().slice(0, -3));
 }
 
 function writeYml(yml, slug) {
   const filteredYml = Object.fromEntries(VALID_YML_KEYS.map(k => [k, yml[k]]));
   fs.writeFileSync(
-    `./_puzzles/${slug}.md`,
+    path.join(puzzlesDir, slug + '.md'),
     ('---\n' + ymlDump(filteredYml, {lineWidth: -1, quoteStyle: 'double'}) + '---')
       .replace(/\r?\n/g, '\r\n'),
     'utf8'
@@ -55,14 +56,15 @@ function getChangedSlugs() {
     const ogSlugs = new Set();
 
     changedFiles.forEach(file => {
-      if (file.startsWith('assets/data/puzzles/') && file.endsWith('.json')) {
+      file = path.join(ROOT_DIR, file);
+      if (file.startsWith(jsonDir) && file.endsWith('.json')) {
         linkSlugs.add(path.basename(file, '.json'));
       }
-      if (file.startsWith('_puzzles/') && file.endsWith('.md')) {
+      if (file.startsWith(puzzlesDir) && file.endsWith('.md')) {
         ogSlugs.add(path.basename(file, '.md'));
         linkSlugs.add(path.basename(file, '.md'));
       }
-      if (file.startsWith('assets/images/') && file.endsWith('.svg')) {
+      if (file.startsWith(imgDir) && file.endsWith('.svg')) {
         ogSlugs.add(path.basename(file, '.svg'));
       }
     });

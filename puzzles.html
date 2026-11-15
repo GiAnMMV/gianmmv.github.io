@@ -137,7 +137,7 @@ permalink: /puzzles/
     for (const puzzle of puzzles.slice((page-1) * itemsPerPage, page * itemsPerPage)) {
       const a = document.createElement("a");
       a.className = "puzzle-card";
-      a.href = "/puzzles/" + puzzle[0];
+      a.href = "/puzzles/" + puzzle[0] + "/";
 
       const img = document.createElement("img");
       img.src = puzzle[5];

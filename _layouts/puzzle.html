@@ -2,13 +2,26 @@
 layout: default
 ---
 <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has("play"))
-      window.location.href = "{{ page.sudokupad_url | relative_url }}";
+  document.addEventListener('DOMContentLoaded', function () {
+    const indexLink = document.getElementById('back-link');
+    if (!indexLink || !document.referrer) return;
+
+    const indexUrl = new URL(indexLink.href, window.location.origin).href;
+    const referrerObj = new URL(document.referrer);
+    const referrerBasePath = referrerObj.origin + referrerObj.pathname.replace(/\/index\.html$|\/$/, '') + '/';
+
+    if (referrerBasePath === indexUrl || referrerBasePath === indexUrl + 'noscript/') {
+      indexLink.href = document.referrer;
+      indexLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.history.back();
+      });
+    }
+  });
 </script>
 
 <style>
-  .back-link {
+  #back-link {
     font-size: 1rem;
   }
 
@@ -19,7 +32,7 @@ layout: default
 
 <article class="project-detail">
   <nav>
-    <a href="/puzzles/" class="back-link">← Back to Puzzle List</a>
+    <a href="/puzzles/" id="back-link">← Back to Puzzle List</a>
   </nav>
   <h1 style="margin-top: 0;">{{ page.title }}</h1>
   {% if page.creation_date %}
@@ -43,7 +56,7 @@ layout: default
       {% endif %}
       <hr/>
       <div style="text-align: center;">
-        <a class="btn primary" title="{{ page.title }} by GiAnMMV" href="{{ page.sudokupad_url | relative_url}}">Play in SudokuPad</a>        
+        <a class="btn primary" title="{{ page.title }} by GiAnMMV" href="{{ page.sudokupad_url }}">Play in SudokuPad</a>        
         <div>
           {% if page.lmd_id %}
           <a class="btn" title="{{ page.title }} — Rätselportal — Logic Masters Deutschland" href="https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?id={{ page.lmd_id }}">Logic Masters Germany</a>

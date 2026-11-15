@@ -14,13 +14,6 @@
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:site_name" content="{{ page.subsite_title | default: site.title }}">
     <meta property="og:type" content="website">
-    {% if page.collection == "puzzles" %}
-    <meta property="og:image" content="{{ site.url }}/assets/images/og/{{ page.slug }}.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="{{ page.title }}">
-    {% endif %}
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="{{ page.title | default: page.subsite_title | default: site.title }}">
     <script type="application/ld+json">
@@ -33,6 +26,18 @@
     <meta name="theme-color" content="#0035d4">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% if page.collection == "puzzles" %}
+    <meta property="og:image" content="{{ site.url }}/assets/images/og/{{ page.slug }}.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="{{ page.title }}">
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has("play"))
+        window.location.href = "{{ page.sudokupad_url }}";
+    </script>
+    {% endif %}
     {% include head-custom.html %}
   </head>
   <body>

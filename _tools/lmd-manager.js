@@ -7,6 +7,8 @@ const { setTimeout } = require('timers/promises');
 
 const { ymlFromSlug, writeYml } = require('./generate-assets.js');
 
+const ROOT_DIR = path.resolve('..');
+
 const EDIT_PUZZLE_URL = 'https://logic-masters.de/Raetselportal/Eigene/einstellen.php';
 const UPLOAD_IMAGE_URL = 'https://logic-masters.de/Dateien/index.php';
 
@@ -70,7 +72,7 @@ function generateHtml(slug, imgCode, yml = ymlFromSlug(slug)) {
 }
 
 function solutionCode(slug, indication) {
-  const puzzle = JSON.parse(fs.readFileSync(path.join(__dirname, 'sudokupad', slug + '.json'), 'utf-8'));
+  const puzzle = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, '_tools', 'sudokupad', slug + '.json'), 'utf-8'));
   const solution = puzzle.metadata.solution;
   const w = puzzle.cells[0].length;
   const boxes = puzzle.regions
@@ -215,7 +217,7 @@ async function uploadPuzzle(slug, params = {}, yml = ymlFromSlug(slug)) {
 async function uploadImage(slug, yml = ymlFromSlug(slug)) {
   let url = UPLOAD_IMAGE_URL;
 
-  const fileBuffer = new Resvg(fs.readFileSync(`./assets/images/${slug}.svg`), {
+  const fileBuffer = new Resvg(fs.readFileSync(path.join(ROOT_DIR, 'assets', 'images', slug + '.svg')), {
     font: { loadSystemFonts: true }
   }).render().asPng();
 
