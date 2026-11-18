@@ -8,7 +8,7 @@ const { load: cheerioLoad } = require('cheerio');
 
 const { getPuzzleId } = require('./sudokupad-id-generator.js');
 
-const ROOT_DIR = path.resolve('..');
+const ROOT_DIR = path.resolve(__dirname, '..');
 
 const puzzlesDir = path.join(ROOT_DIR, '_puzzles');
 const jsonDir = path.join(ROOT_DIR, '_tools', 'sudokupad');
@@ -24,7 +24,8 @@ const VALID_YML_KEYS = [
   "order",
   "sudokupad_url",
   "lmd_id",
-  "rules"
+  "rules",
+  "rules_de"
 ]
 
 function ymlFromSlug(slug) {

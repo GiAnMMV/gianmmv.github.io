@@ -2,9 +2,6 @@
   "id": "sxsm_GiAnMMV_35478a41f7fdcd37366e1a2c3a193057",
   "metadata": {
     "source": "SudokuMaker v2026.08.14-d47fc4b",
-    "title": null,
-    "author": null,
-    "rules": null,
     "msgcorrect": "Congratulations, the solution is correct!\nI hope you enjoyed my fourth puzzle! :D",
     "solution": "123456789975328146486791325791862534368945271254137968647219853839574612512683497"
   },

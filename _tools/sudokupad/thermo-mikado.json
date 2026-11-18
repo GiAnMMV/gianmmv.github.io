@@ -2,11 +2,8 @@
   "id": "sxsm_GiAnMMV_35b89207022e76f241e5983c448a8f38",
   "metadata": {
     "source": "SudokuMaker v2026.08.14-d47fc4b",
-    "author": null,
-    "rules": null,
     "msgcorrect": "You won! Nice!",
-    "solution": "598643217124578396637291845369127584281456973745389162872934651913765428456812739",
-    "title": null
+    "solution": "598643217124578396637291845369127584281456973745389162872934651913765428456812739"
   },
   "cages": [
     {

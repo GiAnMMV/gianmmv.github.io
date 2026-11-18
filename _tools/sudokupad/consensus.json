@@ -2,10 +2,7 @@
   "id": "sxsm_GiAnMMV_26ab7846db878acbd53e3d4f2403584d",
   "metadata": {
     "source": "SudokuMaker v2026.10.05-a3aef4c",
-    "author": null,
-    "rules": null,
     "msgcorrect": "Congrats, you won! I hope you liked it!",
-    "title": null,
     "solution": "841523769576149283932687541493765812627418935185392674759834126264971358318256497"
   },
   "cells": [

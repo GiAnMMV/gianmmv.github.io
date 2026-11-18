@@ -2,11 +2,8 @@
   "id": "sxsm_GiAnMMV_116e12c6f29756519b3905f63feea0a8",
   "metadata": {
     "source": "SudokuMaker v2026.10.05-a3aef4c",
-    "author": null,
-    "rules": null,
     "msgcorrect": "You did it! Hope you had fun!",
-    "solution": "467159283289637541531248697874592136153486729692713458316825974945371862728964315",
-    "title": null
+    "solution": "467159283289637541531248697874592136153486729692713458316825974945371862728964315"
   },
   "cages": [
     {"unique": true, "cells": [[5, 1], [5, 2], [5, 3], [6, 1], [6, 2], [6, 3], [7, 1], [7, 2], [7, 3]]},

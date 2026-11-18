@@ -2,11 +2,8 @@
   "id": "sxsm_unknown_e56d728e5ec49925df38d063f7f86d1a",
   "metadata": {
     "source": "SudokuMaker v2026.08.14-d47fc4b",
-    "author": null,
-    "rules": null,
     "solution": "742951863351876294968423175416287359587394621239615487674538912123769548895142736",
-    "msgcorrect": "It is the Spooky Month!",
-    "title": null
+    "msgcorrect": "It is the Spooky Month!"
   },
   "cells": [
     [{}, {}, {}, {}, {}, {}, {}, {}, {}],

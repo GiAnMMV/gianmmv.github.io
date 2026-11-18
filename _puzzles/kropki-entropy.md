@@ -11,4 +11,11 @@ rules:
     desc: Every sequential group of 3 cells on a line must have a low digit {1,2,3}, a medium digit {4,5,6}, and a high digit {7,8,9}.
   - name: Kropki
     desc: Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio.
+rules_de:
+  - name: Klassisches Sudoku
+    desc: Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.
+  - name: Entropische Linien
+    desc: Jede Gruppe von drei aufeinanderfolgenden Zellen auf einer Linie muss eine niedrige Ziffer {1,2,3}, eine mittlere Ziffer {4,5,6} und eine hohe Ziffer {7,8,9} enthalten.
+  - name: Kropki
+    desc: Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2.
 ---

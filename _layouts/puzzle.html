@@ -4,18 +4,56 @@ layout: default
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const indexLink = document.getElementById('back-link');
-    if (!indexLink || !document.referrer) return;
+    if (indexLink && document.referrer) {
+      const indexUrl = new URL(indexLink.href, window.location.origin).href;
+      const referrerObj = new URL(document.referrer);
+      const referrerBasePath = referrerObj.origin + referrerObj.pathname
+        .replace(/\/index\.html$|(?<!\/)$/, '/')
+        .replace(/noscript\/$/, '');
 
-    const indexUrl = new URL(indexLink.href, window.location.origin).href;
-    const referrerObj = new URL(document.referrer);
-    const referrerBasePath = referrerObj.origin + referrerObj.pathname.replace(/\/index\.html$|\/$/, '') + '/';
+      if (referrerBasePath === indexUrl) {
+        indexLink.href = document.referrer;
+        indexLink.addEventListener('click', function (e) {
+          e.preventDefault();
+          window.history.back();
+        });
+      }
+    }
 
-    if (referrerBasePath === indexUrl || referrerBasePath === indexUrl + 'noscript/') {
-      indexLink.href = document.referrer;
-      indexLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        window.history.back();
-      });
+    const urlParams = new URLSearchParams(window.location.search);
+    if (!document.cookie) {
+      const cookieLang = (navigator.language || navigator.userLanguage || 'en').slice(0, 2);
+      document.cookie = `lang=${cookieLang}; path=/`;
+    }
+    let lang = urlParams.get('lang');
+    if (lang) {
+      document.cookie = `lang=${lang}; path=/`;
+    } else {
+      lang = document.cookie.match(/(?:^|; )lang=([^;]+)/)?.[1];
+    }
+    const rulesCollection = document.getElementsByClassName('rules');
+    const found = Array.from(rulesCollection).some(el =>
+      el.lang === lang || el.getAttribute('lang') === lang
+    );
+    if (!found) lang = 'en';
+    const bar = document.getElementById('lang-selector');
+
+    for (const el of rulesCollection) {
+      const elLang = el.lang || el.getAttribute('lang');
+      el.hidden = elLang !== lang;
+
+      if (rulesCollection.length > 1) {
+        const btn = document.createElement('a');
+        btn.className = 'btn';
+        if (el.hidden) {
+          btn.href = document.location.pathname + `?lang=${elLang}`;
+        } else {
+          btn.href = '#';
+          btn.classList.add('active');
+        }
+        btn.innerText = elLang.toUpperCase();
+        bar.appendChild(btn);
+      }
     }
   });
 </script>
@@ -28,13 +66,20 @@ layout: default
   .rule p {
     display: inline;
   }
+
+  #lang-selector {
+    align-self: flex-start;
+  }
 </style>
 
 <article class="project-detail">
-  <nav>
-    <a href="/puzzles/" id="back-link">← Back to Puzzle List</a>
-  </nav>
-  <h1 style="margin-top: 0;">{{ page.title }}</h1>
+  <div style="display: flex;">
+    <div style="flex: 1;">
+      <a href="/puzzles/" id="back-link">← Back to Puzzle List</a>
+      <h1 style="margin: 0;">{{ page.title }}</h1>
+    </div>
+    <span class="btn-bar" id="lang-selector"></span>
+  </div>
   {% if page.creation_date %}
   <p><time datetime="{{ page.creation_date }}">{{ page.creation_date | date: "%-d %B %Y" }}</time></p>
   {% endif %}
@@ -42,22 +87,34 @@ layout: default
     <div style="flex: 1 1 300px; max-width: 416px;">
       <img src="{% include puzzle-image.html puzzle=page %}" style="width: 100%; height: auto; display: block;" alt="{{ page.title }}" />
     </div>
-  
+
+
     <div style="flex: 2 1 300px; min-width: 0;">
-      {% if page.rules %}
-        <h2>Rules:</h2>
-        <ul>
-        {% for rule in page.rules %}
-          <span class="rule">
-            <li><strong>{{ rule.name }}:</strong> {{ rule.desc | markdownify }}</li>
-          </span>
-        {% endfor %}
-        </ul>
-      {% endif %}
+      {% for item in page %}
+        {% if item contains "rules" %}
+          {% if item contains "rules_" %}
+            {% assign lang_code = item | remove: "rules_" %}
+            {% assign visibility = " hidden" %}
+          {% else %}
+            {% assign lang_code = "en" %}
+            {% assign visibility = "" %}
+          {% endif %}
+          <div class="rules" lang="{{ lang_code }}"{{ visibility }}>
+            <h2>{{ site.data.terms.rules[lang_code] }}:</h2>
+            <ul>
+            {% for rule in page[item] %}
+              <span class="rule">
+                <li><strong>{{ rule.name }}:</strong> {{ rule.desc | markdownify }}</li>
+              </span>
+            {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+      {% endfor %}
       <hr/>
       <div style="text-align: center;">
         <a class="btn primary" title="{{ page.title }} by GiAnMMV" href="{{ page.sudokupad_url }}">Play in SudokuPad</a>        
-        <div>
+        <div style="margin-top: 1rem;">
           {% if page.lmd_id %}
           <a class="btn" title="{{ page.title }} — Rätselportal — Logic Masters Deutschland" href="https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?id={{ page.lmd_id }}">Logic Masters Germany</a>
           {% endif %}

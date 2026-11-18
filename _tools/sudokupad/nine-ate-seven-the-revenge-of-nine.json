@@ -2,11 +2,8 @@
   "id": "sxsm_GiAnMMV_bec57d1c9fa0729e9db72b4e8f5855b0",
   "metadata": {
     "source": "SudokuMaker v2026.10.05-a3aef4c",
-    "author": null,
-    "rules": null,
     "msgcorrect": "Thanks for playing' Hope you enjoyed this li'l puzzle!",
-    "solution": "483129567752863914691574823239416758145987632876352149328691475914735286567248391",
-    "title": null
+    "solution": "483129567752863914691574823239416758145987632876352149328691475914735286567248391"
   },
   "cells": [
     [{}, {}, {}, {}, {}, {}, {}, {}, {}],

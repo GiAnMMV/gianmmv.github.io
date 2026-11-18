@@ -55,9 +55,9 @@ LZipper = function () {
     return str
   }
   return {
-    compact64: str => btoa(data16to8Bit(compress(str))),
+    compact64: str => btoa(data16to8Bit(compress(str)))
   }
-}()
+}();
 
 
 const clearEmptyArrays = o => (

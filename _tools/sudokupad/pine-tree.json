@@ -2,11 +2,8 @@
   "id": "sxsm_GiAnMMV_36bf6a615967b9aeb4decb374a2afd0c",
   "metadata": {
     "source": "SudokuMaker v2026.08.14-d47fc4b",
-    "author": null,
-    "rules": null,
     "msgcorrect": "Hope you liked it! Made for Monthly Puzzle Prompt of October 2026.",
-    "solution": "153798462792364185468251973387142659529673814641589237916435728875926341234817596",
-    "title": null
+    "solution": "153798462792364185468251973387142659529673814641589237916435728875926341234817596"
   },
   "cells": [
     [{}, {}, {}, {}, {}, {}, {}, {}, {}],

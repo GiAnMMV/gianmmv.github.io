@@ -13,4 +13,9 @@ rules:
     desc: |
       Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio; if two digits are separated by a black&white dot, one must be multiple of the other.  
       A dot placed at the corner intersection of four cells indicates that its condition applies to both diagonal pairs (top-left/bottom-right and top-right/bottom-left).
+rules_de:
+  - name: Klassisches Sudoku
+    desc: Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.
+  - name: German Whisper
+    desc: Die Differenz zwischen zwei benachbarten Ziffern auf einer grünen Linie muss mindestens 5 betragen.
 ---

@@ -11,4 +11,11 @@ rules:
     desc: No digit may appear more than once within a cage.
   - name: Thermometers
     desc: Along thermometers, digits must increase from the bulb.
+rules_de:
+  - name: 6x6 Sudoku
+    desc: Jede Zeile, jede Spalte und jedes 2x3-Block muss alle Zahlen von 1 bis 6 enthalten.
+  - name: Killer Käfige
+    desc: Keine Ziffer darf innerhalb eines Käfigs mehr als einmal vorkommen.
+  - name: Thermometer
+    desc: Bei Thermometern steigen die Ziffern von der Glühbirne an.
 ---

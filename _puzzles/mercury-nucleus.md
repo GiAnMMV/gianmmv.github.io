@@ -11,4 +11,11 @@ rules:
     desc: Along thermometers, digits must increase from the bulb.
   - name: Kropki
     desc: Two digits separated by a white dot are consecutive.
+rules_de:
+  - name: Klassisches Sudoku
+    desc: Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.
+  - name: Thermometer
+    desc: Bei Thermometern steigen die Ziffern von der Glühbirne an.
+  - name: Kropki
+    desc: Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend.
 ---

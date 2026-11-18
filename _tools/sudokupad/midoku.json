@@ -2,11 +2,8 @@
   "id": "sxsm_GiAnMMV_cc23cf0ecabf45e4f383f097f1340467",
   "metadata": {
     "source": "SudokuMaker v2026.10.05-a3aef4c",
-    "author": null,
-    "rules": null,
     "msgcorrect": "Yey, congrats!",
-    "solution": "872435169635918427419726835328159674547263981196847253251384796783691542964572318",
-    "title": null
+    "solution": "872435169635918427419726835328159674547263981196847253251384796783691542964572318"
   },
   "cells": [
     [{}, {}, {}, {}, {}, {}, {}, {}, {}],

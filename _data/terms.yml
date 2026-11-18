@@ -1,0 +1,16 @@
+rules:
+  en: Rules
+  de: Regeln
+  it: Regole
+play_in_sudokupad:
+  en: Play in SudokuPad
+  de: In SudokuPad spielen
+  it: Gioca su SudokuPad
+random_puzzle:
+  en: Random Puzzle
+  de: Zufälliges Rätsel
+  it: Rompicato a caso
+back_to_puzzle_list:
+  en: Back to Puzzle List
+  de: Zurück zur Rätselliste
+  it: Torna all'indice dei rompicapi

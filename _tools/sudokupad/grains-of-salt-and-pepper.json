@@ -2,11 +2,8 @@
   "id": "sxsm_GiAnMMV_aaef7feab04369346207d0f6851d5b2b",
   "metadata": {
     "source": "SudokuMaker v2026.08.14-d47fc4b",
-    "author": null,
-    "rules": null,
     "msgcorrect": "Thanks for playing! I intended to submit this for Monthly Puzzle Prompt of September 2026, but I already hit the limit.",
-    "solution": "489276315176543289253918674945132768837694152621857943712489536398765421564321897",
-    "title": null
+    "solution": "489276315176543289253918674945132768837694152621857943712489536398765421564321897"
   },
   "cells": [
     [{}, {}, {}, {}, {}, {}, {}, {}, {}],

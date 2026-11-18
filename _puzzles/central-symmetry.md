@@ -15,4 +15,15 @@ rules:
     desc: If two digits are separated by a "<", the smaller one in on the side where the "<" points to.
   - name: Even
     desc: A digit inside a grey square must be even.
+rules_de:
+  - name: Klassisches Sudoku
+    desc: Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.
+  - name: Entropische Linien
+    desc: Jede Gruppe von drei aufeinanderfolgenden Zellen auf einer Linie muss eine niedrige Ziffer {1,2,3}, eine mittlere Ziffer {4,5,6} und eine hohe Ziffer {7,8,9} enthalten.
+  - name: Pfeile
+    desc: Die Zahlen entlang eines Pfeils ergeben in der Summe den Wert in der eingekreisten Zelle; der eingekreiste Wert wird von links nach rechts oder von oben nach unten gelesen, wenn er aus mehreren Ziffern besteht.
+  - name: Größer/Kleiner
+    desc: Wenn zwei Ziffern durch ein „<“ getrennt sind, steht die kleinere auf der Seite, auf die das „<“ zeigt.
+  - name: Parität
+    desc: Eine Ziffer in einem grauen Quadrat muss gerade sein.
 ---
