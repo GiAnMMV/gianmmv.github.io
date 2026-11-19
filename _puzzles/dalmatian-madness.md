@@ -18,4 +18,8 @@ rules_de:
     desc: Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.
   - name: German Whisper
     desc: Die Differenz zwischen zwei benachbarten Ziffern auf einer grünen Linie muss mindestens 5 betragen.
+  - name: Kropki
+    desc: |
+      Zwei durch einen weißen Punkt getrennte Ziffern sind aufeinanderfolgend; zwei durch einen schwarzen Punkt getrennte Ziffern stehen in einem Verhältnis von 1:2; sind zwei Ziffern durch einen schwarz-weißen Punkt getrennt, muss eine ein Vielfaches der anderen sein.  
+      Ein Punkt am Eckpunkt, an dem vier Zellen zusammentreffen, bedeutet, dass die entsprechende Bedingung für beide diagonalen Paare gilt (oben-links/unten-rechts und oben-rechts/unten-links).
 ---

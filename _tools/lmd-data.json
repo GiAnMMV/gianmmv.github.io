@@ -119,10 +119,11 @@
   "blue-roots": {
     "id": "000W0Q",
     "img_id": "00166X",
+    "codedescr": "Zeile 6, von links nach rechts.",
     "codedescr_en": "Row 6, left to right.",
     "code": "283546917",
     "dif": 1,
-    "date": "2026-11-12 20:00:00",
+    "date": "",
     "labels": [
       4
     ],
@@ -533,10 +534,11 @@
   "reactor": {
     "id": "000VZV",
     "img_id": "00165Q",
+    "codedescr": "Zeile 7, von links nach rechts.",
     "codedescr_en": "Row 7, left to right.",
     "code": "615398274",
     "dif": 3,
-    "date": "2026-11-11 20:00:00",
+    "date": "",
     "labels": [
       4
     ],
@@ -837,6 +839,24 @@
     ],
     "tags": [
       "Killer (Variant)",
+      "Sudoku"
+    ]
+  },
+  "tricolor": {
+    "id": "000W4G",
+    "img_id": "0016BS",
+    "codedescr": "Zeile 9, von links nach rechts.",
+    "codedescr_en": "Row 9, left to right.",
+    "code": "645318927",
+    "dif": 1,
+    "date": "2026-11-19 20:00:00",
+    "labels": [
+      4
+    ],
+    "tags": [
+      "German Whispers (Variant)",
+      "Kropki",
+      "Parity (Theme)",
       "Sudoku"
     ]
   },

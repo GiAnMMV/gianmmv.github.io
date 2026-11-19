@@ -26,7 +26,7 @@ let fetchTimer = Date.now();
 async function sessionFetch(url, options = {}) {
   const headers = {
     ...options.headers,
-    'Cookie': `lm_data=${process.env.LMD_COOKIE_ID}`
+    'Cookie': `lm_data=${process.env.LMD_COOKIE_ID}; lm_lang=en`
   };
 
   await setTimeout(fetchTimer - Date.now());
@@ -225,7 +225,7 @@ async function uploadPuzzle(slug, params = {}, yml = ymlFromSlug(slug)) {
   })(new Date(params.date));
   params.labels.forEach((l) => payload[`label_${l}`] = '1');
   payload.freetags = params.tags.join(', ');
-  payload.comment = params.comment;
+  payload.comment = params.comment ?? '';
   payload.einstellen = createMode ? 'Create' : 'Change';
 
   const $ = await sessionFetchCheerio(url, {
