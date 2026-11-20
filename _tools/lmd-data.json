@@ -682,6 +682,23 @@
       "Sudoku"
     ]
   },
+  "snow-crystal": {
+    "id": "000W50",
+    "img_id": "0016CF",
+    "codedescr": "Spalte 3, von oben nach unten.",
+    "codedescr_en": "Column 3, top to bottom.",
+    "code": "394581726",
+    "dif": 3,
+    "date": "2026-11-20 20:00:00",
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Kropki",
+      "Sudoku",
+      "XV (Variant)"
+    ]
+  },
   "some-x-sums": {
     "id": "000VD3",
     "img_id": "001598",
