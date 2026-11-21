@@ -15,7 +15,7 @@ rules:
     desc: Every two consecutive digits along a green line must have a difference of at least 5.
 rules_it:
   - name: Sudoku classico
-    desc: Ogni riga, ogni colonna e ogni riquadro 3x3 deve contenere tutti i numeri da 1 a 9.
+    desc: Ogni riga, ogni colonna e ogni riquadro 3x3 devono contenere tutti i numeri da 1 a 9.
   - name: Region Sum Line
     desc: I confini dei riquadri dividono le linee azzurre in segmenti con la stessa somma.
   - name: Renban

@@ -80,6 +80,22 @@
       "Sudoku"
     ]
   },
+  "bent-arrow": {
+    "id": "000W5I",
+    "img_id": "0016D6",
+    "codedescr": "Spalte 4, von oben nach unten.",
+    "codedescr_en": "Column 4, top to bottom.",
+    "code": "4231",
+    "dif": 1,
+    "date": "2026-11-22 22:00:00",
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Arrows (Variant)",
+      "Sudoku"
+    ]
+  },
   "big-bang": {
     "id": "000V1A",
     "img_id": "0014UN",

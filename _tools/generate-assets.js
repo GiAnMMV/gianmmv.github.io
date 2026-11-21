@@ -18,14 +18,13 @@ const CHROME_PATH = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
 const WIDTH = 1200;
 const HEIGHT = 630;
 
-const VALID_YML_KEYS = [
+const YML_KEYS = [
   "title",
   "creation_date",
   "order",
   "sudokupad_url",
   "lmd_id",
-  "rules",
-  "rules_de"
+  "rules"
 ]
 
 function ymlFromSlug(slug) {
@@ -35,12 +34,14 @@ function ymlFromSlug(slug) {
 }
 
 function writeYml(yml, slug) {
-  const filteredYml = Object.fromEntries(VALID_YML_KEYS.map(k => [k, yml[k]]));
+  const sortedYml = Object.fromEntries(YML_KEYS.map(k => [k, yml[k]]));
+  Object.assign(sortedYml, yml);
+
   fs.writeFileSync(
     path.join(puzzlesDir, slug + '.md'),
-    ('---\n' + ymlDump(filteredYml, {lineWidth: -1, quoteStyle: 'double'}) + '---')
+    ('---\n' + ymlDump(sortedYml, {lineWidth: -1, quoteStyle: 'double'}) + '---')
       .replace(/\r?\n/g, '\r\n'),
-    'utf8'
+    'utf-8'
   );
 }
 

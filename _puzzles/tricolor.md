@@ -15,7 +15,7 @@ rules:
     desc: Two digits separated by a white dot are consecutive; two digits separated by a black dot have a 1:2 ratio.
 rules_it:
   - name: Sudoku classico
-    desc: Ogni riga, ogni colonna e ogni riquadro 3x3 deve contenere tutti i numeri da 1 a 9.
+    desc: Ogni riga, ogni colonna e ogni riquadro 3x3 devono contenere tutti i numeri da 1 a 9.
   - name: German Whisper
     desc: Due cifre consecutive lungo una linea verde devono avere una differenza pari ad almeno 5.
   - name: Linee di parità
