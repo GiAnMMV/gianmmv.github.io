@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-.02 -.02 9.04 9.04" width="832px" height="832px" text-anchor="middle" dominant-baseline="central" font-family="Arial, Helvetica, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-.02 -.02 9.04 9.04" width="832px" height="832px" font-family="Arial, Helvetica, sans-serif">
   <defs>
     <symbol id="kropki" overflow="visible">
       <circle r=".16" fill="#d3d3d3" stroke="#000" stroke-width=".02"/>
-      <text font-size=".25">?</text>
+      <text text-anchor="middle" dominant-baseline="central" font-size=".25">?</text>
     </symbol>
   </defs>
 
@@ -21,7 +21,7 @@
   <use href="#kropki" x="3.5" y="6"/>
   <use href="#kropki" x="6" y="7.5"/>
 
-  <g font-size=".8">
+  <g text-anchor="middle" dominant-baseline="central" font-size=".8">
     <text x="7.5" y="3.5">8</text>
     <text x="8.5" y="4.5">4</text>
     <text x="5.5" y="5.5">4</text>

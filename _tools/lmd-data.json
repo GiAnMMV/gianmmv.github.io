@@ -689,7 +689,7 @@
     "codedescr_en": "Column 3, top to bottom.",
     "code": "394581726",
     "dif": 3,
-    "date": "2026-11-20 20:00:00",
+    "date": "2026-11-20 22:00:00",
     "labels": [
       4
     ],
@@ -875,6 +875,25 @@
       "Kropki",
       "Parity (Theme)",
       "Sudoku"
+    ]
+  },
+  "union-jack": {
+    "id": "000W5F",
+    "img_id": "0016D4",
+    "codedescr": "Zeile 9, von links nach rechts.",
+    "codedescr_en": "Row 9, left to right.",
+    "code": "261893574",
+    "dif": 2,
+    "date": "2026-11-21 22:00:00",
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Kropki",
+      "Parity (Theme)",
+      "Region Sum Lines (Variant)",
+      "Sudoku",
+      "XV (Variant)"
     ]
   },
   "waves": {

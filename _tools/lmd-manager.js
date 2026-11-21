@@ -29,7 +29,7 @@ async function sessionFetch(url, options = {}) {
     'Cookie': `lm_data=${process.env.LMD_COOKIE_ID}; lm_lang=en`
   };
 
-  await setTimeout(fetchTimer - Date.now());
+  await setTimeout(Math.max(fetchTimer - Date.now(), 0));
 
   const postResponse = await fetch(url, { ...options, headers });
   if (!postResponse.ok)
@@ -308,11 +308,27 @@ async function main() {
   const rawArgs = process.argv.slice(2);
   const slug = rawArgs[0];
   try {
-    if (rawArgs[1] === '--update-image')
+    if (rawArgs[1] === '--image')
       await uploadImage(slug);
-    else if (rawArgs[1] === '--update-puzzle') {
-      if (rawArgs.length > 1)
-        await uploadPuzzle(slug, { comment: rawArgs[2] });
+    else {
+      if (rawArgs.length > 0) {
+        const params = {};
+        rawArgs.forEach( p => {
+          let m = p.match(/^--comment=(.+)/);
+          if (m) { params.comment = m[1]; return; }
+          m = p.match(/^--date=(\d{4}-\d{2}-\d{2}[ _]\d{2}:\d{2}(?::\d{2})?)/);
+          if (m) { params.date = m[1].replace('_', ' '); return; }
+          m = p.match(/^--code=(.+)/);
+          if (m) { params.generate_code = m[1]; return; }
+          m = p.match(/^--dif=(\d)/);
+          if (m) { params.dif = parseInt(m[1]); return; }
+          m = p.match(/--labels=(.+)/);
+          if (m) { params.labels = m[1].split(/, */).map(Number); return; }
+          m = p.match(/--tags=(.+)/);
+          if (m) { params.tags = m[1].split(/, */); return; }
+        });
+        await uploadPuzzle(slug, params);
+      }
       else
         await uploadPuzzle(slug);
     }
