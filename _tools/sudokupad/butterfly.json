@@ -1,0 +1,152 @@
+{
+  "id": "sxsm_GiAnMMV_6022402a96bea4ea2719ca2081093d95",
+  "metadata": {
+    "source": "SudokuMaker v2026.11.08-800383e",
+    "solution": "293461875754928163186753294675149382312876549849532716927615438438297651561384927",
+    "msgcorrect": "Congratulations! Thank you for playing my puzzle!"
+  },
+  "cells": [
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}]
+  ],
+  "regions": [
+    [[0, 0], [0, 1], [0, 2], [1, 0], [1, 1], [1, 2], [2, 0], [2, 1], [2, 2]],
+    [[0, 3], [0, 4], [0, 5], [1, 3], [1, 4], [1, 5], [2, 3], [2, 4], [2, 5]],
+    [[0, 6], [0, 7], [0, 8], [1, 6], [1, 7], [1, 8], [2, 6], [2, 7], [2, 8]],
+    [[3, 0], [3, 1], [3, 2], [4, 0], [4, 1], [4, 2], [5, 0], [5, 1], [5, 2]],
+    [[3, 3], [3, 4], [3, 5], [4, 3], [4, 4], [4, 5], [5, 3], [5, 4], [5, 5]],
+    [[3, 6], [3, 7], [3, 8], [4, 6], [4, 7], [4, 8], [5, 6], [5, 7], [5, 8]],
+    [[6, 0], [6, 1], [6, 2], [7, 0], [7, 1], [7, 2], [8, 0], [8, 1], [8, 2]],
+    [[6, 3], [6, 4], [6, 5], [7, 3], [7, 4], [7, 5], [8, 3], [8, 4], [8, 5]],
+    [[6, 6], [6, 7], [6, 8], [7, 6], [7, 7], [7, 8], [8, 6], [8, 7], [8, 8]]
+  ],
+  "lines": [
+    {
+      "wayPoints": [
+        [5.5, 8.5],
+        [5.5, 7.5],
+        [6.5, 8.5],
+        [8.5, 8.5],
+        [8.5, 5.5],
+        [7.5, 4.5],
+        [8.5, 3.5],
+        [5.5, 0.5],
+        [4.5, 1.5],
+        [3.5, 0.5],
+        [0.5, 0.5],
+        [0.5, 2.5],
+        [1.5, 3.5],
+        [0.5, 3.5]
+      ],
+      "color": "#67f067ff",
+      "thickness": 9.6
+    },
+    {"wayPoints": [[4.5, 8.5], [3.5, 8.5], [3.5, 5.5], [0.5, 5.5], [0.5, 4.5]], "color": "#67f067ff", "thickness": 9.6},
+    {"wayPoints": [[3.5, 5.5], [2.5, 6.5]], "color": "#67f067ff", "thickness": 9.6}
+  ],
+  "overlays": [
+    {
+      "center": [5, 2],
+      "width": 0.62,
+      "height": 0.62,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {"center": [5, 1.915], "width": 0.62, "height": 0.62, "text": 1},
+    {"center": [5, 2.085], "width": 0.62, "height": 0.62, "text": 9},
+    {
+      "center": [5, 3],
+      "width": 0.62,
+      "height": 0.62,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {"center": [5, 2.915], "width": 0.62, "height": 0.62, "text": 2},
+    {"center": [5, 3.085], "width": 0.62, "height": 0.62, "text": 8},
+    {
+      "center": [5, 4],
+      "width": 0.62,
+      "height": 0.62,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {"center": [5, 3.915], "width": 0.62, "height": 0.62, "text": 3},
+    {"center": [5, 4.085], "width": 0.62, "height": 0.62, "text": 7},
+    {
+      "center": [6, 2],
+      "width": 0.62,
+      "height": 0.62,
+      "thickness": 1.28,
+      "text": 4,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [6, 4],
+      "width": 0.62,
+      "height": 0.62,
+      "thickness": 1.28,
+      "text": 6,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {
+      "center": [7, 2],
+      "width": 0.62,
+      "height": 0.62,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {"center": [7, 1.915], "width": 0.62, "height": 0.62, "text": 3},
+    {"center": [7, 2.085], "width": 0.62, "height": 0.62, "text": 7},
+    {
+      "center": [7, 3],
+      "width": 0.62,
+      "height": 0.62,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {"center": [7, 2.915], "width": 0.62, "height": 0.62, "text": 2},
+    {"center": [7, 3.085], "width": 0.62, "height": 0.62, "text": 8},
+    {
+      "center": [7, 4],
+      "width": 0.62,
+      "height": 0.62,
+      "thickness": 1.28,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    },
+    {"center": [7, 3.915], "width": 0.62, "height": 0.62, "text": 1},
+    {"center": [7, 4.085], "width": 0.62, "height": 0.62, "text": 9},
+    {
+      "center": [6, 3],
+      "width": 0.62,
+      "height": 0.62,
+      "thickness": 1.28,
+      "text": 5,
+      "rounded": true,
+      "backgroundColor": "#FFFFFF",
+      "borderColor": "#000000"
+    }
+  ]
+}

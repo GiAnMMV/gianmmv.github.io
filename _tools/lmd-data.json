@@ -166,6 +166,23 @@
       "Thermometers"
     ]
   },
+  "butterfly": {
+    "id": "000W6G",
+    "img_id": "0016E3",
+    "codedescr": "Zeile 8, von links nach rechts.",
+    "codedescr_en": "Row 8, left to right.",
+    "code": "438297651",
+    "dif": 3,
+    "date": "2026-11-23 22:00:00",
+    "labels": [
+      4
+    ],
+    "tags": [
+      "German Whispers (Variant)",
+      "Quadruple (Variant)",
+      "Sudoku"
+    ]
+  },
   "central-symmetry": {
     "id": "000V27",
     "img_id": "0014VV",
