@@ -2,7 +2,7 @@
 title: Union Jack
 creation_date: "2026-11-21"
 order: 56
-sudokupad_url: https://sudokupad.app/2s25su807f
+sudokupad_url: https://sudokupad.app/507gshcu4o
 lmd_id: 000W5F
 rules:
   - name: Classic Sudoku

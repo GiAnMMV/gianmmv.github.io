@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { parseArgs } = require('util');
 const { load: cheerioLoad } = require('cheerio');
 const { marked } = require('marked');
 const { Resvg } = require('@resvg/resvg-js');
@@ -305,33 +306,36 @@ async function uploadImage(slug, yml = ymlFromSlug(slug)) {
 const LMD_DATA_PATH = path.join(__dirname, 'lmd-data.json');
 const lmdData = JSON.parse(fs.readFileSync(LMD_DATA_PATH));
 async function main() {
-  const rawArgs = process.argv.slice(2);
-  const slug = rawArgs[0];
+  const rawArgs = parseArgs({
+    args: process.argv.slice(2),
+    options: {
+      image: {type: 'boolean'},
+      update: {type: 'boolean'},
+      date: {type: 'string'},
+      code: {type: 'string'},
+      dif: {type: 'string'},
+      labels: {type: 'string'},
+      tags: {type: 'string'},
+      comment: {type: 'string'}
+    },
+    strict: true,
+    allowPositionals: true
+  });
+
+  const slug = rawArgs.positionals[0];
   try {
-    if (rawArgs[1] === '--image')
+    if (rawArgs.values.image)
       await uploadImage(slug);
-    else {
-      if (rawArgs.length > 0) {
-        const params = {};
-        rawArgs.forEach( p => {
-          let m = p.match(/^--comment=(.+)/);
-          if (m) { params.comment = m[1]; return; }
-          m = p.match(/^--date=(\d{4}-\d{2}-\d{2}[ _]\d{2}:\d{2}(?::\d{2})?)/);
-          if (m) { params.date = m[1].replace('_', ' '); return; }
-          m = p.match(/^--code=(.+)/);
-          if (m) { params.generate_code = m[1]; return; }
-          m = p.match(/^--dif=(\d)/);
-          if (m) { params.dif = parseInt(m[1]); return; }
-          m = p.match(/--labels=(.+)/);
-          if (m) { params.labels = m[1].split(/, */).map(Number); return; }
-          m = p.match(/--tags=(.+)/);
-          if (m) { params.tags = m[1].split(/, */); return; }
-        });
-        await uploadPuzzle(slug, params);
-      }
-      else
-        await uploadPuzzle(slug);
-    }
+    const params = {
+      date: rawArgs.values.date?.replace('_', ' '),
+      generate_code: rawArgs.values.code,
+      dif: parseInt(rawArgs.values.dif) || undefined,
+      labels: rawArgs.values.labels?.split(/, */)?.map(Number),
+      tags: rawArgs.values.tags?.split(/, */),
+      comment: rawArgs.values.comment
+    };
+    if (rawArgs.values.update || Object.values(params).some(v => v !== undefined))
+      await uploadPuzzle(slug, params);
   } catch (e) {
     console.error(e);
   }
