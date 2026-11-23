@@ -87,7 +87,7 @@
     "codedescr_en": "Column 4, top to bottom.",
     "code": "4231",
     "dif": 1,
-    "date": "2026-11-22 22:00:00",
+    "date": "2026-11-23 23:00:00",
     "labels": [
       4
     ],
@@ -173,7 +173,7 @@
     "codedescr_en": "Row 8, left to right.",
     "code": "438297651",
     "dif": 3,
-    "date": "2026-11-23 22:00:00",
+    "date": "2026-11-22 23:00:00",
     "labels": [
       4
     ],
@@ -826,6 +826,22 @@
     "tags": [
       "Kropki",
       "Sudoku"
+    ]
+  },
+  "thermo-antenna": {
+    "id": "000W74",
+    "img_id": "0016ER",
+    "codedescr": "Zeile 9, von links nach rechts.",
+    "codedescr_en": "Row 9, left to right.",
+    "code": "571624398",
+    "dif": 2,
+    "date": "2026-11-24 23:00:00",
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Sudoku",
+      "Thermometers"
     ]
   },
   "thermo-mikado": {
