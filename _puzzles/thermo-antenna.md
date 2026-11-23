@@ -2,7 +2,7 @@
 title: Thermo Antenna
 creation_date: "2026-11-23"
 order: 59
-sudokupad_url: https://sudokupad.app/07z3z2z674
+sudokupad_url: https://sudokupad.app/tj1bld6nuv
 lmd_id: 000W74
 rules:
   - name: Classic Sudoku
