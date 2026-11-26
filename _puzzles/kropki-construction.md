@@ -2,7 +2,7 @@
 title: Kropki Construction
 creation_date: "2026-11-26"
 order: 60
-sudokupad_url: https://sudokupad.app/rwnuq03ucj
+sudokupad_url: https://sudokupad.app/x6xj1rr9tv
 lmd_id: 000W8L
 rules:
   - name: Classic Sudoku
@@ -12,7 +12,7 @@ rules:
   - name: Chaos Construction
     desc: |
       There are 9 orthogonally continuous regions in which each digit from 1 to 9 occurs exactly once. These regions must be found, considering that:
-      - no 4x4 square can belong entirely to one region;
+      - no 2x2 square can belong entirely to one region;
       - a white kropki always sits on a region border;
       - a black kropki separates two digits belonging to the same region.
 ---

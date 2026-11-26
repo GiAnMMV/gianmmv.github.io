@@ -12,11 +12,11 @@ permalink: /puzzles/
     gap: 1.5rem;
     margin-top: 1.5rem;
   }
-  
+
   @media screen and (max-width: 42em) {
     .puzzle-grid {
-        grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
-    } 
+      grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+    }
   }
 
   .puzzle-card {
@@ -66,11 +66,20 @@ permalink: /puzzles/
 
 <p><a href="/puzzles/noscript/">Switch to List View</a></p>
 
-<div id="paginator-top"></div>
-<div id="sort-manager"></div>
+<div id="paginator-top" style="margin-bottom: 1rem;"></div>
+<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+  <div>
+    <span>Sort by </span>
+    <span id="sort-manager-type" class="btn-bar" style="justify-content: left; display: inline-flex;"></span>
+  </div>
+  <div>
+    <span>Order: </span>
+    <span id="sort-manager-order" class="btn-bar" style="justify-content: right; display: inline-flex;"></span>
+  </div>
+</div>
 <div id="puzzle-container" style="margin-top: 1rem;"></div>
 <div id="limit-selector"></div>
-<div id="paginator-bottom"></div>
+<div id="paginator-bottom" style="margin-top: 1rem;"></div>
 
 <noscript>
   <meta http-equiv="refresh" content="0;url=/puzzles/noscript/">
@@ -83,7 +92,7 @@ permalink: /puzzles/
     const uri = urlParams.toString();
     window.history.replaceState({}, '', window.location.pathname + (uri ? "?" + uri : ""));
   }
-  
+
   function paginate({ current, max }) {
     if (!current || !max) return null;
 
@@ -128,13 +137,13 @@ permalink: /puzzles/
 
     return { current, prev, next, items };
   }
-  
+
   function updateCards() {
     const container = document.getElementById('puzzle-container') || document.querySelector('main');
     if (!container) return;
     const div = document.createElement("div");
     div.className = "puzzle-grid";
-    for (const puzzle of puzzles.slice((page-1) * itemsPerPage, page * itemsPerPage)) {
+    for (const puzzle of puzzles.slice((page - 1) * itemsPerPage, page * itemsPerPage)) {
       const a = document.createElement("a");
       a.className = "puzzle-card";
       a.href = "/puzzles/" + puzzle[0] + "/";
@@ -156,12 +165,12 @@ permalink: /puzzles/
       div.appendChild(a);
     }
     container.replaceChildren(div);
-    
+
     const p = document.createElement("p");
     p.innerText = `Showing puzzles ${(page - 1) * itemsPerPage + 1}-${Math.min(page * itemsPerPage, puzzles.length)} of ${puzzles.length}`;
     container.appendChild(p);
   }
-  
+
   function changePage(p) {
     page = p;
     if (p === 1) {
@@ -227,16 +236,16 @@ permalink: /puzzles/
       bottomPag.replaceChildren();
     }
   }
-  
+
   function sortPuzzles() {
     if (sortRule === "name") {
       urlParams.set("sort", sortRule);
-      puzzles.sort((a,b) => a[1].localeCompare(b[1]));
+      puzzles.sort((a, b) => a[1].localeCompare(b[1]));
     } else if (sortRule === "date") {
       urlParams.delete("sort");
-      puzzles.sort((a,b) => a[4] - b[4]);
+      puzzles.sort((a, b) => a[4] - b[4]);
     }
-    
+
     if (sortOrder === "asc")
       urlParams.set("sort-order", sortOrder);
     else {
@@ -244,7 +253,7 @@ permalink: /puzzles/
       puzzles.reverse();
     }
   }
-  
+
   function changeItemsPerPage(l) {
     itemsPerPage = l;
     maxPage = Math.ceil(puzzles.length / itemsPerPage);
@@ -255,15 +264,15 @@ permalink: /puzzles/
     else
       urlParams.set("limit", l);
   }
-  
+
   function updateLimitBar() {
     const container = document.getElementById('limit-selector') || document.querySelector('main');
     if (!container) return;
-    
-    const generateLimitButton = (v, n=null) => {
+
+    const generateLimitButton = (v, n = null) => {
       if (n === null) n = v;
       const active = itemsPerPage === v;
-    
+
       const button = document.createElement('button');
       button.className = 'btn';
       if (active) button.classList.add('active');
@@ -278,28 +287,28 @@ permalink: /puzzles/
         updateCards();
         updatePagination();
       });
-    
+
       return button;
     };
-    
+
     const values = [10, 20, 50];
     if (!values.includes(itemsPerPage) && itemsPerPage !== Number.MAX_VALUE) {
       values.push(itemsPerPage);
-      values.sort((a,b) => a-b);
+      values.sort((a, b) => a - b);
     }
-    
+
     container.replaceChildren();
-  
+
     const span = document.createElement("span");
     span.innerText = "Puzzles per page: ";
     container.appendChild(span);
-  
+
     const bar = document.createElement("span");
     bar.className = "btn-bar";
     bar.style.justifyContent = "left";
     bar.style.display = "inline-flex";
     container.appendChild(bar);
-  
+
     for (const v of values) {
       bar.appendChild(generateLimitButton(v));
     }
@@ -323,7 +332,7 @@ permalink: /puzzles/
   let sortRule = urlParams.get("sort");
   if (sortRule !== "date")
     sortRule = "date";
-  
+
   let sortOrder = urlParams.get("sort-order");
   if (sortOrder !== "asc")
     sortOrder = "desc";
@@ -387,41 +396,15 @@ permalink: /puzzles/
       mainDiv.style.alignItems = "center";
       mainDiv.style.flexWrap = "wrap";
       {
-        const subDiv = document.createElement("div");
-
-        const span = document.createElement("span");
-        span.innerText = "Sort by ";
-        subDiv.appendChild(span);
-
-        const bar = document.createElement("span");
-        bar.className = "btn-bar";
-        bar.style.justifyContent = "left";
-        bar.style.display = "inline-flex";
+        const bar = document.getElementById('sort-manager-type');
         bar.appendChild(generateSortButton("sort", "date", "Date"));
         bar.appendChild(generateSortButton("sort", "name", "Name"));
-        subDiv.appendChild(bar);
-
-        mainDiv.appendChild(subDiv);
       }
       {
-        const subDiv = document.createElement("div");
-
-        const span = document.createElement("span");
-        span.innerText = "Order: ";
-        subDiv.appendChild(span);
-
-        const bar = document.createElement("span");
-        bar.className = "btn-bar";
-        bar.style.justifyContent = "right";
-        bar.style.display = "inline-flex";
+        const bar = document.getElementById('sort-manager-order');
         bar.appendChild(generateSortButton("sort-order", "asc", "Ascending \u2197"));
         bar.appendChild(generateSortButton("sort-order", "desc", "Descending \u2198"));
-        subDiv.appendChild(bar);
-
-        mainDiv.appendChild(subDiv);
       }
-      const container = document.getElementById('sort-manager') || document.querySelector('main');
-      if (container) container.appendChild(mainDiv);
     }
 
     updateLimitBar();
