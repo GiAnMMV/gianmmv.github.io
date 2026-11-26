@@ -403,6 +403,22 @@
       "Sudoku"
     ]
   },
+  "kropki-construction": {
+    "id": "000W8L",
+    "img_id": "0016GU",
+    "codedescr_en": "The region including R1C1, in reading order.",
+    "code": "798645132",
+    "dif": 2,
+    "date": "2026-11-26 23:00:00",
+    "labels": [
+      4
+    ],
+    "tags": [
+      "Chaos Construction (Variant)",
+      "Kropki",
+      "Sudoku"
+    ]
+  },
   "kropki-entropy": {
     "id": "000USP",
     "img_id": "0014KN",

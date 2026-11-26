@@ -181,6 +181,7 @@ async function generateOGImage(slug, browser) {
           .left-col { width: 500px; display: flex; justify-content: center; }
           .left-col svg { width: 100%; height: auto; display: block; }
           .right-col { width: 700px; display: flex; justify-content: center; }
+          p { display: inline; }
         </style>
       </head>
       <body>

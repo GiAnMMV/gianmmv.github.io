@@ -147,18 +147,11 @@ const Zipper = {
 };
 
 function getPuzzleId(jsonData, compressed = true) {
-  if (compressed)
-    return "scl" + encodeURIComponent(LZipper.compact64(Zipper.zip(jsonData)));
-  else
-    return "scl" + encodeURIComponent(LZipper.compact64(jsonData));
+  return 'scl' + LZipper.compact64(compressed ? Zipper.zip(jsonData) : JSON.stringify(jsonData));
 }
 
-function convertJsonToUrl(jsonData) {
-  return "https://sudokupad.app/" + getPuzzleId(jsonData);
-}
-
-function convertJsonToUrlNoShort(jsonData) {
-  return "https://sudokupad.app/scf?puzzleid=" + getPuzzleId(jsonData);
+function convertJsonToUrl(jsonData, short = true) {
+  return "https://sudokupad.app/" + short ? '' : 'scf?puzzleid=' + encodeURIComponent(getPuzzleId(jsonData));
 }
 
 if (typeof module !== 'undefined' && module.exports) {

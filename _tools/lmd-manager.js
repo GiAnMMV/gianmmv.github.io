@@ -96,13 +96,15 @@ function generateHtml(slug, imgCode, yml = ymlFromSlug(slug), lang = '') {
     .replace(/[\r\n]+/g, '');
 }
 
-function solutionCode(slug, indication) {
+function codeGenerator(slug, indication) {
+  if (indication.includes(',')) {
+    const res = indication.split(/ *(?<!,),(?!,) */);
+    return [...new Array(3)].map((_, i) => res[i]?.replace(/,,/g, ',') ?? '');
+  }
+
   const puzzle = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, '_tools', 'sudokupad', slug + '.json'), 'utf-8'));
   const solution = puzzle.metadata.solution;
   const w = puzzle.cells[0].length;
-  const boxes = puzzle.regions
-    .map(box => box.map(c => c[0] * w + c[1]).sort((a, b) => a - b))
-    .sort((a, b) => a[0] - b[0]);
 
   const rcb = indication.charAt(0);
   const number = parseInt(indication.slice(1)) - 1;
@@ -120,6 +122,9 @@ function solutionCode(slug, indication) {
         `Spalte ${number + 1}, von oben nach unten.`
       ];
     case 'b':
+      const boxes = puzzle.regions
+        .map(box => box.map(c => c[0] * w + c[1]).sort((a, b) => a - b))
+        .sort((a, b) => a[0] - b[0]);
       return [
         [...solution].filter((_, i) => boxes[number].includes(i)).join(''),
         `${number === (boxes.length - 1) / 2 ? 'Central box' : `Box ${number + 1}`}, in reading order.`,
@@ -197,7 +202,7 @@ async function uploadPuzzle(slug, params = {}, yml = ymlFromSlug(slug)) {
     params.generate_code = storedParams.generate_code;
 
   if (params.generate_code) {
-    [params.code, params.codedescr_en, params.codedescr] = solutionCode(slug, params.generate_code);
+    [params.code, params.codedescr_en, params.codedescr] = codeGenerator(slug, params.generate_code);
   }
 
   if (createMode)
@@ -328,11 +333,11 @@ async function main() {
       await uploadImage(slug);
     const params = {
       date: rawArgs.values.date?.replace('_', ' '),
-      generate_code: rawArgs.values.code,
+      generate_code: rawArgs.values.code?.replace('_', ' ')?.replace('__', '_'),
       dif: parseInt(rawArgs.values.dif) || undefined,
       labels: rawArgs.values.labels?.split(/, */)?.map(Number),
       tags: rawArgs.values.tags?.split(/, */),
-      comment: rawArgs.values.comment
+      comment: rawArgs.values.comment?.replace('_', ' ')?.replace('__', '_')
     };
     if (rawArgs.values.update || Object.values(params).some(v => v !== undefined))
       await uploadPuzzle(slug, params);
