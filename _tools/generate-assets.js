@@ -178,6 +178,7 @@ async function generateOGImage(slug, browser) {
             font-size: 1.25em;
           }
           h1 { margin-block: .25em; }
+          h1 span { font-size: 1.25rem; font-weight: normal; }
           .container { display: flex; }
           .left-col { width: 500px; display: flex; justify-content: center; }
           .left-col svg { width: 100%; height: auto; display: block; }
@@ -186,7 +187,7 @@ async function generateOGImage(slug, browser) {
         </style>
       </head>
       <body>
-        <h1>${yml['title']}</h1>
+        <h1>${yml.title} <span>(${'\u2605'.repeat(yml.difficulty).padEnd(5, '\u2606')})</span></h1>
         <div class="container">
           <div class="left-col">
             ${cleanSvg}

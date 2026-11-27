@@ -70,7 +70,8 @@ function generateHtml(slug, imgCode, yml = ymlFromSlug(slug), lang = '') {
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
   const rules_html = marked(rules.map(r => `- **${r.name}:** ` + r.desc.replaceAll('\n', '\n    ')).join('\n'))
-    .replace(/<(p|li)>/g, '<$1 style="max-width:100%">');
+    .replace(/<\/?p *>/g, '')
+    .replaceAll('<li>', '<li style="max-width:100%">');
 
   return `
     <div style="display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start;">
@@ -213,7 +214,7 @@ async function uploadPuzzle(slug, params = {}, yml = ymlFromSlug(slug)) {
   payload.htmlcode_en = generateHtml(slug, storedParams.img_id, yml);
   payload.codedescr_en = params.codedescr_en;
   payload.code = params.code;
-  payload.dif = (yml.difficulty || 3).toString();
+  payload.dif = (yml.difficulty ?? 3).toString();
   ((d) => {
     if (d === '')
       payload.frei = 'nein';
