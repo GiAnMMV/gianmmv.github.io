@@ -504,13 +504,17 @@
   "pareidolia": {
     "id": "000W98",
     "img_id": "0016HK",
-    "codedescr_en": "",
-    "code": "",
-    "date": "0-00-00 00:00:00",
+    "codedescr": "Zeile 9, von links nach rechts.",
+    "codedescr_en": "Row 9, left to right.",
+    "code": "638519742",
+    "date": "",
     "labels": [
       4
     ],
     "tags": [
+      "Kropki",
+      "Parity (Theme)",
+      "Region Sum Lines (Variant)",
       "Sudoku"
     ]
   },

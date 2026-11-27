@@ -20,7 +20,7 @@ rules_de:
   - name: Klassisches Sudoku
     desc: Jede Zeile, jede Spalte und jedes 3x3-Block muss alle Zahlen von 1 bis 9 enthalten.
   - name: Region Sum Lines
-    desc: Die Grenzen der 3x3-Blöcke unterteilen eine blaue Linie in mehrere Abschnitte, die dieselbe Summe aufweisen. Alle derartigen Linien müssen dieselbe Summe haben.
+    desc: Die Grenzen der 3x3-Blöcke unterteilen eine blaue Linie in mehrere Abschnitte, die dieselbe Summe aufweisen. Verschiedene Linien können unterschiedliche Summen haben.
   - name: Paritätslinien
     desc: Jedes Paar aufeinanderfolgender Zellen entlang einer roten Linie muss eine ungerade und eine gerade Ziffer enthalten.
   - name: Kropki

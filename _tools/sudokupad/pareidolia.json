@@ -29,7 +29,7 @@
   ],
   "lines": [
     {
-      "d": "M167.104 175.04C172.736 157.952 180.672 142.016 192 128 213.312 101.632 253.376 87.296 288 87.616 322.624 87.296 362.688 101.632 384 128 425.024 178.816 422.208 254.912 422.208 320.256 422.208 385.408 410.176 465.408 384 512 371.584 534.144 367.104 544 352 544 334.656 544 323.264 526.72 320 512 316.736 497.152 304.448 484.288 288 484.288 271.552 484.288 259.264 497.152 256 512 252.736 526.72 241.344 544 224 544 208.896 544 204.416 534.144 192 512 165.824 465.408 153.792 385.408 153.792 320.256 153.792 303.616 153.6 286.336 153.984 268.928",
+      "d": "M414.528 414.528C413.568 414.4 442.176 433.856 465.728 416.896 509.888 385.024 495.808 253.632 466.56 221.632 459.136 213.504 418.368 221.952 418.56 221.952M153.984 268.928C153.6 286.336 153.792 303.616 153.792 320.256 153.792 385.408 165.824 465.408 192 512 204.416 534.144 208.896 544 224 544 241.344 544 252.736 526.72 256 512 259.264 497.152 271.552 484.288 288 484.288S316.736 497.152 320 512C323.264 526.72 334.656 544 352 544 367.104 544 371.584 534.144 384 512 410.176 465.408 422.208 385.408 422.208 320.256 422.208 254.912 425.024 178.816 384 128 362.688 101.632 322.624 87.296 288 87.616 253.376 87.296 213.312 101.632 192 128 180.672 142.016 172.736 157.952 167.104 175.04",
       "color": "#f66f",
       "thickness": 9.6
     },
@@ -51,12 +51,8 @@
     {"center": [4.5, 2], "width": 0.34, "height": 0.34, "thickness": 1.28, "rounded": true, "backgroundColor": "#FFFFFF", "borderColor": "#000000"},
     {"center": [2, 3.5], "width": 0.34, "height": 0.34, "thickness": 1.28, "rounded": true, "backgroundColor": "#FFFFFF", "borderColor": "#000000"},
     {"center": [3.5, 6], "width": 0.34, "height": 0.34, "thickness": 1.28, "rounded": true, "backgroundColor": "#FFFFFF", "borderColor": "#000000"},
-    {"center": [8, 4.5], "width": 0.34, "height": 0.34, "thickness": 1.28, "rounded": true, "backgroundColor": "#FFFFFF", "borderColor": "#000000"},
     {"center": [1, 4.5], "width": 0.34, "height": 0.34, "thickness": 1.28, "rounded": true, "backgroundColor": "#FFFFFF", "borderColor": "#000000"},
     {"center": [6.5, 2], "width": 0.34, "height": 0.34, "thickness": 1.28, "rounded": true, "backgroundColor": "#FFFFFF", "borderColor": "#000000"},
-    {"center": [6.5, 7], "width": 0.34, "height": 0.34, "thickness": 1.28, "rounded": true, "backgroundColor": "#FFFFFF", "borderColor": "#000000"},
-    {"center": [5.5, 7], "width": 0.34, "height": 0.34, "thickness": 1.28, "rounded": true, "backgroundColor": "#FFFFFF", "borderColor": "#000000"},
-    {"center": [5.5, 2], "width": 0.34, "height": 0.34, "thickness": 1.28, "rounded": true, "backgroundColor": "#FFFFFF", "borderColor": "#000000"},
     {"center": [1.5, 2], "width": 0.34, "height": 0.34, "thickness": 1.28, "rounded": true, "backgroundColor": "#FFFFFF", "borderColor": "#000000"},
     {"center": [8, 6.5], "width": 0.34, "height": 0.34, "thickness": 1.28, "rounded": true, "backgroundColor": "#FFFFFF", "borderColor": "#000000"}
   ]

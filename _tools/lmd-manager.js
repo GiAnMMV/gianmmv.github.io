@@ -216,7 +216,7 @@ async function uploadPuzzle(slug, params = {}, yml = ymlFromSlug(slug)) {
   payload.code = params.code;
   payload.dif = (yml.difficulty ?? 3).toString();
   ((d) => {
-    if (d === '')
+    if (isNaN(d))
       payload.frei = 'nein';
     else {
       payload.frei = 'ja';
