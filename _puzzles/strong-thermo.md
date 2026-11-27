@@ -1,6 +1,7 @@
 ---
 title: Strong Thermo
 creation_date: "2026-10-22"
+difficulty: 2
 order: 44
 sudokupad_url: https://sudokupad.app/iclan06dqn
 lmd_id: 000VS2

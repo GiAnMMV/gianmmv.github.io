@@ -1,6 +1,7 @@
 ---
 title: Open Plan
 creation_date: "2026-09-27"
+difficulty: 2
 order: 21
 sudokupad_url: https://sudokupad.app/epm5ctk5fw
 lmd_id: 000V7X

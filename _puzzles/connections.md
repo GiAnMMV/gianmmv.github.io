@@ -1,6 +1,7 @@
 ---
 title: Connections
 creation_date: "2026-10-06"
+difficulty: 2
 order: 37
 sudokupad_url: https://sudokupad.app/5nrzbltlrk
 lmd_id: 000VOA

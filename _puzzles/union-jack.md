@@ -1,6 +1,7 @@
 ---
 title: Union Jack
 creation_date: "2026-11-21"
+difficulty: 2
 order: 56
 sudokupad_url: https://sudokupad.app/507gshcu4o
 lmd_id: 000W5F

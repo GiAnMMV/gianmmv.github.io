@@ -1,6 +1,7 @@
 ---
 title: Ambiguous Clues
 creation_date: "2026-10-03"
+difficulty: 2
 order: 33
 sudokupad_url: https://sudokupad.app/ps357uih2j
 lmd_id: 000VIR

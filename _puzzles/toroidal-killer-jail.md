@@ -1,6 +1,7 @@
 ---
 title: Toroidal Killer Jail
 creation_date: "2026-11-07"
+difficulty: 2
 order: 49
 sudokupad_url: https://sudokupad.app/lu2xi9w1sm
 lmd_id: 000VYB

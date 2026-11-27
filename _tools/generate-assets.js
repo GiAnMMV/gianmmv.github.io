@@ -21,6 +21,7 @@ const HEIGHT = 630;
 const YML_KEYS = [
   "title",
   "creation_date",
+  "difficulty",
   "order",
   "sudokupad_url",
   "lmd_id",

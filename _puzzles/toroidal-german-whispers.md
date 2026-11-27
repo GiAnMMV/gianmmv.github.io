@@ -1,6 +1,7 @@
 ---
 title: Toroidal German Whispers
 creation_date: "2026-11-09"
+difficulty: 2
 order: 50
 sudokupad_url: https://sudokupad.app/dkfk7w3d60
 lmd_id: 000VZ8

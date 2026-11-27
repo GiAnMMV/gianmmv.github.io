@@ -1,6 +1,7 @@
 ---
 title: Midoku
 creation_date: "2026-10-08"
+difficulty: 2
 order: 40
 sudokupad_url: https://sudokupad.app/dk71161wy3
 lmd_id: 000VRX

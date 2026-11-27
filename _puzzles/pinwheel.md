@@ -1,6 +1,7 @@
 ---
 title: Pinwheel
 creation_date: "2026-09-17"
+difficulty: 2
 order: 10
 sudokupad_url: https://sudokupad.app/9gz5upvi0m
 lmd_id: 000UZ1

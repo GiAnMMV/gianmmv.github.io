@@ -1,6 +1,7 @@
 ---
 title: Black & White
 creation_date: "2026-09-06"
+difficulty: 4
 order: 3
 sudokupad_url: https://sudokupad.app/k605s0d81d
 lmd_id: 000UUW

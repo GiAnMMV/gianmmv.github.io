@@ -1,6 +1,7 @@
 ---
 title: Kropki Construction
 creation_date: "2026-11-26"
+difficulty: 3
 order: 60
 sudokupad_url: https://sudokupad.app/x6xj1rr9tv
 lmd_id: 000W8L

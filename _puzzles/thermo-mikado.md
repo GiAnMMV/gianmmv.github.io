@@ -1,6 +1,7 @@
 ---
 title: Thermo Mikado
 creation_date: "2026-09-29"
+difficulty: 1
 order: 23
 sudokupad_url: https://sudokupad.app/m1atf4lxf3
 lmd_id: 000V8W

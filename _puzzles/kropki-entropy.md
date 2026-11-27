@@ -1,6 +1,7 @@
 ---
 title: Kropki Entropy
 creation_date: "2026-09-05"
+difficulty: 1
 order: 1
 sudokupad_url: https://sudokupad.app/xvygqiydrh
 lmd_id: 000USP

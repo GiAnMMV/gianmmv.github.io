@@ -21,15 +21,24 @@ permalink: /puzzles/noscript/
       <th style="width:1%; white-space:nowrap;">#</th>
       <th style="width:100%;">Name</th>
       <th style="width:1%; white-space:nowrap;">Date</th>
+      <th style="width:1%; white-space:nowrap;">Difficulty</th>
     </tr>
-    {% assign sorted_puzzles = site.puzzles | sort: "order" %}
-    {% for puzzle in sorted_puzzles %}
+    {%- assign sorted_puzzles = site.puzzles | sort: "order" -%}
+    {%- for puzzle in sorted_puzzles -%}
     <tr>
       <td style="width:1%; white-space:nowrap;">{{ puzzle.order }}</td>
       <td style="width:100%;"><a href="{{ puzzle.url }}">{{ puzzle.title }}</a></td>
-      <td style="width:1%; white-space:nowrap;"><time datetime="{{ puzzle.creation_date }}">{{ puzzle.creation_date |
-          date: "%-d %B %Y" }}</time></td>
+      <td style="width:1%; white-space:nowrap;">
+        <time datetime="{{ puzzle.creation_date }}">
+          {{ puzzle.creation_date | date: "%-d %B %Y" }}
+        </time>
+      </td>
+      <td style="width:1%; white-space:nowrap;">
+        {%- assign empty_stars = 5 | minus: puzzle.difficulty -%}
+        {%- for i in (1..puzzle.difficulty) -%}★{%- endfor -%}
+        {%- for i in (1..empty_stars) -%}☆{%- endfor -%}
+      </td>
     </tr>
-    {% endfor %}
+    {%- endfor -%}
   </tbody>
 </table>

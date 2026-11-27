@@ -80,9 +80,17 @@ layout: default
     </div>
     <span class="btn-bar" id="lang-selector"></span>
   </div>
-  {% if page.creation_date %}
-  <p><time datetime="{{ page.creation_date }}">{{ page.creation_date | date: "%-d %B %Y" }}</time></p>
-  {% endif %}
+  <p>
+    {%- if page.creation_date %}
+    <time datetime="{{ page.creation_date }}">{{ page.creation_date | date: "%-d %B %Y" }}</time>
+    <span>•</span>
+    {% endif -%}
+    <span>Difficulty:&nbsp;
+    {%- assign empty_stars = 5 | minus: page.difficulty -%}
+    {%- for i in (1..page.difficulty) -%}★{%- endfor -%}
+    {%- for i in (1..empty_stars) -%}☆{%- endfor -%}
+    </span>
+  </p>
   <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
     <div style="flex: 1 1 300px; max-width: 416px;">
       <img src="{% include puzzle-image.html puzzle=page %}" style="width: 100%; height: auto; display: block;" alt="{{ page.title }}" />
@@ -90,42 +98,42 @@ layout: default
 
 
     <div style="flex: 2 1 300px; min-width: 0;">
-      {% for item in page %}
-        {% if item contains "rules" %}
-          {% if item contains "rules_" %}
-            {% assign lang_code = item | remove: "rules_" %}
-            {% assign visibility = " hidden" %}
-          {% else %}
-            {% assign lang_code = "en" %}
-            {% assign visibility = "" %}
-          {% endif %}
+      {%- for item in page -%}
+        {%- if item contains "rules" -%}
+          {%- if item contains "rules_" -%}
+            {%- assign lang_code = item | remove: "rules_" -%}
+            {%- assign visibility = " hidden" -%}
+          {%- else -%}
+            {%- assign lang_code = "en" -%}
+            {%- assign visibility = "" -%}
+          {%- endif %}
           <div class="rules" lang="{{ lang_code }}"{{ visibility }}>
             <h2>{{ site.data.terms.rules[lang_code] }}:</h2>
             <ul>
-            {% for rule in page[item] %}
+            {%- for rule in page[item] %}
               <span class="rule">
                 <li><strong>{{ rule.name }}:</strong> {{ rule.desc | markdownify }}</li>
               </span>
-            {% endfor %}
+            {%- endfor %}
             </ul>
           </div>
-        {% endif %}
-      {% endfor %}
+        {%- endif -%}
+      {%- endfor %}
       <hr/>
       <div style="text-align: center;">
         <a class="btn primary" title="{{ page.title }} by GiAnMMV" href="{{ page.sudokupad_url }}">Play in SudokuPad</a>        
         <div style="margin-top: 1rem;">
-          {% if page.lmd_id %}
+          {%- if page.lmd_id %}
           <a class="btn" title="{{ page.title }} — Rätselportal — Logic Masters Deutschland" href="https://logic-masters.de/Raetselportal/Raetsel/zeigen.php?id={{ page.lmd_id }}">Logic Masters Germany</a>
-          {% endif %}
+          {%- endif %}
           <a class="btn random" title="Random Puzzle..." href="/puzzles/random/?from={{ page.slug }}">Random Puzzle</a>
         </div>
       </div>
-      {% if page.content %}
+      {%- if page.content %}
       <div class="content">
         {{ content }}
       </div>
-      {% endif %}
+      {%- endif %}
     </div>
   </div>
 </article>

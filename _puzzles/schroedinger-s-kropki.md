@@ -1,6 +1,7 @@
 ---
 title: Schrödinger's Kropki
 creation_date: "2026-09-15"
+difficulty: 2
 order: 9
 sudokupad_url: https://sudokupad.app/n70fyp370n
 lmd_id: 000UWJ

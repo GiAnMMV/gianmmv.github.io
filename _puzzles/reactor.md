@@ -2,6 +2,7 @@
 title: Reactor
 creation_date: "2026-11-11"
 order: 51
+difficulty: 3
 sudokupad_url: https://sudokupad.app/kejp2v7w59
 lmd_id: 000VZV
 rules:

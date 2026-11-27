@@ -1,6 +1,7 @@
 ---
 title: Assassin Cages
 creation_date: "2026-09-14"
+difficulty: 2
 order: 8
 sudokupad_url: https://sudokupad.app/bcde4gy7io
 lmd_id: 000UW3

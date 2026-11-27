@@ -1,6 +1,7 @@
 ---
 title: Thermo Square
 creation_date: "2026-09-25"
+difficulty: 2
 order: 18
 sudokupad_url: https://sudokupad.app/q5gth1v9qd
 lmd_id: 000V67

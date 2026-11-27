@@ -1,6 +1,7 @@
 ---
 title: Number Fever
 creation_date: "2026-09-07"
+difficulty: 3
 order: 4
 sudokupad_url: https://sudokupad.app/uo43fdoylc
 lmd_id: 000UTU

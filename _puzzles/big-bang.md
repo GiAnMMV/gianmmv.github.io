@@ -1,6 +1,7 @@
 ---
 title: Big Bang
 creation_date: "2026-09-20"
+difficulty: 2
 order: 12
 sudokupad_url: https://sudokupad.app/vl9j17qd0e
 lmd_id: 000V1A

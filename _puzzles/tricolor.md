@@ -1,6 +1,7 @@
 ---
 title: Tricolor
 creation_date: "2026-11-19"
+difficulty: 1
 order: 54
 sudokupad_url: https://sudokupad.app/pthu959i97
 lmd_id: 000W4G

@@ -1,6 +1,7 @@
 ---
 title: Butterfly
 creation_date: "2026-11-22"
+difficulty: 3
 order: 58
 sudokupad_url: https://sudokupad.app/d7sff08go0
 lmd_id: 000W6G

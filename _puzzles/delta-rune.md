@@ -1,6 +1,7 @@
 ---
 title: Delta Rune
 creation_date: "2026-09-27"
+difficulty: 1
 order: 20
 sudokupad_url: https://sudokupad.app/odgv620p0a
 lmd_id: 000V74

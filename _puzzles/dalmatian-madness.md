@@ -1,6 +1,7 @@
 ---
 title: Dalmatian Madness
 creation_date: "2026-09-08"
+difficulty: 2
 order: 5
 sudokupad_url: https://sudokupad.app/y87139ujag
 lmd_id: 000UT0

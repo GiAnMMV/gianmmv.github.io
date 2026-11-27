@@ -1,6 +1,7 @@
 ---
 title: Sudogram
 creation_date: "2026-09-29"
+difficulty: 2
 order: 24
 sudokupad_url: https://sudokupad.app/p3h7pj6z8r
 lmd_id: 000V9N

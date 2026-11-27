@@ -1,6 +1,7 @@
 ---
 title: Renban Chaos
 creation_date: "2026-09-25"
+difficulty: 2
 order: 17
 sudokupad_url: https://sudokupad.app/0gabrx0p8p
 lmd_id: 000V51

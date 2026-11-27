@@ -1,6 +1,7 @@
 ---
 title: Spooky Month
 creation_date: "2026-10-02"
+difficulty: 1
 order: 31
 sudokupad_url: https://sudokupad.app/3g4cracxm9
 lmd_id: 000VFS

@@ -1,6 +1,7 @@
 ---
 title: Some X-Sums
 creation_date: "2026-10-01"
+difficulty: 1
 order: 28
 sudokupad_url: https://sudokupad.app/bghew8zi62
 lmd_id: 000VD3

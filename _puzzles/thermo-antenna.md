@@ -1,6 +1,7 @@
 ---
 title: Thermo Antenna
 creation_date: "2026-11-23"
+difficulty: 2
 order: 59
 sudokupad_url: https://sudokupad.app/q7q3f9qw2r
 lmd_id: 000W74

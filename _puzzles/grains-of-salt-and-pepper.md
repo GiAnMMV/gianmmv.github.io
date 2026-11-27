@@ -1,6 +1,7 @@
 ---
 title: Grains of Salt & Pepper
 creation_date: "2026-09-27"
+difficulty: 1
 order: 22
 sudokupad_url: https://sudokupad.app/ctdl6zr7xc
 lmd_id: 000V8V

@@ -1,6 +1,7 @@
 ---
 title: General Whisper
 creation_date: "2026-10-30"
+difficulty: 2
 order: 47
 sudokupad_url: https://sudokupad.app/7zbqbf3t3t
 lmd_id: 000VSN

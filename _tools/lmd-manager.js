@@ -146,7 +146,6 @@ function extractPuzzleForm($form) {
     codedescr: payload.codedescr || undefined,
     codedescr_en: payload.codedescr_en ?? '',
     code: payload.code ?? '',
-    dif: parseInt(payload.dif),
     date: (payload.frei === 'ja') ? (
       `${payload.year}-${payload.month.padStart(2, 0)}-${payload.day.padStart(2, 0)} ` +
       `${payload.hour.padStart(2, 0)}:${payload.min.padStart(2, 0)}:${payload.sec.padStart(2, 0)}`
@@ -180,7 +179,6 @@ async function uploadPuzzle(slug, params = {}, yml = ymlFromSlug(slug)) {
   const DEFAULTS = {
     codedescr_en: '',
     code: '',
-    dif: 3,
     date: '',
     labels: [4],
     tags: ['Sudoku']
@@ -215,7 +213,7 @@ async function uploadPuzzle(slug, params = {}, yml = ymlFromSlug(slug)) {
   payload.htmlcode_en = generateHtml(slug, storedParams.img_id, yml);
   payload.codedescr_en = params.codedescr_en;
   payload.code = params.code;
-  payload.dif = params.dif.toString();
+  payload.dif = (yml.difficulty || 3).toString();
   ((d) => {
     if (d === '')
       payload.frei = 'nein';
@@ -318,7 +316,6 @@ async function main() {
       update: {type: 'boolean'},
       date: {type: 'string'},
       code: {type: 'string'},
-      dif: {type: 'string'},
       labels: {type: 'string'},
       tags: {type: 'string'},
       comment: {type: 'string'}
@@ -334,7 +331,6 @@ async function main() {
     const params = {
       date: rawArgs.values.date?.replace('_', ' '),
       generate_code: rawArgs.values.code?.replace('_', ' ')?.replace('__', '_'),
-      dif: parseInt(rawArgs.values.dif) || undefined,
       labels: rawArgs.values.labels?.split(/, */)?.map(Number),
       tags: rawArgs.values.tags?.split(/, */),
       comment: rawArgs.values.comment?.replace('_', ' ')?.replace('__', '_')
@@ -351,7 +347,6 @@ async function main() {
     "codedescr",
     "codedescr_en",
     "code",
-    "dif",
     "date",
     "labels",
     "tags"

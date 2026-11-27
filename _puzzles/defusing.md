@@ -1,6 +1,7 @@
 ---
 title: Defusing
 creation_date: "2026-11-18"
+difficulty: 2
 order: 53
 sudokupad_url: https://sudokupad.app/8pevjd00jw
 lmd_id: 000W3Q

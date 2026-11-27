@@ -1,6 +1,7 @@
 ---
 title: Bent Arrow
 creation_date: "2026-11-21"
+difficulty: 1
 order: 57
 sudokupad_url: https://sudokupad.app/3mtz7tzdc3
 lmd_id: 000W5I

@@ -1,6 +1,7 @@
 ---
 title: Bulbless Thermometers
 creation_date: "2026-09-22"
+difficulty: 2
 order: 14
 sudokupad_url: https://sudokupad.app/md3bap0lnb
 lmd_id: 000V3N

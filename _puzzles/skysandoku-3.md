@@ -1,6 +1,7 @@
 ---
 title: Skysandoku 3
 creation_date: "2026-09-29"
+difficulty: 2
 order: 25
 sudokupad_url: https://sudokupad.app/sro3e3j53l
 lmd_id: 000V9P

@@ -77,7 +77,8 @@ permalink: /puzzles/
     <span id="sort-manager-order" class="btn-bar" style="justify-content: right; display: inline-flex;"></span>
   </div>
 </div>
-<div id="puzzle-container" style="margin-top: 1rem;"></div>
+<div id="puzzle-container" class="puzzle-grid" style="margin-top: 1rem;"></div>
+<p id="shown-puzzles-count"></p>
 <div id="limit-selector"></div>
 <div id="paginator-bottom" style="margin-top: 1rem;"></div>
 
@@ -139,36 +140,25 @@ permalink: /puzzles/
   }
 
   function updateCards() {
-    const container = document.getElementById('puzzle-container') || document.querySelector('main');
-    if (!container) return;
-    const div = document.createElement("div");
-    div.className = "puzzle-grid";
+    const div = document.getElementById('puzzle-container');
+    if (!div) return;
+
+    let html = '';
     for (const puzzle of puzzles.slice((page - 1) * itemsPerPage, page * itemsPerPage)) {
-      const a = document.createElement("a");
-      a.className = "puzzle-card";
-      a.href = "/puzzles/" + puzzle[0] + "/";
-
-      const img = document.createElement("img");
-      img.src = puzzle[5];
-      img.alt = puzzle[2];
-      a.appendChild(img);
-
-      const h3 = document.createElement("h3");
-      h3.innerText = puzzle[1];
-      a.appendChild(h3);
-
-      const time = document.createElement("time");
-      time.dateTime = puzzle[2];
-      time.innerText = puzzle[3];
-      a.appendChild(time);
-
-      div.appendChild(a);
+      const [slug, title, dateTime, dateText, order, imageSrc, difficulty] = puzzle;
+      html += `
+        <a class="puzzle-card" href="/puzzles/${slug}/">
+          <img src="${imageSrc}" alt="${title}">
+          <h3>${title}</h3>
+          <time datetime="${dateTime}">${dateText}</time>
+          <span>${'\u2605'.repeat(difficulty).padEnd(5, '\u2606')}</span>
+        </a>
+      `;
     }
-    container.replaceChildren(div);
+    div.innerHTML = html;
 
-    const p = document.createElement("p");
-    p.innerText = `Showing puzzles ${(page - 1) * itemsPerPage + 1}-${Math.min(page * itemsPerPage, puzzles.length)} of ${puzzles.length}`;
-    container.appendChild(p);
+    const p = document.getElementById('shown-puzzles-count');
+    if (p) p.innerText = `Showing puzzles ${(page - 1) * itemsPerPage + 1}-${Math.min(page * itemsPerPage, puzzles.length)} of ${puzzles.length}`;
   }
 
   function changePage(p) {

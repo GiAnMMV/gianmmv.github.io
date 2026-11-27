@@ -1,6 +1,7 @@
 ---
 title: Pine Tree
 creation_date: "2026-10-02"
+difficulty: 1
 order: 30
 sudokupad_url: https://sudokupad.app/ddbyg1awsv
 lmd_id: 000VDM

@@ -1,6 +1,7 @@
 ---
 title: Nine Ate Seven – The Revenge of Nine
 creation_date: "2026-11-05"
+difficulty: 2
 order: 48
 sudokupad_url: https://sudokupad.app/jmyr30kdye
 lmd_id: 000VW6

@@ -1,6 +1,7 @@
 ---
 title: The Power of Three
 creation_date: "2026-10-15"
+difficulty: 2
 order: 43
 sudokupad_url: https://sudokupad.app/v521hf1huv
 lmd_id: 000VS1

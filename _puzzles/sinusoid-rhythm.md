@@ -1,6 +1,7 @@
 ---
 title: Sinusoid Rhythm
 creation_date: "2026-10-07"
+difficulty: 1
 order: 38
 sudokupad_url: https://sudokupad.app/w7tibjyugd
 lmd_id: 000VQW

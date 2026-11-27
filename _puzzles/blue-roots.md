@@ -1,6 +1,7 @@
 ---
 title: Blue Roots
 creation_date: "2026-11-12"
+difficulty: 1
 order: 52
 sudokupad_url: https://sudokupad.app/kjrhf0lsef
 lmd_id: 000W0Q

@@ -1,6 +1,7 @@
 ---
 title: Follow the Arrows
 creation_date: "2026-10-14"
+difficulty: 2
 order: 42
 sudokupad_url: https://sudokupad.app/rfu7p0i0mp
 lmd_id: 000VS0

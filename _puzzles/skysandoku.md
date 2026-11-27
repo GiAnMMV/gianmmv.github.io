@@ -1,6 +1,7 @@
 ---
 title: Skysandoku
 creation_date: "2026-09-24"
+difficulty: 2
 order: 16
 sudokupad_url: https://sudokupad.app/59epykkdj8
 lmd_id: 000V44
@@ -17,5 +18,5 @@ rules_de:
   - name: Hochhäuser
     desc: Jede Ziffer im Gitter steht für die Höhe eines Gebäudes in der jeweiligen Zelle, wobei höhere Gebäude die Sicht auf dahinterliegende, niedrigere Gebäude versperren; Hinweise außerhalb des Gitters geben an, wie viele Gebäude von der jeweiligen Position aus in der entsprechenden Zeile oder Spalte sichtbar sind.
   - name: Sandwich Sums
-    desc: "Eine eingekreiste Hinweiszahl gibt die Summe der Ziffern von 1 bis 9 in der jeweiligen Zeile oder Spalte an. <u>Eingekreiste Hinweise sind zugleich Hochhäuser-Hinweise.</u>"
+    desc: Eine eingekreiste Hinweiszahl gibt die Summe der Ziffern von 1 bis 9 in der jeweiligen Zeile oder Spalte an. <u>Eingekreiste Hinweise sind zugleich Hochhäuser-Hinweise.</u>
 ---

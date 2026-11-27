@@ -1,6 +1,7 @@
 ---
 title: Consensus
 creation_date: "2026-10-27"
+difficulty: 2
 order: 45
 sudokupad_url: https://sudokupad.app/bf7qfuzwsj
 lmd_id: 000VS3

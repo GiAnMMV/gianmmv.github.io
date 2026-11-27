@@ -1,6 +1,7 @@
 ---
 title: Little Archers
 creation_date: "2026-10-04"
+difficulty: 2
 order: 35
 sudokupad_url: https://sudokupad.app/4i1t91suvq
 lmd_id: 000VMW

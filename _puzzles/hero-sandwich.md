@@ -1,6 +1,7 @@
 ---
 title: Hero Sandwich
 creation_date: "2026-09-29"
+difficulty: 1
 order: 26
 sudokupad_url: https://sudokupad.app/o7v0i0phnm
 lmd_id: 000V9X

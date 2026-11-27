@@ -1,6 +1,7 @@
 ---
 title: Equal Prison
 creation_date: "2026-10-04"
+difficulty: 2
 order: 34
 sudokupad_url: https://sudokupad.app/u6l1gt3ku0
 lmd_id: 000VL3

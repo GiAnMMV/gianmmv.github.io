@@ -1,6 +1,7 @@
 ---
 title: Spilled Candies
 creation_date: "2026-09-30"
+difficulty: 2
 order: 27
 sudokupad_url: https://sudokupad.app/sj8llb0qnm
 lmd_id: 000VAW

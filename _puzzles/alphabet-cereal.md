@@ -1,6 +1,7 @@
 ---
 title: Alphabet Cereal
 creation_date: "2026-10-03"
+difficulty: 3
 order: 32
 sudokupad_url: https://sudokupad.app/xg03iodhuk
 lmd_id: 000VHF

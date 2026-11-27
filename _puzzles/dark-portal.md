@@ -1,6 +1,7 @@
 ---
 title: Dark Portal
 creation_date: "2026-09-13"
+difficulty: 2
 order: 7
 sudokupad_url: https://sudokupad.app/q6t2qnrph5
 lmd_id: 000UUO

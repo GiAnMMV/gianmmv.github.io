@@ -1,6 +1,7 @@
 ---
 title: Snow Crystal
 creation_date: "2026-11-20"
+difficulty: 3
 order: 55
 sudokupad_url: https://sudokupad.app/s7a3onb3qb
 lmd_id: 000W50

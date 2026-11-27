@@ -1,6 +1,7 @@
 ---
 title: Mercury Nucleus
 creation_date: "2026-09-20"
+difficulty: 1
 order: 11
 sudokupad_url: https://sudokupad.app/eznd62lu6b
 lmd_id: 000V0T

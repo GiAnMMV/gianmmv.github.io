@@ -1,6 +1,7 @@
 ---
 title: Skydoku
 creation_date: "2026-10-01"
+difficulty: 2
 order: 29
 sudokupad_url: https://sudokupad.app/35gvrdb4a5
 lmd_id: 000VDK
