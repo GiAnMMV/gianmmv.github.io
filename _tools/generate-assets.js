@@ -180,7 +180,7 @@ async function generateOGImage(slug, browser) {
           h1 { margin-block: .25em; }
           h1 span { font-size: 1.25rem; font-weight: normal; }
           .container { display: flex; }
-          .left-col { width: 500px; display: flex; justify-content: center; }
+          .left-col { width: 500px; display: flex; justify-content: center; align-items: flex-start; }
           .left-col svg { width: 100%; height: auto; display: block; }
           .right-col { width: 700px; display: flex; justify-content: center; }
           p { display: inline; }

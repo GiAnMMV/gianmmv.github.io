@@ -1,7 +1,7 @@
 ---
 title: Central Symmetry
 creation_date: "2026-09-21"
-difficulty: 3
+difficulty: 2
 order: 13
 sudokupad_url: https://sudokupad.app/nb18hxtkvf
 lmd_id: 000V27
